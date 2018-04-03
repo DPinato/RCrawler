@@ -30,49 +30,96 @@ class Crawler
   end
 
 
-  def runPings(dst, delay = 0, limit=-1)
+  def runPings(opInput)
     # run a ping every delay number of seconds
-    @pingDelay = delay        # delay, in seconds, between ping commands
-    @pingDestination = dst    # destination IP address for ping
+    @pingDelay = opInput.interval.to_i  # delay, in seconds, between ping commands
+    @pingDest = opInput.dest.to_s    # destination IP address for ping
     @pingCounter = 0          # count how many pings have been taken, if -1 go on forever
-    @pingLimit = limit        # number of pings to send
+    @pingLimit = opInput.reps.to_i        # number of pings to send
     @pingLatency = Array.new  # latency for ping
-    @pingDate = Array.new     # date in which ping result was taken
+    @pingReturnEpoch = Array.new     # date in which ping result was taken
+    @pingBaseOutputDir = opInput.outputDir.to_s # directory to store output files in
+    @pingFileHeader = opInput.pingFileHeader.to_s    # static file headers to put at the top of an output file
+    @pingOutFile
+    @pingDstIsIP = false
+
+    begin
+      unless opInput.is_a?(Operation)
+        raise "UnexpectedType"
+      end
+
+    rescue => e
+      puts "runPings(...) is expecting an Operation object"
+      puts "EXCEPTION, runPings(...): #{e}"
+      return
+    end
 
 
+    # TODO: does checking for the correct IP address even matter, if I can also put in a hostname?
     num = "(\\d|[01]?\\d\\d|2[0-4]\\d|25[0-5])" # TODO: this will consider x.x.xxx as a valid IP address
     pat = "^(#{num}\.){3}#{num}$"
     ip_pat = Regexp.new(pat)
 
-    # check if the IP address is valid
-    begin
-      puts pingDestination
-      unless pingDestination =~ ip_pat
-        raise "Bad IP Address"
-      end
+    # check if the input is a valid IP address or a hostname
+    puts pingDest
+    if pingDest =~ ip_pat
+      pingDstIsIP = true  # this should only run if pingDest is a valid IP address
+    else
+      pingDstIsIP = false
+    end
+    ######################################################################################################
 
-    rescue => e   # if the IP address is invalid, just return
-      puts "EXCEPTION: #{e}"
+
+    # create file to store data to
+    pos1 = pingDest.index(":").to_i
+    tmpStr = "ping_" + pingDest[pos1, pingDest.length - (pos1)]
+    pingOutFile = pingBaseOutputDir + tmpStr + "_" + DateTime.now.strftime('%Q').to_s + ".log"
+    puts "id: #{objId}, pingOutFile: " + pingOutFile
+
+    begin
+      outFile = File.open(pingOutFile, 'w')
+    rescue Errno::ENOENT
+      puts "Could not write to pingOutFile: " + pingOutFile
       return
     end
 
+    # put first few lines of data to file
+    outFile << "# " << pingDest << "\n"  # URL being crawled
+    outFile << "# Started at: " << DateTime.now.to_s << "\n"
+    outFile << pingFileHeader << "\n"
+
+
     # start the pings
-    # TODO: if the ping does not succeed, for whatever reason, this currently does not return anything
+    # stores a -1 if the ping does not succeeds, i.e. timeout
     loop do
-      now = `ping #{dst} -c 1`
+      now = `ping #{pingDest.to_s} -c 1 -W 5` # anything above 5 seconds is really high
 
       tmpStr = now.split("\n")[1] # get second line of output "64 bytes from 8.8.8.8: icmp_seq=1 ttl=59 time=13.7 ms"
-#      puts tmpStr
+      #puts "tmpStr: " + tmpStr
 
-      index = tmpStr.rindex("time")
-      pos1 = index + "time".length + 1
+      index = tmpStr.rindex("time").to_i
+      #puts "index: " + index.to_s
+
+      tmpLatency = -1
+
+      unless tmpStr.size == 0   # it means that we did not get a reply for the ping
+        pos1 = index.to_i + "time".length.to_i + 1
+        tmpLatency = tmpStr[pos1, tmpStr.length - pos1 - 3]
+      end
 
       # store data in the arrays
-      pingDate.push(Time.now.to_i)  # set current epoch time in seconds
-      pingLatency.push(tmpStr[pos1, tmpStr.length - pos1 - 3])   # set current latency from ping command
+      pingReturnEpoch.push(DateTime.now.strftime('%Q').to_s)  # set current epoch time in milliseconds
+      pingLatency.push(tmpLatency)   # set current latency from ping command
 
       # show something in the terminal
-      puts "Latency: " + pingLatency[pingLatency.size - 1] + " ms"
+      print objId.to_s + "\t" + pingDest
+      print "\tlatency: " + pingLatency[pingLatency.size - 1].to_s + " ms"
+      print "\n"
+
+      # save to file
+      outFile << pingLatency[pingLatency.size-1]
+      outFile << "\t" << pingReturnEpoch[pingReturnEpoch.size-1]
+      outFile << "\n"
 
 
       self.pingCounter += 1
@@ -102,7 +149,6 @@ class Crawler
       puts "runHttpQueries(...) is expecting an Operation object"
       puts "EXCEPTION: #{e}"
       return
-
     end
 
     @httpUrl = opInput.dest.to_s    # this NEEDS to start with either http:// or https://, otherwise it will be
@@ -115,7 +161,7 @@ class Crawler
     @httpReturnSize = Array.new
     @httpReturnEpoch = Array.new
     @httpBaseOutputDir = opInput.outputDir.to_s  # directory to store output files in
-    @httpFileHeader = opInput.outFileHeader.to_s    # static file headers to put at the top of an output file
+    @httpFileHeader = opInput.httpFileHeader.to_s    # static file headers to put at the top of an output file
     @httpOutFile
 
 
@@ -136,7 +182,7 @@ class Crawler
 
     # put first few lines of data to file
     outFile << "# " << httpUrl << "\n"  # URL being crawled
-    outFile << "# " << DateTime.now.to_s << "\n"
+    outFile << "# Started at: " << DateTime.now.to_s << "\n"
     outFile << httpFileHeader << "\n"
 
 
@@ -204,11 +250,8 @@ class Crawler
         break
       end
 
-
-
     end
 
-    # loop is over
     outFile.close
 
 
@@ -221,11 +264,15 @@ class Crawler
   attr_accessor :objId
 
   attr_accessor :pingDelay
-  attr_accessor :pingDestination
+  attr_accessor :pingDest
   attr_accessor :pingCounter
   attr_accessor :pingLimit
   attr_accessor :pingLatency
-  attr_accessor :pingDate
+  attr_accessor :pingReturnEpoch
+  attr_accessor :pingBaseOutputDir
+  attr_accessor :pingFileHeader
+  attr_accessor :pingOutFile
+  attr_accessor :pingDstIsIP
 
   attr_accessor :httpUrl
   attr_accessor :httpDelay
@@ -245,13 +292,14 @@ class Operation
 # class used to store input from the config file
 # TODO: probably a struct would be better here
 
-  def initialize(opType, dest, interval, reps, outputDir, outFileHeader)
+  def initialize(opType, dest, interval, reps, outputDir, httpFileHeader, pingFileHeader)
     @opType = opType
     @dest = dest
     @interval = interval
     @reps = reps
     @outputDir = outputDir
-    @outFileHeader = outFileHeader
+    @httpFileHeader = httpFileHeader
+    @pingFileHeader = pingFileHeader
   end
 
   attr_accessor :opType
@@ -259,13 +307,17 @@ class Operation
   attr_accessor :interval
   attr_accessor :reps
   attr_accessor :outputDir
-  attr_accessor :outFileHeader
+  attr_accessor :httpFileHeader
+  attr_accessor :pingFileHeader
 end
+
+
 
 
 # read config file and create the appropriate instance objects
 tmpOutputDir = ""
-tmpFileHeader = ""
+tmpHttpFileHeader = ""
+tmpPingFileHeader = ""
 ops = Array.new
 
 begin
@@ -290,10 +342,14 @@ confFile.readlines().each do |line|
       # puts "tmpOutputDir: " + tmpOutputDir
     end
 
-    if line.include?("fileHeader")
+    if line.include?("httpFileHeader")
       pos = line.index('=')
-      tmpFileHeader = line[pos+1, line.size - (pos+1)].chomp!  # last character is newline
-      #puts "tmpFileHeader: " + tmpFileHeader
+      tmpHttpFileHeader = line[pos+1, line.size - (pos+1)].chomp!  # last character is newline
+    end
+
+    if line.include?("pingFileHeader")
+      pos = line.index('=')
+      tmpPingFileHeader = line[pos+1, line.size - (pos+1)].chomp!  # last character is newline
     end
 
 
@@ -301,7 +357,7 @@ confFile.readlines().each do |line|
       # process these lines as if they were a CSV file
       # format is: <operation>,<destination>,<interval>,<reps>
       tmpArray = CSV.parse_line(line)
-      tmpOps = Operation.new(tmpArray[0], tmpArray[1], tmpArray[2], tmpArray[3], tmpOutputDir, tmpFileHeader)
+      tmpOps = Operation.new(tmpArray[0], tmpArray[1], tmpArray[2], tmpArray[3], tmpOutputDir, tmpHttpFileHeader, tmpPingFileHeader)
       ops.push(tmpOps)
     end
 
@@ -317,8 +373,6 @@ ops.each do |op|
 end
 
 
-
-
 # create an array containing the threads that will run what is specified in the config file
 crawlArray = Array.new
 
@@ -326,7 +380,14 @@ threadArray = (0...ops.size).map do |i| # this is equivalent to for (int i = 0; 
   crawlArray[i] = Crawler.new(i)
 
   Thread.new(i) do |i|
-    crawlArray[i].runHttpQueries(ops[i])
+    if ops[i].opType == "PING"
+      crawlArray[i].runPings(ops[i])
+    elsif ops[i].opType == "HTTP"
+      crawlArray[i].runHttpQueries(ops[i])
+    else
+      puts "I do not understand operation: " + ops[i].opType
+    end
+
   end
 end
 
