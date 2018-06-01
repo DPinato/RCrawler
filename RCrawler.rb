@@ -5,6 +5,9 @@ require 'date'
 require 'thread'
 require 'csv'
 
+load 'Operation.rb'
+load 'Alerter.rb'
+
 
 BEGIN {
   # this is called before the program is run
@@ -93,7 +96,7 @@ class Crawler
     # stores a -1 if the ping does not succeeds, i.e. timeout
     loop do
 			tmpLatency = -1
-      now = `ping #{pingDest.to_s} -c 1 -W 5000` # anything above 5 seconds is really high
+      now = `ping #{pingDest.to_s} -c 1 -W 5` # anything above 5 seconds is really high
 																									# remember that Mac OS has that value in milliseconds
 			#puts "now #{now.size}" + ": " + now.to_s
 
@@ -292,30 +295,6 @@ class Crawler
 end
 
 
-class Operation
-# class used to store input from the config file
-# TODO: probably a struct would be better here
-
-  def initialize(opType, dest, interval, reps, outputDir, httpFileHeader, pingFileHeader)
-    @opType = opType
-    @dest = dest
-    @interval = interval
-    @reps = reps
-    @outputDir = outputDir
-    @httpFileHeader = httpFileHeader
-    @pingFileHeader = pingFileHeader
-  end
-
-  attr_accessor :opType
-  attr_accessor :dest
-  attr_accessor :interval
-  attr_accessor :reps
-  attr_accessor :outputDir
-  attr_accessor :httpFileHeader
-  attr_accessor :pingFileHeader
-end
-
-
 
 
 # read config file and create the appropriate instance objects
@@ -356,7 +335,22 @@ confFile.readlines().each do |line|
       tmpPingFileHeader = line[pos+1, line.size - (pos+1)].chomp!  # last character is newline
     end
 
+    # read variables related to alerts
+    if line.include?("emailAddresses")  # TODO: add support for multiple email addresses
+      pos = line.index('=')
+      tmpEmailAddresses = line[pos+1, line.size - (pos+1)].chomp!  # last character is newline
+    end
+    if line.include?("maxPingsBeforeAlert")
+      pos = line.index('=')
+      tmpMaxPingsBeforeAlert = line[pos+1, line.size - (pos+1)].chomp!  # last character is newline
+    end
+    if line.include?("maxHTTPBeforeAlert")
+      pos = line.index('=')
+      tmpMaxHTTPBeforeAlert = line[pos+1, line.size - (pos+1)].chomp!  # last character is newline
+    end
 
+
+    # read list of operations to perform
     if line.include?("HTTP") || line.include?("PING")
       # process these lines as if they were a CSV file
       # format is: <operation>,<destination>,<interval>,<reps>
