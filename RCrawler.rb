@@ -92,27 +92,31 @@ class Crawler
     # start the pings
     # stores a -1 if the ping does not succeeds, i.e. timeout
     loop do
-      now = `ping #{pingDest.to_s} -c 1 -W 5` # anything above 5 seconds is really high
+			tmpLatency = -1
+      now = `ping #{pingDest.to_s} -c 1 -W 5000` # anything above 5 seconds is really high
+																									# remember that Mac OS has that value in milliseconds
+			#puts "now #{now.size}" + ": " + now.to_s
 
-      tmpStr = now.split("\n")[1] # get second line of output "64 bytes from 8.8.8.8: icmp_seq=1 ttl=59 time=13.7 ms"
-      #puts "tmpStr: " + tmpStr
+			# if now has no size, we could not resolve the hostname or something OS-related happened
+			# TODO: better logging would be nice here
+			unless now.size == 0
+	      tmpStr = now.split("\n")[1] # get second line of output "64 bytes from 8.8.8.8: icmp_seq=1 ttl=59 time=13.7 ms"
+	      #puts "tmpStr: " + tmpStr
 
-      index = tmpStr.rindex("time").to_i
-      #puts "index: " + index.to_s
+	      index = tmpStr.rindex("time").to_i
+	      #puts "index: " + index.to_s
 
-      tmpLatency = -1
+	      pos1 = index.to_i + "time".length.to_i + 1
+	      tmpLatency = tmpStr[pos1, tmpStr.length - pos1 - 3]
+			end
 
-      unless tmpStr.size == 0   # it means that we did not get a reply for the ping
-        pos1 = index.to_i + "time".length.to_i + 1
-        tmpLatency = tmpStr[pos1, tmpStr.length - pos1 - 3]
-      end
 
       # store data in the arrays
       pingReturnEpoch.push(DateTime.now.strftime('%Q').to_s)  # set current epoch time in milliseconds
       pingLatency.push(tmpLatency)   # set current latency from ping command
 
       # show something in the terminal
-      print objId.to_s + "\t" + pingDest
+      print objId.to_s + "\t" + pingCounter.to_s + "\t" + pingDest
       print "\tlatency: " + pingLatency[pingLatency.size - 1].to_s + " ms"
       print "\n"
 
@@ -234,7 +238,7 @@ class Crawler
 
 
       # show some output in the terminal
-      print objId.to_s + "\t" + httpUrl
+      print objId.to_s + "\t" + httpCounter + "\t" + httpUrl
       print "\t" + duration.to_s + " ms"
       print "\tcode: " + responseStatus[0]
       print "\tsize: " + responseBody.length.to_s
