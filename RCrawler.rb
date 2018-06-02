@@ -301,6 +301,12 @@ end
 tmpOutputDir = ""
 tmpHttpFileHeader = ""
 tmpPingFileHeader = ""
+tmpAlertTemplateLocation = ""
+tmpEmailAddresses = ""
+tmpMaxPingsBeforeAlert = ""
+tmpMaxHTTPBeforeAlert = ""
+
+
 ops = Array.new
 
 begin
@@ -322,7 +328,6 @@ confFile.readlines().each do |line|
     if line.include?("outputDir")
       pos = line.index('=')
       tmpOutputDir = line[pos+1, line.size - (pos+1)].chomp!  # last character is newline
-      # puts "tmpOutputDir: " + tmpOutputDir
     end
 
     if line.include?("httpFileHeader")
@@ -336,6 +341,10 @@ confFile.readlines().each do |line|
     end
 
     # read variables related to alerts
+		if line.include?("alertTemplateLocation")
+      pos = line.index('=')
+      tmpAlertTemplateLocation = line[pos+1, line.size - (pos+1)].chomp!  # last character is newline
+    end
     if line.include?("emailAddresses")  # TODO: add support for multiple email addresses
       pos = line.index('=')
       tmpEmailAddresses = line[pos+1, line.size - (pos+1)].chomp!  # last character is newline
@@ -367,8 +376,19 @@ end
 # show some output on what was loaded from the config file
 puts "I have " + ops.size.to_s + " operations to do"
 ops.each do |op|
-  puts op.opType + "\t" + op.dest + "\t" + op.interval.to_s + "\t" + op.reps.to_s
+  #puts op.opType + "\t" + op.dest + "\t" + op.interval.to_s + "\t" + op.reps.to_s
 end
+
+puts "tmpAlertTemplateLocation: " + tmpAlertTemplateLocation
+puts "tmpEmailAddresses: " + tmpEmailAddresses
+puts "tmpMaxPingsBeforeAlert: " + tmpMaxPingsBeforeAlert
+puts "tmpMaxHTTPBeforeAlert: " + tmpMaxHTTPBeforeAlert
+
+
+alertObj = Alerter.new(tmpEmailAddresses, tmpMaxPingsBeforeAlert, tmpMaxHTTPBeforeAlert)
+alertObj.readEmailTemplate(tmpAlertTemplateLocation)
+alertObj.sendEmailAlert("HTTP", "google.com", 45, DateTime.now.strftime('%Q').to_s, DateTime.now)
+exit
 
 
 # create an array containing the threads that will run what is specified in the config file
