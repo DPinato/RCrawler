@@ -28,8 +28,10 @@ END {
 
 class Crawler
 
-  def initialize(id=-1)
+  def initialize(aObj, id=-1)
     @objId = id   # useful when using multiple threads
+		@alertObj = aObj	# object used to send alerts
+
   end
 
 
@@ -94,9 +96,11 @@ class Crawler
 
     # start the pings
     # stores a -1 if the ping does not succeeds, i.e. timeout
+		failCounter = 0			# count how many times the operation failed
+		alertSent = false		# flag whether the alert was sent for the last occurrence
     loop do
 			tmpLatency = -1
-      now = `ping #{pingDest.to_s} -c 1 -W 5` # anything above 5 seconds is really high
+      now = `ping #{pingDest.to_s} -c 1 -W 5000` # anything above 5 seconds is really high
 																									# remember that Mac OS has that value in milliseconds
 			#puts "now #{now.size}" + ": " + now.to_s
 
@@ -104,13 +108,26 @@ class Crawler
 			# TODO: better logging would be nice here
 			unless now.size == 0
 	      tmpStr = now.split("\n")[1] # get second line of output "64 bytes from 8.8.8.8: icmp_seq=1 ttl=59 time=13.7 ms"
-	      #puts "tmpStr: " + tmpStr
-
 	      index = tmpStr.rindex("time").to_i
+				#puts "tmpStr: " + tmpStr
 	      #puts "index: " + index.to_s
 
 	      pos1 = index.to_i + "time".length.to_i + 1
 	      tmpLatency = tmpStr[pos1, tmpStr.length - pos1 - 3]
+
+				failCounter = 0
+				alertSent = false
+			else
+				failCounter += 1
+				#puts "FAILED, " + "#{failCounter}\t" + "#{alertObj.maxPingsBeforeAlert.to_i}"
+				if failCounter >= alertObj.maxPingsBeforeAlert.to_i && !alertSent
+					# send alert, but only one per-occurrence
+					currEpoch = DateTime.now.strftime('%Q')	# this so that logs and email alert have the same timestamp
+					alertObj.sendEmailAlert("PING", pingDest, failCounter, currEpoch.to_s, DateTime.strptime(currEpoch,'%Q'))
+					alertSent = true
+					puts "[#{currEpoch},#{objId.to_s}]: PING Alert sent, #{pingDest}"
+				end
+
 			end
 
 
@@ -194,6 +211,8 @@ class Crawler
 
 
     # start crawling
+		failCounter = 0			# count how many times the operation failed
+		alertSent = false		# flag whether the alert was sent for the last occurrence
     loop do
       startTime = DateTime.now.strftime('%Q').to_s
 
@@ -201,6 +220,32 @@ class Crawler
         queryResponse = open(httpUrl.to_s)
 
       # try to rescue from any exceptions, but keep trying
+			# TODO: for some reason the rescue clauses below throw runtime errors on Mac OS
+			rescue Exception => e
+				# TODO: do some logging before re-raising the exception
+				puts "#{e}"
+
+				failCounter += 1
+				#puts "FAILED, " + "#{failCounter}\t" + "#{alertObj.maxPingsBeforeAlert.to_i}"
+				if failCounter >= alertObj.maxHTTPBeforeAlert.to_i && !alertSent
+					# send alert, but only one per-occurrence
+					currEpoch = DateTime.now.strftime('%Q')	# this so that logs and email alert have the same timestamp
+					alertObj.sendEmailAlert("HTTP", httpUrl.to_s, failCounter, currEpoch.to_s, DateTime.strptime(currEpoch,'%Q'))
+					alertSent = true
+					puts "[#{currEpoch},#{objId.to_s}]: HTTP Alert sent, #{httpUrl.to_s}"
+
+				end
+
+				sleep httpDelay
+				retry
+
+				#raise e  # TODO: re-raise exception previously ignored and process properly
+
+			end
+
+			alertSent = false
+
+=begin
       rescue SocketError
         # something happened to the socket, can happen when adapter is turned off or if could not
         # resolve domain name for URL
@@ -220,6 +265,7 @@ class Crawler
         retry
 
       end
+=end
 
       endTime = DateTime.now.strftime('%Q').to_s
       duration = endTime.to_i - startTime.to_i  # time taken to do the HTTP GET, in milliseconds
@@ -269,6 +315,7 @@ class Crawler
 
   # accessors for instance variables
   attr_accessor :objId
+	attr_accessor :alertObj
 
   attr_accessor :pingDelay
   attr_accessor :pingDest
@@ -360,7 +407,7 @@ confFile.readlines().each do |line|
 
 
     # read list of operations to perform
-    if line.include?("HTTP") || line.include?("PING")
+    if line[0,4].include?("HTTP") || line[0,4].include?("PING")
       # process these lines as if they were a CSV file
       # format is: <operation>,<destination>,<interval>,<reps>
       tmpArray = CSV.parse_line(line)
@@ -385,17 +432,15 @@ puts "tmpMaxPingsBeforeAlert: " + tmpMaxPingsBeforeAlert
 puts "tmpMaxHTTPBeforeAlert: " + tmpMaxHTTPBeforeAlert
 
 
-alertObj = Alerter.new(tmpEmailAddresses, tmpMaxPingsBeforeAlert, tmpMaxHTTPBeforeAlert)
-alertObj.readEmailTemplate(tmpAlertTemplateLocation)
-alertObj.sendEmailAlert("HTTP", "google.com", 45, DateTime.now.strftime('%Q').to_s, DateTime.now)
-exit
+tmpAlertObj = Alerter.new(tmpEmailAddresses, tmpMaxPingsBeforeAlert, tmpMaxHTTPBeforeAlert)
+tmpAlertObj.readEmailTemplate(tmpAlertTemplateLocation)
 
 
 # create an array containing the threads that will run what is specified in the config file
 crawlArray = Array.new
 
 threadArray = (0...ops.size).map do |i| # this is equivalent to for (int i = 0; i < ops.size() i++)
-  crawlArray[i] = Crawler.new(i)
+  crawlArray[i] = Crawler.new(tmpAlertObj, i)
 
   Thread.new(i) do |i|
     if ops[i].opType == "PING"

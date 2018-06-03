@@ -1,4 +1,3 @@
-========== ALERT ==========
 
 operation: <op>
 destination: <dest>
@@ -6,5 +5,5 @@ failuresInARow: <fails>
 startEpoch: <sEpoch>
 startDate: <sDate>
 
-BYE
+
 RCrawler

@@ -7,7 +7,6 @@ class Alerter
     @maxPingsBeforeAlert = maxPings
     @maxHTTPBeforeAlert = maxHTTPs
 
-
   end
 
 
@@ -22,20 +21,20 @@ class Alerter
 
   def sendEmailAlert(op, dest, fails, sEpoch, sDate)
 		# first finish generating the email from the template
-		@emailMessage = @alertTemplate
+		@emailMessage = @alertTemplate.dup	# otherwise the copy would be by reference
 		@emailSubject = "ALERT(#{op.to_s}): #{dest.to_s} - #{sDate.to_s}"
 		emailMessage.sub!("<op>", op.to_s)
 		emailMessage.sub!("<dest>", dest.to_s)
 		emailMessage.sub!("<fails>", fails.to_s)
 		emailMessage.sub!("<sEpoch>", sEpoch.to_s)
 		emailMessage.sub!("<sDate>", sDate.to_s)
-
+		#puts "\t" + "#{emailMessage}"
 
 		# use either of the commands below to send the email
 		# echo "<emailMessage>" | mail -s "<emailSubject>" emailAddress
 		# mail -s "<subject>" <email_address> < "<file>"
 		cmdTest1 = "echo \"#{emailMessage.to_s}\" | mail -s \"#{emailSubject.to_s}\" #{emailAddresses.to_s}"
-		puts cmdTest1
+		#puts cmdTest1
 		output = `#{cmdTest1}`
 
 		#cmdTest2 = "mail -s \"#{emailSubject.to_s}\" #{emailAddresses.to_s} < \"#{emailMessage.to_s}\""
