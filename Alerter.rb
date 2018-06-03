@@ -33,6 +33,8 @@ class Alerter
 		# use either of the commands below to send the email
 		# echo "<emailMessage>" | mail -s "<emailSubject>" emailAddress
 		# mail -s "<subject>" <email_address> < "<file>"
+
+		# TODO: the mail command fails silently
 		cmdTest1 = "echo \"#{emailMessage.to_s}\" | mail -s \"#{emailSubject.to_s}\" #{emailAddresses.to_s}"
 		#puts cmdTest1
 		output = `#{cmdTest1}`

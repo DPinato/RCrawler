@@ -42,7 +42,8 @@ class Crawler
     @pingCounter = 0          # count how many pings have been taken, if -1 go on forever
     @pingLimit = opInput.reps.to_i        # number of pings to send
     @pingLatency = Array.new  # latency for ping
-    @pingReturnEpoch = Array.new     # date in which ping result was taken
+    @pingReturnEpoch = Array.new     	# date in which ping result was taken
+		@pingReturnEpochDay = Array.new		# milliseconds after the start of the day in which ping result was taken
     @pingBaseOutputDir = opInput.outputDir.to_s # directory to store output files in
     @pingFileHeader = opInput.pingFileHeader.to_s    # static file headers to put at the top of an output file
     @pingOutFile
@@ -66,7 +67,7 @@ class Crawler
     ip_pat = Regexp.new(pat)
 
     # check if the input is a valid IP address or a hostname
-    puts pingDest
+    #puts pingDest
     if pingDest =~ ip_pat
       pingDstIsIP = true  # this should only run if pingDest is a valid IP address
     else
@@ -89,7 +90,7 @@ class Crawler
     end
 
     # put first few lines of data to file
-    outFile << "# " << pingDest << "\n"  # URL being crawled
+    outFile << "# PING\t" << pingDest << "\n"  # URL being crawled
     outFile << "# Started at: " << DateTime.now.to_s << "\n"
     outFile << pingFileHeader << "\n"
 
@@ -132,8 +133,9 @@ class Crawler
 
 
       # store data in the arrays
-      pingReturnEpoch.push(DateTime.now.strftime('%Q').to_s)  # set current epoch time in milliseconds
-      pingLatency.push(tmpLatency)   # set current latency from ping command
+			pingLatency.push(tmpLatency)   # save current latency from ping command
+      pingReturnEpoch.push(DateTime.now.strftime('%Q').to_s)  # save current epoch time in milliseconds, this is UTC+0
+			pingReturnEpochDay.push(pingReturnEpoch[pingReturnEpoch.size-1].to_i % (3600000*24))
 
       # show something in the terminal
       print objId.to_s + "\t" + pingCounter.to_s + "\t" + pingDest
@@ -143,6 +145,7 @@ class Crawler
       # save to file
       outFile << pingLatency[pingLatency.size-1]
       outFile << "\t" << pingReturnEpoch[pingReturnEpoch.size-1]
+			outFile << "\t" << pingReturnEpochDay[pingReturnEpochDay.size-1]
       outFile << "\n"
 
 
@@ -184,6 +187,7 @@ class Crawler
     @httpReturnCode = Array.new
     @httpReturnSize = Array.new
     @httpReturnEpoch = Array.new
+		@httpReturnEpochDay = Array.new
     @httpBaseOutputDir = opInput.outputDir.to_s  # directory to store output files in
     @httpFileHeader = opInput.httpFileHeader.to_s    # static file headers to put at the top of an output file
     @httpOutFile
@@ -191,8 +195,8 @@ class Crawler
 
     # create file to store data to
     pos1 = httpUrl.index(":").to_i
-    tmpStr = httpUrl[pos1+3, httpUrl.length - (pos1+3)]
-    httpOutFile = httpBaseOutputDir + tmpStr + "_" + DateTime.now.strftime('%Q').to_s + ".log"
+    fileName = httpUrl[0,pos1] + "_" + httpUrl[pos1+3, httpUrl.length - (pos1+3)]
+    httpOutFile = httpBaseOutputDir + fileName + "_" + DateTime.now.strftime('%Q').to_s + ".log"
 
     puts "id: #{objId}, httpOutFile: " + httpOutFile
 
@@ -205,7 +209,7 @@ class Crawler
 
 
     # put first few lines of data to file
-    outFile << "# " << httpUrl << "\n"  # URL being crawled
+    outFile << "# HTTP\t" << httpUrl << "\n"  # URL being crawled
     outFile << "# Started at: " << DateTime.now.to_s << "\n"
     outFile << httpFileHeader << "\n"
 
@@ -213,6 +217,7 @@ class Crawler
     # start crawling
 		failCounter = 0			# count how many times the operation failed
 		alertSent = false		# flag whether the alert was sent for the last occurrence
+		currEpoch = 0
     loop do
       startTime = DateTime.now.strftime('%Q').to_s
 
@@ -236,14 +241,10 @@ class Crawler
 
 				end
 
-				sleep httpDelay
-				retry
-
 				#raise e  # TODO: re-raise exception previously ignored and process properly
 
 			end
 
-			alertSent = false
 
 =begin
       rescue SocketError
@@ -267,31 +268,44 @@ class Crawler
       end
 =end
 
-      endTime = DateTime.now.strftime('%Q').to_s
-      duration = endTime.to_i - startTime.to_i  # time taken to do the HTTP GET, in milliseconds
-      responseStatus = queryResponse.status     # HTTP response code received by the server
-      responseBody = queryResponse.read
+			currEpoch = DateTime.now.strftime('%Q').to_s
+
+			# if the query failed, save a whole bunch of -1s to file
+			if failCounter > 0
+				duration = -1
+				responseStatus = -1
+				responseBody = ""
+			else
+      	duration = currEpoch.to_i - startTime.to_i  # time taken to do the HTTP GET, in milliseconds
+      	responseStatus = queryResponse.status     # HTTP response code received by the server
+      	responseBody = queryResponse.read
+
+				# reset flags and variables
+				alertSent = false
+				failCounter = 0
+			end
 
       # store data in the arrays
       httpDuration.push(duration)
       httpReturnCode.push(responseStatus[0])
       httpReturnSize.push(responseBody.length)
-      httpReturnEpoch.push(endTime)
+      httpReturnEpoch.push(currEpoch)
+			httpReturnEpochDay.push(httpReturnEpoch[httpReturnEpoch.size-1].to_i % (3600000*24))
 
       # save to file
       outFile << httpDuration[httpDuration.size-1]
       outFile << "\t" << httpReturnCode[httpReturnCode.size-1]
       outFile << "\t" << httpReturnSize[httpReturnSize.size-1]
       outFile << "\t" << httpReturnEpoch[httpReturnEpoch.size-1]
+			outFile << "\t" << httpReturnEpochDay[httpReturnEpochDay.size-1]
       outFile << "\n"
 
 
       # show some output in the terminal
-      print objId.to_s + "\t" + httpCounter + "\t" + httpUrl
+      print objId.to_s + "\t" + httpCounter.to_s + "\t" + httpUrl
       print "\t" + duration.to_s + " ms"
-      print "\tcode: " + responseStatus[0]
+      print "\tcode: " + responseStatus[0].to_s
       print "\tsize: " + responseBody.length.to_s
-      print "\tepoch: " + endTime
       print "\n"
 
 
@@ -323,6 +337,7 @@ class Crawler
   attr_accessor :pingLimit
   attr_accessor :pingLatency
   attr_accessor :pingReturnEpoch
+	attr_accessor :pingReturnEpochDay
   attr_accessor :pingBaseOutputDir
   attr_accessor :pingFileHeader
   attr_accessor :pingOutFile
@@ -336,6 +351,7 @@ class Crawler
   attr_accessor :httpReturnCode
   attr_accessor :httpReturnSize
   attr_accessor :httpReturnEpoch
+	attr_accessor :httpReturnEpochDay
   attr_accessor :httpBaseOutputDir
   attr_accessor :httpFileHeader
 
