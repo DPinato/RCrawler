@@ -15,6 +15,7 @@ BEGIN {
   if ARGV.size == 0
     puts "Please specify config file"
     puts "Usage: ./RCrawler.rb <config_file>"
+		puts "optional: -i <instance_id>"
     exit
   end
 }
@@ -368,7 +369,7 @@ tmpAlertTemplateLocation = ""
 tmpEmailAddresses = ""
 tmpMaxPingsBeforeAlert = ""
 tmpMaxHTTPBeforeAlert = ""
-
+tmpOperationsPerInstance = -1
 
 ops = Array.new
 
@@ -421,6 +422,11 @@ confFile.readlines().each do |line|
       tmpMaxHTTPBeforeAlert = line[pos+1, line.size - (pos+1)].chomp!  # last character is newline
     end
 
+		# read variables related to instances
+		if line.include?("operationsPerInstance")	# goes with the -i flag
+      pos = line.index('=')
+      tmpOperationsPerInstance = line[pos+1, line.size - (pos+1)].chomp!  # last character is newline
+    end
 
     # read list of operations to perform
     if line[0,4].include?("HTTP") || line[0,4].include?("PING")
@@ -446,16 +452,47 @@ puts "tmpAlertTemplateLocation: " + tmpAlertTemplateLocation
 puts "tmpEmailAddresses: " + tmpEmailAddresses
 puts "tmpMaxPingsBeforeAlert: " + tmpMaxPingsBeforeAlert
 puts "tmpMaxHTTPBeforeAlert: " + tmpMaxHTTPBeforeAlert
+puts "tmpOperationsPerInstance: " + tmpOperationsPerInstance
+
+tmpIIndex = ARGV.index("-i")
+instanceId = 0
+firstOp = 0
+lastOp = ops.size
+
+if tmpIIndex != nil
+	instanceId = ARGV[tmpIIndex+1].to_i
+	puts "instanceId: #{instanceId}"
+
+	# compute startOp and endOp
+	firstOp = instanceId * tmpOperationsPerInstance.to_i
+	lastOp = firstOp + tmpOperationsPerInstance.to_i - 1
+
+	# do some error correction
+	if firstOp > ops.size
+		puts "Not enough operations for my instanceId, ops: #{ops.size}, instanceId: #{instanceId}"
+		exit
+	elsif lastOp >= ops.size
+		# this instance will be doing less operations than the others
+		lastOp = ops.size-1
+	end
+
+end
+
+puts "Doing operations from index " + "#{firstOp}" + " to " + "#{lastOp}"
 
 
+# this alert object will be referenced by all the threads
 tmpAlertObj = Alerter.new(tmpEmailAddresses, tmpMaxPingsBeforeAlert, tmpMaxHTTPBeforeAlert)
 tmpAlertObj.readEmailTemplate(tmpAlertTemplateLocation)
 
 
 # create an array containing the threads that will run what is specified in the config file
+# start the threads
 crawlArray = Array.new
 
-threadArray = (0...ops.size).map do |i| # this is equivalent to for (int i = 0; i < ops.size() i++)
+#threadArray = (0...ops.size).map do |i| # this is equivalent to for (int i = 0; i < ops.size() i++)
+threadArray = (firstOp..lastOp).map do |i|
+
   crawlArray[i] = Crawler.new(tmpAlertObj, i)
 
   Thread.new(i) do |i|
