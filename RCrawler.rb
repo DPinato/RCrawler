@@ -149,6 +149,12 @@ class Crawler
 			outFile << "\t" << pingReturnEpochDay[pingReturnEpochDay.size-1]
       outFile << "\n"
 
+			if pingCounter % 100 == 0
+				pingLatency.clear
+				pingReturnEpoch.clear
+				pingReturnEpochDay.clear
+			end
+
 
       self.pingCounter += 1
       sleep pingDelay
@@ -159,6 +165,8 @@ class Crawler
       end
 
     end
+
+		outFile.close
 
   end
 
@@ -300,6 +308,15 @@ class Crawler
       outFile << "\t" << httpReturnEpoch[httpReturnEpoch.size-1]
 			outFile << "\t" << httpReturnEpochDay[httpReturnEpochDay.size-1]
       outFile << "\n"
+
+			if httpCounter % 100 == 0
+				# store at most 100 elements in the arrays
+				httpDuration.clear
+				httpReturnCode.clear
+				httpReturnSize.clear
+				httpReturnEpoch.clear
+				httpReturnEpochDay.clear
+			end
 
 
       # show some output in the terminal
