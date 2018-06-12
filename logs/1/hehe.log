@@ -1,0 +1,636 @@
+# Logfile created on 2018-06-12 19:48:55 +0100 by logger.rb/56438
+I, [2018-06-12T19:48:55.466508 #13369]  INFO -- : Logger has started
+I, [2018-06-12T19:48:55.466562 #13369]  INFO -- : instanceId: 1
+I, [2018-06-12T19:48:55.466594 #13369]  INFO -- : I have 20 operations to do
+I, [2018-06-12T19:48:55.466621 #13369]  INFO -- : tmpStatsDir: /Users/davide/Desktop/Code/RUBY/RCrawler/stats/
+I, [2018-06-12T19:48:55.466648 #13369]  INFO -- : tmpLogsDir: /Users/davide/Desktop/Code/RUBY/RCrawler/logs/
+I, [2018-06-12T19:48:55.466674 #13369]  INFO -- : tmpAlertTemplateLocation: /Users/davide/Desktop/Code/RUBY/RCrawler/alerts/template1.txt
+I, [2018-06-12T19:48:55.466701 #13369]  INFO -- : tmpEmailAddresses: dvdpnt16+alerts@gmail.com
+I, [2018-06-12T19:48:55.466727 #13369]  INFO -- : tmpMaxPingsBeforeAlert: 10
+I, [2018-06-12T19:48:55.466752 #13369]  INFO -- : tmpMaxHTTPBeforeAlert: 5
+I, [2018-06-12T19:48:55.466778 #13369]  INFO -- : tmpOperationsPerInstance: 10
+I, [2018-06-12T19:48:55.466805 #13369]  INFO -- : Doing operations from index 10 to 19
+D, [2018-06-12T19:48:55.466893 #13369] DEBUG -- : thrId: 10, #<Alerter:0x007f97219f1d60 @emailAddresses="dvdpnt16+alerts@gmail.com", @maxPingsBeforeAlert="10", @maxHTTPBeforeAlert="5", @alertTemplatelocation="/Users/davide/Desktop/Code/RUBY/RCrawler/alerts/template1.txt", @alertTemplate="\noperation: <op>\ndestination: <dest>\nfailuresInARow: <fails>\nstartEpoch: <sEpoch>\nstartDate: <sDate>\n\n\nRCrawler\n">, #<Logger:0x007f97219ebbe0 @progname=nil, @level=0, @default_formatter=#<Logger::Formatter:0x007f97219ebbb8 @datetime_format=nil>, @formatter=nil, @logdev=#<Logger::LogDevice:0x007f97219ebb68 @shift_size=1048576, @shift_age=10, @filename="/Users/davide/Desktop/Code/RUBY/RCrawler/logs/1/hehe.log", @dev=#<File:/Users/davide/Desktop/Code/RUBY/RCrawler/logs/1/hehe.log>, @mon_owner=nil, @mon_count=0, @mon_mutex=#<Thread::Mutex:0x007f97219ebb18>>>
+D, [2018-06-12T19:48:55.467180 #13369] DEBUG -- : thrId: 11, #<Alerter:0x007f97219f1d60 @emailAddresses="dvdpnt16+alerts@gmail.com", @maxPingsBeforeAlert="10", @maxHTTPBeforeAlert="5", @alertTemplatelocation="/Users/davide/Desktop/Code/RUBY/RCrawler/alerts/template1.txt", @alertTemplate="\noperation: <op>\ndestination: <dest>\nfailuresInARow: <fails>\nstartEpoch: <sEpoch>\nstartDate: <sDate>\n\n\nRCrawler\n">, #<Logger:0x007f97219ebbe0 @progname=nil, @level=0, @default_formatter=#<Logger::Formatter:0x007f97219ebbb8 @datetime_format=nil>, @formatter=nil, @logdev=#<Logger::LogDevice:0x007f97219ebb68 @shift_size=1048576, @shift_age=10, @filename="/Users/davide/Desktop/Code/RUBY/RCrawler/logs/1/hehe.log", @dev=#<File:/Users/davide/Desktop/Code/RUBY/RCrawler/logs/1/hehe.log>, @mon_owner=nil, @mon_count=0, @mon_mutex=#<Thread::Mutex:0x007f97219ebb18>>>
+D, [2018-06-12T19:48:55.467375 #13369] DEBUG -- : thrId: 12, #<Alerter:0x007f97219f1d60 @emailAddresses="dvdpnt16+alerts@gmail.com", @maxPingsBeforeAlert="10", @maxHTTPBeforeAlert="5", @alertTemplatelocation="/Users/davide/Desktop/Code/RUBY/RCrawler/alerts/template1.txt", @alertTemplate="\noperation: <op>\ndestination: <dest>\nfailuresInARow: <fails>\nstartEpoch: <sEpoch>\nstartDate: <sDate>\n\n\nRCrawler\n">, #<Logger:0x007f97219ebbe0 @progname=nil, @level=0, @default_formatter=#<Logger::Formatter:0x007f97219ebbb8 @datetime_format=nil>, @formatter=nil, @logdev=#<Logger::LogDevice:0x007f97219ebb68 @shift_size=1048576, @shift_age=10, @filename="/Users/davide/Desktop/Code/RUBY/RCrawler/logs/1/hehe.log", @dev=#<File:/Users/davide/Desktop/Code/RUBY/RCrawler/logs/1/hehe.log>, @mon_owner=nil, @mon_count=0, @mon_mutex=#<Thread::Mutex:0x007f97219ebb18>>>
+D, [2018-06-12T19:48:55.468444 #13369] DEBUG -- : thrId: 13, #<Alerter:0x007f97219f1d60 @emailAddresses="dvdpnt16+alerts@gmail.com", @maxPingsBeforeAlert="10", @maxHTTPBeforeAlert="5", @alertTemplatelocation="/Users/davide/Desktop/Code/RUBY/RCrawler/alerts/template1.txt", @alertTemplate="\noperation: <op>\ndestination: <dest>\nfailuresInARow: <fails>\nstartEpoch: <sEpoch>\nstartDate: <sDate>\n\n\nRCrawler\n">, #<Logger:0x007f97219ebbe0 @progname=nil, @level=0, @default_formatter=#<Logger::Formatter:0x007f97219ebbb8 @datetime_format=nil>, @formatter=nil, @logdev=#<Logger::LogDevice:0x007f97219ebb68 @shift_size=1048576, @shift_age=10, @filename="/Users/davide/Desktop/Code/RUBY/RCrawler/logs/1/hehe.log", @dev=#<File:/Users/davide/Desktop/Code/RUBY/RCrawler/logs/1/hehe.log>, @mon_owner=nil, @mon_count=0, @mon_mutex=#<Thread::Mutex:0x007f97219ebb18>>>
+D, [2018-06-12T19:48:55.470955 #13369] DEBUG -- : thrId: 14, #<Alerter:0x007f97219f1d60 @emailAddresses="dvdpnt16+alerts@gmail.com", @maxPingsBeforeAlert="10", @maxHTTPBeforeAlert="5", @alertTemplatelocation="/Users/davide/Desktop/Code/RUBY/RCrawler/alerts/template1.txt", @alertTemplate="\noperation: <op>\ndestination: <dest>\nfailuresInARow: <fails>\nstartEpoch: <sEpoch>\nstartDate: <sDate>\n\n\nRCrawler\n">, #<Logger:0x007f97219ebbe0 @progname=nil, @level=0, @default_formatter=#<Logger::Formatter:0x007f97219ebbb8 @datetime_format=nil>, @formatter=nil, @logdev=#<Logger::LogDevice:0x007f97219ebb68 @shift_size=1048576, @shift_age=10, @filename="/Users/davide/Desktop/Code/RUBY/RCrawler/logs/1/hehe.log", @dev=#<File:/Users/davide/Desktop/Code/RUBY/RCrawler/logs/1/hehe.log>, @mon_owner=nil, @mon_count=0, @mon_mutex=#<Thread::Mutex:0x007f97219ebb18>>>
+D, [2018-06-12T19:48:55.472380 #13369] DEBUG -- : thrId: 15, #<Alerter:0x007f97219f1d60 @emailAddresses="dvdpnt16+alerts@gmail.com", @maxPingsBeforeAlert="10", @maxHTTPBeforeAlert="5", @alertTemplatelocation="/Users/davide/Desktop/Code/RUBY/RCrawler/alerts/template1.txt", @alertTemplate="\noperation: <op>\ndestination: <dest>\nfailuresInARow: <fails>\nstartEpoch: <sEpoch>\nstartDate: <sDate>\n\n\nRCrawler\n">, #<Logger:0x007f97219ebbe0 @progname=nil, @level=0, @default_formatter=#<Logger::Formatter:0x007f97219ebbb8 @datetime_format=nil>, @formatter=nil, @logdev=#<Logger::LogDevice:0x007f97219ebb68 @shift_size=1048576, @shift_age=10, @filename="/Users/davide/Desktop/Code/RUBY/RCrawler/logs/1/hehe.log", @dev=#<File:/Users/davide/Desktop/Code/RUBY/RCrawler/logs/1/hehe.log>, @mon_owner=nil, @mon_count=0, @mon_mutex=#<Thread::Mutex:0x007f97219ebb18>>>
+D, [2018-06-12T19:48:55.473788 #13369] DEBUG -- : thrId: 16, #<Alerter:0x007f97219f1d60 @emailAddresses="dvdpnt16+alerts@gmail.com", @maxPingsBeforeAlert="10", @maxHTTPBeforeAlert="5", @alertTemplatelocation="/Users/davide/Desktop/Code/RUBY/RCrawler/alerts/template1.txt", @alertTemplate="\noperation: <op>\ndestination: <dest>\nfailuresInARow: <fails>\nstartEpoch: <sEpoch>\nstartDate: <sDate>\n\n\nRCrawler\n">, #<Logger:0x007f97219ebbe0 @progname=nil, @level=0, @default_formatter=#<Logger::Formatter:0x007f97219ebbb8 @datetime_format=nil>, @formatter=nil, @logdev=#<Logger::LogDevice:0x007f97219ebb68 @shift_size=1048576, @shift_age=10, @filename="/Users/davide/Desktop/Code/RUBY/RCrawler/logs/1/hehe.log", @dev=#<File:/Users/davide/Desktop/Code/RUBY/RCrawler/logs/1/hehe.log>, @mon_owner=nil, @mon_count=0, @mon_mutex=#<Thread::Mutex:0x007f97219ebb18>>>
+D, [2018-06-12T19:48:55.474989 #13369] DEBUG -- : thrId: 17, #<Alerter:0x007f97219f1d60 @emailAddresses="dvdpnt16+alerts@gmail.com", @maxPingsBeforeAlert="10", @maxHTTPBeforeAlert="5", @alertTemplatelocation="/Users/davide/Desktop/Code/RUBY/RCrawler/alerts/template1.txt", @alertTemplate="\noperation: <op>\ndestination: <dest>\nfailuresInARow: <fails>\nstartEpoch: <sEpoch>\nstartDate: <sDate>\n\n\nRCrawler\n">, #<Logger:0x007f97219ebbe0 @progname=nil, @level=0, @default_formatter=#<Logger::Formatter:0x007f97219ebbb8 @datetime_format=nil>, @formatter=nil, @logdev=#<Logger::LogDevice:0x007f97219ebb68 @shift_size=1048576, @shift_age=10, @filename="/Users/davide/Desktop/Code/RUBY/RCrawler/logs/1/hehe.log", @dev=#<File:/Users/davide/Desktop/Code/RUBY/RCrawler/logs/1/hehe.log>, @mon_owner=nil, @mon_count=0, @mon_mutex=#<Thread::Mutex:0x007f97219ebb18>>>
+D, [2018-06-12T19:48:55.476659 #13369] DEBUG -- : thrId: 18, #<Alerter:0x007f97219f1d60 @emailAddresses="dvdpnt16+alerts@gmail.com", @maxPingsBeforeAlert="10", @maxHTTPBeforeAlert="5", @alertTemplatelocation="/Users/davide/Desktop/Code/RUBY/RCrawler/alerts/template1.txt", @alertTemplate="\noperation: <op>\ndestination: <dest>\nfailuresInARow: <fails>\nstartEpoch: <sEpoch>\nstartDate: <sDate>\n\n\nRCrawler\n">, #<Logger:0x007f97219ebbe0 @progname=nil, @level=0, @default_formatter=#<Logger::Formatter:0x007f97219ebbb8 @datetime_format=nil>, @formatter=nil, @logdev=#<Logger::LogDevice:0x007f97219ebb68 @shift_size=1048576, @shift_age=10, @filename="/Users/davide/Desktop/Code/RUBY/RCrawler/logs/1/hehe.log", @dev=#<File:/Users/davide/Desktop/Code/RUBY/RCrawler/logs/1/hehe.log>, @mon_owner=nil, @mon_count=0, @mon_mutex=#<Thread::Mutex:0x007f97219ebb18>>>
+D, [2018-06-12T19:48:55.478547 #13369] DEBUG -- : thrId: 19, #<Alerter:0x007f97219f1d60 @emailAddresses="dvdpnt16+alerts@gmail.com", @maxPingsBeforeAlert="10", @maxHTTPBeforeAlert="5", @alertTemplatelocation="/Users/davide/Desktop/Code/RUBY/RCrawler/alerts/template1.txt", @alertTemplate="\noperation: <op>\ndestination: <dest>\nfailuresInARow: <fails>\nstartEpoch: <sEpoch>\nstartDate: <sDate>\n\n\nRCrawler\n">, #<Logger:0x007f97219ebbe0 @progname=nil, @level=0, @default_formatter=#<Logger::Formatter:0x007f97219ebbb8 @datetime_format=nil>, @formatter=nil, @logdev=#<Logger::LogDevice:0x007f97219ebb68 @shift_size=1048576, @shift_age=10, @filename="/Users/davide/Desktop/Code/RUBY/RCrawler/logs/1/hehe.log", @dev=#<File:/Users/davide/Desktop/Code/RUBY/RCrawler/logs/1/hehe.log>, @mon_owner=nil, @mon_count=0, @mon_mutex=#<Thread::Mutex:0x007f97219ebb18>>>
+I, [2018-06-12T19:48:55.478722 #13369]  INFO -- : Starting 10 threads...
+I, [2018-06-12T19:48:55.885791 #13369]  INFO -- : thrId: 17, 0, https://twitch.tv, 401 ms, code: 200, size: 29286
+D, [2018-06-12T19:48:55.885922 #13369] DEBUG -- : thrId: 17, clearing HTTP arrays...
+I, [2018-06-12T19:48:55.893453 #13369]  INFO -- : thrId: 10, 0, https://google.com, 426 ms, code: 200, size: 11704
+D, [2018-06-12T19:48:55.893602 #13369] DEBUG -- : thrId: 10, clearing HTTP arrays...
+I, [2018-06-12T19:48:56.114927 #13369]  INFO -- : thrId: 15, 0, https://ruby-doc.org, 631 ms, code: 200, size: 22789
+D, [2018-06-12T19:48:56.115017 #13369] DEBUG -- : thrId: 15, clearing HTTP arrays...
+I, [2018-06-12T19:48:56.240637 #13369]  INFO -- : thrId: 12, 0, https://facebook.com, 765 ms, code: 200, size: 447815
+D, [2018-06-12T19:48:56.240813 #13369] DEBUG -- : thrId: 12, clearing HTTP arrays...
+I, [2018-06-12T19:48:56.247884 #13369]  INFO -- : thrId: 18, 0, https://apple.com, 762 ms, code: 200, size: 50061
+D, [2018-06-12T19:48:56.247978 #13369] DEBUG -- : thrId: 18, clearing HTTP arrays...
+I, [2018-06-12T19:48:56.370110 #13369]  INFO -- : thrId: 19, 0, https://cisco.com, 884 ms, code: 200, size: 84440
+D, [2018-06-12T19:48:56.370238 #13369] DEBUG -- : thrId: 19, clearing HTTP arrays...
+I, [2018-06-12T19:48:56.647119 #13369]  INFO -- : thrId: 16, 0, https://dropbox.com, 1163 ms, code: 200, size: 90632
+D, [2018-06-12T19:48:56.647531 #13369] DEBUG -- : thrId: 16, clearing HTTP arrays...
+I, [2018-06-12T19:48:56.670676 #13369]  INFO -- : thrId: 13, 0, https://yahoo.com, 1189 ms, code: 200, size: 398335
+D, [2018-06-12T19:48:56.670847 #13369] DEBUG -- : thrId: 13, clearing HTTP arrays...
+I, [2018-06-12T19:48:56.677606 #13369]  INFO -- : thrId: 11, 0, https://youtube.com, 1208 ms, code: 200, size: 460985
+D, [2018-06-12T19:48:56.677719 #13369] DEBUG -- : thrId: 11, clearing HTTP arrays...
+I, [2018-06-12T19:48:57.095386 #13369]  INFO -- : thrId: 14, 0, https://nintendo.com, 1610 ms, code: 200, size: 52982
+D, [2018-06-12T19:48:57.095609 #13369] DEBUG -- : thrId: 14, clearing HTTP arrays...
+I, [2018-06-12T19:49:06.102752 #13369]  INFO -- : thrId: 17, 1, https://twitch.tv, 212 ms, code: 200, size: 29286
+I, [2018-06-12T19:49:06.146740 #13369]  INFO -- : thrId: 10, 1, https://google.com, 244 ms, code: 200, size: 11752
+I, [2018-06-12T19:49:06.634466 #13369]  INFO -- : thrId: 15, 1, https://ruby-doc.org, 515 ms, code: 200, size: 22789
+I, [2018-06-12T19:49:06.795977 #13369]  INFO -- : thrId: 18, 1, https://apple.com, 541 ms, code: 200, size: 50061
+I, [2018-06-12T19:49:06.985784 #13369]  INFO -- : thrId: 12, 1, https://facebook.com, 743 ms, code: 200, size: 447462
+I, [2018-06-12T19:49:07.061914 #13369]  INFO -- : thrId: 19, 1, https://cisco.com, 688 ms, code: 200, size: 84440
+I, [2018-06-12T19:49:07.619572 #13369]  INFO -- : thrId: 16, 1, https://dropbox.com, 969 ms, code: 200, size: 90632
+I, [2018-06-12T19:49:07.676171 #13369]  INFO -- : thrId: 13, 1, https://yahoo.com, 1004 ms, code: 200, size: 398765
+I, [2018-06-12T19:49:07.899144 #13369]  INFO -- : thrId: 11, 1, https://youtube.com, 1215 ms, code: 200, size: 479998
+I, [2018-06-12T19:49:08.499884 #13369]  INFO -- : thrId: 14, 1, https://nintendo.com, 1403 ms, code: 200, size: 52982
+I, [2018-06-12T19:49:16.256444 #13369]  INFO -- : thrId: 17, 2, https://twitch.tv, 148 ms, code: 200, size: 29286
+I, [2018-06-12T19:49:16.339651 #13369]  INFO -- : thrId: 10, 2, https://google.com, 190 ms, code: 200, size: 11708
+I, [2018-06-12T19:49:17.317756 #13369]  INFO -- : thrId: 15, 2, https://ruby-doc.org, 681 ms, code: 200, size: 22789
+I, [2018-06-12T19:49:17.363849 #13369]  INFO -- : thrId: 18, 2, https://apple.com, 565 ms, code: 200, size: 50061
+I, [2018-06-12T19:49:17.696078 #13369]  INFO -- : thrId: 19, 2, https://cisco.com, 615 ms, code: 200, size: 84440
+I, [2018-06-12T19:49:18.543334 #13369]  INFO -- : thrId: 16, 2, https://dropbox.com, 918 ms, code: 200, size: 90878
+I, [2018-06-12T19:49:18.631157 #13369]  INFO -- : thrId: 13, 2, https://yahoo.com, 951 ms, code: 200, size: 398876
+I, [2018-06-12T19:49:18.850226 #13369]  INFO -- : thrId: 12, 2, https://facebook.com, 1858 ms, code: 200, size: 447237
+I, [2018-06-12T19:49:18.889250 #13369]  INFO -- : thrId: 11, 2, https://youtube.com, 987 ms, code: 200, size: 445529
+I, [2018-06-12T19:49:19.891934 #13369]  INFO -- : thrId: 14, 2, https://nintendo.com, 1391 ms, code: 200, size: 52982
+I, [2018-06-12T19:49:26.430062 #13369]  INFO -- : thrId: 17, 3, https://twitch.tv, 170 ms, code: 200, size: 29286
+I, [2018-06-12T19:49:26.578024 #13369]  INFO -- : thrId: 10, 3, https://google.com, 227 ms, code: 200, size: 11696
+I, [2018-06-12T19:49:27.849357 #13369]  INFO -- : thrId: 15, 3, https://ruby-doc.org, 528 ms, code: 200, size: 22789
+I, [2018-06-12T19:49:27.917125 #13369]  INFO -- : thrId: 18, 3, https://apple.com, 551 ms, code: 200, size: 50061
+I, [2018-06-12T19:49:28.350672 #13369]  INFO -- : thrId: 19, 3, https://cisco.com, 654 ms, code: 200, size: 84440
+I, [2018-06-12T19:49:29.474276 #13369]  INFO -- : thrId: 12, 3, https://facebook.com, 620 ms, code: 200, size: 447479
+I, [2018-06-12T19:49:29.581587 #13369]  INFO -- : thrId: 16, 3, https://dropbox.com, 1038 ms, code: 200, size: 90628
+I, [2018-06-12T19:49:29.619179 #13369]  INFO -- : thrId: 13, 3, https://yahoo.com, 982 ms, code: 200, size: 398193
+I, [2018-06-12T19:49:29.915595 #13369]  INFO -- : thrId: 11, 3, https://youtube.com, 1025 ms, code: 200, size: 476908
+I, [2018-06-12T19:49:31.273284 #13369]  INFO -- : thrId: 14, 3, https://nintendo.com, 1380 ms, code: 200, size: 52982
+I, [2018-06-12T19:49:36.606584 #13369]  INFO -- : thrId: 17, 4, https://twitch.tv, 172 ms, code: 200, size: 29286
+I, [2018-06-12T19:49:36.792363 #13369]  INFO -- : thrId: 10, 4, https://google.com, 213 ms, code: 200, size: 11718
+I, [2018-06-12T19:49:38.368470 #13369]  INFO -- : thrId: 15, 4, https://ruby-doc.org, 518 ms, code: 200, size: 22789
+I, [2018-06-12T19:49:38.473016 #13369]  INFO -- : thrId: 18, 4, https://apple.com, 550 ms, code: 200, size: 50061
+I, [2018-06-12T19:49:39.248260 #13369]  INFO -- : thrId: 19, 4, https://cisco.com, 893 ms, code: 200, size: 84440
+I, [2018-06-12T19:49:40.169297 #13369]  INFO -- : thrId: 12, 4, https://facebook.com, 693 ms, code: 200, size: 447504
+I, [2018-06-12T19:49:40.609291 #13369]  INFO -- : thrId: 13, 4, https://yahoo.com, 984 ms, code: 200, size: 397800
+I, [2018-06-12T19:49:40.711081 #13369]  INFO -- : thrId: 16, 4, https://dropbox.com, 1128 ms, code: 200, size: 90632
+I, [2018-06-12T19:49:41.123121 #13369]  INFO -- : thrId: 11, 4, https://youtube.com, 1205 ms, code: 200, size: 460949
+E, [2018-06-12T19:49:41.641457 #13369] ERROR -- : thrId: 14, runHttpQueries() redirection forbidden: https://nintendo.com -> http://www.nintendo.com/
+D, [2018-06-12T19:49:41.641703 #13369] DEBUG -- : thrId: 14, https://nintendo.com failCounter=1
+I, [2018-06-12T19:49:41.641865 #13369]  INFO -- : thrId: 14, 4, https://nintendo.com, -1 ms, code: 1, size: 0
+I, [2018-06-12T19:49:46.787148 #13369]  INFO -- : thrId: 17, 5, https://twitch.tv, 176 ms, code: 200, size: 29286
+I, [2018-06-12T19:49:46.998839 #13369]  INFO -- : thrId: 10, 5, https://google.com, 204 ms, code: 200, size: 11698
+I, [2018-06-12T19:49:48.886784 #13369]  INFO -- : thrId: 15, 5, https://ruby-doc.org, 513 ms, code: 200, size: 22789
+I, [2018-06-12T19:49:49.041200 #13369]  INFO -- : thrId: 18, 5, https://apple.com, 563 ms, code: 200, size: 50061
+I, [2018-06-12T19:49:50.190227 #13369]  INFO -- : thrId: 19, 5, https://cisco.com, 939 ms, code: 200, size: 84440
+I, [2018-06-12T19:49:50.803699 #13369]  INFO -- : thrId: 12, 5, https://facebook.com, 628 ms, code: 200, size: 447788
+I, [2018-06-12T19:49:51.638454 #13369]  INFO -- : thrId: 13, 5, https://yahoo.com, 1023 ms, code: 200, size: 399101
+I, [2018-06-12T19:49:51.738446 #13369]  INFO -- : thrId: 16, 5, https://dropbox.com, 1022 ms, code: 200, size: 90864
+E, [2018-06-12T19:49:52.029998 #13369] ERROR -- : thrId: 14, runHttpQueries() redirection forbidden: https://nintendo.com -> http://www.nintendo.com/
+D, [2018-06-12T19:49:52.030179 #13369] DEBUG -- : thrId: 14, https://nintendo.com failCounter=2
+I, [2018-06-12T19:49:52.030322 #13369]  INFO -- : thrId: 14, 5, https://nintendo.com, -1 ms, code: 1, size: 0
+I, [2018-06-12T19:49:52.297047 #13369]  INFO -- : thrId: 11, 5, https://youtube.com, 1162 ms, code: 200, size: 496428
+I, [2018-06-12T19:49:56.950909 #13369]  INFO -- : thrId: 17, 6, https://twitch.tv, 161 ms, code: 200, size: 29286
+I, [2018-06-12T19:49:57.217332 #13369]  INFO -- : thrId: 10, 6, https://google.com, 215 ms, code: 200, size: 11703
+I, [2018-06-12T19:49:59.415463 #13369]  INFO -- : thrId: 15, 6, https://ruby-doc.org, 525 ms, code: 200, size: 22789
+I, [2018-06-12T19:49:59.647798 #13369]  INFO -- : thrId: 18, 6, https://apple.com, 604 ms, code: 200, size: 50061
+I, [2018-06-12T19:50:00.833718 #13369]  INFO -- : thrId: 19, 6, https://cisco.com, 638 ms, code: 200, size: 84440
+I, [2018-06-12T19:50:01.984014 #13369]  INFO -- : thrId: 12, 6, https://facebook.com, 1178 ms, code: 200, size: 447781
+E, [2018-06-12T19:50:02.405992 #13369] ERROR -- : thrId: 14, runHttpQueries() redirection forbidden: https://nintendo.com -> http://www.nintendo.com/
+D, [2018-06-12T19:50:02.406145 #13369] DEBUG -- : thrId: 14, https://nintendo.com failCounter=3
+I, [2018-06-12T19:50:02.406345 #13369]  INFO -- : thrId: 14, 6, https://nintendo.com, -1 ms, code: 1, size: 0
+I, [2018-06-12T19:50:02.626622 #13369]  INFO -- : thrId: 13, 6, https://yahoo.com, 984 ms, code: 200, size: 398420
+I, [2018-06-12T19:50:02.714121 #13369]  INFO -- : thrId: 16, 6, https://dropbox.com, 970 ms, code: 200, size: 90632
+I, [2018-06-12T19:50:03.239831 #13369]  INFO -- : thrId: 11, 6, https://youtube.com, 941 ms, code: 200, size: 429964
+I, [2018-06-12T19:50:07.113533 #13369]  INFO -- : thrId: 17, 7, https://twitch.tv, 161 ms, code: 200, size: 29286
+I, [2018-06-12T19:50:07.604142 #13369]  INFO -- : thrId: 10, 7, https://google.com, 380 ms, code: 200, size: 11694
+I, [2018-06-12T19:50:09.923995 #13369]  INFO -- : thrId: 15, 7, https://ruby-doc.org, 505 ms, code: 200, size: 22789
+I, [2018-06-12T19:50:10.284708 #13369]  INFO -- : thrId: 18, 7, https://apple.com, 635 ms, code: 200, size: 50061
+I, [2018-06-12T19:50:11.528409 #13369]  INFO -- : thrId: 19, 7, https://cisco.com, 693 ms, code: 200, size: 84440
+I, [2018-06-12T19:50:12.667562 #13369]  INFO -- : thrId: 12, 7, https://facebook.com, 678 ms, code: 200, size: 447446
+E, [2018-06-12T19:50:12.787819 #13369] ERROR -- : thrId: 14, runHttpQueries() redirection forbidden: https://nintendo.com -> http://www.nintendo.com/
+D, [2018-06-12T19:50:12.787916 #13369] DEBUG -- : thrId: 14, https://nintendo.com failCounter=4
+I, [2018-06-12T19:50:12.788016 #13369]  INFO -- : thrId: 14, 7, https://nintendo.com, -1 ms, code: 1, size: 0
+I, [2018-06-12T19:50:13.624087 #13369]  INFO -- : thrId: 13, 7, https://yahoo.com, 994 ms, code: 200, size: 398477
+I, [2018-06-12T19:50:13.733496 #13369]  INFO -- : thrId: 16, 7, https://dropbox.com, 1018 ms, code: 200, size: 90632
+I, [2018-06-12T19:50:14.287098 #13369]  INFO -- : thrId: 11, 7, https://youtube.com, 1035 ms, code: 200, size: 461379
+I, [2018-06-12T19:50:17.362154 #13369]  INFO -- : thrId: 17, 8, https://twitch.tv, 246 ms, code: 200, size: 29286
+I, [2018-06-12T19:50:17.804419 #13369]  INFO -- : thrId: 10, 8, https://google.com, 200 ms, code: 200, size: 11666
+I, [2018-06-12T19:50:20.441895 #13369]  INFO -- : thrId: 15, 8, https://ruby-doc.org, 517 ms, code: 200, size: 22789
+I, [2018-06-12T19:50:20.884597 #13369]  INFO -- : thrId: 18, 8, https://apple.com, 599 ms, code: 200, size: 50061
+I, [2018-06-12T19:50:22.162685 #13369]  INFO -- : thrId: 19, 8, https://cisco.com, 630 ms, code: 200, size: 84440
+E, [2018-06-12T19:50:23.164684 #13369] ERROR -- : thrId: 14, runHttpQueries() redirection forbidden: https://nintendo.com -> http://www.nintendo.com/
+D, [2018-06-12T19:50:23.164955 #13369] DEBUG -- : thrId: 14, https://nintendo.com failCounter=5
+I, [2018-06-12T19:50:23.273436 #13369]  INFO -- : thrId: 14, HTTP Alert sent, https://nintendo.com
+I, [2018-06-12T19:50:23.273711 #13369]  INFO -- : thrId: 14, 8, https://nintendo.com, -1 ms, code: 1, size: 0
+I, [2018-06-12T19:50:23.328985 #13369]  INFO -- : thrId: 12, 8, https://facebook.com, 658 ms, code: 200, size: 447754
+I, [2018-06-12T19:50:24.518364 #13369]  INFO -- : thrId: 13, 8, https://yahoo.com, 889 ms, code: 200, size: 399704
+I, [2018-06-12T19:50:24.776186 #13369]  INFO -- : thrId: 16, 8, https://dropbox.com, 1037 ms, code: 200, size: 90632
+I, [2018-06-12T19:50:25.475703 #13369]  INFO -- : thrId: 11, 8, https://youtube.com, 1185 ms, code: 200, size: 494487
+I, [2018-06-12T19:50:27.550175 #13369]  INFO -- : thrId: 17, 9, https://twitch.tv, 183 ms, code: 200, size: 29286
+I, [2018-06-12T19:50:28.019176 #13369]  INFO -- : thrId: 10, 9, https://google.com, 212 ms, code: 200, size: 11682
+I, [2018-06-12T19:50:30.960995 #13369]  INFO -- : thrId: 15, 9, https://ruby-doc.org, 518 ms, code: 200, size: 22789
+I, [2018-06-12T19:50:31.468156 #13369]  INFO -- : thrId: 18, 9, https://apple.com, 579 ms, code: 200, size: 50061
+I, [2018-06-12T19:50:32.854356 #13369]  INFO -- : thrId: 19, 9, https://cisco.com, 690 ms, code: 200, size: 84440
+E, [2018-06-12T19:50:33.694368 #13369] ERROR -- : thrId: 14, runHttpQueries() redirection forbidden: https://nintendo.com -> http://www.nintendo.com/
+D, [2018-06-12T19:50:33.694685 #13369] DEBUG -- : thrId: 14, https://nintendo.com failCounter=6
+I, [2018-06-12T19:50:33.696915 #13369]  INFO -- : thrId: 14, 9, https://nintendo.com, -1 ms, code: 1, size: 0
+I, [2018-06-12T19:50:33.985128 #13369]  INFO -- : thrId: 12, 9, https://facebook.com, 652 ms, code: 200, size: 447780
+I, [2018-06-12T19:50:35.456554 #13369]  INFO -- : thrId: 13, 9, https://yahoo.com, 933 ms, code: 200, size: 399033
+I, [2018-06-12T19:50:35.755845 #13369]  INFO -- : thrId: 16, 9, https://dropbox.com, 973 ms, code: 200, size: 90632
+I, [2018-06-12T19:50:36.556674 #13369]  INFO -- : thrId: 11, 9, https://youtube.com, 1076 ms, code: 200, size: 479877
+I, [2018-06-12T19:50:37.705964 #13369]  INFO -- : thrId: 17, 10, https://twitch.tv, 153 ms, code: 200, size: 29286
+I, [2018-06-12T19:50:38.388330 #13369]  INFO -- : thrId: 10, 10, https://google.com, 366 ms, code: 200, size: 11707
+I, [2018-06-12T19:50:41.840251 #13369]  INFO -- : thrId: 15, 10, https://ruby-doc.org, 875 ms, code: 200, size: 22789
+I, [2018-06-12T19:50:42.022507 #13369]  INFO -- : thrId: 18, 10, https://apple.com, 553 ms, code: 200, size: 50061
+I, [2018-06-12T19:50:43.530380 #13369]  INFO -- : thrId: 19, 10, https://cisco.com, 673 ms, code: 200, size: 84440
+E, [2018-06-12T19:50:44.069100 #13369] ERROR -- : thrId: 14, runHttpQueries() redirection forbidden: https://nintendo.com -> http://www.nintendo.com/
+D, [2018-06-12T19:50:44.069255 #13369] DEBUG -- : thrId: 14, https://nintendo.com failCounter=7
+I, [2018-06-12T19:50:44.069339 #13369]  INFO -- : thrId: 14, 10, https://nintendo.com, -1 ms, code: 1, size: 0
+I, [2018-06-12T19:50:44.508206 #13369]  INFO -- : thrId: 12, 10, https://facebook.com, 519 ms, code: 200, size: 447806
+I, [2018-06-12T19:50:46.361348 #13369]  INFO -- : thrId: 13, 10, https://yahoo.com, 898 ms, code: 200, size: 398466
+I, [2018-06-12T19:50:46.764735 #13369]  INFO -- : thrId: 16, 10, https://dropbox.com, 1004 ms, code: 200, size: 90632
+I, [2018-06-12T19:50:47.577966 #13369]  INFO -- : thrId: 11, 10, https://youtube.com, 1018 ms, code: 200, size: 481965
+I, [2018-06-12T19:50:47.869067 #13369]  INFO -- : thrId: 17, 11, https://twitch.tv, 159 ms, code: 200, size: 29286
+I, [2018-06-12T19:50:48.611872 #13369]  INFO -- : thrId: 10, 11, https://google.com, 218 ms, code: 200, size: 11717
+I, [2018-06-12T19:50:52.349354 #13369]  INFO -- : thrId: 15, 11, https://ruby-doc.org, 505 ms, code: 200, size: 22789
+I, [2018-06-12T19:50:52.571358 #13369]  INFO -- : thrId: 18, 11, https://apple.com, 543 ms, code: 200, size: 50061
+I, [2018-06-12T19:50:54.182088 #13369]  INFO -- : thrId: 19, 11, https://cisco.com, 648 ms, code: 200, size: 84440
+E, [2018-06-12T19:50:54.483402 #13369] ERROR -- : thrId: 14, runHttpQueries() redirection forbidden: https://nintendo.com -> http://www.nintendo.com/
+D, [2018-06-12T19:50:54.483495 #13369] DEBUG -- : thrId: 14, https://nintendo.com failCounter=8
+I, [2018-06-12T19:50:54.483575 #13369]  INFO -- : thrId: 14, 11, https://nintendo.com, -1 ms, code: 1, size: 0
+I, [2018-06-12T19:50:55.081952 #13369]  INFO -- : thrId: 12, 11, https://facebook.com, 569 ms, code: 200, size: 447777
+I, [2018-06-12T19:50:57.392226 #13369]  INFO -- : thrId: 13, 11, https://yahoo.com, 1029 ms, code: 200, size: 398438
+I, [2018-06-12T19:50:57.838140 #13369]  INFO -- : thrId: 16, 11, https://dropbox.com, 1060 ms, code: 200, size: 90646
+I, [2018-06-12T19:50:58.028245 #13369]  INFO -- : thrId: 17, 12, https://twitch.tv, 156 ms, code: 200, size: 29286
+I, [2018-06-12T19:50:58.638940 #13369]  INFO -- : thrId: 11, 11, https://youtube.com, 1055 ms, code: 200, size: 494917
+I, [2018-06-12T19:50:58.991481 #13369]  INFO -- : thrId: 10, 12, https://google.com, 376 ms, code: 200, size: 11689
+I, [2018-06-12T19:51:02.850851 #13369]  INFO -- : thrId: 15, 12, https://ruby-doc.org, 499 ms, code: 200, size: 22789
+I, [2018-06-12T19:51:03.148874 #13369]  INFO -- : thrId: 18, 12, https://apple.com, 575 ms, code: 200, size: 50061
+I, [2018-06-12T19:51:04.839559 #13369]  INFO -- : thrId: 19, 12, https://cisco.com, 652 ms, code: 200, size: 84440
+E, [2018-06-12T19:51:04.857004 #13369] ERROR -- : thrId: 14, runHttpQueries() redirection forbidden: https://nintendo.com -> http://www.nintendo.com/
+D, [2018-06-12T19:51:04.857135 #13369] DEBUG -- : thrId: 14, https://nintendo.com failCounter=9
+I, [2018-06-12T19:51:04.857294 #13369]  INFO -- : thrId: 14, 12, https://nintendo.com, -1 ms, code: 1, size: 0
+I, [2018-06-12T19:51:05.671690 #13369]  INFO -- : thrId: 12, 12, https://facebook.com, 583 ms, code: 200, size: 447506
+I, [2018-06-12T19:51:08.184693 #13369]  INFO -- : thrId: 17, 13, https://twitch.tv, 155 ms, code: 200, size: 29286
+I, [2018-06-12T19:51:08.344794 #13369]  INFO -- : thrId: 13, 12, https://yahoo.com, 946 ms, code: 200, size: 399580
+I, [2018-06-12T19:51:08.836042 #13369]  INFO -- : thrId: 16, 12, https://dropbox.com, 992 ms, code: 200, size: 90632
+I, [2018-06-12T19:51:09.215007 #13369]  INFO -- : thrId: 10, 13, https://google.com, 222 ms, code: 200, size: 11709
+I, [2018-06-12T19:51:09.901402 #13369]  INFO -- : thrId: 11, 12, https://youtube.com, 1256 ms, code: 200, size: 470307
+I, [2018-06-12T19:51:13.378069 #13369]  INFO -- : thrId: 15, 13, https://ruby-doc.org, 522 ms, code: 200, size: 22789
+I, [2018-06-12T19:51:13.691960 #13369]  INFO -- : thrId: 18, 13, https://apple.com, 538 ms, code: 200, size: 50061
+E, [2018-06-12T19:51:15.228672 #13369] ERROR -- : thrId: 14, runHttpQueries() redirection forbidden: https://nintendo.com -> http://www.nintendo.com/
+D, [2018-06-12T19:51:15.228811 #13369] DEBUG -- : thrId: 14, https://nintendo.com failCounter=10
+I, [2018-06-12T19:51:15.229040 #13369]  INFO -- : thrId: 14, 13, https://nintendo.com, -1 ms, code: 1, size: 0
+I, [2018-06-12T19:51:15.454086 #13369]  INFO -- : thrId: 19, 13, https://cisco.com, 610 ms, code: 200, size: 84440
+I, [2018-06-12T19:51:17.100832 #13369]  INFO -- : thrId: 12, 13, https://facebook.com, 1425 ms, code: 200, size: 447503
+I, [2018-06-12T19:51:18.334826 #13369]  INFO -- : thrId: 17, 14, https://twitch.tv, 149 ms, code: 200, size: 29286
+I, [2018-06-12T19:51:19.286509 #13369]  INFO -- : thrId: 13, 13, https://yahoo.com, 941 ms, code: 200, size: 399163
+I, [2018-06-12T19:51:19.420343 #13369]  INFO -- : thrId: 10, 14, https://google.com, 201 ms, code: 200, size: 11693
+I, [2018-06-12T19:51:19.858341 #13369]  INFO -- : thrId: 16, 13, https://dropbox.com, 1021 ms, code: 200, size: 90632
+I, [2018-06-12T19:51:21.226790 #13369]  INFO -- : thrId: 11, 13, https://youtube.com, 1323 ms, code: 200, size: 479764
+I, [2018-06-12T19:51:23.895780 #13369]  INFO -- : thrId: 15, 14, https://ruby-doc.org, 514 ms, code: 200, size: 22789
+I, [2018-06-12T19:51:24.241548 #13369]  INFO -- : thrId: 18, 14, https://apple.com, 546 ms, code: 200, size: 50061
+E, [2018-06-12T19:51:25.605461 #13369] ERROR -- : thrId: 14, runHttpQueries() redirection forbidden: https://nintendo.com -> http://www.nintendo.com/
+D, [2018-06-12T19:51:25.605681 #13369] DEBUG -- : thrId: 14, https://nintendo.com failCounter=11
+I, [2018-06-12T19:51:25.606025 #13369]  INFO -- : thrId: 14, 14, https://nintendo.com, -1 ms, code: 1, size: 0
+I, [2018-06-12T19:51:26.058563 #13369]  INFO -- : thrId: 19, 14, https://cisco.com, 599 ms, code: 200, size: 84440
+I, [2018-06-12T19:51:27.652373 #13369]  INFO -- : thrId: 12, 14, https://facebook.com, 545 ms, code: 200, size: 447561
+I, [2018-06-12T19:51:28.499503 #13369]  INFO -- : thrId: 17, 15, https://twitch.tv, 162 ms, code: 200, size: 29286
+I, [2018-06-12T19:51:29.634862 #13369]  INFO -- : thrId: 10, 15, https://google.com, 212 ms, code: 200, size: 11660
+I, [2018-06-12T19:51:30.213246 #13369]  INFO -- : thrId: 13, 14, https://yahoo.com, 922 ms, code: 200, size: 398880
+I, [2018-06-12T19:51:30.862548 #13369]  INFO -- : thrId: 16, 14, https://dropbox.com, 999 ms, code: 200, size: 90632
+I, [2018-06-12T19:51:32.330657 #13369]  INFO -- : thrId: 11, 14, https://youtube.com, 1101 ms, code: 200, size: 452842
+I, [2018-06-12T19:51:34.405490 #13369]  INFO -- : thrId: 15, 15, https://ruby-doc.org, 507 ms, code: 200, size: 22789
+I, [2018-06-12T19:51:34.811583 #13369]  INFO -- : thrId: 18, 15, https://apple.com, 566 ms, code: 200, size: 50061
+E, [2018-06-12T19:51:35.978032 #13369] ERROR -- : thrId: 14, runHttpQueries() redirection forbidden: https://nintendo.com -> http://www.nintendo.com/
+D, [2018-06-12T19:51:35.978183 #13369] DEBUG -- : thrId: 14, https://nintendo.com failCounter=12
+I, [2018-06-12T19:51:35.978423 #13369]  INFO -- : thrId: 14, 15, https://nintendo.com, -1 ms, code: 1, size: 0
+I, [2018-06-12T19:51:36.728382 #13369]  INFO -- : thrId: 19, 15, https://cisco.com, 665 ms, code: 200, size: 84440
+I, [2018-06-12T19:51:38.328341 #13369]  INFO -- : thrId: 12, 15, https://facebook.com, 674 ms, code: 200, size: 447754
+I, [2018-06-12T19:51:38.751038 #13369]  INFO -- : thrId: 17, 16, https://twitch.tv, 249 ms, code: 200, size: 29286
+I, [2018-06-12T19:51:39.958129 #13369]  INFO -- : thrId: 10, 16, https://google.com, 318 ms, code: 200, size: 11714
+I, [2018-06-12T19:51:41.332524 #13369]  INFO -- : thrId: 13, 15, https://yahoo.com, 1118 ms, code: 200, size: 398236
+I, [2018-06-12T19:51:41.997726 #13369]  INFO -- : thrId: 16, 15, https://dropbox.com, 1131 ms, code: 200, size: 90632
+I, [2018-06-12T19:51:43.672647 #13369]  INFO -- : thrId: 11, 15, https://youtube.com, 1335 ms, code: 200, size: 460466
+I, [2018-06-12T19:51:44.939524 #13369]  INFO -- : thrId: 15, 16, https://ruby-doc.org, 530 ms, code: 200, size: 22789
+I, [2018-06-12T19:51:45.355428 #13369]  INFO -- : thrId: 18, 16, https://apple.com, 542 ms, code: 200, size: 50061
+E, [2018-06-12T19:51:46.370948 #13369] ERROR -- : thrId: 14, runHttpQueries() redirection forbidden: https://nintendo.com -> http://www.nintendo.com/
+D, [2018-06-12T19:51:46.371140 #13369] DEBUG -- : thrId: 14, https://nintendo.com failCounter=13
+I, [2018-06-12T19:51:46.371409 #13369]  INFO -- : thrId: 14, 16, https://nintendo.com, -1 ms, code: 1, size: 0
+I, [2018-06-12T19:51:47.358737 #13369]  INFO -- : thrId: 19, 16, https://cisco.com, 627 ms, code: 200, size: 84440
+I, [2018-06-12T19:51:48.908063 #13369]  INFO -- : thrId: 17, 17, https://twitch.tv, 152 ms, code: 200, size: 29286
+I, [2018-06-12T19:51:49.655289 #13369]  INFO -- : thrId: 12, 16, https://facebook.com, 1321 ms, code: 200, size: 447518
+I, [2018-06-12T19:51:50.169245 #13369]  INFO -- : thrId: 10, 17, https://google.com, 211 ms, code: 200, size: 11721
+I, [2018-06-12T19:51:52.264661 #13369]  INFO -- : thrId: 13, 16, https://yahoo.com, 927 ms, code: 200, size: 398824
+I, [2018-06-12T19:51:52.999807 #13369]  INFO -- : thrId: 16, 16, https://dropbox.com, 1000 ms, code: 200, size: 81050
+I, [2018-06-12T19:51:54.957897 #13369]  INFO -- : thrId: 11, 16, https://youtube.com, 1282 ms, code: 200, size: 456292
+I, [2018-06-12T19:51:55.497051 #13369]  INFO -- : thrId: 15, 17, https://ruby-doc.org, 552 ms, code: 200, size: 22789
+I, [2018-06-12T19:51:55.912152 #13369]  INFO -- : thrId: 18, 17, https://apple.com, 549 ms, code: 200, size: 50061
+E, [2018-06-12T19:51:56.741317 #13369] ERROR -- : thrId: 14, runHttpQueries() redirection forbidden: https://nintendo.com -> http://www.nintendo.com/
+D, [2018-06-12T19:51:56.741518 #13369] DEBUG -- : thrId: 14, https://nintendo.com failCounter=14
+I, [2018-06-12T19:51:56.741679 #13369]  INFO -- : thrId: 14, 17, https://nintendo.com, -1 ms, code: 1, size: 0
+I, [2018-06-12T19:51:58.019179 #13369]  INFO -- : thrId: 19, 17, https://cisco.com, 654 ms, code: 200, size: 84440
+I, [2018-06-12T19:51:59.061619 #13369]  INFO -- : thrId: 17, 18, https://twitch.tv, 152 ms, code: 200, size: 29286
+I, [2018-06-12T19:52:00.345511 #13369]  INFO -- : thrId: 12, 17, https://facebook.com, 688 ms, code: 200, size: 447819
+I, [2018-06-12T19:52:00.403519 #13369]  INFO -- : thrId: 10, 18, https://google.com, 229 ms, code: 200, size: 11695
+I, [2018-06-12T19:52:03.249603 #13369]  INFO -- : thrId: 13, 17, https://yahoo.com, 979 ms, code: 200, size: 398628
+I, [2018-06-12T19:52:04.053865 #13369]  INFO -- : thrId: 16, 17, https://dropbox.com, 1047 ms, code: 200, size: 90632
+I, [2018-06-12T19:52:06.006841 #13369]  INFO -- : thrId: 15, 18, https://ruby-doc.org, 508 ms, code: 200, size: 22789
+I, [2018-06-12T19:52:06.243393 #13369]  INFO -- : thrId: 11, 17, https://youtube.com, 1280 ms, code: 200, size: 491104
+I, [2018-06-12T19:52:06.484931 #13369]  INFO -- : thrId: 18, 18, https://apple.com, 571 ms, code: 200, size: 50061
+E, [2018-06-12T19:52:07.111883 #13369] ERROR -- : thrId: 14, runHttpQueries() redirection forbidden: https://nintendo.com -> http://www.nintendo.com/
+D, [2018-06-12T19:52:07.112031 #13369] DEBUG -- : thrId: 14, https://nintendo.com failCounter=15
+I, [2018-06-12T19:52:07.112267 #13369]  INFO -- : thrId: 14, 18, https://nintendo.com, -1 ms, code: 1, size: 0
+I, [2018-06-12T19:52:08.664677 #13369]  INFO -- : thrId: 19, 18, https://cisco.com, 640 ms, code: 200, size: 85457
+I, [2018-06-12T19:52:09.224687 #13369]  INFO -- : thrId: 17, 19, https://twitch.tv, 158 ms, code: 200, size: 29286
+I, [2018-06-12T19:52:10.637531 #13369]  INFO -- : thrId: 10, 19, https://google.com, 229 ms, code: 200, size: 11679
+I, [2018-06-12T19:52:10.885112 #13369]  INFO -- : thrId: 12, 18, https://facebook.com, 536 ms, code: 200, size: 447424
+I, [2018-06-12T19:52:14.220783 #13369]  INFO -- : thrId: 13, 18, https://yahoo.com, 969 ms, code: 200, size: 399045
+I, [2018-06-12T19:52:15.160414 #13369]  INFO -- : thrId: 16, 18, https://dropbox.com, 1102 ms, code: 200, size: 90864
+I, [2018-06-12T19:52:16.507894 #13369]  INFO -- : thrId: 15, 19, https://ruby-doc.org, 499 ms, code: 200, size: 22789
+I, [2018-06-12T19:52:17.045230 #13369]  INFO -- : thrId: 18, 19, https://apple.com, 555 ms, code: 200, size: 50061
+I, [2018-06-12T19:52:17.233677 #13369]  INFO -- : thrId: 11, 18, https://youtube.com, 988 ms, code: 200, size: 436974
+E, [2018-06-12T19:52:17.778796 #13369] ERROR -- : thrId: 14, runHttpQueries() redirection forbidden: https://nintendo.com -> http://www.nintendo.com/
+D, [2018-06-12T19:52:17.779133 #13369] DEBUG -- : thrId: 14, https://nintendo.com failCounter=16
+I, [2018-06-12T19:52:17.779309 #13369]  INFO -- : thrId: 14, 19, https://nintendo.com, -1 ms, code: 1, size: 0
+I, [2018-06-12T19:52:19.323866 #13369]  INFO -- : thrId: 19, 19, https://cisco.com, 656 ms, code: 200, size: 84440
+I, [2018-06-12T19:52:19.390856 #13369]  INFO -- : thrId: 17, 20, https://twitch.tv, 154 ms, code: 200, size: 29286
+I, [2018-06-12T19:52:20.849052 #13369]  INFO -- : thrId: 10, 20, https://google.com, 207 ms, code: 200, size: 11690
+I, [2018-06-12T19:52:21.573689 #13369]  INFO -- : thrId: 12, 19, https://facebook.com, 687 ms, code: 200, size: 447741
+I, [2018-06-12T19:52:25.159693 #13369]  INFO -- : thrId: 13, 19, https://yahoo.com, 932 ms, code: 200, size: 398756
+I, [2018-06-12T19:52:26.382137 #13369]  INFO -- : thrId: 16, 19, https://dropbox.com, 1215 ms, code: 200, size: 90864
+I, [2018-06-12T19:52:27.023416 #13369]  INFO -- : thrId: 15, 20, https://ruby-doc.org, 513 ms, code: 200, size: 22789
+I, [2018-06-12T19:52:27.589351 #13369]  INFO -- : thrId: 18, 20, https://apple.com, 542 ms, code: 200, size: 50061
+I, [2018-06-12T19:52:28.148101 #13369]  INFO -- : thrId: 11, 19, https://youtube.com, 909 ms, code: 200, size: 452914
+E, [2018-06-12T19:52:28.542991 #13369] ERROR -- : thrId: 14, runHttpQueries() redirection forbidden: https://nintendo.com -> http://www.nintendo.com/
+D, [2018-06-12T19:52:28.543183 #13369] DEBUG -- : thrId: 14, https://nintendo.com failCounter=17
+I, [2018-06-12T19:52:28.543339 #13369]  INFO -- : thrId: 14, 20, https://nintendo.com, -1 ms, code: 1, size: 0
+I, [2018-06-12T19:52:29.547712 #13369]  INFO -- : thrId: 17, 21, https://twitch.tv, 156 ms, code: 200, size: 29286
+I, [2018-06-12T19:52:29.975701 #13369]  INFO -- : thrId: 19, 20, https://cisco.com, 648 ms, code: 200, size: 84440
+I, [2018-06-12T19:52:31.074191 #13369]  INFO -- : thrId: 10, 21, https://google.com, 219 ms, code: 200, size: 11674
+I, [2018-06-12T19:52:32.227250 #13369]  INFO -- : thrId: 12, 20, https://facebook.com, 651 ms, code: 200, size: 447787
+I, [2018-06-12T19:52:36.209901 #13369]  INFO -- : thrId: 13, 20, https://yahoo.com, 1045 ms, code: 200, size: 399455
+I, [2018-06-12T19:52:37.505855 #13369]  INFO -- : thrId: 16, 20, https://dropbox.com, 1119 ms, code: 200, size: 90864
+I, [2018-06-12T19:52:37.536640 #13369]  INFO -- : thrId: 15, 21, https://ruby-doc.org, 510 ms, code: 200, size: 22789
+I, [2018-06-12T19:52:38.221766 #13369]  INFO -- : thrId: 18, 21, https://apple.com, 628 ms, code: 200, size: 50061
+I, [2018-06-12T19:52:39.163635 #13369]  INFO -- : thrId: 11, 20, https://youtube.com, 1012 ms, code: 200, size: 452606
+E, [2018-06-12T19:52:39.215085 #13369] ERROR -- : thrId: 14, runHttpQueries() redirection forbidden: https://nintendo.com -> http://www.nintendo.com/
+D, [2018-06-12T19:52:39.215193 #13369] DEBUG -- : thrId: 14, https://nintendo.com failCounter=18
+I, [2018-06-12T19:52:39.215393 #13369]  INFO -- : thrId: 14, 21, https://nintendo.com, -1 ms, code: 1, size: 0
+I, [2018-06-12T19:52:39.697688 #13369]  INFO -- : thrId: 17, 22, https://twitch.tv, 148 ms, code: 200, size: 29286
+I, [2018-06-12T19:52:40.748534 #13369]  INFO -- : thrId: 19, 21, https://cisco.com, 772 ms, code: 200, size: 84440
+I, [2018-06-12T19:52:41.304888 #13369]  INFO -- : thrId: 10, 22, https://google.com, 227 ms, code: 200, size: 11690
+I, [2018-06-12T19:52:42.768686 #13369]  INFO -- : thrId: 12, 21, https://facebook.com, 539 ms, code: 200, size: 447455
+I, [2018-06-12T19:52:47.165330 #13369]  INFO -- : thrId: 13, 21, https://yahoo.com, 953 ms, code: 200, size: 398933
+I, [2018-06-12T19:52:48.561930 #13369]  INFO -- : thrId: 16, 21, https://dropbox.com, 1050 ms, code: 200, size: 90628
+I, [2018-06-12T19:52:48.770657 #13369]  INFO -- : thrId: 18, 22, https://apple.com, 543 ms, code: 200, size: 50061
+I, [2018-06-12T19:52:49.038016 #13369]  INFO -- : thrId: 15, 22, https://ruby-doc.org, 1497 ms, code: 200, size: 22789
+I, [2018-06-12T19:52:49.855967 #13369]  INFO -- : thrId: 17, 23, https://twitch.tv, 155 ms, code: 200, size: 29286
+E, [2018-06-12T19:52:49.916542 #13369] ERROR -- : thrId: 14, runHttpQueries() redirection forbidden: https://nintendo.com -> http://www.nintendo.com/
+D, [2018-06-12T19:52:49.916681 #13369] DEBUG -- : thrId: 14, https://nintendo.com failCounter=19
+I, [2018-06-12T19:52:49.916908 #13369]  INFO -- : thrId: 14, 22, https://nintendo.com, -1 ms, code: 1, size: 0
+I, [2018-06-12T19:52:50.333794 #13369]  INFO -- : thrId: 11, 21, https://youtube.com, 1163 ms, code: 200, size: 445284
+I, [2018-06-12T19:52:51.409958 #13369]  INFO -- : thrId: 19, 22, https://cisco.com, 659 ms, code: 200, size: 84440
+I, [2018-06-12T19:52:51.517883 #13369]  INFO -- : thrId: 10, 23, https://google.com, 208 ms, code: 200, size: 11693
+I, [2018-06-12T19:52:53.558819 #13369]  INFO -- : thrId: 12, 22, https://facebook.com, 788 ms, code: 200, size: 447820
+I, [2018-06-12T19:52:58.135748 #13369]  INFO -- : thrId: 13, 22, https://yahoo.com, 964 ms, code: 200, size: 398936
+I, [2018-06-12T19:52:59.340079 #13369]  INFO -- : thrId: 18, 23, https://apple.com, 566 ms, code: 200, size: 50061
+I, [2018-06-12T19:52:59.547353 #13369]  INFO -- : thrId: 15, 23, https://ruby-doc.org, 508 ms, code: 200, size: 22789
+I, [2018-06-12T19:52:59.691517 #13369]  INFO -- : thrId: 16, 22, https://dropbox.com, 1126 ms, code: 200, size: 90646
+I, [2018-06-12T19:53:00.028497 #13369]  INFO -- : thrId: 17, 24, https://twitch.tv, 170 ms, code: 200, size: 29286
+E, [2018-06-12T19:53:00.609822 #13369] ERROR -- : thrId: 14, runHttpQueries() redirection forbidden: https://nintendo.com -> http://www.nintendo.com/
+D, [2018-06-12T19:53:00.609934 #13369] DEBUG -- : thrId: 14, https://nintendo.com failCounter=20
+I, [2018-06-12T19:53:00.610045 #13369]  INFO -- : thrId: 14, 23, https://nintendo.com, -1 ms, code: 1, size: 0
+I, [2018-06-12T19:53:01.602616 #13369]  INFO -- : thrId: 11, 22, https://youtube.com, 1264 ms, code: 200, size: 456683
+I, [2018-06-12T19:53:01.798114 #13369]  INFO -- : thrId: 10, 24, https://google.com, 279 ms, code: 200, size: 11744
+I, [2018-06-12T19:53:02.041086 #13369]  INFO -- : thrId: 19, 23, https://cisco.com, 626 ms, code: 200, size: 84440
+I, [2018-06-12T19:53:04.409521 #13369]  INFO -- : thrId: 12, 23, https://facebook.com, 847 ms, code: 200, size: 447450
+I, [2018-06-12T19:53:09.038656 #13369]  INFO -- : thrId: 13, 23, https://yahoo.com, 897 ms, code: 200, size: 398863
+I, [2018-06-12T19:53:09.882929 #13369]  INFO -- : thrId: 18, 24, https://apple.com, 541 ms, code: 200, size: 50061
+I, [2018-06-12T19:53:10.171348 #13369]  INFO -- : thrId: 15, 24, https://ruby-doc.org, 623 ms, code: 200, size: 22789
+I, [2018-06-12T19:53:10.209560 #13369]  INFO -- : thrId: 17, 25, https://twitch.tv, 177 ms, code: 200, size: 29286
+I, [2018-06-12T19:53:10.732139 #13369]  INFO -- : thrId: 16, 23, https://dropbox.com, 1035 ms, code: 200, size: 90632
+E, [2018-06-12T19:53:11.280981 #13369] ERROR -- : thrId: 14, runHttpQueries() redirection forbidden: https://nintendo.com -> http://www.nintendo.com/
+D, [2018-06-12T19:53:11.281167 #13369] DEBUG -- : thrId: 14, https://nintendo.com failCounter=21
+I, [2018-06-12T19:53:11.281413 #13369]  INFO -- : thrId: 14, 24, https://nintendo.com, -1 ms, code: 1, size: 0
+I, [2018-06-12T19:53:12.006556 #13369]  INFO -- : thrId: 10, 25, https://google.com, 205 ms, code: 200, size: 11658
+I, [2018-06-12T19:53:12.680481 #13369]  INFO -- : thrId: 11, 23, https://youtube.com, 1075 ms, code: 200, size: 456123
+I, [2018-06-12T19:53:12.762396 #13369]  INFO -- : thrId: 19, 24, https://cisco.com, 716 ms, code: 200, size: 84440
+I, [2018-06-12T19:53:14.969380 #13369]  INFO -- : thrId: 12, 24, https://facebook.com, 558 ms, code: 200, size: 447852
+I, [2018-06-12T19:53:19.998859 #13369]  INFO -- : thrId: 13, 24, https://yahoo.com, 952 ms, code: 200, size: 398505
+I, [2018-06-12T19:53:20.380326 #13369]  INFO -- : thrId: 17, 26, https://twitch.tv, 167 ms, code: 200, size: 29286
+I, [2018-06-12T19:53:20.519500 #13369]  INFO -- : thrId: 18, 25, https://apple.com, 631 ms, code: 200, size: 50061
+I, [2018-06-12T19:53:20.711643 #13369]  INFO -- : thrId: 15, 25, https://ruby-doc.org, 538 ms, code: 200, size: 22789
+I, [2018-06-12T19:53:21.699333 #13369]  INFO -- : thrId: 16, 24, https://dropbox.com, 965 ms, code: 200, size: 90632
+E, [2018-06-12T19:53:21.937900 #13369] ERROR -- : thrId: 14, runHttpQueries() redirection forbidden: https://nintendo.com -> http://www.nintendo.com/
+D, [2018-06-12T19:53:21.938064 #13369] DEBUG -- : thrId: 14, https://nintendo.com failCounter=22
+I, [2018-06-12T19:53:21.938202 #13369]  INFO -- : thrId: 14, 25, https://nintendo.com, -1 ms, code: 1, size: 0
+I, [2018-06-12T19:53:22.216103 #13369]  INFO -- : thrId: 10, 26, https://google.com, 208 ms, code: 200, size: 11749
+I, [2018-06-12T19:53:23.394267 #13369]  INFO -- : thrId: 19, 25, https://cisco.com, 629 ms, code: 200, size: 84440
+I, [2018-06-12T19:53:23.838695 #13369]  INFO -- : thrId: 11, 24, https://youtube.com, 1156 ms, code: 200, size: 460752
+I, [2018-06-12T19:53:25.472457 #13369]  INFO -- : thrId: 12, 25, https://facebook.com, 499 ms, code: 200, size: 447512
+I, [2018-06-12T19:53:30.548000 #13369]  INFO -- : thrId: 17, 27, https://twitch.tv, 163 ms, code: 200, size: 29286
+I, [2018-06-12T19:53:31.213978 #13369]  INFO -- : thrId: 18, 26, https://apple.com, 692 ms, code: 200, size: 50061
+I, [2018-06-12T19:53:31.257115 #13369]  INFO -- : thrId: 13, 25, https://yahoo.com, 1252 ms, code: 200, size: 399045
+I, [2018-06-12T19:53:31.288399 #13369]  INFO -- : thrId: 15, 26, https://ruby-doc.org, 571 ms, code: 200, size: 22789
+I, [2018-06-12T19:53:32.425738 #13369]  INFO -- : thrId: 10, 27, https://google.com, 204 ms, code: 200, size: 11676
+E, [2018-06-12T19:53:32.592044 #13369] ERROR -- : thrId: 14, runHttpQueries() redirection forbidden: https://nintendo.com -> http://www.nintendo.com/
+D, [2018-06-12T19:53:32.592230 #13369] DEBUG -- : thrId: 14, https://nintendo.com failCounter=23
+I, [2018-06-12T19:53:32.592373 #13369]  INFO -- : thrId: 14, 26, https://nintendo.com, -1 ms, code: 1, size: 0
+I, [2018-06-12T19:53:32.682645 #13369]  INFO -- : thrId: 16, 25, https://dropbox.com, 981 ms, code: 200, size: 90632
+I, [2018-06-12T19:53:34.055138 #13369]  INFO -- : thrId: 19, 26, https://cisco.com, 655 ms, code: 200, size: 84440
+I, [2018-06-12T19:53:34.795554 #13369]  INFO -- : thrId: 11, 25, https://youtube.com, 954 ms, code: 200, size: 445535
+I, [2018-06-12T19:53:36.071842 #13369]  INFO -- : thrId: 12, 26, https://facebook.com, 592 ms, code: 200, size: 447425
+I, [2018-06-12T19:53:40.706200 #13369]  INFO -- : thrId: 17, 28, https://twitch.tv, 156 ms, code: 200, size: 29286
+I, [2018-06-12T19:53:41.826078 #13369]  INFO -- : thrId: 18, 27, https://apple.com, 607 ms, code: 200, size: 50061
+I, [2018-06-12T19:53:41.853867 #13369]  INFO -- : thrId: 15, 27, https://ruby-doc.org, 560 ms, code: 200, size: 22789
+I, [2018-06-12T19:53:42.275296 #13369]  INFO -- : thrId: 13, 26, https://yahoo.com, 1016 ms, code: 200, size: 399141
+I, [2018-06-12T19:53:42.645637 #13369]  INFO -- : thrId: 10, 28, https://google.com, 216 ms, code: 200, size: 11688
+E, [2018-06-12T19:53:43.259872 #13369] ERROR -- : thrId: 14, runHttpQueries() redirection forbidden: https://nintendo.com -> http://www.nintendo.com/
+D, [2018-06-12T19:53:43.260086 #13369] DEBUG -- : thrId: 14, https://nintendo.com failCounter=24
+I, [2018-06-12T19:53:43.260338 #13369]  INFO -- : thrId: 14, 27, https://nintendo.com, -1 ms, code: 1, size: 0
+I, [2018-06-12T19:53:43.692070 #13369]  INFO -- : thrId: 16, 26, https://dropbox.com, 1006 ms, code: 200, size: 90624
+I, [2018-06-12T19:53:44.679466 #13369]  INFO -- : thrId: 19, 27, https://cisco.com, 623 ms, code: 200, size: 84440
+I, [2018-06-12T19:53:45.860063 #13369]  INFO -- : thrId: 11, 26, https://youtube.com, 1060 ms, code: 200, size: 486933
+I, [2018-06-12T19:53:46.697446 #13369]  INFO -- : thrId: 12, 27, https://facebook.com, 620 ms, code: 200, size: 447817
+I, [2018-06-12T19:53:50.874141 #13369]  INFO -- : thrId: 17, 29, https://twitch.tv, 164 ms, code: 200, size: 29286
+I, [2018-06-12T19:53:52.365158 #13369]  INFO -- : thrId: 18, 28, https://apple.com, 537 ms, code: 200, size: 50061
+I, [2018-06-12T19:53:52.372204 #13369]  INFO -- : thrId: 15, 28, https://ruby-doc.org, 513 ms, code: 200, size: 22789
+I, [2018-06-12T19:53:52.881427 #13369]  INFO -- : thrId: 10, 29, https://google.com, 234 ms, code: 200, size: 11712
+I, [2018-06-12T19:53:53.175986 #13369]  INFO -- : thrId: 13, 27, https://yahoo.com, 895 ms, code: 200, size: 399254
+E, [2018-06-12T19:53:53.927733 #13369] ERROR -- : thrId: 14, runHttpQueries() redirection forbidden: https://nintendo.com -> http://www.nintendo.com/
+D, [2018-06-12T19:53:53.927875 #13369] DEBUG -- : thrId: 14, https://nintendo.com failCounter=25
+I, [2018-06-12T19:53:53.928212 #13369]  INFO -- : thrId: 14, 28, https://nintendo.com, -1 ms, code: 1, size: 0
+I, [2018-06-12T19:53:54.657304 #13369]  INFO -- : thrId: 16, 27, https://dropbox.com, 960 ms, code: 200, size: 90632
+I, [2018-06-12T19:53:55.389003 #13369]  INFO -- : thrId: 19, 28, https://cisco.com, 705 ms, code: 200, size: 84440
+I, [2018-06-12T19:53:57.023078 #13369]  INFO -- : thrId: 11, 27, https://youtube.com, 1157 ms, code: 200, size: 449080
+I, [2018-06-12T19:53:57.304940 #13369]  INFO -- : thrId: 12, 28, https://facebook.com, 606 ms, code: 200, size: 447500
+I, [2018-06-12T19:54:01.032733 #13369]  INFO -- : thrId: 17, 30, https://twitch.tv, 155 ms, code: 200, size: 29286
+I, [2018-06-12T19:54:02.870595 #13369]  INFO -- : thrId: 15, 29, https://ruby-doc.org, 492 ms, code: 200, size: 22789
+I, [2018-06-12T19:54:02.968971 #13369]  INFO -- : thrId: 18, 29, https://apple.com, 600 ms, code: 200, size: 50061
+I, [2018-06-12T19:54:03.292568 #13369]  INFO -- : thrId: 10, 30, https://google.com, 408 ms, code: 200, size: 11714
+I, [2018-06-12T19:54:04.154195 #13369]  INFO -- : thrId: 13, 28, https://yahoo.com, 972 ms, code: 200, size: 399239
+E, [2018-06-12T19:54:04.590345 #13369] ERROR -- : thrId: 14, runHttpQueries() redirection forbidden: https://nintendo.com -> http://www.nintendo.com/
+D, [2018-06-12T19:54:04.590563 #13369] DEBUG -- : thrId: 14, https://nintendo.com failCounter=26
+I, [2018-06-12T19:54:04.591344 #13369]  INFO -- : thrId: 14, 29, https://nintendo.com, -1 ms, code: 1, size: 0
+I, [2018-06-12T19:54:05.748951 #13369]  INFO -- : thrId: 16, 28, https://dropbox.com, 1087 ms, code: 200, size: 90646
+I, [2018-06-12T19:54:06.071371 #13369]  INFO -- : thrId: 19, 29, https://cisco.com, 679 ms, code: 200, size: 84440
+I, [2018-06-12T19:54:07.896105 #13369]  INFO -- : thrId: 12, 29, https://facebook.com, 588 ms, code: 200, size: 447213
+I, [2018-06-12T19:54:08.218332 #13369]  INFO -- : thrId: 11, 28, https://youtube.com, 1192 ms, code: 200, size: 491358
+I, [2018-06-12T19:54:11.189110 #13369]  INFO -- : thrId: 17, 31, https://twitch.tv, 155 ms, code: 200, size: 29286
+I, [2018-06-12T19:54:13.383849 #13369]  INFO -- : thrId: 15, 30, https://ruby-doc.org, 507 ms, code: 200, size: 22789
+I, [2018-06-12T19:54:13.500518 #13369]  INFO -- : thrId: 10, 31, https://google.com, 205 ms, code: 200, size: 11729
+I, [2018-06-12T19:54:13.529510 #13369]  INFO -- : thrId: 18, 30, https://apple.com, 557 ms, code: 200, size: 50061
+I, [2018-06-12T19:54:15.128029 #13369]  INFO -- : thrId: 13, 29, https://yahoo.com, 971 ms, code: 200, size: 398904
+E, [2018-06-12T19:54:15.267531 #13369] ERROR -- : thrId: 14, runHttpQueries() redirection forbidden: https://nintendo.com -> http://www.nintendo.com/
+D, [2018-06-12T19:54:15.267676 #13369] DEBUG -- : thrId: 14, https://nintendo.com failCounter=27
+I, [2018-06-12T19:54:15.267910 #13369]  INFO -- : thrId: 14, 30, https://nintendo.com, -1 ms, code: 1, size: 0
+I, [2018-06-12T19:54:16.688793 #13369]  INFO -- : thrId: 16, 29, https://dropbox.com, 936 ms, code: 200, size: 90874
+I, [2018-06-12T19:54:16.695689 #13369]  INFO -- : thrId: 19, 30, https://cisco.com, 619 ms, code: 200, size: 85458
+I, [2018-06-12T19:54:18.533415 #13369]  INFO -- : thrId: 12, 30, https://facebook.com, 633 ms, code: 200, size: 447746
+I, [2018-06-12T19:54:19.758391 #13369]  INFO -- : thrId: 11, 29, https://youtube.com, 1537 ms, code: 200, size: 500033
+I, [2018-06-12T19:54:21.348388 #13369]  INFO -- : thrId: 17, 32, https://twitch.tv, 158 ms, code: 200, size: 29286
+I, [2018-06-12T19:54:23.910019 #13369]  INFO -- : thrId: 15, 31, https://ruby-doc.org, 523 ms, code: 200, size: 22789
+I, [2018-06-12T19:54:24.082170 #13369]  INFO -- : thrId: 18, 31, https://apple.com, 552 ms, code: 200, size: 50061
+I, [2018-06-12T19:54:24.104330 #13369]  INFO -- : thrId: 10, 32, https://google.com, 602 ms, code: 200, size: 11688
+E, [2018-06-12T19:54:25.915540 #13369] ERROR -- : thrId: 14, runHttpQueries() redirection forbidden: https://nintendo.com -> http://www.nintendo.com/
+D, [2018-06-12T19:54:25.915684 #13369] DEBUG -- : thrId: 14, https://nintendo.com failCounter=28
+I, [2018-06-12T19:54:25.915947 #13369]  INFO -- : thrId: 14, 31, https://nintendo.com, -1 ms, code: 1, size: 0
+I, [2018-06-12T19:54:26.068804 #13369]  INFO -- : thrId: 13, 30, https://yahoo.com, 932 ms, code: 200, size: 398424
+I, [2018-06-12T19:54:27.912077 #13369]  INFO -- : thrId: 16, 30, https://dropbox.com, 1217 ms, code: 200, size: 90632
+I, [2018-06-12T19:54:28.954258 #13369]  INFO -- : thrId: 19, 31, https://cisco.com, 2250 ms, code: 200, size: 84440
+I, [2018-06-12T19:54:29.143051 #13369]  INFO -- : thrId: 12, 31, https://facebook.com, 608 ms, code: 200, size: 447485
+I, [2018-06-12T19:54:31.121327 #13369]  INFO -- : thrId: 11, 30, https://youtube.com, 1361 ms, code: 200, size: 472655
+I, [2018-06-12T19:54:31.531734 #13369]  INFO -- : thrId: 17, 33, https://twitch.tv, 177 ms, code: 200, size: 29286
+I, [2018-06-12T19:54:34.337787 #13369]  INFO -- : thrId: 10, 33, https://google.com, 232 ms, code: 200, size: 11712
+I, [2018-06-12T19:54:34.445889 #13369]  INFO -- : thrId: 15, 32, https://ruby-doc.org, 531 ms, code: 200, size: 22789
+I, [2018-06-12T19:54:34.666225 #13369]  INFO -- : thrId: 18, 32, https://apple.com, 574 ms, code: 200, size: 50061
+E, [2018-06-12T19:54:36.576233 #13369] ERROR -- : thrId: 14, runHttpQueries() redirection forbidden: https://nintendo.com -> http://www.nintendo.com/
+D, [2018-06-12T19:54:36.576380 #13369] DEBUG -- : thrId: 14, https://nintendo.com failCounter=29
+I, [2018-06-12T19:54:36.576636 #13369]  INFO -- : thrId: 14, 32, https://nintendo.com, -1 ms, code: 1, size: 0
+I, [2018-06-12T19:54:37.090416 #13369]  INFO -- : thrId: 13, 31, https://yahoo.com, 1013 ms, code: 200, size: 398300
+I, [2018-06-12T19:54:39.019912 #13369]  INFO -- : thrId: 16, 31, https://dropbox.com, 1101 ms, code: 200, size: 90632
+I, [2018-06-12T19:54:39.605746 #13369]  INFO -- : thrId: 12, 32, https://facebook.com, 459 ms, code: 200, size: 447744
+I, [2018-06-12T19:54:39.608003 #13369]  INFO -- : thrId: 19, 32, https://cisco.com, 643 ms, code: 200, size: 84440
+I, [2018-06-12T19:54:41.684148 #13369]  INFO -- : thrId: 17, 34, https://twitch.tv, 151 ms, code: 200, size: 29286
+I, [2018-06-12T19:54:42.459983 #13369]  INFO -- : thrId: 11, 31, https://youtube.com, 1330 ms, code: 200, size: 456121
+I, [2018-06-12T19:54:44.572239 #13369]  INFO -- : thrId: 10, 34, https://google.com, 234 ms, code: 200, size: 11731
+I, [2018-06-12T19:54:44.955223 #13369]  INFO -- : thrId: 15, 33, https://ruby-doc.org, 507 ms, code: 200, size: 22789
+I, [2018-06-12T19:54:45.214133 #13369]  INFO -- : thrId: 18, 33, https://apple.com, 544 ms, code: 200, size: 50061
+E, [2018-06-12T19:54:47.281929 #13369] ERROR -- : thrId: 14, runHttpQueries() redirection forbidden: https://nintendo.com -> http://www.nintendo.com/
+D, [2018-06-12T19:54:47.282032 #13369] DEBUG -- : thrId: 14, https://nintendo.com failCounter=30
+I, [2018-06-12T19:54:47.282146 #13369]  INFO -- : thrId: 14, 33, https://nintendo.com, -1 ms, code: 1, size: 0
+I, [2018-06-12T19:54:48.064898 #13369]  INFO -- : thrId: 13, 32, https://yahoo.com, 963 ms, code: 200, size: 398342
+I, [2018-06-12T19:54:50.025514 #13369]  INFO -- : thrId: 16, 32, https://dropbox.com, 1003 ms, code: 200, size: 90632
+I, [2018-06-12T19:54:50.214004 #13369]  INFO -- : thrId: 12, 33, https://facebook.com, 605 ms, code: 200, size: 447516
+I, [2018-06-12T19:54:50.251345 #13369]  INFO -- : thrId: 19, 33, https://cisco.com, 634 ms, code: 200, size: 84440
+I, [2018-06-12T19:54:51.961551 #13369]  INFO -- : thrId: 17, 35, https://twitch.tv, 270 ms, code: 200, size: 29286
+I, [2018-06-12T19:54:53.535079 #13369]  INFO -- : thrId: 11, 32, https://youtube.com, 1070 ms, code: 200, size: 453247
+I, [2018-06-12T19:54:54.802104 #13369]  INFO -- : thrId: 10, 35, https://google.com, 219 ms, code: 200, size: 11738
+I, [2018-06-12T19:54:55.465688 #13369]  INFO -- : thrId: 15, 34, https://ruby-doc.org, 509 ms, code: 200, size: 22789
+I, [2018-06-12T19:54:55.758479 #13369]  INFO -- : thrId: 18, 34, https://apple.com, 535 ms, code: 200, size: 50061
+E, [2018-06-12T19:54:58.011110 #13369] ERROR -- : thrId: 14, runHttpQueries() redirection forbidden: https://nintendo.com -> http://www.nintendo.com/
+D, [2018-06-12T19:54:58.011336 #13369] DEBUG -- : thrId: 14, https://nintendo.com failCounter=31
+I, [2018-06-12T19:54:58.011517 #13369]  INFO -- : thrId: 14, 34, https://nintendo.com, -1 ms, code: 1, size: 0
+I, [2018-06-12T19:54:58.995294 #13369]  INFO -- : thrId: 13, 33, https://yahoo.com, 929 ms, code: 200, size: 398808
+I, [2018-06-12T19:55:00.861303 #13369]  INFO -- : thrId: 19, 34, https://cisco.com, 608 ms, code: 200, size: 84440
+I, [2018-06-12T19:55:01.003368 #13369]  INFO -- : thrId: 16, 33, https://dropbox.com, 977 ms, code: 200, size: 90646
+I, [2018-06-12T19:55:01.492179 #13369]  INFO -- : thrId: 12, 34, https://facebook.com, 1271 ms, code: 200, size: 447823
+I, [2018-06-12T19:55:02.118029 #13369]  INFO -- : thrId: 17, 36, https://twitch.tv, 155 ms, code: 200, size: 29286
+I, [2018-06-12T19:55:04.664383 #13369]  INFO -- : thrId: 11, 33, https://youtube.com, 1118 ms, code: 200, size: 468249
+I, [2018-06-12T19:55:05.035956 #13369]  INFO -- : thrId: 10, 36, https://google.com, 223 ms, code: 200, size: 11708
+I, [2018-06-12T19:55:06.264486 #13369]  INFO -- : thrId: 15, 35, https://ruby-doc.org, 794 ms, code: 200, size: 22789
+I, [2018-06-12T19:55:06.332430 #13369]  INFO -- : thrId: 18, 35, https://apple.com, 570 ms, code: 200, size: 50061
+E, [2018-06-12T19:55:08.683101 #13369] ERROR -- : thrId: 14, runHttpQueries() redirection forbidden: https://nintendo.com -> http://www.nintendo.com/
+D, [2018-06-12T19:55:08.683287 #13369] DEBUG -- : thrId: 14, https://nintendo.com failCounter=32
+I, [2018-06-12T19:55:08.683484 #13369]  INFO -- : thrId: 14, 35, https://nintendo.com, -1 ms, code: 1, size: 0
+I, [2018-06-12T19:55:09.988590 #13369]  INFO -- : thrId: 13, 34, https://yahoo.com, 988 ms, code: 200, size: 399401
+I, [2018-06-12T19:55:11.489277 #13369]  INFO -- : thrId: 19, 35, https://cisco.com, 627 ms, code: 200, size: 84440
+I, [2018-06-12T19:55:12.083651 #13369]  INFO -- : thrId: 12, 35, https://facebook.com, 569 ms, code: 200, size: 447487
+I, [2018-06-12T19:55:12.164512 #13369]  INFO -- : thrId: 16, 34, https://dropbox.com, 1161 ms, code: 200, size: 90632
+I, [2018-06-12T19:55:12.288366 #13369]  INFO -- : thrId: 17, 37, https://twitch.tv, 164 ms, code: 200, size: 29286
+I, [2018-06-12T19:55:15.262346 #13369]  INFO -- : thrId: 10, 37, https://google.com, 219 ms, code: 200, size: 11702
+I, [2018-06-12T19:55:15.815201 #13369]  INFO -- : thrId: 11, 34, https://youtube.com, 1143 ms, code: 200, size: 476059
+I, [2018-06-12T19:55:16.775317 #13369]  INFO -- : thrId: 15, 36, https://ruby-doc.org, 503 ms, code: 200, size: 22789
+I, [2018-06-12T19:55:16.865262 #13369]  INFO -- : thrId: 18, 36, https://apple.com, 529 ms, code: 200, size: 50061
+E, [2018-06-12T19:55:19.363553 #13369] ERROR -- : thrId: 14, runHttpQueries() redirection forbidden: https://nintendo.com -> http://www.nintendo.com/
+D, [2018-06-12T19:55:19.363738 #13369] DEBUG -- : thrId: 14, https://nintendo.com failCounter=33
+I, [2018-06-12T19:55:19.364036 #13369]  INFO -- : thrId: 14, 36, https://nintendo.com, -1 ms, code: 1, size: 0
+I, [2018-06-12T19:55:20.936456 #13369]  INFO -- : thrId: 13, 35, https://yahoo.com, 942 ms, code: 200, size: 398286
+I, [2018-06-12T19:55:22.109901 #13369]  INFO -- : thrId: 19, 36, https://cisco.com, 612 ms, code: 200, size: 84440
+I, [2018-06-12T19:55:22.450838 #13369]  INFO -- : thrId: 17, 38, https://twitch.tv, 158 ms, code: 200, size: 29286
+I, [2018-06-12T19:55:23.263164 #13369]  INFO -- : thrId: 16, 35, https://dropbox.com, 1083 ms, code: 200, size: 90632
+I, [2018-06-12T19:55:23.801697 #13369]  INFO -- : thrId: 12, 36, https://facebook.com, 1710 ms, code: 200, size: 447506
+I, [2018-06-12T19:55:25.476400 #13369]  INFO -- : thrId: 10, 38, https://google.com, 205 ms, code: 200, size: 11735
+I, [2018-06-12T19:55:26.850806 #13369]  INFO -- : thrId: 11, 35, https://youtube.com, 1024 ms, code: 200, size: 475765
+I, [2018-06-12T19:55:27.275781 #13369]  INFO -- : thrId: 15, 37, https://ruby-doc.org, 500 ms, code: 200, size: 22789
+I, [2018-06-12T19:55:27.423597 #13369]  INFO -- : thrId: 18, 37, https://apple.com, 551 ms, code: 200, size: 50061
+E, [2018-06-12T19:55:30.029173 #13369] ERROR -- : thrId: 14, runHttpQueries() redirection forbidden: https://nintendo.com -> http://www.nintendo.com/
+D, [2018-06-12T19:55:30.029536 #13369] DEBUG -- : thrId: 14, https://nintendo.com failCounter=34
+I, [2018-06-12T19:55:30.029849 #13369]  INFO -- : thrId: 14, 37, https://nintendo.com, -1 ms, code: 1, size: 0
+I, [2018-06-12T19:55:31.876828 #13369]  INFO -- : thrId: 13, 36, https://yahoo.com, 933 ms, code: 200, size: 399346
+I, [2018-06-12T19:55:32.604733 #13369]  INFO -- : thrId: 17, 39, https://twitch.tv, 150 ms, code: 200, size: 29286
+I, [2018-06-12T19:55:32.744224 #13369]  INFO -- : thrId: 19, 37, https://cisco.com, 624 ms, code: 200, size: 84440
+I, [2018-06-12T19:55:34.247376 #13369]  INFO -- : thrId: 16, 36, https://dropbox.com, 980 ms, code: 200, size: 90632
+I, [2018-06-12T19:55:34.404407 #13369]  INFO -- : thrId: 12, 37, https://facebook.com, 596 ms, code: 200, size: 447751
+I, [2018-06-12T19:55:35.691758 #13369]  INFO -- : thrId: 10, 39, https://google.com, 207 ms, code: 200, size: 11698
+I, [2018-06-12T19:55:37.792328 #13369]  INFO -- : thrId: 15, 38, https://ruby-doc.org, 515 ms, code: 200, size: 22789
+I, [2018-06-12T19:55:37.905180 #13369]  INFO -- : thrId: 11, 36, https://youtube.com, 1053 ms, code: 200, size: 410208
+I, [2018-06-12T19:55:38.017850 #13369]  INFO -- : thrId: 18, 38, https://apple.com, 587 ms, code: 200, size: 50061
+E, [2018-06-12T19:55:40.688967 #13369] ERROR -- : thrId: 14, runHttpQueries() redirection forbidden: https://nintendo.com -> http://www.nintendo.com/
+D, [2018-06-12T19:55:40.689146 #13369] DEBUG -- : thrId: 14, https://nintendo.com failCounter=35
+I, [2018-06-12T19:55:40.689564 #13369]  INFO -- : thrId: 14, 38, https://nintendo.com, -1 ms, code: 1, size: 0
+I, [2018-06-12T19:55:42.767289 #13369]  INFO -- : thrId: 17, 40, https://twitch.tv, 156 ms, code: 200, size: 29286
+I, [2018-06-12T19:55:42.821638 #13369]  INFO -- : thrId: 13, 37, https://yahoo.com, 940 ms, code: 200, size: 398879
+I, [2018-06-12T19:55:43.503503 #13369]  INFO -- : thrId: 19, 38, https://cisco.com, 751 ms, code: 200, size: 84714
+I, [2018-06-12T19:55:44.876810 #13369]  INFO -- : thrId: 12, 38, https://facebook.com, 464 ms, code: 200, size: 447514
+I, [2018-06-12T19:55:45.237593 #13369]  INFO -- : thrId: 16, 37, https://dropbox.com, 983 ms, code: 200, size: 90632
+I, [2018-06-12T19:55:45.904711 #13369]  INFO -- : thrId: 10, 40, https://google.com, 210 ms, code: 200, size: 11683
+I, [2018-06-12T19:55:48.346412 #13369]  INFO -- : thrId: 15, 39, https://ruby-doc.org, 552 ms, code: 200, size: 22789
+I, [2018-06-12T19:55:48.648233 #13369]  INFO -- : thrId: 18, 39, https://apple.com, 623 ms, code: 200, size: 50061
+I, [2018-06-12T19:55:49.038331 #13369]  INFO -- : thrId: 11, 37, https://youtube.com, 1126 ms, code: 200, size: 441135
+E, [2018-06-12T19:55:51.326167 #13369] ERROR -- : thrId: 14, runHttpQueries() redirection forbidden: https://nintendo.com -> http://www.nintendo.com/
+D, [2018-06-12T19:55:51.326316 #13369] DEBUG -- : thrId: 14, https://nintendo.com failCounter=36
+I, [2018-06-12T19:55:51.326496 #13369]  INFO -- : thrId: 14, 39, https://nintendo.com, -1 ms, code: 1, size: 0
+I, [2018-06-12T19:55:53.024171 #13369]  INFO -- : thrId: 17, 41, https://twitch.tv, 247 ms, code: 200, size: 29286
+I, [2018-06-12T19:55:53.921909 #13369]  INFO -- : thrId: 13, 38, https://yahoo.com, 1090 ms, code: 200, size: 399495
+I, [2018-06-12T19:55:54.148444 #13369]  INFO -- : thrId: 19, 39, https://cisco.com, 636 ms, code: 200, size: 84714
+I, [2018-06-12T19:55:55.547254 #13369]  INFO -- : thrId: 12, 39, https://facebook.com, 662 ms, code: 200, size: 447742
+I, [2018-06-12T19:55:56.132438 #13369]  INFO -- : thrId: 10, 41, https://google.com, 218 ms, code: 200, size: 11675
+I, [2018-06-12T19:55:56.238606 #13369]  INFO -- : thrId: 16, 38, https://dropbox.com, 997 ms, code: 200, size: 90864
+I, [2018-06-12T19:55:58.886663 #13369]  INFO -- : thrId: 15, 40, https://ruby-doc.org, 538 ms, code: 200, size: 22789
+I, [2018-06-12T19:55:59.214687 #13369]  INFO -- : thrId: 18, 40, https://apple.com, 565 ms, code: 200, size: 50061
+I, [2018-06-12T19:56:00.119231 #13369]  INFO -- : thrId: 11, 38, https://youtube.com, 1073 ms, code: 200, size: 468182
+E, [2018-06-12T19:56:02.018227 #13369] ERROR -- : thrId: 14, runHttpQueries() redirection forbidden: https://nintendo.com -> http://www.nintendo.com/
+D, [2018-06-12T19:56:02.018373 #13369] DEBUG -- : thrId: 14, https://nintendo.com failCounter=37
+I, [2018-06-12T19:56:02.018533 #13369]  INFO -- : thrId: 14, 40, https://nintendo.com, -1 ms, code: 1, size: 0
+I, [2018-06-12T19:56:03.216088 #13369]  INFO -- : thrId: 17, 42, https://twitch.tv, 189 ms, code: 200, size: 29286
+I, [2018-06-12T19:56:04.814755 #13369]  INFO -- : thrId: 19, 40, https://cisco.com, 657 ms, code: 200, size: 84714
+I, [2018-06-12T19:56:04.929360 #13369]  INFO -- : thrId: 13, 39, https://yahoo.com, 996 ms, code: 200, size: 399084
+I, [2018-06-12T19:56:06.047061 #13369]  INFO -- : thrId: 12, 40, https://facebook.com, 496 ms, code: 200, size: 447462
+I, [2018-06-12T19:56:06.343017 #13369]  INFO -- : thrId: 10, 42, https://google.com, 208 ms, code: 200, size: 11699
+I, [2018-06-12T19:56:07.259980 #13369]  INFO -- : thrId: 16, 39, https://dropbox.com, 1019 ms, code: 200, size: 90646
+I, [2018-06-12T19:56:09.399769 #13369]  INFO -- : thrId: 15, 41, https://ruby-doc.org, 506 ms, code: 200, size: 22789
+I, [2018-06-12T19:56:09.809936 #13369]  INFO -- : thrId: 18, 41, https://apple.com, 586 ms, code: 200, size: 50061
+I, [2018-06-12T19:56:11.201471 #13369]  INFO -- : thrId: 11, 39, https://youtube.com, 1077 ms, code: 200, size: 484226
+E, [2018-06-12T19:56:12.653129 #13369] ERROR -- : thrId: 14, runHttpQueries() redirection forbidden: https://nintendo.com -> http://www.nintendo.com/
+D, [2018-06-12T19:56:12.653277 #13369] DEBUG -- : thrId: 14, https://nintendo.com failCounter=38
+I, [2018-06-12T19:56:12.653508 #13369]  INFO -- : thrId: 14, 41, https://nintendo.com, -1 ms, code: 1, size: 0
+I, [2018-06-12T19:56:13.608996 #13369]  INFO -- : thrId: 17, 43, https://twitch.tv, 385 ms, code: 200, size: 29286
+I, [2018-06-12T19:56:15.439269 #13369]  INFO -- : thrId: 19, 41, https://cisco.com, 621 ms, code: 200, size: 84714
+I, [2018-06-12T19:56:15.837929 #13369]  INFO -- : thrId: 13, 40, https://yahoo.com, 904 ms, code: 200, size: 398923
+I, [2018-06-12T19:56:16.567176 #13369]  INFO -- : thrId: 10, 43, https://google.com, 221 ms, code: 200, size: 11789
+I, [2018-06-12T19:56:16.697238 #13369]  INFO -- : thrId: 12, 41, https://facebook.com, 646 ms, code: 200, size: 447503
+I, [2018-06-12T19:56:18.272966 #13369]  INFO -- : thrId: 16, 40, https://dropbox.com, 1004 ms, code: 200, size: 90632
+I, [2018-06-12T19:56:19.912460 #13369]  INFO -- : thrId: 15, 42, https://ruby-doc.org, 508 ms, code: 200, size: 22789
+I, [2018-06-12T19:56:20.346020 #13369]  INFO -- : thrId: 18, 42, https://apple.com, 535 ms, code: 200, size: 50061
+I, [2018-06-12T19:56:22.525766 #13369]  INFO -- : thrId: 11, 40, https://youtube.com, 1316 ms, code: 200, size: 495506
+E, [2018-06-12T19:56:23.083215 #13369] ERROR -- : thrId: 14, runHttpQueries() redirection forbidden: https://nintendo.com -> http://www.nintendo.com/
+D, [2018-06-12T19:56:23.083390 #13369] DEBUG -- : thrId: 14, https://nintendo.com failCounter=39
+I, [2018-06-12T19:56:23.083532 #13369]  INFO -- : thrId: 14, 42, https://nintendo.com, -1 ms, code: 1, size: 0
+I, [2018-06-12T19:56:24.112546 #13369]  INFO -- : thrId: 17, 44, https://twitch.tv, 500 ms, code: 200, size: 29286
+I, [2018-06-12T19:56:26.045025 #13369]  INFO -- : thrId: 19, 42, https://cisco.com, 604 ms, code: 200, size: 84714
+I, [2018-06-12T19:56:26.777796 #13369]  INFO -- : thrId: 13, 41, https://yahoo.com, 928 ms, code: 200, size: 399179
+I, [2018-06-12T19:56:26.801506 #13369]  INFO -- : thrId: 10, 44, https://google.com, 228 ms, code: 200, size: 11688
+I, [2018-06-12T19:56:28.449218 #13369]  INFO -- : thrId: 12, 42, https://facebook.com, 1748 ms, code: 200, size: 447518
+I, [2018-06-12T19:56:29.900431 #13369]  INFO -- : thrId: 16, 41, https://dropbox.com, 1618 ms, code: 200, size: 90632
+I, [2018-06-12T19:56:30.897563 #13369]  INFO -- : thrId: 18, 43, https://apple.com, 546 ms, code: 200, size: 50061
+I, [2018-06-12T19:56:32.392620 #13369]  INFO -- : thrId: 15, 43, https://ruby-doc.org, 2471 ms, code: 200, size: 22789
+E, [2018-06-12T19:56:33.497646 #13369] ERROR -- : thrId: 14, runHttpQueries() redirection forbidden: https://nintendo.com -> http://www.nintendo.com/
+D, [2018-06-12T19:56:33.497830 #13369] DEBUG -- : thrId: 14, https://nintendo.com failCounter=40
+I, [2018-06-12T19:56:33.497974 #13369]  INFO -- : thrId: 14, 43, https://nintendo.com, -1 ms, code: 1, size: 0
+I, [2018-06-12T19:56:33.913817 #13369]  INFO -- : thrId: 11, 41, https://youtube.com, 1380 ms, code: 200, size: 441213
+I, [2018-06-12T19:56:34.271327 #13369]  INFO -- : thrId: 17, 45, https://twitch.tv, 153 ms, code: 200, size: 29286
+I, [2018-06-12T19:56:36.734432 #13369]  INFO -- : thrId: 19, 43, https://cisco.com, 663 ms, code: 200, size: 84714
+I, [2018-06-12T19:56:37.033512 #13369]  INFO -- : thrId: 10, 45, https://google.com, 228 ms, code: 200, size: 11698
+I, [2018-06-12T19:56:37.804906 #13369]  INFO -- : thrId: 13, 42, https://yahoo.com, 998 ms, code: 200, size: 399045
+I, [2018-06-12T19:56:39.139153 #13369]  INFO -- : thrId: 12, 43, https://facebook.com, 686 ms, code: 200, size: 447548
+I, [2018-06-12T19:56:40.959423 #13369]  INFO -- : thrId: 16, 42, https://dropbox.com, 1055 ms, code: 200, size: 90864
+I, [2018-06-12T19:56:41.476945 #13369]  INFO -- : thrId: 18, 44, https://apple.com, 572 ms, code: 200, size: 50061
+I, [2018-06-12T19:56:42.909326 #13369]  INFO -- : thrId: 15, 44, https://ruby-doc.org, 514 ms, code: 200, size: 22789
+E, [2018-06-12T19:56:43.962320 #13369] ERROR -- : thrId: 14, runHttpQueries() redirection forbidden: https://nintendo.com -> http://www.nintendo.com/
+D, [2018-06-12T19:56:43.962479 #13369] DEBUG -- : thrId: 14, https://nintendo.com failCounter=41
+I, [2018-06-12T19:56:43.962908 #13369]  INFO -- : thrId: 14, 44, https://nintendo.com, -1 ms, code: 1, size: 0
+I, [2018-06-12T19:56:44.462068 #13369]  INFO -- : thrId: 17, 46, https://twitch.tv, 182 ms, code: 200, size: 29286
+I, [2018-06-12T19:56:45.258599 #13369]  INFO -- : thrId: 11, 42, https://youtube.com, 1336 ms, code: 200, size: 394184
+I, [2018-06-12T19:56:47.249587 #13369]  INFO -- : thrId: 10, 46, https://google.com, 212 ms, code: 200, size: 11711
+I, [2018-06-12T19:56:47.339022 #13369]  INFO -- : thrId: 19, 44, https://cisco.com, 601 ms, code: 200, size: 84714
+I, [2018-06-12T19:56:48.816337 #13369]  INFO -- : thrId: 13, 43, https://yahoo.com, 1007 ms, code: 200, size: 398357
+I, [2018-06-12T19:56:50.051340 #13369]  INFO -- : thrId: 12, 44, https://facebook.com, 902 ms, code: 200, size: 447582
+I, [2018-06-12T19:56:52.002720 #13369]  INFO -- : thrId: 16, 43, https://dropbox.com, 1032 ms, code: 200, size: 90628
+I, [2018-06-12T19:56:52.021654 #13369]  INFO -- : thrId: 18, 45, https://apple.com, 543 ms, code: 200, size: 50061
+I, [2018-06-12T19:56:53.436644 #13369]  INFO -- : thrId: 15, 45, https://ruby-doc.org, 517 ms, code: 200, size: 22789
+E, [2018-06-12T19:56:54.428193 #13369] ERROR -- : thrId: 14, runHttpQueries() redirection forbidden: https://nintendo.com -> http://www.nintendo.com/
+D, [2018-06-12T19:56:54.428328 #13369] DEBUG -- : thrId: 14, https://nintendo.com failCounter=42
+I, [2018-06-12T19:56:54.428554 #13369]  INFO -- : thrId: 14, 45, https://nintendo.com, -1 ms, code: 1, size: 0
+I, [2018-06-12T19:56:54.622634 #13369]  INFO -- : thrId: 17, 47, https://twitch.tv, 158 ms, code: 200, size: 29286
+I, [2018-06-12T19:56:56.351647 #13369]  INFO -- : thrId: 11, 43, https://youtube.com, 1089 ms, code: 200, size: 453039
+I, [2018-06-12T19:56:57.469812 #13369]  INFO -- : thrId: 10, 47, https://google.com, 215 ms, code: 200, size: 11704
+I, [2018-06-12T19:56:57.970577 #13369]  INFO -- : thrId: 19, 45, https://cisco.com, 630 ms, code: 200, size: 84714
+I, [2018-06-12T19:57:00.368360 #13369]  INFO -- : thrId: 13, 44, https://yahoo.com, 1541 ms, code: 200, size: 398944
+I, [2018-06-12T19:57:00.626599 #13369]  INFO -- : thrId: 12, 45, https://facebook.com, 561 ms, code: 200, size: 447430
+I, [2018-06-12T19:57:02.574551 #13369]  INFO -- : thrId: 18, 46, https://apple.com, 551 ms, code: 200, size: 50061
+I, [2018-06-12T19:57:03.067666 #13369]  INFO -- : thrId: 16, 44, https://dropbox.com, 1061 ms, code: 200, size: 90632
+I, [2018-06-12T19:57:03.963032 #13369]  INFO -- : thrId: 15, 46, https://ruby-doc.org, 515 ms, code: 200, size: 22789
+I, [2018-06-12T19:57:04.814217 #13369]  INFO -- : thrId: 17, 48, https://twitch.tv, 184 ms, code: 200, size: 29286
+E, [2018-06-12T19:57:04.887660 #13369] ERROR -- : thrId: 14, runHttpQueries() redirection forbidden: https://nintendo.com -> http://www.nintendo.com/
+D, [2018-06-12T19:57:04.887908 #13369] DEBUG -- : thrId: 14, https://nintendo.com failCounter=43
+I, [2018-06-12T19:57:04.889782 #13369]  INFO -- : thrId: 14, 46, https://nintendo.com, -1 ms, code: 1, size: 0
+I, [2018-06-12T19:57:07.410381 #13369]  INFO -- : thrId: 11, 44, https://youtube.com, 1056 ms, code: 200, size: 453159
+I, [2018-06-12T19:57:07.716547 #13369]  INFO -- : thrId: 10, 48, https://google.com, 242 ms, code: 200, size: 11702
+I, [2018-06-12T19:57:08.617144 #13369]  INFO -- : thrId: 19, 46, https://cisco.com, 644 ms, code: 200, size: 85731
+I, [2018-06-12T19:57:11.209765 #13369]  INFO -- : thrId: 12, 46, https://facebook.com, 573 ms, code: 200, size: 447438
+I, [2018-06-12T19:57:11.395539 #13369]  INFO -- : thrId: 13, 45, https://yahoo.com, 1024 ms, code: 200, size: 398946
+I, [2018-06-12T19:57:13.136574 #13369]  INFO -- : thrId: 18, 47, https://apple.com, 560 ms, code: 200, size: 50061
+I, [2018-06-12T19:57:14.105897 #13369]  INFO -- : thrId: 16, 45, https://dropbox.com, 1035 ms, code: 200, size: 90624
+I, [2018-06-12T19:57:14.498487 #13369]  INFO -- : thrId: 15, 47, https://ruby-doc.org, 533 ms, code: 200, size: 22789
+I, [2018-06-12T19:57:14.987223 #13369]  INFO -- : thrId: 17, 49, https://twitch.tv, 166 ms, code: 200, size: 29286
+I, [2018-06-12T19:57:14.987580 #13369]  INFO -- : thrId: 17 has completed 50 HTTP operations, https://twitch.tv
+E, [2018-06-12T19:57:15.315381 #13369] ERROR -- : thrId: 14, runHttpQueries() redirection forbidden: https://nintendo.com -> http://www.nintendo.com/
+D, [2018-06-12T19:57:15.315572 #13369] DEBUG -- : thrId: 14, https://nintendo.com failCounter=44
+I, [2018-06-12T19:57:15.315761 #13369]  INFO -- : thrId: 14, 47, https://nintendo.com, -1 ms, code: 1, size: 0
+I, [2018-06-12T19:57:17.929801 #13369]  INFO -- : thrId: 10, 49, https://google.com, 212 ms, code: 200, size: 11684
+I, [2018-06-12T19:57:17.929989 #13369]  INFO -- : thrId: 10 has completed 50 HTTP operations, https://google.com
+I, [2018-06-12T19:57:18.641456 #13369]  INFO -- : thrId: 11, 45, https://youtube.com, 1223 ms, code: 200, size: 452967
+I, [2018-06-12T19:57:19.423604 #13369]  INFO -- : thrId: 19, 47, https://cisco.com, 800 ms, code: 200, size: 84714
+I, [2018-06-12T19:57:21.825183 #13369]  INFO -- : thrId: 12, 47, https://facebook.com, 606 ms, code: 200, size: 447515
+I, [2018-06-12T19:57:22.313962 #13369]  INFO -- : thrId: 13, 46, https://yahoo.com, 910 ms, code: 200, size: 399004
+I, [2018-06-12T19:57:23.691776 #13369]  INFO -- : thrId: 18, 48, https://apple.com, 546 ms, code: 200, size: 50061
+I, [2018-06-12T19:57:25.036801 #13369]  INFO -- : thrId: 15, 48, https://ruby-doc.org, 532 ms, code: 200, size: 22789
+I, [2018-06-12T19:57:25.282670 #13369]  INFO -- : thrId: 16, 46, https://dropbox.com, 1167 ms, code: 200, size: 90864
+E, [2018-06-12T19:57:25.798129 #13369] ERROR -- : thrId: 14, runHttpQueries() redirection forbidden: https://nintendo.com -> http://www.nintendo.com/
+D, [2018-06-12T19:57:25.798284 #13369] DEBUG -- : thrId: 14, https://nintendo.com failCounter=45
+I, [2018-06-12T19:57:25.800241 #13369]  INFO -- : thrId: 14, 48, https://nintendo.com, -1 ms, code: 1, size: 0
+I, [2018-06-12T19:57:29.730936 #13369]  INFO -- : thrId: 11, 46, https://youtube.com, 1087 ms, code: 200, size: 488019
+I, [2018-06-12T19:57:30.167309 #13369]  INFO -- : thrId: 19, 48, https://cisco.com, 742 ms, code: 200, size: 84714
+I, [2018-06-12T19:57:32.416669 #13369]  INFO -- : thrId: 12, 48, https://facebook.com, 587 ms, code: 200, size: 447430
+I, [2018-06-12T19:57:33.303150 #13369]  INFO -- : thrId: 13, 47, https://yahoo.com, 980 ms, code: 200, size: 399112
+I, [2018-06-12T19:57:34.248041 #13369]  INFO -- : thrId: 18, 49, https://apple.com, 554 ms, code: 200, size: 50061
+I, [2018-06-12T19:57:34.248289 #13369]  INFO -- : thrId: 18 has completed 50 HTTP operations, https://apple.com
+I, [2018-06-12T19:57:35.559077 #13369]  INFO -- : thrId: 15, 49, https://ruby-doc.org, 521 ms, code: 200, size: 22789
+I, [2018-06-12T19:57:35.559324 #13369]  INFO -- : thrId: 15 has completed 50 HTTP operations, https://ruby-doc.org
+E, [2018-06-12T19:57:36.265662 #13369] ERROR -- : thrId: 14, runHttpQueries() redirection forbidden: https://nintendo.com -> http://www.nintendo.com/
+D, [2018-06-12T19:57:36.265934 #13369] DEBUG -- : thrId: 14, https://nintendo.com failCounter=46
+I, [2018-06-12T19:57:36.266412 #13369]  INFO -- : thrId: 14, 49, https://nintendo.com, -1 ms, code: 1, size: 0
+I, [2018-06-12T19:57:36.266579 #13369]  INFO -- : thrId: 14 has completed 50 HTTP operations, https://nintendo.com
+I, [2018-06-12T19:57:36.303671 #13369]  INFO -- : thrId: 16, 47, https://dropbox.com, 1016 ms, code: 200, size: 90632
+I, [2018-06-12T19:57:40.809057 #13369]  INFO -- : thrId: 19, 49, https://cisco.com, 635 ms, code: 200, size: 84714
+I, [2018-06-12T19:57:40.810909 #13369]  INFO -- : thrId: 19 has completed 50 HTTP operations, https://cisco.com
+I, [2018-06-12T19:57:41.109760 #13369]  INFO -- : thrId: 11, 47, https://youtube.com, 1374 ms, code: 200, size: 491751
+I, [2018-06-12T19:57:42.993408 #13369]  INFO -- : thrId: 12, 49, https://facebook.com, 571 ms, code: 200, size: 447476
+I, [2018-06-12T19:57:42.993828 #13369]  INFO -- : thrId: 12 has completed 50 HTTP operations, https://facebook.com
+I, [2018-06-12T19:57:44.671335 #13369]  INFO -- : thrId: 13, 48, https://yahoo.com, 1362 ms, code: 200, size: 399140
+I, [2018-06-12T19:57:47.362654 #13369]  INFO -- : thrId: 16, 48, https://dropbox.com, 1053 ms, code: 200, size: 90632
+I, [2018-06-12T19:57:52.234599 #13369]  INFO -- : thrId: 11, 48, https://youtube.com, 1115 ms, code: 200, size: 491429
+I, [2018-06-12T19:57:55.615478 #13369]  INFO -- : thrId: 13, 49, https://yahoo.com, 935 ms, code: 200, size: 397963
+I, [2018-06-12T19:57:55.615697 #13369]  INFO -- : thrId: 13 has completed 50 HTTP operations, https://yahoo.com
+I, [2018-06-12T19:57:58.356544 #13369]  INFO -- : thrId: 16, 49, https://dropbox.com, 989 ms, code: 200, size: 90632
+I, [2018-06-12T19:57:58.356736 #13369]  INFO -- : thrId: 16 has completed 50 HTTP operations, https://dropbox.com
+I, [2018-06-12T19:58:03.245736 #13369]  INFO -- : thrId: 11, 49, https://youtube.com, 1008 ms, code: 200, size: 456866
+I, [2018-06-12T19:58:03.245940 #13369]  INFO -- : thrId: 11 has completed 50 HTTP operations, https://youtube.com

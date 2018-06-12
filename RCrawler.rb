@@ -4,6 +4,8 @@ require 'open-uri'
 require 'date'
 require 'thread'
 require 'csv'
+require 'logger'
+require 'fileutils'		# so that I can use FileUtils.mkpath
 
 load 'Operation.rb'
 load 'Alerter.rb'
@@ -29,9 +31,12 @@ END {
 
 class Crawler
 
-  def initialize(aObj, id=-1)
+  def initialize(aObj, lObj, id=-1)
     @objId = id   # useful when using multiple threads
 		@alertObj = aObj	# object used to send alerts
+		@logObj = lObj		# object used to log stuff
+
+		logObj.debug("thrId: #{@objId}, #{aObj.inspect}, #{lObj.inspect}")
 
   end
 
@@ -58,6 +63,7 @@ class Crawler
     rescue => e
       puts "runPings(...) is expecting an Operation object"
       puts "EXCEPTION, runPings(...): #{e}"
+			logObj.error("thrId: #{@objId}, runPings(...): #{e}")
       return
     end
 
@@ -81,12 +87,14 @@ class Crawler
     pos1 = pingDest.index(":").to_i
     tmpStr = "ping_" + pingDest[pos1, pingDest.length - (pos1)]
     pingOutFile = pingBaseOutputDir + tmpStr + "_" + DateTime.now.strftime('%Q').to_s + ".log"
-    puts "id: #{objId}, pingOutFile: " + pingOutFile
+    puts "thrId: #{objId}, pingOutFile: #{pingOutFile.to_s}"
+		logObj.debug("thrId: #{@objId}, pingOutFile: #{pingOutFile.to_s}")
 
     begin
       outFile = File.open(pingOutFile, 'w')
     rescue Errno::ENOENT
-      puts "Could not write to pingOutFile: " + pingOutFile
+      puts "Could not write to pingOutFile: #{pingOutFile.to_s}"
+			logObj.error("thrId: #{@objId}, Could not write to pingOutFile: #{pingOutFile.to_s}")
       return
     end
 
@@ -107,8 +115,7 @@ class Crawler
 			#puts "now #{now.size}" + ": " + now.to_s
 
 			# if now has no size, we could not resolve the hostname or something OS-related happened
-			# TODO: better logging would be nice here
-			unless now.size == 0
+			unless now.size == 0 || now.index("100.0% packet loss")
 	      tmpStr = now.split("\n")[1] # get second line of output "64 bytes from 8.8.8.8: icmp_seq=1 ttl=59 time=13.7 ms"
 	      index = tmpStr.rindex("time").to_i
 				#puts "tmpStr: " + tmpStr
@@ -121,17 +128,20 @@ class Crawler
 				alertSent = false
 			else
 				failCounter += 1
+				logObj.debug("thrId: #{@objId}, #{pingDest.to_s} failCounter=#{failCounter}")
+
 				#puts "FAILED, " + "#{failCounter}\t" + "#{alertObj.maxPingsBeforeAlert.to_i}"
 				if failCounter >= alertObj.maxPingsBeforeAlert.to_i && !alertSent
 					# send alert, but only one per-occurrence
 					currEpoch = DateTime.now.strftime('%Q')	# this so that logs and email alert have the same timestamp
-					alertObj.sendEmailAlert("PING", pingDest, failCounter, currEpoch.to_s, DateTime.strptime(currEpoch,'%Q'))
+					alertObj.sendEmailAlert("PING", pingDest.to_s, failCounter, currEpoch.to_s, DateTime.strptime(currEpoch,'%Q'))
 					alertSent = true
-					puts "[#{currEpoch},#{objId.to_s}]: PING Alert sent, #{pingDest}"
+					puts "[#{currEpoch},#{objId.to_s}]: PING Alert sent, #{pingDest.to_s}"
+					logObj.info("thrId: #{@objId}, PING Alert sent, #{pingDest.to_s}")
+
 				end
 
 			end
-
 
       # store data in the arrays
 			pingLatency.push(tmpLatency)   # save current latency from ping command
@@ -139,9 +149,11 @@ class Crawler
 			pingReturnEpochDay.push(pingReturnEpoch[pingReturnEpoch.size-1].to_i % (3600000*24))
 
       # show something in the terminal
-      print objId.to_s + "\t" + pingCounter.to_s + "\t" + pingDest
-      print "\tlatency: " + pingLatency[pingLatency.size - 1].to_s + " ms"
-      print "\n"
+			pingOutput = objId.to_s + ", " + pingCounter.to_s + ", " + pingDest
+			pingOutput += ", latency: #{pingLatency[pingLatency.size - 1].to_s} ms"
+      puts pingOutput
+			logObj.info("thrId: #{@objId}, #{pingOutput.to_s}")
+
 
       # save to file
       outFile << pingLatency[pingLatency.size-1]
@@ -150,19 +162,24 @@ class Crawler
       outFile << "\n"
 
 			if pingCounter % 100 == 0
+				logObj.debug("thrId: #{@objId}, clearing PING arrays...")
 				pingLatency.clear
 				pingReturnEpoch.clear
 				pingReturnEpochDay.clear
 			end
 
 
+			# increase counters and see if the loop needs to continue
       self.pingCounter += 1
-      sleep pingDelay
 
-      # stop if the number of pings was reached
       if pingLimit > 0 && pingCounter >= pingLimit
+				puts "thrId: #{@objId} has completed #{pingLimit} PING operations, #{pingDest}"
+				logObj.info("thrId: #{@objId} has completed #{pingLimit} PING operations, #{pingDest}")
         break
-      end
+      else
+				sleep pingDelay
+			end
+
 
     end
 
@@ -212,7 +229,8 @@ class Crawler
     begin
       outFile = File.open(httpOutFile, 'w')
     rescue Errno::ENOENT
-      puts "Could not write to httpOutFile: " + httpOutFile
+      puts "Could not write to httpOutFile: #{httpOutFile.to_s}"
+			logObj.error("thrId: #{@objId}, Could not write to httpOutFile: #{httpOutFile.to_s}")
       return
     end
 
@@ -238,8 +256,10 @@ class Crawler
 			rescue Exception => e
 				# TODO: do some logging before re-raising the exception
 				puts "#{e}"
-
+				logObj.error("thrId: #{@objId}, runHttpQueries() #{e}")
 				failCounter += 1
+				logObj.debug("thrId: #{@objId}, #{httpUrl.to_s} failCounter=#{failCounter}")
+
 				#puts "FAILED, " + "#{failCounter}\t" + "#{alertObj.maxPingsBeforeAlert.to_i}"
 				if failCounter >= alertObj.maxHTTPBeforeAlert.to_i && !alertSent
 					# send alert, but only one per-occurrence
@@ -247,6 +267,7 @@ class Crawler
 					alertObj.sendEmailAlert("HTTP", httpUrl.to_s, failCounter, currEpoch.to_s, DateTime.strptime(currEpoch,'%Q'))
 					alertSent = true
 					puts "[#{currEpoch},#{objId.to_s}]: HTTP Alert sent, #{httpUrl.to_s}"
+					logObj.info("thrId: #{@objId}, HTTP Alert sent, #{httpUrl.to_s}")
 
 				end
 
@@ -301,6 +322,13 @@ class Crawler
       httpReturnEpoch.push(currEpoch)
 			httpReturnEpochDay.push(httpReturnEpoch[httpReturnEpoch.size-1].to_i % (3600000*24))
 
+			# show some output in the terminal
+			httpOutput = "thrId: #{objId}" + ", " + httpCounter.to_s + ", " + httpUrl + ", " + duration.to_s + " ms"
+			httpOutput += ", code: " + responseStatus[0].to_s + ", size: " + responseBody.length.to_s
+      puts httpOutput
+			logObj.info(httpOutput)
+
+
       # save to file
       outFile << httpDuration[httpDuration.size-1]
       outFile << "\t" << httpReturnCode[httpReturnCode.size-1]
@@ -311,6 +339,7 @@ class Crawler
 
 			if httpCounter % 100 == 0
 				# store at most 100 elements in the arrays
+				logObj.debug("thrId: #{@objId}, clearing HTTP arrays...")
 				httpDuration.clear
 				httpReturnCode.clear
 				httpReturnSize.clear
@@ -319,21 +348,16 @@ class Crawler
 			end
 
 
-      # show some output in the terminal
-      print objId.to_s + "\t" + httpCounter.to_s + "\t" + httpUrl
-      print "\t" + duration.to_s + " ms"
-      print "\tcode: " + responseStatus[0].to_s
-      print "\tsize: " + responseBody.length.to_s
-      print "\n"
-
-
+			# increase counters and see if the loop needs to continue
       self.httpCounter += 1
-      sleep httpDelay
 
-      # stop if the number of queries was reached
       if httpLimit > 0 && httpCounter >= httpLimit
+				puts "thrId: #{@objId} has completed #{httpLimit} HTTP operations, #{httpUrl}"
+				logObj.info("thrId: #{@objId} has completed #{httpLimit} HTTP operations, #{httpUrl}")
         break
-      end
+      else
+				sleep httpDelay
+			end
 
     end
 
@@ -348,6 +372,7 @@ class Crawler
   # accessors for instance variables
   attr_accessor :objId
 	attr_accessor :alertObj
+	attr_accessor :logObj
 
   attr_accessor :pingDelay
   attr_accessor :pingDest
@@ -379,7 +404,8 @@ end
 
 
 # read config file and create the appropriate instance objects
-tmpOutputDir = ""
+tmpStatsDir = ""
+tmpLogsDir = ""
 tmpHttpFileHeader = ""
 tmpPingFileHeader = ""
 tmpAlertTemplateLocation = ""
@@ -406,10 +432,15 @@ confFile.readlines().each do |line|
   unless line.size < 3 || line[0] == '#'
 #    print "#{line}"
 
-    if line.include?("outputDir")
+		# variables indicating directories where to save stuff
+    if line.include?("statsDir")
       pos = line.index('=')
-      tmpOutputDir = line[pos+1, line.size - (pos+1)].chomp!  # last character is newline
+      tmpStatsDir = line[pos+1, line.size - (pos+1)].chomp!  # last character is newline
     end
+		if line.include?("logsDir")
+			pos = line.index('=')
+			tmpLogsDir = line[pos+1, line.size - (pos+1)].chomp!  # last character is newline
+		end
 
     if line.include?("httpFileHeader")
       pos = line.index('=')
@@ -450,7 +481,7 @@ confFile.readlines().each do |line|
       # process these lines as if they were a CSV file
       # format is: <operation>,<destination>,<interval>,<reps>
       tmpArray = CSV.parse_line(line)
-      tmpOps = Operation.new(tmpArray[0], tmpArray[1], tmpArray[2], tmpArray[3], tmpOutputDir, tmpHttpFileHeader, tmpPingFileHeader)
+      tmpOps = Operation.new(tmpArray[0], tmpArray[1], tmpArray[2], tmpArray[3], tmpStatsDir, tmpHttpFileHeader, tmpPingFileHeader)
       ops.push(tmpOps)
     end
 
@@ -462,15 +493,20 @@ end
 # show some output on what was loaded from the config file
 puts "I have " + ops.size.to_s + " operations to do"
 ops.each do |op|
-  #puts op.opType + "\t" + op.dest + "\t" + op.interval.to_s + "\t" + op.reps.to_s
+	#tmpStr = op.opType + ", " + op.dest + ", " + op.interval.to_s + ", " + op.reps.to_s
 end
 
+puts "tmpStatsDir: " + tmpStatsDir
+puts "tmpLogsDir: " + tmpLogsDir
 puts "tmpAlertTemplateLocation: " + tmpAlertTemplateLocation
 puts "tmpEmailAddresses: " + tmpEmailAddresses
 puts "tmpMaxPingsBeforeAlert: " + tmpMaxPingsBeforeAlert
 puts "tmpMaxHTTPBeforeAlert: " + tmpMaxHTTPBeforeAlert
 puts "tmpOperationsPerInstance: " + tmpOperationsPerInstance
 
+
+
+# check if the -i flag was given through the CLI, indicating that RCrawler will be running in an instanced mode
 tmpIIndex = ARGV.index("-i")
 instanceId = 0
 firstOp = 0
@@ -484,13 +520,12 @@ if tmpIIndex != nil
 	firstOp = instanceId * tmpOperationsPerInstance.to_i
 	lastOp = firstOp + tmpOperationsPerInstance.to_i - 1
 
-	# do some error correction
+	# do some error detection
 	if firstOp > ops.size
-		puts "Not enough operations for my instanceId, ops: #{ops.size}, instanceId: #{instanceId}"
+		puts "Not enough operations for my instanceId, ops: #{ops.size}, instanceId: #{instanceId}, tmpOperationsPerInstance: #{tmpOperationsPerInstance}"
 		exit
 	elsif lastOp >= ops.size
-		# this instance will be doing less operations than the others
-		lastOp = ops.size-1
+		lastOp = ops.size-1		# this instance will be doing less operations than the others
 	end
 
 end
@@ -498,9 +533,46 @@ end
 puts "Doing operations from index " + "#{firstOp}" + " to " + "#{lastOp}"
 
 
-# this alert object will be referenced by all the threads
+# these objects will be referenced by all the threads running the operations
+# initialise the Alerter object
 tmpAlertObj = Alerter.new(tmpEmailAddresses, tmpMaxPingsBeforeAlert, tmpMaxHTTPBeforeAlert)
 tmpAlertObj.readEmailTemplate(tmpAlertTemplateLocation)
+
+# initialise the Logger object, store logs in a separate directory for every instance
+# TODO: make it possible to select in config file: number of old logs to keep, maximum log file size, logging level
+#logFile = File.open(tmpLogsDir + "hehe.log", File::WRONLY | File::APPEND | File::CREAT)
+logFileDir = tmpLogsDir + instanceId.to_s + "/"
+unless Dir.exist?(logFileDir)
+	begin
+		#Dir.mkdir(logFileDir)
+		FileUtils.mkpath(logFileDir)	# if needed, this will create every single directory that does not exist yet, so that
+																	# the path will be created
+
+	rescue SystemCallError
+		puts "Could not create directory for log file, instance: #{instanceId.to_s}, exiting..."
+		exit
+	end
+end
+
+tmpLoggerObj = Logger.new(logFileDir + "hehe.log", 10, 1*1024*1024)
+# DEBUG < INFO < WARN < ERROR < FATAL < UNKNOWN
+tmpLoggerObj.level = Logger::DEBUG
+tmpLoggerObj.info("Logger has started")
+
+tmpLoggerObj.info("instanceId: #{instanceId}")
+tmpLoggerObj.info("I have " + ops.size.to_s + " operations to do")
+
+tmpLoggerObj.info("tmpStatsDir: " + tmpStatsDir)
+tmpLoggerObj.info("tmpLogsDir: " + tmpLogsDir)
+tmpLoggerObj.info("tmpAlertTemplateLocation: " + tmpAlertTemplateLocation)
+tmpLoggerObj.info("tmpEmailAddresses: " + tmpEmailAddresses)
+tmpLoggerObj.info("tmpMaxPingsBeforeAlert: " + tmpMaxPingsBeforeAlert)
+tmpLoggerObj.info("tmpMaxHTTPBeforeAlert: " + tmpMaxHTTPBeforeAlert)
+tmpLoggerObj.info("tmpOperationsPerInstance: " + tmpOperationsPerInstance)
+
+tmpLoggerObj.info("Doing operations from index " + "#{firstOp}" + " to " + "#{lastOp}")
+
+
 
 
 # create an array containing the threads that will run what is specified in the config file
@@ -510,7 +582,7 @@ crawlArray = Array.new
 #threadArray = (0...ops.size).map do |i| # this is equivalent to for (int i = 0; i < ops.size() i++)
 threadArray = (firstOp..lastOp).map do |i|
 
-  crawlArray[i] = Crawler.new(tmpAlertObj, i)
+  crawlArray[i] = Crawler.new(tmpAlertObj, tmpLoggerObj, i)
 
   Thread.new(i) do |i|
     if ops[i].opType == "PING"
@@ -519,54 +591,11 @@ threadArray = (firstOp..lastOp).map do |i|
       crawlArray[i].runHttpQueries(ops[i])
     else
       puts "I do not understand operation: " + ops[i].opType
+			tmpLoggerObj.error("I do not understand operation: " + ops[i].opType)
     end
 
   end
 end
 
+tmpLoggerObj.info("Starting #{threadArray.size} threads...")
 threadArray.each {|t| t.join}
-
-
-
-
-
-
-
-=begin
-t1 = Thread.new{crawlArray[0].runHttpQueries(ops[0])}
-t2 = Thread.new{crawlArray[1].runHttpQueries(ops[1])}
-t1.join
-t2.join
-=end
-
-
-=begin
-for i in 0...ops.size
-  puts crawlArray[i].httpUrl
-
-end
-
-# start the threads
-for i in 0...threadArray.size
-  threadArray[i].join
-end
-=end
-
-
-
-=begin
-testCrawler = Crawler.new(1)
-testCrawler.runPings(2, "216.58.205.110")
-
-
-# put the crawlers in different threads
-t1 = Thread.new{crawl1.runHttpQueries("https://yahoo.com", 720, 10)}
-t2 = Thread.new{crawl2.runHttpQueries("https://twitch.tv", 720, 10)}
-t3 = Thread.new{crawl3.runHttpQueries("https://youtube.com", 720, 10)}
-t4 = Thread.new{crawl4.runHttpQueries("https://stackoverflow.com", 720, 10)}
-
-t1.join
-t2.join
-t3.join
-t4.join
-=end

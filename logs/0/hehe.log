@@ -1,0 +1,1222 @@
+# Logfile created on 2018-06-12 19:48:53 +0100 by logger.rb/56438
+I, [2018-06-12T19:48:53.843771 #13356]  INFO -- : Logger has started
+I, [2018-06-12T19:48:53.843839 #13356]  INFO -- : instanceId: 0
+I, [2018-06-12T19:48:53.843881 #13356]  INFO -- : I have 20 operations to do
+I, [2018-06-12T19:48:53.843917 #13356]  INFO -- : tmpStatsDir: /Users/davide/Desktop/Code/RUBY/RCrawler/stats/
+I, [2018-06-12T19:48:53.843951 #13356]  INFO -- : tmpLogsDir: /Users/davide/Desktop/Code/RUBY/RCrawler/logs/
+I, [2018-06-12T19:48:53.843985 #13356]  INFO -- : tmpAlertTemplateLocation: /Users/davide/Desktop/Code/RUBY/RCrawler/alerts/template1.txt
+I, [2018-06-12T19:48:53.844019 #13356]  INFO -- : tmpEmailAddresses: dvdpnt16+alerts@gmail.com
+I, [2018-06-12T19:48:53.844052 #13356]  INFO -- : tmpMaxPingsBeforeAlert: 10
+I, [2018-06-12T19:48:53.844085 #13356]  INFO -- : tmpMaxHTTPBeforeAlert: 5
+I, [2018-06-12T19:48:53.844118 #13356]  INFO -- : tmpOperationsPerInstance: 10
+I, [2018-06-12T19:48:53.844153 #13356]  INFO -- : Doing operations from index 0 to 9
+D, [2018-06-12T19:48:53.844264 #13356] DEBUG -- : thrId: 0, #<Alerter:0x007f9458812b50 @emailAddresses="dvdpnt16+alerts@gmail.com", @maxPingsBeforeAlert="10", @maxHTTPBeforeAlert="5", @alertTemplatelocation="/Users/davide/Desktop/Code/RUBY/RCrawler/alerts/template1.txt", @alertTemplate="\noperation: <op>\ndestination: <dest>\nfailuresInARow: <fails>\nstartEpoch: <sEpoch>\nstartDate: <sDate>\n\n\nRCrawler\n">, #<Logger:0x007f945787bb88 @progname=nil, @level=0, @default_formatter=#<Logger::Formatter:0x007f945787bb60 @datetime_format=nil>, @formatter=nil, @logdev=#<Logger::LogDevice:0x007f945787bb10 @shift_size=1048576, @shift_age=10, @filename="/Users/davide/Desktop/Code/RUBY/RCrawler/logs/0/hehe.log", @dev=#<File:/Users/davide/Desktop/Code/RUBY/RCrawler/logs/0/hehe.log>, @mon_owner=nil, @mon_count=0, @mon_mutex=#<Thread::Mutex:0x007f945787bac0>>>
+D, [2018-06-12T19:48:53.844433 #13356] DEBUG -- : thrId: 1, #<Alerter:0x007f9458812b50 @emailAddresses="dvdpnt16+alerts@gmail.com", @maxPingsBeforeAlert="10", @maxHTTPBeforeAlert="5", @alertTemplatelocation="/Users/davide/Desktop/Code/RUBY/RCrawler/alerts/template1.txt", @alertTemplate="\noperation: <op>\ndestination: <dest>\nfailuresInARow: <fails>\nstartEpoch: <sEpoch>\nstartDate: <sDate>\n\n\nRCrawler\n">, #<Logger:0x007f945787bb88 @progname=nil, @level=0, @default_formatter=#<Logger::Formatter:0x007f945787bb60 @datetime_format=nil>, @formatter=nil, @logdev=#<Logger::LogDevice:0x007f945787bb10 @shift_size=1048576, @shift_age=10, @filename="/Users/davide/Desktop/Code/RUBY/RCrawler/logs/0/hehe.log", @dev=#<File:/Users/davide/Desktop/Code/RUBY/RCrawler/logs/0/hehe.log>, @mon_owner=nil, @mon_count=0, @mon_mutex=#<Thread::Mutex:0x007f945787bac0>>>
+D, [2018-06-12T19:48:53.844750 #13356] DEBUG -- : thrId: 0, pingOutFile: /Users/davide/Desktop/Code/RUBY/RCrawler/stats/ping_google.com_1528829333844.log
+D, [2018-06-12T19:48:53.844970 #13356] DEBUG -- : thrId: 2, #<Alerter:0x007f9458812b50 @emailAddresses="dvdpnt16+alerts@gmail.com", @maxPingsBeforeAlert="10", @maxHTTPBeforeAlert="5", @alertTemplatelocation="/Users/davide/Desktop/Code/RUBY/RCrawler/alerts/template1.txt", @alertTemplate="\noperation: <op>\ndestination: <dest>\nfailuresInARow: <fails>\nstartEpoch: <sEpoch>\nstartDate: <sDate>\n\n\nRCrawler\n">, #<Logger:0x007f945787bb88 @progname=nil, @level=0, @default_formatter=#<Logger::Formatter:0x007f945787bb60 @datetime_format=nil>, @formatter=nil, @logdev=#<Logger::LogDevice:0x007f945787bb10 @shift_size=1048576, @shift_age=10, @filename="/Users/davide/Desktop/Code/RUBY/RCrawler/logs/0/hehe.log", @dev=#<File:/Users/davide/Desktop/Code/RUBY/RCrawler/logs/0/hehe.log>, @mon_owner=nil, @mon_count=0, @mon_mutex=#<Thread::Mutex:0x007f945787bac0>>>
+D, [2018-06-12T19:48:53.847325 #13356] DEBUG -- : thrId: 1, pingOutFile: /Users/davide/Desktop/Code/RUBY/RCrawler/stats/ping_youtube.com_1528829333845.log
+D, [2018-06-12T19:48:53.847605 #13356] DEBUG -- : thrId: 3, #<Alerter:0x007f9458812b50 @emailAddresses="dvdpnt16+alerts@gmail.com", @maxPingsBeforeAlert="10", @maxHTTPBeforeAlert="5", @alertTemplatelocation="/Users/davide/Desktop/Code/RUBY/RCrawler/alerts/template1.txt", @alertTemplate="\noperation: <op>\ndestination: <dest>\nfailuresInARow: <fails>\nstartEpoch: <sEpoch>\nstartDate: <sDate>\n\n\nRCrawler\n">, #<Logger:0x007f945787bb88 @progname=nil, @level=0, @default_formatter=#<Logger::Formatter:0x007f945787bb60 @datetime_format=nil>, @formatter=nil, @logdev=#<Logger::LogDevice:0x007f945787bb10 @shift_size=1048576, @shift_age=10, @filename="/Users/davide/Desktop/Code/RUBY/RCrawler/logs/0/hehe.log", @dev=#<File:/Users/davide/Desktop/Code/RUBY/RCrawler/logs/0/hehe.log>, @mon_owner=nil, @mon_count=0, @mon_mutex=#<Thread::Mutex:0x007f945787bac0>>>
+D, [2018-06-12T19:48:53.848328 #13356] DEBUG -- : thrId: 2, pingOutFile: /Users/davide/Desktop/Code/RUBY/RCrawler/stats/ping_facebook.com_1528829333847.log
+D, [2018-06-12T19:48:53.850654 #13356] DEBUG -- : thrId: 4, #<Alerter:0x007f9458812b50 @emailAddresses="dvdpnt16+alerts@gmail.com", @maxPingsBeforeAlert="10", @maxHTTPBeforeAlert="5", @alertTemplatelocation="/Users/davide/Desktop/Code/RUBY/RCrawler/alerts/template1.txt", @alertTemplate="\noperation: <op>\ndestination: <dest>\nfailuresInARow: <fails>\nstartEpoch: <sEpoch>\nstartDate: <sDate>\n\n\nRCrawler\n">, #<Logger:0x007f945787bb88 @progname=nil, @level=0, @default_formatter=#<Logger::Formatter:0x007f945787bb60 @datetime_format=nil>, @formatter=nil, @logdev=#<Logger::LogDevice:0x007f945787bb10 @shift_size=1048576, @shift_age=10, @filename="/Users/davide/Desktop/Code/RUBY/RCrawler/logs/0/hehe.log", @dev=#<File:/Users/davide/Desktop/Code/RUBY/RCrawler/logs/0/hehe.log>, @mon_owner=nil, @mon_count=0, @mon_mutex=#<Thread::Mutex:0x007f945787bac0>>>
+D, [2018-06-12T19:48:53.851419 #13356] DEBUG -- : thrId: 3, pingOutFile: /Users/davide/Desktop/Code/RUBY/RCrawler/stats/ping_yahoo.com_1528829333851.log
+D, [2018-06-12T19:48:53.853916 #13356] DEBUG -- : thrId: 5, #<Alerter:0x007f9458812b50 @emailAddresses="dvdpnt16+alerts@gmail.com", @maxPingsBeforeAlert="10", @maxHTTPBeforeAlert="5", @alertTemplatelocation="/Users/davide/Desktop/Code/RUBY/RCrawler/alerts/template1.txt", @alertTemplate="\noperation: <op>\ndestination: <dest>\nfailuresInARow: <fails>\nstartEpoch: <sEpoch>\nstartDate: <sDate>\n\n\nRCrawler\n">, #<Logger:0x007f945787bb88 @progname=nil, @level=0, @default_formatter=#<Logger::Formatter:0x007f945787bb60 @datetime_format=nil>, @formatter=nil, @logdev=#<Logger::LogDevice:0x007f945787bb10 @shift_size=1048576, @shift_age=10, @filename="/Users/davide/Desktop/Code/RUBY/RCrawler/logs/0/hehe.log", @dev=#<File:/Users/davide/Desktop/Code/RUBY/RCrawler/logs/0/hehe.log>, @mon_owner=nil, @mon_count=0, @mon_mutex=#<Thread::Mutex:0x007f945787bac0>>>
+D, [2018-06-12T19:48:53.854520 #13356] DEBUG -- : thrId: 6, #<Alerter:0x007f9458812b50 @emailAddresses="dvdpnt16+alerts@gmail.com", @maxPingsBeforeAlert="10", @maxHTTPBeforeAlert="5", @alertTemplatelocation="/Users/davide/Desktop/Code/RUBY/RCrawler/alerts/template1.txt", @alertTemplate="\noperation: <op>\ndestination: <dest>\nfailuresInARow: <fails>\nstartEpoch: <sEpoch>\nstartDate: <sDate>\n\n\nRCrawler\n">, #<Logger:0x007f945787bb88 @progname=nil, @level=0, @default_formatter=#<Logger::Formatter:0x007f945787bb60 @datetime_format=nil>, @formatter=nil, @logdev=#<Logger::LogDevice:0x007f945787bb10 @shift_size=1048576, @shift_age=10, @filename="/Users/davide/Desktop/Code/RUBY/RCrawler/logs/0/hehe.log", @dev=#<File:/Users/davide/Desktop/Code/RUBY/RCrawler/logs/0/hehe.log>, @mon_owner=nil, @mon_count=0, @mon_mutex=#<Thread::Mutex:0x007f945787bac0>>>
+D, [2018-06-12T19:48:53.857452 #13356] DEBUG -- : thrId: 7, #<Alerter:0x007f9458812b50 @emailAddresses="dvdpnt16+alerts@gmail.com", @maxPingsBeforeAlert="10", @maxHTTPBeforeAlert="5", @alertTemplatelocation="/Users/davide/Desktop/Code/RUBY/RCrawler/alerts/template1.txt", @alertTemplate="\noperation: <op>\ndestination: <dest>\nfailuresInARow: <fails>\nstartEpoch: <sEpoch>\nstartDate: <sDate>\n\n\nRCrawler\n">, #<Logger:0x007f945787bb88 @progname=nil, @level=0, @default_formatter=#<Logger::Formatter:0x007f945787bb60 @datetime_format=nil>, @formatter=nil, @logdev=#<Logger::LogDevice:0x007f945787bb10 @shift_size=1048576, @shift_age=10, @filename="/Users/davide/Desktop/Code/RUBY/RCrawler/logs/0/hehe.log", @dev=#<File:/Users/davide/Desktop/Code/RUBY/RCrawler/logs/0/hehe.log>, @mon_owner=nil, @mon_count=0, @mon_mutex=#<Thread::Mutex:0x007f945787bac0>>>
+D, [2018-06-12T19:48:53.857589 #13356] DEBUG -- : thrId: 4, pingOutFile: /Users/davide/Desktop/Code/RUBY/RCrawler/stats/ping_nintendo.com_1528829333854.log
+D, [2018-06-12T19:48:53.857971 #13356] DEBUG -- : thrId: 8, #<Alerter:0x007f9458812b50 @emailAddresses="dvdpnt16+alerts@gmail.com", @maxPingsBeforeAlert="10", @maxHTTPBeforeAlert="5", @alertTemplatelocation="/Users/davide/Desktop/Code/RUBY/RCrawler/alerts/template1.txt", @alertTemplate="\noperation: <op>\ndestination: <dest>\nfailuresInARow: <fails>\nstartEpoch: <sEpoch>\nstartDate: <sDate>\n\n\nRCrawler\n">, #<Logger:0x007f945787bb88 @progname=nil, @level=0, @default_formatter=#<Logger::Formatter:0x007f945787bb60 @datetime_format=nil>, @formatter=nil, @logdev=#<Logger::LogDevice:0x007f945787bb10 @shift_size=1048576, @shift_age=10, @filename="/Users/davide/Desktop/Code/RUBY/RCrawler/logs/0/hehe.log", @dev=#<File:/Users/davide/Desktop/Code/RUBY/RCrawler/logs/0/hehe.log>, @mon_owner=nil, @mon_count=0, @mon_mutex=#<Thread::Mutex:0x007f945787bac0>>>
+D, [2018-06-12T19:48:53.858386 #13356] DEBUG -- : thrId: 5, pingOutFile: /Users/davide/Desktop/Code/RUBY/RCrawler/stats/ping_ruby-doc.org_1528829333857.log
+D, [2018-06-12T19:48:53.858684 #13356] DEBUG -- : thrId: 9, #<Alerter:0x007f9458812b50 @emailAddresses="dvdpnt16+alerts@gmail.com", @maxPingsBeforeAlert="10", @maxHTTPBeforeAlert="5", @alertTemplatelocation="/Users/davide/Desktop/Code/RUBY/RCrawler/alerts/template1.txt", @alertTemplate="\noperation: <op>\ndestination: <dest>\nfailuresInARow: <fails>\nstartEpoch: <sEpoch>\nstartDate: <sDate>\n\n\nRCrawler\n">, #<Logger:0x007f945787bb88 @progname=nil, @level=0, @default_formatter=#<Logger::Formatter:0x007f945787bb60 @datetime_format=nil>, @formatter=nil, @logdev=#<Logger::LogDevice:0x007f945787bb10 @shift_size=1048576, @shift_age=10, @filename="/Users/davide/Desktop/Code/RUBY/RCrawler/logs/0/hehe.log", @dev=#<File:/Users/davide/Desktop/Code/RUBY/RCrawler/logs/0/hehe.log>, @mon_owner=nil, @mon_count=0, @mon_mutex=#<Thread::Mutex:0x007f945787bac0>>>
+D, [2018-06-12T19:48:53.861396 #13356] DEBUG -- : thrId: 7, pingOutFile: /Users/davide/Desktop/Code/RUBY/RCrawler/stats/ping_twitch.tv_1528829333858.log
+D, [2018-06-12T19:48:53.864163 #13356] DEBUG -- : thrId: 8, pingOutFile: /Users/davide/Desktop/Code/RUBY/RCrawler/stats/ping_apple.com_1528829333861.log
+I, [2018-06-12T19:48:53.865246 #13356]  INFO -- : Starting 10 threads...
+D, [2018-06-12T19:48:53.865382 #13356] DEBUG -- : thrId: 6, pingOutFile: /Users/davide/Desktop/Code/RUBY/RCrawler/stats/ping_dropbox.com_1528829333857.log
+I, [2018-06-12T19:48:53.866070 #13356]  INFO -- : thrId: 0, 0, 0, google.com, latency: 10.966 ms
+D, [2018-06-12T19:48:53.870869 #13356] DEBUG -- : thrId: 9, pingOutFile: /Users/davide/Desktop/Code/RUBY/RCrawler/stats/ping_cisco.com_1528829333865.log
+D, [2018-06-12T19:48:53.874400 #13356] DEBUG -- : thrId: 0, clearing PING arrays...
+I, [2018-06-12T19:48:53.874535 #13356]  INFO -- : thrId: 1, 1, 0, youtube.com, latency: 10.075 ms
+D, [2018-06-12T19:48:53.880466 #13356] DEBUG -- : thrId: 1, clearing PING arrays...
+I, [2018-06-12T19:48:53.883706 #13356]  INFO -- : thrId: 7, 7, 0, twitch.tv, latency: 9.290 ms
+D, [2018-06-12T19:48:53.883861 #13356] DEBUG -- : thrId: 7, clearing PING arrays...
+I, [2018-06-12T19:48:53.887270 #13356]  INFO -- : thrId: 2, 2, 0, facebook.com, latency: 26.683 ms
+D, [2018-06-12T19:48:53.887401 #13356] DEBUG -- : thrId: 2, clearing PING arrays...
+I, [2018-06-12T19:48:53.907711 #13356]  INFO -- : thrId: 6, 6, 0, dropbox.com, latency: 10.396 ms
+D, [2018-06-12T19:48:53.907920 #13356] DEBUG -- : thrId: 6, clearing PING arrays...
+I, [2018-06-12T19:48:53.971804 #13356]  INFO -- : thrId: 3, 3, 0, yahoo.com, latency: 110.111 ms
+D, [2018-06-12T19:48:53.971966 #13356] DEBUG -- : thrId: 3, clearing PING arrays...
+I, [2018-06-12T19:48:53.985129 #13356]  INFO -- : thrId: 5, 5, 0, ruby-doc.org, latency: 115.504 ms
+D, [2018-06-12T19:48:53.985327 #13356] DEBUG -- : thrId: 5, clearing PING arrays...
+I, [2018-06-12T19:48:54.012909 #13356]  INFO -- : thrId: 9, 9, 0, cisco.com, latency: 122.654 ms
+D, [2018-06-12T19:48:54.013092 #13356] DEBUG -- : thrId: 9, clearing PING arrays...
+I, [2018-06-12T19:48:58.902017 #13356]  INFO -- : thrId: 0, 0, 1, google.com, latency: 10.188 ms
+I, [2018-06-12T19:48:58.904754 #13356]  INFO -- : thrId: 1, 1, 1, youtube.com, latency: 8.910 ms
+I, [2018-06-12T19:48:58.909044 #13356]  INFO -- : thrId: 7, 7, 1, twitch.tv, latency: 9.976 ms
+I, [2018-06-12T19:48:58.928440 #13356]  INFO -- : thrId: 2, 2, 1, facebook.com, latency: 27.321 ms
+I, [2018-06-12T19:48:58.931638 #13356]  INFO -- : thrId: 6, 6, 1, dropbox.com, latency: 10.442 ms
+I, [2018-06-12T19:48:59.095931 #13356]  INFO -- : thrId: 3, 3, 1, yahoo.com, latency: 109.890 ms
+I, [2018-06-12T19:48:59.116822 #13356]  INFO -- : thrId: 5, 5, 1, ruby-doc.org, latency: 115.145 ms
+I, [2018-06-12T19:48:59.145683 #13356]  INFO -- : thrId: 9, 9, 1, cisco.com, latency: 120.905 ms
+D, [2018-06-12T19:48:59.874306 #13356] DEBUG -- : thrId: 4, nintendo.com failCounter=1
+I, [2018-06-12T19:48:59.874709 #13356]  INFO -- : thrId: 4, 4, 0, nintendo.com, latency: -1 ms
+D, [2018-06-12T19:48:59.874809 #13356] DEBUG -- : thrId: 4, clearing PING arrays...
+D, [2018-06-12T19:48:59.879067 #13356] DEBUG -- : thrId: 8, apple.com failCounter=1
+I, [2018-06-12T19:48:59.879333 #13356]  INFO -- : thrId: 8, 8, 0, apple.com, latency: -1 ms
+D, [2018-06-12T19:48:59.879505 #13356] DEBUG -- : thrId: 8, clearing PING arrays...
+I, [2018-06-12T19:49:03.923700 #13356]  INFO -- : thrId: 0, 0, 2, google.com, latency: 9.762 ms
+I, [2018-06-12T19:49:03.928288 #13356]  INFO -- : thrId: 1, 1, 2, youtube.com, latency: 9.644 ms
+I, [2018-06-12T19:49:03.935479 #13356]  INFO -- : thrId: 7, 7, 2, twitch.tv, latency: 10.006 ms
+I, [2018-06-12T19:49:03.958505 #13356]  INFO -- : thrId: 6, 6, 2, dropbox.com, latency: 10.247 ms
+I, [2018-06-12T19:49:03.969057 #13356]  INFO -- : thrId: 2, 2, 2, facebook.com, latency: 27.035 ms
+I, [2018-06-12T19:49:04.219679 #13356]  INFO -- : thrId: 3, 3, 2, yahoo.com, latency: 109.714 ms
+I, [2018-06-12T19:49:04.242913 #13356]  INFO -- : thrId: 5, 5, 2, ruby-doc.org, latency: 115.295 ms
+I, [2018-06-12T19:49:04.283728 #13356]  INFO -- : thrId: 9, 9, 2, cisco.com, latency: 122.696 ms
+I, [2018-06-12T19:49:05.059641 #13356]  INFO -- : thrId: 4, 4, 1, nintendo.com, latency: 173.432 ms
+I, [2018-06-12T19:49:08.948581 #13356]  INFO -- : thrId: 0, 0, 3, google.com, latency: 9.982 ms
+I, [2018-06-12T19:49:08.952617 #13356]  INFO -- : thrId: 1, 1, 3, youtube.com, latency: 9.724 ms
+I, [2018-06-12T19:49:08.959148 #13356]  INFO -- : thrId: 7, 7, 3, twitch.tv, latency: 9.816 ms
+I, [2018-06-12T19:49:08.979465 #13356]  INFO -- : thrId: 6, 6, 3, dropbox.com, latency: 10.294 ms
+I, [2018-06-12T19:49:09.004317 #13356]  INFO -- : thrId: 2, 2, 3, facebook.com, latency: 27.113 ms
+I, [2018-06-12T19:49:09.343039 #13356]  INFO -- : thrId: 3, 3, 3, yahoo.com, latency: 110.918 ms
+I, [2018-06-12T19:49:09.372923 #13356]  INFO -- : thrId: 5, 5, 3, ruby-doc.org, latency: 115.212 ms
+I, [2018-06-12T19:49:09.417990 #13356]  INFO -- : thrId: 9, 9, 3, cisco.com, latency: 123.166 ms
+I, [2018-06-12T19:49:10.229975 #13356]  INFO -- : thrId: 4, 4, 2, nintendo.com, latency: 155.372 ms
+D, [2018-06-12T19:49:10.895089 #13356] DEBUG -- : thrId: 8, apple.com failCounter=2
+I, [2018-06-12T19:49:10.895355 #13356]  INFO -- : thrId: 8, 8, 1, apple.com, latency: -1 ms
+I, [2018-06-12T19:49:13.972169 #13356]  INFO -- : thrId: 0, 0, 4, google.com, latency: 9.248 ms
+I, [2018-06-12T19:49:13.975000 #13356]  INFO -- : thrId: 1, 1, 4, youtube.com, latency: 8.260 ms
+I, [2018-06-12T19:49:13.981295 #13356]  INFO -- : thrId: 7, 7, 4, twitch.tv, latency: 8.707 ms
+I, [2018-06-12T19:49:14.001744 #13356]  INFO -- : thrId: 6, 6, 4, dropbox.com, latency: 9.938 ms
+I, [2018-06-12T19:49:14.045429 #13356]  INFO -- : thrId: 2, 2, 4, facebook.com, latency: 28.210 ms
+I, [2018-06-12T19:49:14.464943 #13356]  INFO -- : thrId: 3, 3, 4, yahoo.com, latency: 111.226 ms
+I, [2018-06-12T19:49:14.500781 #13356]  INFO -- : thrId: 5, 5, 4, ruby-doc.org, latency: 116.188 ms
+I, [2018-06-12T19:49:14.557243 #13356]  INFO -- : thrId: 9, 9, 4, cisco.com, latency: 123.854 ms
+I, [2018-06-12T19:49:15.389331 #13356]  INFO -- : thrId: 4, 4, 3, nintendo.com, latency: 147.243 ms
+I, [2018-06-12T19:49:18.996873 #13356]  INFO -- : thrId: 0, 0, 5, google.com, latency: 9.864 ms
+I, [2018-06-12T19:49:18.998819 #13356]  INFO -- : thrId: 1, 1, 5, youtube.com, latency: 8.489 ms
+I, [2018-06-12T19:49:19.006708 #13356]  INFO -- : thrId: 7, 7, 5, twitch.tv, latency: 9.843 ms
+I, [2018-06-12T19:49:19.023606 #13356]  INFO -- : thrId: 6, 6, 5, dropbox.com, latency: 10.152 ms
+I, [2018-06-12T19:49:19.089299 #13356]  INFO -- : thrId: 2, 2, 5, facebook.com, latency: 28.028 ms
+I, [2018-06-12T19:49:19.589594 #13356]  INFO -- : thrId: 3, 3, 5, yahoo.com, latency: 109.604 ms
+I, [2018-06-12T19:49:19.627915 #13356]  INFO -- : thrId: 5, 5, 5, ruby-doc.org, latency: 114.718 ms
+I, [2018-06-12T19:49:19.693868 #13356]  INFO -- : thrId: 9, 9, 5, cisco.com, latency: 122.166 ms
+I, [2018-06-12T19:49:20.551000 #13356]  INFO -- : thrId: 4, 4, 4, nintendo.com, latency: 146.292 ms
+D, [2018-06-12T19:49:21.912278 #13356] DEBUG -- : thrId: 8, apple.com failCounter=3
+I, [2018-06-12T19:49:21.912530 #13356]  INFO -- : thrId: 8, 8, 2, apple.com, latency: -1 ms
+I, [2018-06-12T19:49:24.017044 #13356]  INFO -- : thrId: 0, 0, 6, google.com, latency: 9.729 ms
+I, [2018-06-12T19:49:24.019680 #13356]  INFO -- : thrId: 1, 1, 6, youtube.com, latency: 8.932 ms
+I, [2018-06-12T19:49:24.023945 #13356]  INFO -- : thrId: 7, 7, 6, twitch.tv, latency: 9.171 ms
+I, [2018-06-12T19:49:24.041294 #13356]  INFO -- : thrId: 6, 6, 6, dropbox.com, latency: 10.199 ms
+I, [2018-06-12T19:49:24.130087 #13356]  INFO -- : thrId: 2, 2, 6, facebook.com, latency: 26.352 ms
+I, [2018-06-12T19:49:24.711872 #13356]  INFO -- : thrId: 3, 3, 6, yahoo.com, latency: 111.086 ms
+I, [2018-06-12T19:49:24.761166 #13356]  INFO -- : thrId: 5, 5, 6, ruby-doc.org, latency: 116.775 ms
+I, [2018-06-12T19:49:24.833310 #13356]  INFO -- : thrId: 9, 9, 6, cisco.com, latency: 126.578 ms
+I, [2018-06-12T19:49:25.707801 #13356]  INFO -- : thrId: 4, 4, 5, nintendo.com, latency: 146.240 ms
+I, [2018-06-12T19:49:29.033152 #13356]  INFO -- : thrId: 0, 0, 7, google.com, latency: 8.332 ms
+I, [2018-06-12T19:49:29.037368 #13356]  INFO -- : thrId: 1, 1, 7, youtube.com, latency: 10.479 ms
+I, [2018-06-12T19:49:29.044130 #13356]  INFO -- : thrId: 7, 7, 7, twitch.tv, latency: 8.894 ms
+I, [2018-06-12T19:49:29.063143 #13356]  INFO -- : thrId: 6, 6, 7, dropbox.com, latency: 11.186 ms
+I, [2018-06-12T19:49:29.165867 #13356]  INFO -- : thrId: 2, 2, 7, facebook.com, latency: 27.118 ms
+I, [2018-06-12T19:49:29.839469 #13356]  INFO -- : thrId: 3, 3, 7, yahoo.com, latency: 113.001 ms
+I, [2018-06-12T19:49:29.891215 #13356]  INFO -- : thrId: 5, 5, 7, ruby-doc.org, latency: 117.289 ms
+I, [2018-06-12T19:49:29.968306 #13356]  INFO -- : thrId: 9, 9, 7, cisco.com, latency: 122.266 ms
+I, [2018-06-12T19:49:30.875201 #13356]  INFO -- : thrId: 4, 4, 6, nintendo.com, latency: 153.542 ms
+D, [2018-06-12T19:49:32.929528 #13356] DEBUG -- : thrId: 8, apple.com failCounter=4
+I, [2018-06-12T19:49:32.929906 #13356]  INFO -- : thrId: 8, 8, 3, apple.com, latency: -1 ms
+I, [2018-06-12T19:49:34.057787 #13356]  INFO -- : thrId: 0, 0, 8, google.com, latency: 10.451 ms
+I, [2018-06-12T19:49:34.060756 #13356]  INFO -- : thrId: 1, 1, 8, youtube.com, latency: 9.754 ms
+I, [2018-06-12T19:49:34.065840 #13356]  INFO -- : thrId: 7, 7, 8, twitch.tv, latency: 9.209 ms
+I, [2018-06-12T19:49:34.082874 #13356]  INFO -- : thrId: 6, 6, 8, dropbox.com, latency: 10.441 ms
+I, [2018-06-12T19:49:34.209513 #13356]  INFO -- : thrId: 2, 2, 8, facebook.com, latency: 28.397 ms
+I, [2018-06-12T19:49:34.962505 #13356]  INFO -- : thrId: 3, 3, 8, yahoo.com, latency: 111.833 ms
+I, [2018-06-12T19:49:35.021443 #13356]  INFO -- : thrId: 5, 5, 8, ruby-doc.org, latency: 115.517 ms
+I, [2018-06-12T19:49:35.102976 #13356]  INFO -- : thrId: 9, 9, 8, cisco.com, latency: 122.661 ms
+I, [2018-06-12T19:49:39.090288 #13356]  INFO -- : thrId: 0, 0, 9, google.com, latency: 19.024 ms
+I, [2018-06-12T19:49:39.094238 #13356]  INFO -- : thrId: 1, 1, 9, youtube.com, latency: 20.312 ms
+I, [2018-06-12T19:49:39.096248 #13356]  INFO -- : thrId: 7, 7, 9, twitch.tv, latency: 18.469 ms
+I, [2018-06-12T19:49:39.118180 #13356]  INFO -- : thrId: 6, 6, 9, dropbox.com, latency: 20.108 ms
+I, [2018-06-12T19:49:39.249038 #13356]  INFO -- : thrId: 2, 2, 9, facebook.com, latency: 27.113 ms
+I, [2018-06-12T19:49:40.084068 #13356]  INFO -- : thrId: 3, 3, 9, yahoo.com, latency: 109.803 ms
+I, [2018-06-12T19:49:40.150526 #13356]  INFO -- : thrId: 5, 5, 9, ruby-doc.org, latency: 117.952 ms
+I, [2018-06-12T19:49:40.232167 #13356]  INFO -- : thrId: 9, 9, 9, cisco.com, latency: 121.304 ms
+D, [2018-06-12T19:49:41.943992 #13356] DEBUG -- : thrId: 4, nintendo.com failCounter=1
+I, [2018-06-12T19:49:41.944290 #13356]  INFO -- : thrId: 4, 4, 7, nintendo.com, latency: -1 ms
+D, [2018-06-12T19:49:43.945551 #13356] DEBUG -- : thrId: 8, apple.com failCounter=5
+I, [2018-06-12T19:49:43.945790 #13356]  INFO -- : thrId: 8, 8, 4, apple.com, latency: -1 ms
+I, [2018-06-12T19:49:44.118494 #13356]  INFO -- : thrId: 1, 1, 10, youtube.com, latency: 11.832 ms
+I, [2018-06-12T19:49:44.118699 #13356]  INFO -- : thrId: 0, 0, 10, google.com, latency: 8.603 ms
+I, [2018-06-12T19:49:44.123210 #13356]  INFO -- : thrId: 7, 7, 10, twitch.tv, latency: 8.643 ms
+I, [2018-06-12T19:49:44.138922 #13356]  INFO -- : thrId: 6, 6, 10, dropbox.com, latency: 10.442 ms
+I, [2018-06-12T19:49:44.290674 #13356]  INFO -- : thrId: 2, 2, 10, facebook.com, latency: 27.173 ms
+I, [2018-06-12T19:49:45.216913 #13356]  INFO -- : thrId: 3, 3, 10, yahoo.com, latency: 118.418 ms
+I, [2018-06-12T19:49:45.288825 #13356]  INFO -- : thrId: 5, 5, 10, ruby-doc.org, latency: 126.302 ms
+I, [2018-06-12T19:49:45.379661 #13356]  INFO -- : thrId: 9, 9, 10, cisco.com, latency: 131.307 ms
+I, [2018-06-12T19:49:49.141003 #13356]  INFO -- : thrId: 1, 1, 11, youtube.com, latency: 9.139 ms
+I, [2018-06-12T19:49:49.148478 #13356]  INFO -- : thrId: 0, 0, 11, google.com, latency: 8.220 ms
+I, [2018-06-12T19:49:49.151128 #13356]  INFO -- : thrId: 7, 7, 11, twitch.tv, latency: 9.747 ms
+I, [2018-06-12T19:49:49.165431 #13356]  INFO -- : thrId: 6, 6, 11, dropbox.com, latency: 9.818 ms
+I, [2018-06-12T19:49:49.331674 #13356]  INFO -- : thrId: 2, 2, 11, facebook.com, latency: 27.785 ms
+I, [2018-06-12T19:49:50.341742 #13356]  INFO -- : thrId: 3, 3, 11, yahoo.com, latency: 108.815 ms
+I, [2018-06-12T19:49:50.419027 #13356]  INFO -- : thrId: 5, 5, 11, ruby-doc.org, latency: 114.813 ms
+I, [2018-06-12T19:49:50.512135 #13356]  INFO -- : thrId: 9, 9, 11, cisco.com, latency: 121.669 ms
+D, [2018-06-12T19:49:52.962344 #13356] DEBUG -- : thrId: 4, nintendo.com failCounter=2
+I, [2018-06-12T19:49:52.962628 #13356]  INFO -- : thrId: 4, 4, 8, nintendo.com, latency: -1 ms
+I, [2018-06-12T19:49:54.172791 #13356]  INFO -- : thrId: 1, 1, 12, youtube.com, latency: 16.959 ms
+I, [2018-06-12T19:49:54.174091 #13356]  INFO -- : thrId: 0, 0, 12, google.com, latency: 9.941 ms
+I, [2018-06-12T19:49:54.177467 #13356]  INFO -- : thrId: 7, 7, 12, twitch.tv, latency: 9.062 ms
+I, [2018-06-12T19:49:54.194961 #13356]  INFO -- : thrId: 6, 6, 12, dropbox.com, latency: 9.626 ms
+I, [2018-06-12T19:49:54.383979 #13356]  INFO -- : thrId: 2, 2, 12, facebook.com, latency: 40.079 ms
+D, [2018-06-12T19:49:54.962564 #13356] DEBUG -- : thrId: 8, apple.com failCounter=6
+I, [2018-06-12T19:49:54.962820 #13356]  INFO -- : thrId: 8, 8, 5, apple.com, latency: -1 ms
+I, [2018-06-12T19:49:55.465867 #13356]  INFO -- : thrId: 3, 3, 12, yahoo.com, latency: 113.573 ms
+I, [2018-06-12T19:49:55.558752 #13356]  INFO -- : thrId: 5, 5, 12, ruby-doc.org, latency: 123.947 ms
+I, [2018-06-12T19:49:55.651557 #13356]  INFO -- : thrId: 9, 9, 12, cisco.com, latency: 130.928 ms
+I, [2018-06-12T19:49:59.197061 #13356]  INFO -- : thrId: 0, 0, 13, google.com, latency: 8.537 ms
+I, [2018-06-12T19:49:59.201246 #13356]  INFO -- : thrId: 1, 1, 13, youtube.com, latency: 8.426 ms
+I, [2018-06-12T19:49:59.202951 #13356]  INFO -- : thrId: 7, 7, 13, twitch.tv, latency: 8.814 ms
+I, [2018-06-12T19:49:59.216147 #13356]  INFO -- : thrId: 6, 6, 13, dropbox.com, latency: 10.425 ms
+I, [2018-06-12T19:49:59.425899 #13356]  INFO -- : thrId: 2, 2, 13, facebook.com, latency: 26.398 ms
+I, [2018-06-12T19:50:00.589250 #13356]  INFO -- : thrId: 3, 3, 13, yahoo.com, latency: 109.138 ms
+I, [2018-06-12T19:50:00.688859 #13356]  INFO -- : thrId: 5, 5, 13, ruby-doc.org, latency: 116.341 ms
+I, [2018-06-12T19:50:00.785353 #13356]  INFO -- : thrId: 9, 9, 13, cisco.com, latency: 123.277 ms
+D, [2018-06-12T19:50:03.980955 #13356] DEBUG -- : thrId: 4, nintendo.com failCounter=3
+I, [2018-06-12T19:50:03.981245 #13356]  INFO -- : thrId: 4, 4, 9, nintendo.com, latency: -1 ms
+I, [2018-06-12T19:50:04.223449 #13356]  INFO -- : thrId: 0, 0, 14, google.com, latency: 10.061 ms
+I, [2018-06-12T19:50:04.226016 #13356]  INFO -- : thrId: 1, 1, 14, youtube.com, latency: 8.854 ms
+I, [2018-06-12T19:50:04.231968 #13356]  INFO -- : thrId: 7, 7, 14, twitch.tv, latency: 10.426 ms
+I, [2018-06-12T19:50:04.239051 #13356]  INFO -- : thrId: 6, 6, 14, dropbox.com, latency: 10.991 ms
+I, [2018-06-12T19:50:04.552541 #13356]  INFO -- : thrId: 2, 2, 14, facebook.com, latency: 114.854 ms
+I, [2018-06-12T19:50:05.715405 #13356]  INFO -- : thrId: 3, 3, 14, yahoo.com, latency: 110.880 ms
+I, [2018-06-12T19:50:05.819937 #13356]  INFO -- : thrId: 5, 5, 14, ruby-doc.org, latency: 116.177 ms
+I, [2018-06-12T19:50:05.921884 #13356]  INFO -- : thrId: 9, 9, 14, cisco.com, latency: 122.639 ms
+D, [2018-06-12T19:50:05.976644 #13356] DEBUG -- : thrId: 8, apple.com failCounter=7
+I, [2018-06-12T19:50:05.976854 #13356]  INFO -- : thrId: 8, 8, 6, apple.com, latency: -1 ms
+I, [2018-06-12T19:50:09.250036 #13356]  INFO -- : thrId: 0, 0, 15, google.com, latency: 9.022 ms
+I, [2018-06-12T19:50:09.252915 #13356]  INFO -- : thrId: 1, 1, 15, youtube.com, latency: 8.704 ms
+I, [2018-06-12T19:50:09.256192 #13356]  INFO -- : thrId: 7, 7, 15, twitch.tv, latency: 9.337 ms
+I, [2018-06-12T19:50:09.271314 #13356]  INFO -- : thrId: 6, 6, 15, dropbox.com, latency: 10.020 ms
+I, [2018-06-12T19:50:09.591102 #13356]  INFO -- : thrId: 2, 2, 15, facebook.com, latency: 27.863 ms
+I, [2018-06-12T19:50:10.841881 #13356]  INFO -- : thrId: 3, 3, 15, yahoo.com, latency: 110.700 ms
+I, [2018-06-12T19:50:10.950508 #13356]  INFO -- : thrId: 5, 5, 15, ruby-doc.org, latency: 116.184 ms
+I, [2018-06-12T19:50:11.057926 #13356]  INFO -- : thrId: 9, 9, 15, cisco.com, latency: 122.640 ms
+I, [2018-06-12T19:50:14.278783 #13356]  INFO -- : thrId: 0, 0, 16, google.com, latency: 9.816 ms
+I, [2018-06-12T19:50:14.281374 #13356]  INFO -- : thrId: 1, 1, 16, youtube.com, latency: 10.949 ms
+I, [2018-06-12T19:50:14.285876 #13356]  INFO -- : thrId: 7, 7, 16, twitch.tv, latency: 10.064 ms
+I, [2018-06-12T19:50:14.291141 #13356]  INFO -- : thrId: 6, 6, 16, dropbox.com, latency: 10.496 ms
+I, [2018-06-12T19:50:14.626648 #13356]  INFO -- : thrId: 2, 2, 16, facebook.com, latency: 28.244 ms
+D, [2018-06-12T19:50:14.997940 #13356] DEBUG -- : thrId: 4, nintendo.com failCounter=4
+I, [2018-06-12T19:50:14.998235 #13356]  INFO -- : thrId: 4, 4, 10, nintendo.com, latency: -1 ms
+I, [2018-06-12T19:50:15.963654 #13356]  INFO -- : thrId: 3, 3, 16, yahoo.com, latency: 110.424 ms
+I, [2018-06-12T19:50:16.082964 #13356]  INFO -- : thrId: 5, 5, 16, ruby-doc.org, latency: 117.935 ms
+I, [2018-06-12T19:50:16.187544 #13356]  INFO -- : thrId: 9, 9, 16, cisco.com, latency: 122.623 ms
+D, [2018-06-12T19:50:17.000647 #13356] DEBUG -- : thrId: 8, apple.com failCounter=8
+I, [2018-06-12T19:50:17.000935 #13356]  INFO -- : thrId: 8, 8, 7, apple.com, latency: -1 ms
+I, [2018-06-12T19:50:19.297809 #13356]  INFO -- : thrId: 0, 0, 17, google.com, latency: 10.206 ms
+I, [2018-06-12T19:50:19.298978 #13356]  INFO -- : thrId: 1, 1, 17, youtube.com, latency: 9.909 ms
+I, [2018-06-12T19:50:19.301645 #13356]  INFO -- : thrId: 7, 7, 17, twitch.tv, latency: 9.417 ms
+I, [2018-06-12T19:50:19.313168 #13356]  INFO -- : thrId: 6, 6, 17, dropbox.com, latency: 10.050 ms
+I, [2018-06-12T19:50:19.667156 #13356]  INFO -- : thrId: 2, 2, 17, facebook.com, latency: 28.274 ms
+I, [2018-06-12T19:50:21.085549 #13356]  INFO -- : thrId: 3, 3, 17, yahoo.com, latency: 110.563 ms
+I, [2018-06-12T19:50:21.208183 #13356]  INFO -- : thrId: 5, 5, 17, ruby-doc.org, latency: 116.264 ms
+I, [2018-06-12T19:50:21.319979 #13356]  INFO -- : thrId: 9, 9, 17, cisco.com, latency: 123.480 ms
+I, [2018-06-12T19:50:24.321018 #13356]  INFO -- : thrId: 0, 0, 18, google.com, latency: 9.130 ms
+I, [2018-06-12T19:50:24.324391 #13356]  INFO -- : thrId: 7, 7, 18, twitch.tv, latency: 9.478 ms
+I, [2018-06-12T19:50:24.328730 #13356]  INFO -- : thrId: 1, 1, 18, youtube.com, latency: 10.087 ms
+I, [2018-06-12T19:50:24.335138 #13356]  INFO -- : thrId: 6, 6, 18, dropbox.com, latency: 9.427 ms
+I, [2018-06-12T19:50:24.706415 #13356]  INFO -- : thrId: 2, 2, 18, facebook.com, latency: 27.322 ms
+D, [2018-06-12T19:50:26.015071 #13356] DEBUG -- : thrId: 4, nintendo.com failCounter=5
+I, [2018-06-12T19:50:26.015395 #13356]  INFO -- : thrId: 4, 4, 11, nintendo.com, latency: -1 ms
+I, [2018-06-12T19:50:26.212658 #13356]  INFO -- : thrId: 3, 3, 18, yahoo.com, latency: 110.920 ms
+I, [2018-06-12T19:50:26.336160 #13356]  INFO -- : thrId: 5, 5, 18, ruby-doc.org, latency: 116.355 ms
+I, [2018-06-12T19:50:26.453346 #13356]  INFO -- : thrId: 9, 9, 18, cisco.com, latency: 121.670 ms
+D, [2018-06-12T19:50:28.018022 #13356] DEBUG -- : thrId: 8, apple.com failCounter=9
+I, [2018-06-12T19:50:28.018301 #13356]  INFO -- : thrId: 8, 8, 8, apple.com, latency: -1 ms
+I, [2018-06-12T19:50:29.341588 #13356]  INFO -- : thrId: 0, 0, 19, google.com, latency: 9.889 ms
+I, [2018-06-12T19:50:29.347077 #13356]  INFO -- : thrId: 7, 7, 19, twitch.tv, latency: 9.444 ms
+I, [2018-06-12T19:50:29.349386 #13356]  INFO -- : thrId: 1, 1, 19, youtube.com, latency: 9.260 ms
+I, [2018-06-12T19:50:29.355779 #13356]  INFO -- : thrId: 6, 6, 19, dropbox.com, latency: 10.480 ms
+I, [2018-06-12T19:50:29.749569 #13356]  INFO -- : thrId: 2, 2, 19, facebook.com, latency: 28.867 ms
+I, [2018-06-12T19:50:31.333383 #13356]  INFO -- : thrId: 3, 3, 19, yahoo.com, latency: 109.760 ms
+I, [2018-06-12T19:50:31.464606 #13356]  INFO -- : thrId: 5, 5, 19, ruby-doc.org, latency: 116.754 ms
+I, [2018-06-12T19:50:31.586356 #13356]  INFO -- : thrId: 9, 9, 19, cisco.com, latency: 125.597 ms
+I, [2018-06-12T19:50:34.362666 #13356]  INFO -- : thrId: 0, 0, 20, google.com, latency: 9.365 ms
+I, [2018-06-12T19:50:34.368226 #13356]  INFO -- : thrId: 7, 7, 20, twitch.tv, latency: 8.954 ms
+I, [2018-06-12T19:50:34.373493 #13356]  INFO -- : thrId: 1, 1, 20, youtube.com, latency: 8.952 ms
+I, [2018-06-12T19:50:34.378117 #13356]  INFO -- : thrId: 6, 6, 20, dropbox.com, latency: 10.182 ms
+I, [2018-06-12T19:50:34.789065 #13356]  INFO -- : thrId: 2, 2, 20, facebook.com, latency: 24.492 ms
+I, [2018-06-12T19:50:36.455244 #13356]  INFO -- : thrId: 3, 3, 20, yahoo.com, latency: 110.127 ms
+I, [2018-06-12T19:50:36.596302 #13356]  INFO -- : thrId: 5, 5, 20, ruby-doc.org, latency: 115.591 ms
+I, [2018-06-12T19:50:36.726126 #13356]  INFO -- : thrId: 9, 9, 20, cisco.com, latency: 123.688 ms
+D, [2018-06-12T19:50:37.036197 #13356] DEBUG -- : thrId: 4, nintendo.com failCounter=6
+I, [2018-06-12T19:50:37.036441 #13356]  INFO -- : thrId: 4, 4, 12, nintendo.com, latency: -1 ms
+D, [2018-06-12T19:50:39.032652 #13356] DEBUG -- : thrId: 8, apple.com failCounter=10
+I, [2018-06-12T19:50:39.096841 #13356]  INFO -- : thrId: 8, PING Alert sent, apple.com
+I, [2018-06-12T19:50:39.097056 #13356]  INFO -- : thrId: 8, 8, 9, apple.com, latency: -1 ms
+I, [2018-06-12T19:50:39.384093 #13356]  INFO -- : thrId: 0, 0, 21, google.com, latency: 9.234 ms
+I, [2018-06-12T19:50:39.389438 #13356]  INFO -- : thrId: 7, 7, 21, twitch.tv, latency: 9.153 ms
+I, [2018-06-12T19:50:39.391403 #13356]  INFO -- : thrId: 1, 1, 21, youtube.com, latency: 8.895 ms
+I, [2018-06-12T19:50:39.396030 #13356]  INFO -- : thrId: 6, 6, 21, dropbox.com, latency: 10.440 ms
+I, [2018-06-12T19:50:39.827281 #13356]  INFO -- : thrId: 2, 2, 21, facebook.com, latency: 24.890 ms
+I, [2018-06-12T19:50:41.575854 #13356]  INFO -- : thrId: 3, 3, 21, yahoo.com, latency: 110.002 ms
+I, [2018-06-12T19:50:41.720014 #13356]  INFO -- : thrId: 5, 5, 21, ruby-doc.org, latency: 116.642 ms
+I, [2018-06-12T19:50:41.864922 #13356]  INFO -- : thrId: 9, 9, 21, cisco.com, latency: 123.626 ms
+I, [2018-06-12T19:50:44.408089 #13356]  INFO -- : thrId: 0, 0, 22, google.com, latency: 8.801 ms
+I, [2018-06-12T19:50:44.413740 #13356]  INFO -- : thrId: 7, 7, 22, twitch.tv, latency: 9.593 ms
+I, [2018-06-12T19:50:44.416496 #13356]  INFO -- : thrId: 1, 1, 22, youtube.com, latency: 9.616 ms
+I, [2018-06-12T19:50:44.438508 #13356]  INFO -- : thrId: 6, 6, 22, dropbox.com, latency: 11.606 ms
+I, [2018-06-12T19:50:44.868374 #13356]  INFO -- : thrId: 2, 2, 22, facebook.com, latency: 25.099 ms
+I, [2018-06-12T19:50:46.696517 #13356]  INFO -- : thrId: 3, 3, 22, yahoo.com, latency: 108.991 ms
+I, [2018-06-12T19:50:46.845962 #13356]  INFO -- : thrId: 5, 5, 22, ruby-doc.org, latency: 116.573 ms
+I, [2018-06-12T19:50:47.001111 #13356]  INFO -- : thrId: 9, 9, 22, cisco.com, latency: 122.291 ms
+D, [2018-06-12T19:50:48.052578 #13356] DEBUG -- : thrId: 4, nintendo.com failCounter=7
+I, [2018-06-12T19:50:48.052986 #13356]  INFO -- : thrId: 4, 4, 13, nintendo.com, latency: -1 ms
+I, [2018-06-12T19:50:49.430501 #13356]  INFO -- : thrId: 0, 0, 23, google.com, latency: 10.404 ms
+I, [2018-06-12T19:50:49.437712 #13356]  INFO -- : thrId: 7, 7, 23, twitch.tv, latency: 9.024 ms
+I, [2018-06-12T19:50:49.443630 #13356]  INFO -- : thrId: 1, 1, 23, youtube.com, latency: 9.527 ms
+I, [2018-06-12T19:50:49.460005 #13356]  INFO -- : thrId: 6, 6, 23, dropbox.com, latency: 10.229 ms
+I, [2018-06-12T19:50:49.905772 #13356]  INFO -- : thrId: 2, 2, 23, facebook.com, latency: 25.838 ms
+D, [2018-06-12T19:50:50.109344 #13356] DEBUG -- : thrId: 8, apple.com failCounter=11
+I, [2018-06-12T19:50:50.109596 #13356]  INFO -- : thrId: 8, 8, 10, apple.com, latency: -1 ms
+I, [2018-06-12T19:50:51.820385 #13356]  INFO -- : thrId: 3, 3, 23, yahoo.com, latency: 110.656 ms
+I, [2018-06-12T19:50:51.971453 #13356]  INFO -- : thrId: 5, 5, 23, ruby-doc.org, latency: 115.881 ms
+I, [2018-06-12T19:50:52.140220 #13356]  INFO -- : thrId: 9, 9, 23, cisco.com, latency: 123.305 ms
+I, [2018-06-12T19:50:54.453864 #13356]  INFO -- : thrId: 0, 0, 24, google.com, latency: 9.028 ms
+I, [2018-06-12T19:50:54.459219 #13356]  INFO -- : thrId: 7, 7, 24, twitch.tv, latency: 9.035 ms
+I, [2018-06-12T19:50:54.463397 #13356]  INFO -- : thrId: 1, 1, 24, youtube.com, latency: 9.534 ms
+I, [2018-06-12T19:50:54.476184 #13356]  INFO -- : thrId: 6, 6, 24, dropbox.com, latency: 9.579 ms
+I, [2018-06-12T19:50:54.942106 #13356]  INFO -- : thrId: 2, 2, 24, facebook.com, latency: 25.074 ms
+I, [2018-06-12T19:50:56.942688 #13356]  INFO -- : thrId: 3, 3, 24, yahoo.com, latency: 109.956 ms
+I, [2018-06-12T19:50:57.101521 #13356]  INFO -- : thrId: 5, 5, 24, ruby-doc.org, latency: 116.084 ms
+I, [2018-06-12T19:50:57.274790 #13356]  INFO -- : thrId: 9, 9, 24, cisco.com, latency: 122.708 ms
+D, [2018-06-12T19:50:59.097135 #13356] DEBUG -- : thrId: 4, nintendo.com failCounter=8
+I, [2018-06-12T19:50:59.097456 #13356]  INFO -- : thrId: 4, 4, 14, nintendo.com, latency: -1 ms
+I, [2018-06-12T19:50:59.483611 #13356]  INFO -- : thrId: 0, 0, 25, google.com, latency: 10.540 ms
+I, [2018-06-12T19:50:59.484349 #13356]  INFO -- : thrId: 7, 7, 25, twitch.tv, latency: 9.145 ms
+I, [2018-06-12T19:50:59.486135 #13356]  INFO -- : thrId: 1, 1, 25, youtube.com, latency: 9.399 ms
+I, [2018-06-12T19:50:59.497449 #13356]  INFO -- : thrId: 6, 6, 25, dropbox.com, latency: 9.878 ms
+I, [2018-06-12T19:50:59.980931 #13356]  INFO -- : thrId: 2, 2, 25, facebook.com, latency: 25.729 ms
+D, [2018-06-12T19:51:01.135246 #13356] DEBUG -- : thrId: 8, apple.com failCounter=12
+I, [2018-06-12T19:51:01.135755 #13356]  INFO -- : thrId: 8, 8, 11, apple.com, latency: -1 ms
+I, [2018-06-12T19:51:02.068167 #13356]  INFO -- : thrId: 3, 3, 25, yahoo.com, latency: 110.832 ms
+I, [2018-06-12T19:51:02.231763 #13356]  INFO -- : thrId: 5, 5, 25, ruby-doc.org, latency: 116.787 ms
+I, [2018-06-12T19:51:02.409150 #13356]  INFO -- : thrId: 9, 9, 25, cisco.com, latency: 123.683 ms
+I, [2018-06-12T19:51:04.506910 #13356]  INFO -- : thrId: 0, 0, 26, google.com, latency: 9.198 ms
+I, [2018-06-12T19:51:04.509913 #13356]  INFO -- : thrId: 1, 1, 26, youtube.com, latency: 9.780 ms
+I, [2018-06-12T19:51:04.512009 #13356]  INFO -- : thrId: 7, 7, 26, twitch.tv, latency: 8.913 ms
+I, [2018-06-12T19:51:04.518489 #13356]  INFO -- : thrId: 6, 6, 26, dropbox.com, latency: 9.946 ms
+I, [2018-06-12T19:51:05.019727 #13356]  INFO -- : thrId: 2, 2, 26, facebook.com, latency: 24.377 ms
+I, [2018-06-12T19:51:07.191524 #13356]  INFO -- : thrId: 3, 3, 26, yahoo.com, latency: 109.602 ms
+I, [2018-06-12T19:51:07.362890 #13356]  INFO -- : thrId: 5, 5, 26, ruby-doc.org, latency: 117.563 ms
+I, [2018-06-12T19:51:07.539292 #13356]  INFO -- : thrId: 9, 9, 26, cisco.com, latency: 122.817 ms
+I, [2018-06-12T19:51:09.532882 #13356]  INFO -- : thrId: 0, 0, 27, google.com, latency: 11.230 ms
+I, [2018-06-12T19:51:09.534322 #13356]  INFO -- : thrId: 1, 1, 27, youtube.com, latency: 8.460 ms
+I, [2018-06-12T19:51:09.539071 #13356]  INFO -- : thrId: 7, 7, 27, twitch.tv, latency: 9.766 ms
+I, [2018-06-12T19:51:09.541158 #13356]  INFO -- : thrId: 6, 6, 27, dropbox.com, latency: 9.387 ms
+I, [2018-06-12T19:51:10.056093 #13356]  INFO -- : thrId: 2, 2, 27, facebook.com, latency: 24.776 ms
+D, [2018-06-12T19:51:10.123087 #13356] DEBUG -- : thrId: 4, nintendo.com failCounter=9
+I, [2018-06-12T19:51:10.123357 #13356]  INFO -- : thrId: 4, 4, 15, nintendo.com, latency: -1 ms
+D, [2018-06-12T19:51:12.153278 #13356] DEBUG -- : thrId: 8, apple.com failCounter=13
+I, [2018-06-12T19:51:12.153543 #13356]  INFO -- : thrId: 8, 8, 12, apple.com, latency: -1 ms
+I, [2018-06-12T19:51:12.317905 #13356]  INFO -- : thrId: 3, 3, 27, yahoo.com, latency: 111.361 ms
+I, [2018-06-12T19:51:12.492171 #13356]  INFO -- : thrId: 5, 5, 27, ruby-doc.org, latency: 116.305 ms
+I, [2018-06-12T19:51:12.672624 #13356]  INFO -- : thrId: 9, 9, 27, cisco.com, latency: 122.403 ms
+I, [2018-06-12T19:51:14.556338 #13356]  INFO -- : thrId: 0, 0, 28, google.com, latency: 9.073 ms
+I, [2018-06-12T19:51:14.561499 #13356]  INFO -- : thrId: 1, 1, 28, youtube.com, latency: 10.174 ms
+I, [2018-06-12T19:51:14.564631 #13356]  INFO -- : thrId: 7, 7, 28, twitch.tv, latency: 9.712 ms
+I, [2018-06-12T19:51:14.566678 #13356]  INFO -- : thrId: 6, 6, 28, dropbox.com, latency: 9.563 ms
+I, [2018-06-12T19:51:15.089681 #13356]  INFO -- : thrId: 2, 2, 28, facebook.com, latency: 25.061 ms
+I, [2018-06-12T19:51:17.442581 #13356]  INFO -- : thrId: 3, 3, 28, yahoo.com, latency: 109.781 ms
+I, [2018-06-12T19:51:17.623929 #13356]  INFO -- : thrId: 5, 5, 28, ruby-doc.org, latency: 116.922 ms
+I, [2018-06-12T19:51:17.811161 #13356]  INFO -- : thrId: 9, 9, 28, cisco.com, latency: 125.223 ms
+I, [2018-06-12T19:51:19.577484 #13356]  INFO -- : thrId: 0, 0, 29, google.com, latency: 8.066 ms
+I, [2018-06-12T19:51:19.583334 #13356]  INFO -- : thrId: 1, 1, 29, youtube.com, latency: 10.139 ms
+I, [2018-06-12T19:51:19.585333 #13356]  INFO -- : thrId: 7, 7, 29, twitch.tv, latency: 9.318 ms
+I, [2018-06-12T19:51:19.588639 #13356]  INFO -- : thrId: 6, 6, 29, dropbox.com, latency: 9.877 ms
+I, [2018-06-12T19:51:20.125180 #13356]  INFO -- : thrId: 2, 2, 29, facebook.com, latency: 24.473 ms
+D, [2018-06-12T19:51:21.141774 #13356] DEBUG -- : thrId: 4, nintendo.com failCounter=10
+I, [2018-06-12T19:51:21.202075 #13356]  INFO -- : thrId: 4, PING Alert sent, nintendo.com
+I, [2018-06-12T19:51:21.202441 #13356]  INFO -- : thrId: 4, 4, 16, nintendo.com, latency: -1 ms
+I, [2018-06-12T19:51:22.567603 #13356]  INFO -- : thrId: 3, 3, 29, yahoo.com, latency: 110.132 ms
+I, [2018-06-12T19:51:22.753339 #13356]  INFO -- : thrId: 5, 5, 29, ruby-doc.org, latency: 115.990 ms
+I, [2018-06-12T19:51:22.946766 #13356]  INFO -- : thrId: 9, 9, 29, cisco.com, latency: 123.642 ms
+D, [2018-06-12T19:51:23.171001 #13356] DEBUG -- : thrId: 8, apple.com failCounter=14
+I, [2018-06-12T19:51:23.171351 #13356]  INFO -- : thrId: 8, 8, 13, apple.com, latency: -1 ms
+I, [2018-06-12T19:51:24.603927 #13356]  INFO -- : thrId: 0, 0, 30, google.com, latency: 10.397 ms
+I, [2018-06-12T19:51:24.608609 #13356]  INFO -- : thrId: 1, 1, 30, youtube.com, latency: 9.262 ms
+I, [2018-06-12T19:51:24.613196 #13356]  INFO -- : thrId: 7, 7, 30, twitch.tv, latency: 9.903 ms
+I, [2018-06-12T19:51:24.616266 #13356]  INFO -- : thrId: 6, 6, 30, dropbox.com, latency: 9.806 ms
+I, [2018-06-12T19:51:25.164396 #13356]  INFO -- : thrId: 2, 2, 30, facebook.com, latency: 24.163 ms
+I, [2018-06-12T19:51:27.692994 #13356]  INFO -- : thrId: 3, 3, 30, yahoo.com, latency: 110.406 ms
+I, [2018-06-12T19:51:27.882658 #13356]  INFO -- : thrId: 5, 5, 30, ruby-doc.org, latency: 116.241 ms
+I, [2018-06-12T19:51:28.082148 #13356]  INFO -- : thrId: 9, 9, 30, cisco.com, latency: 124.666 ms
+I, [2018-06-12T19:51:29.630878 #13356]  INFO -- : thrId: 0, 0, 31, google.com, latency: 10.883 ms
+I, [2018-06-12T19:51:29.632362 #13356]  INFO -- : thrId: 1, 1, 31, youtube.com, latency: 9.372 ms
+I, [2018-06-12T19:51:29.635467 #13356]  INFO -- : thrId: 7, 7, 31, twitch.tv, latency: 9.058 ms
+I, [2018-06-12T19:51:29.639089 #13356]  INFO -- : thrId: 6, 6, 31, dropbox.com, latency: 10.259 ms
+I, [2018-06-12T19:51:30.203728 #13356]  INFO -- : thrId: 2, 2, 31, facebook.com, latency: 25.327 ms
+D, [2018-06-12T19:51:32.221706 #13356] DEBUG -- : thrId: 4, nintendo.com failCounter=11
+I, [2018-06-12T19:51:32.221988 #13356]  INFO -- : thrId: 4, 4, 17, nintendo.com, latency: -1 ms
+I, [2018-06-12T19:51:32.819352 #13356]  INFO -- : thrId: 3, 3, 31, yahoo.com, latency: 111.134 ms
+I, [2018-06-12T19:51:33.020437 #13356]  INFO -- : thrId: 5, 5, 31, ruby-doc.org, latency: 124.059 ms
+I, [2018-06-12T19:51:33.219454 #13356]  INFO -- : thrId: 9, 9, 31, cisco.com, latency: 123.473 ms
+D, [2018-06-12T19:51:34.189299 #13356] DEBUG -- : thrId: 8, apple.com failCounter=15
+I, [2018-06-12T19:51:34.189522 #13356]  INFO -- : thrId: 8, 8, 14, apple.com, latency: -1 ms
+I, [2018-06-12T19:51:34.657721 #13356]  INFO -- : thrId: 1, 1, 32, youtube.com, latency: 10.523 ms
+I, [2018-06-12T19:51:34.661881 #13356]  INFO -- : thrId: 7, 7, 32, twitch.tv, latency: 9.321 ms
+I, [2018-06-12T19:51:34.663746 #13356]  INFO -- : thrId: 6, 6, 32, dropbox.com, latency: 9.204 ms
+I, [2018-06-12T19:51:34.681643 #13356]  INFO -- : thrId: 0, 0, 32, google.com, latency: 10.317 ms
+I, [2018-06-12T19:51:35.241459 #13356]  INFO -- : thrId: 2, 2, 32, facebook.com, latency: 24.716 ms
+I, [2018-06-12T19:51:37.949171 #13356]  INFO -- : thrId: 3, 3, 32, yahoo.com, latency: 115.005 ms
+I, [2018-06-12T19:51:38.158033 #13356]  INFO -- : thrId: 5, 5, 32, ruby-doc.org, latency: 126.030 ms
+I, [2018-06-12T19:51:38.372836 #13356]  INFO -- : thrId: 9, 9, 32, cisco.com, latency: 139.663 ms
+I, [2018-06-12T19:51:39.688199 #13356]  INFO -- : thrId: 1, 1, 33, youtube.com, latency: 13.776 ms
+I, [2018-06-12T19:51:39.691625 #13356]  INFO -- : thrId: 7, 7, 33, twitch.tv, latency: 14.582 ms
+I, [2018-06-12T19:51:39.696612 #13356]  INFO -- : thrId: 6, 6, 33, dropbox.com, latency: 17.162 ms
+I, [2018-06-12T19:51:39.715434 #13356]  INFO -- : thrId: 0, 0, 33, google.com, latency: 19.348 ms
+I, [2018-06-12T19:51:40.299985 #13356]  INFO -- : thrId: 2, 2, 33, facebook.com, latency: 43.794 ms
+I, [2018-06-12T19:51:43.088238 #13356]  INFO -- : thrId: 3, 3, 33, yahoo.com, latency: 124.561 ms
+D, [2018-06-12T19:51:43.238644 #13356] DEBUG -- : thrId: 4, nintendo.com failCounter=12
+I, [2018-06-12T19:51:43.238970 #13356]  INFO -- : thrId: 4, 4, 18, nintendo.com, latency: -1 ms
+I, [2018-06-12T19:51:43.368783 #13356]  INFO -- : thrId: 5, 5, 33, ruby-doc.org, latency: 196.674 ms
+I, [2018-06-12T19:51:43.525486 #13356]  INFO -- : thrId: 9, 9, 33, cisco.com, latency: 139.148 ms
+I, [2018-06-12T19:51:44.708909 #13356]  INFO -- : thrId: 1, 1, 34, youtube.com, latency: 10.307 ms
+I, [2018-06-12T19:51:44.709759 #13356]  INFO -- : thrId: 7, 7, 34, twitch.tv, latency: 8.796 ms
+I, [2018-06-12T19:51:44.715636 #13356]  INFO -- : thrId: 6, 6, 34, dropbox.com, latency: 9.852 ms
+I, [2018-06-12T19:51:44.735019 #13356]  INFO -- : thrId: 0, 0, 34, google.com, latency: 8.540 ms
+D, [2018-06-12T19:51:45.206315 #13356] DEBUG -- : thrId: 8, apple.com failCounter=16
+I, [2018-06-12T19:51:45.206672 #13356]  INFO -- : thrId: 8, 8, 15, apple.com, latency: -1 ms
+I, [2018-06-12T19:51:45.338003 #13356]  INFO -- : thrId: 2, 2, 34, facebook.com, latency: 26.516 ms
+I, [2018-06-12T19:51:48.209622 #13356]  INFO -- : thrId: 3, 3, 34, yahoo.com, latency: 110.655 ms
+I, [2018-06-12T19:51:48.500595 #13356]  INFO -- : thrId: 5, 5, 34, ruby-doc.org, latency: 116.403 ms
+I, [2018-06-12T19:51:48.656729 #13356]  INFO -- : thrId: 9, 9, 34, cisco.com, latency: 122.776 ms
+I, [2018-06-12T19:51:49.730514 #13356]  INFO -- : thrId: 1, 1, 35, youtube.com, latency: 10.803 ms
+I, [2018-06-12T19:51:49.733158 #13356]  INFO -- : thrId: 7, 7, 35, twitch.tv, latency: 9.493 ms
+I, [2018-06-12T19:51:49.752547 #13356]  INFO -- : thrId: 6, 6, 35, dropbox.com, latency: 10.179 ms
+I, [2018-06-12T19:51:49.760009 #13356]  INFO -- : thrId: 0, 0, 35, google.com, latency: 9.962 ms
+I, [2018-06-12T19:51:50.375630 #13356]  INFO -- : thrId: 2, 2, 35, facebook.com, latency: 26.117 ms
+I, [2018-06-12T19:51:53.332786 #13356]  INFO -- : thrId: 3, 3, 35, yahoo.com, latency: 108.768 ms
+I, [2018-06-12T19:51:53.674377 #13356]  INFO -- : thrId: 5, 5, 35, ruby-doc.org, latency: 157.465 ms
+I, [2018-06-12T19:51:53.796043 #13356]  INFO -- : thrId: 9, 9, 35, cisco.com, latency: 123.738 ms
+D, [2018-06-12T19:51:54.257106 #13356] DEBUG -- : thrId: 4, nintendo.com failCounter=13
+I, [2018-06-12T19:51:54.257399 #13356]  INFO -- : thrId: 4, 4, 19, nintendo.com, latency: -1 ms
+I, [2018-06-12T19:51:54.754465 #13356]  INFO -- : thrId: 1, 1, 36, youtube.com, latency: 10.333 ms
+I, [2018-06-12T19:51:54.760781 #13356]  INFO -- : thrId: 7, 7, 36, twitch.tv, latency: 9.704 ms
+I, [2018-06-12T19:51:54.777964 #13356]  INFO -- : thrId: 6, 6, 36, dropbox.com, latency: 10.890 ms
+I, [2018-06-12T19:51:54.780987 #13356]  INFO -- : thrId: 0, 0, 36, google.com, latency: 9.483 ms
+I, [2018-06-12T19:51:55.413600 #13356]  INFO -- : thrId: 2, 2, 36, facebook.com, latency: 25.204 ms
+D, [2018-06-12T19:51:56.222010 #13356] DEBUG -- : thrId: 8, apple.com failCounter=17
+I, [2018-06-12T19:51:56.222297 #13356]  INFO -- : thrId: 8, 8, 16, apple.com, latency: -1 ms
+I, [2018-06-12T19:51:58.461122 #13356]  INFO -- : thrId: 3, 3, 36, yahoo.com, latency: 110.572 ms
+I, [2018-06-12T19:51:58.804008 #13356]  INFO -- : thrId: 5, 5, 36, ruby-doc.org, latency: 117.599 ms
+I, [2018-06-12T19:51:58.932321 #13356]  INFO -- : thrId: 9, 9, 36, cisco.com, latency: 122.604 ms
+I, [2018-06-12T19:51:59.792039 #13356]  INFO -- : thrId: 1, 1, 37, youtube.com, latency: 23.676 ms
+I, [2018-06-12T19:51:59.792915 #13356]  INFO -- : thrId: 7, 7, 37, twitch.tv, latency: 24.635 ms
+I, [2018-06-12T19:51:59.825889 #13356]  INFO -- : thrId: 6, 6, 37, dropbox.com, latency: 30.412 ms
+I, [2018-06-12T19:51:59.826771 #13356]  INFO -- : thrId: 0, 0, 37, google.com, latency: 27.780 ms
+I, [2018-06-12T19:52:00.452695 #13356]  INFO -- : thrId: 2, 2, 37, facebook.com, latency: 24.050 ms
+I, [2018-06-12T19:52:03.593708 #13356]  INFO -- : thrId: 3, 3, 37, yahoo.com, latency: 110.629 ms
+I, [2018-06-12T19:52:03.933026 #13356]  INFO -- : thrId: 5, 5, 37, ruby-doc.org, latency: 115.718 ms
+I, [2018-06-12T19:52:04.072875 #13356]  INFO -- : thrId: 9, 9, 37, cisco.com, latency: 124.684 ms
+I, [2018-06-12T19:52:04.813990 #13356]  INFO -- : thrId: 1, 1, 38, youtube.com, latency: 10.860 ms
+I, [2018-06-12T19:52:04.815401 #13356]  INFO -- : thrId: 7, 7, 38, twitch.tv, latency: 8.542 ms
+I, [2018-06-12T19:52:04.849089 #13356]  INFO -- : thrId: 0, 0, 38, google.com, latency: 9.411 ms
+I, [2018-06-12T19:52:04.853154 #13356]  INFO -- : thrId: 6, 6, 38, dropbox.com, latency: 9.978 ms
+D, [2018-06-12T19:52:05.273823 #13356] DEBUG -- : thrId: 4, nintendo.com failCounter=14
+I, [2018-06-12T19:52:05.274150 #13356]  INFO -- : thrId: 4, 4, 20, nintendo.com, latency: -1 ms
+I, [2018-06-12T19:52:05.493206 #13356]  INFO -- : thrId: 2, 2, 38, facebook.com, latency: 27.295 ms
+D, [2018-06-12T19:52:07.238988 #13356] DEBUG -- : thrId: 8, apple.com failCounter=18
+I, [2018-06-12T19:52:07.239212 #13356]  INFO -- : thrId: 8, 8, 17, apple.com, latency: -1 ms
+I, [2018-06-12T19:52:08.715160 #13356]  INFO -- : thrId: 3, 3, 38, yahoo.com, latency: 109.093 ms
+I, [2018-06-12T19:52:09.066913 #13356]  INFO -- : thrId: 5, 5, 38, ruby-doc.org, latency: 117.667 ms
+I, [2018-06-12T19:52:09.210524 #13356]  INFO -- : thrId: 9, 9, 38, cisco.com, latency: 122.755 ms
+I, [2018-06-12T19:52:09.838529 #13356]  INFO -- : thrId: 1, 1, 39, youtube.com, latency: 10.763 ms
+I, [2018-06-12T19:52:09.841191 #13356]  INFO -- : thrId: 7, 7, 39, twitch.tv, latency: 8.962 ms
+I, [2018-06-12T19:52:09.873551 #13356]  INFO -- : thrId: 0, 0, 39, google.com, latency: 13.705 ms
+I, [2018-06-12T19:52:09.881676 #13356]  INFO -- : thrId: 6, 6, 39, dropbox.com, latency: 15.239 ms
+I, [2018-06-12T19:52:10.526190 #13356]  INFO -- : thrId: 2, 2, 39, facebook.com, latency: 25.940 ms
+I, [2018-06-12T19:52:13.835578 #13356]  INFO -- : thrId: 3, 3, 39, yahoo.com, latency: 109.688 ms
+I, [2018-06-12T19:52:14.197431 #13356]  INFO -- : thrId: 5, 5, 39, ruby-doc.org, latency: 120.867 ms
+I, [2018-06-12T19:52:14.346576 #13356]  INFO -- : thrId: 9, 9, 39, cisco.com, latency: 122.098 ms
+I, [2018-06-12T19:52:14.890545 #13356]  INFO -- : thrId: 7, 7, 40, twitch.tv, latency: 30.521 ms
+I, [2018-06-12T19:52:14.915549 #13356]  INFO -- : thrId: 0, 0, 40, google.com, latency: 29.805 ms
+I, [2018-06-12T19:52:14.928197 #13356]  INFO -- : thrId: 6, 6, 40, dropbox.com, latency: 30.671 ms
+I, [2018-06-12T19:52:15.567476 #13356]  INFO -- : thrId: 2, 2, 40, facebook.com, latency: 26.105 ms
+D, [2018-06-12T19:52:16.309742 #13356] DEBUG -- : thrId: 4, nintendo.com failCounter=15
+I, [2018-06-12T19:52:16.309924 #13356]  INFO -- : thrId: 4, 4, 21, nintendo.com, latency: -1 ms
+D, [2018-06-12T19:52:18.255308 #13356] DEBUG -- : thrId: 8, apple.com failCounter=19
+I, [2018-06-12T19:52:18.255597 #13356]  INFO -- : thrId: 8, 8, 18, apple.com, latency: -1 ms
+I, [2018-06-12T19:52:18.962047 #13356]  INFO -- : thrId: 3, 3, 40, yahoo.com, latency: 111.961 ms
+I, [2018-06-12T19:52:19.323846 #13356]  INFO -- : thrId: 5, 5, 40, ruby-doc.org, latency: 115.711 ms
+I, [2018-06-12T19:52:19.484587 #13356]  INFO -- : thrId: 9, 9, 40, cisco.com, latency: 125.745 ms
+I, [2018-06-12T19:52:19.913110 #13356]  INFO -- : thrId: 7, 7, 41, twitch.tv, latency: 10.646 ms
+I, [2018-06-12T19:52:19.940843 #13356]  INFO -- : thrId: 0, 0, 41, google.com, latency: 10.189 ms
+I, [2018-06-12T19:52:19.950837 #13356]  INFO -- : thrId: 6, 6, 41, dropbox.com, latency: 9.627 ms
+I, [2018-06-12T19:52:20.617371 #13356]  INFO -- : thrId: 2, 2, 41, facebook.com, latency: 34.020 ms
+D, [2018-06-12T19:52:20.859813 #13356] DEBUG -- : thrId: 1, youtube.com failCounter=1
+I, [2018-06-12T19:52:20.860138 #13356]  INFO -- : thrId: 1, 1, 40, youtube.com, latency: -1 ms
+I, [2018-06-12T19:52:24.087013 #13356]  INFO -- : thrId: 3, 3, 41, yahoo.com, latency: 112.133 ms
+I, [2018-06-12T19:52:24.455033 #13356]  INFO -- : thrId: 5, 5, 41, ruby-doc.org, latency: 116.736 ms
+I, [2018-06-12T19:52:24.620690 #13356]  INFO -- : thrId: 9, 9, 41, cisco.com, latency: 122.547 ms
+I, [2018-06-12T19:52:24.934459 #13356]  INFO -- : thrId: 7, 7, 42, twitch.tv, latency: 10.092 ms
+I, [2018-06-12T19:52:24.966273 #13356]  INFO -- : thrId: 0, 0, 42, google.com, latency: 9.887 ms
+I, [2018-06-12T19:52:24.972513 #13356]  INFO -- : thrId: 6, 6, 42, dropbox.com, latency: 9.435 ms
+I, [2018-06-12T19:52:25.671835 #13356]  INFO -- : thrId: 2, 2, 42, facebook.com, latency: 38.628 ms
+I, [2018-06-12T19:52:25.883511 #13356]  INFO -- : thrId: 1, 1, 41, youtube.com, latency: 9.870 ms
+D, [2018-06-12T19:52:27.326727 #13356] DEBUG -- : thrId: 4, nintendo.com failCounter=16
+I, [2018-06-12T19:52:27.327122 #13356]  INFO -- : thrId: 4, 4, 22, nintendo.com, latency: -1 ms
+I, [2018-06-12T19:52:29.211676 #13356]  INFO -- : thrId: 3, 3, 42, yahoo.com, latency: 110.825 ms
+D, [2018-06-12T19:52:29.270880 #13356] DEBUG -- : thrId: 8, apple.com failCounter=20
+I, [2018-06-12T19:52:29.271100 #13356]  INFO -- : thrId: 8, 8, 19, apple.com, latency: -1 ms
+I, [2018-06-12T19:52:29.584466 #13356]  INFO -- : thrId: 5, 5, 42, ruby-doc.org, latency: 114.686 ms
+I, [2018-06-12T19:52:29.757436 #13356]  INFO -- : thrId: 9, 9, 42, cisco.com, latency: 122.248 ms
+I, [2018-06-12T19:52:29.959232 #13356]  INFO -- : thrId: 7, 7, 43, twitch.tv, latency: 8.956 ms
+I, [2018-06-12T19:52:29.990416 #13356]  INFO -- : thrId: 0, 0, 43, google.com, latency: 9.953 ms
+I, [2018-06-12T19:52:29.997787 #13356]  INFO -- : thrId: 6, 6, 43, dropbox.com, latency: 10.491 ms
+I, [2018-06-12T19:52:30.708062 #13356]  INFO -- : thrId: 2, 2, 43, facebook.com, latency: 24.456 ms
+I, [2018-06-12T19:52:30.903695 #13356]  INFO -- : thrId: 1, 1, 42, youtube.com, latency: 8.781 ms
+I, [2018-06-12T19:52:34.334473 #13356]  INFO -- : thrId: 3, 3, 43, yahoo.com, latency: 111.669 ms
+I, [2018-06-12T19:52:34.715054 #13356]  INFO -- : thrId: 5, 5, 43, ruby-doc.org, latency: 117.720 ms
+I, [2018-06-12T19:52:34.891663 #13356]  INFO -- : thrId: 9, 9, 43, cisco.com, latency: 122.772 ms
+I, [2018-06-12T19:52:34.982965 #13356]  INFO -- : thrId: 7, 7, 44, twitch.tv, latency: 9.296 ms
+I, [2018-06-12T19:52:35.014542 #13356]  INFO -- : thrId: 0, 0, 44, google.com, latency: 10.366 ms
+I, [2018-06-12T19:52:35.020300 #13356]  INFO -- : thrId: 6, 6, 44, dropbox.com, latency: 9.676 ms
+I, [2018-06-12T19:52:35.758060 #13356]  INFO -- : thrId: 2, 2, 44, facebook.com, latency: 35.596 ms
+I, [2018-06-12T19:52:35.949849 #13356]  INFO -- : thrId: 1, 1, 43, youtube.com, latency: 30.540 ms
+D, [2018-06-12T19:52:38.343523 #13356] DEBUG -- : thrId: 4, nintendo.com failCounter=17
+I, [2018-06-12T19:52:38.343755 #13356]  INFO -- : thrId: 4, 4, 23, nintendo.com, latency: -1 ms
+I, [2018-06-12T19:52:39.458219 #13356]  INFO -- : thrId: 3, 3, 44, yahoo.com, latency: 110.170 ms
+I, [2018-06-12T19:52:39.845521 #13356]  INFO -- : thrId: 5, 5, 44, ruby-doc.org, latency: 117.711 ms
+I, [2018-06-12T19:52:40.004647 #13356]  INFO -- : thrId: 7, 7, 45, twitch.tv, latency: 10.798 ms
+I, [2018-06-12T19:52:40.028290 #13356]  INFO -- : thrId: 9, 9, 44, cisco.com, latency: 124.295 ms
+I, [2018-06-12T19:52:40.036327 #13356]  INFO -- : thrId: 0, 0, 45, google.com, latency: 9.881 ms
+I, [2018-06-12T19:52:40.039794 #13356]  INFO -- : thrId: 6, 6, 45, dropbox.com, latency: 10.723 ms
+D, [2018-06-12T19:52:40.287474 #13356] DEBUG -- : thrId: 8, apple.com failCounter=21
+I, [2018-06-12T19:52:40.287760 #13356]  INFO -- : thrId: 8, 8, 20, apple.com, latency: -1 ms
+I, [2018-06-12T19:52:40.805974 #13356]  INFO -- : thrId: 2, 2, 45, facebook.com, latency: 35.514 ms
+I, [2018-06-12T19:52:40.974149 #13356]  INFO -- : thrId: 1, 1, 44, youtube.com, latency: 10.631 ms
+I, [2018-06-12T19:52:44.579626 #13356]  INFO -- : thrId: 3, 3, 45, yahoo.com, latency: 109.982 ms
+I, [2018-06-12T19:52:44.980938 #13356]  INFO -- : thrId: 5, 5, 45, ruby-doc.org, latency: 123.591 ms
+I, [2018-06-12T19:52:45.044273 #13356]  INFO -- : thrId: 7, 7, 46, twitch.tv, latency: 23.805 ms
+I, [2018-06-12T19:52:45.079341 #13356]  INFO -- : thrId: 0, 0, 46, google.com, latency: 27.913 ms
+I, [2018-06-12T19:52:45.087494 #13356]  INFO -- : thrId: 6, 6, 46, dropbox.com, latency: 32.308 ms
+I, [2018-06-12T19:52:45.847882 #13356]  INFO -- : thrId: 2, 2, 46, facebook.com, latency: 26.967 ms
+I, [2018-06-12T19:52:45.999350 #13356]  INFO -- : thrId: 1, 1, 45, youtube.com, latency: 10.187 ms
+D, [2018-06-12T19:52:49.362252 #13356] DEBUG -- : thrId: 4, nintendo.com failCounter=18
+I, [2018-06-12T19:52:49.362485 #13356]  INFO -- : thrId: 4, 4, 24, nintendo.com, latency: -1 ms
+I, [2018-06-12T19:52:49.704578 #13356]  INFO -- : thrId: 3, 3, 46, yahoo.com, latency: 110.013 ms
+I, [2018-06-12T19:52:50.067286 #13356]  INFO -- : thrId: 7, 7, 47, twitch.tv, latency: 8.948 ms
+I, [2018-06-12T19:52:50.104398 #13356]  INFO -- : thrId: 0, 0, 47, google.com, latency: 9.354 ms
+I, [2018-06-12T19:52:50.109045 #13356]  INFO -- : thrId: 6, 6, 47, dropbox.com, latency: 9.719 ms
+I, [2018-06-12T19:52:50.110764 #13356]  INFO -- : thrId: 5, 5, 46, ruby-doc.org, latency: 115.210 ms
+I, [2018-06-12T19:52:50.893189 #13356]  INFO -- : thrId: 2, 2, 47, facebook.com, latency: 34.037 ms
+I, [2018-06-12T19:52:51.037311 #13356]  INFO -- : thrId: 1, 1, 46, youtube.com, latency: 25.163 ms
+D, [2018-06-12T19:52:51.039736 #13356] DEBUG -- : thrId: 9, cisco.com failCounter=1
+I, [2018-06-12T19:52:51.040007 #13356]  INFO -- : thrId: 9, 9, 45, cisco.com, latency: -1 ms
+D, [2018-06-12T19:52:51.302471 #13356] DEBUG -- : thrId: 8, apple.com failCounter=22
+I, [2018-06-12T19:52:51.302699 #13356]  INFO -- : thrId: 8, 8, 21, apple.com, latency: -1 ms
+I, [2018-06-12T19:52:54.831040 #13356]  INFO -- : thrId: 3, 3, 47, yahoo.com, latency: 110.304 ms
+I, [2018-06-12T19:52:55.091029 #13356]  INFO -- : thrId: 7, 7, 48, twitch.tv, latency: 11.084 ms
+I, [2018-06-12T19:52:55.123636 #13356]  INFO -- : thrId: 0, 0, 48, google.com, latency: 8.651 ms
+I, [2018-06-12T19:52:55.131412 #13356]  INFO -- : thrId: 6, 6, 48, dropbox.com, latency: 9.873 ms
+I, [2018-06-12T19:52:55.241678 #13356]  INFO -- : thrId: 5, 5, 47, ruby-doc.org, latency: 116.239 ms
+I, [2018-06-12T19:52:55.952410 #13356]  INFO -- : thrId: 2, 2, 48, facebook.com, latency: 44.089 ms
+I, [2018-06-12T19:52:56.060350 #13356]  INFO -- : thrId: 1, 1, 47, youtube.com, latency: 11.215 ms
+I, [2018-06-12T19:52:56.178668 #13356]  INFO -- : thrId: 9, 9, 46, cisco.com, latency: 123.774 ms
+I, [2018-06-12T19:52:59.952190 #13356]  INFO -- : thrId: 3, 3, 48, yahoo.com, latency: 109.374 ms
+I, [2018-06-12T19:53:00.116776 #13356]  INFO -- : thrId: 7, 7, 49, twitch.tv, latency: 10.772 ms
+I, [2018-06-12T19:53:00.147075 #13356]  INFO -- : thrId: 0, 0, 49, google.com, latency: 8.727 ms
+I, [2018-06-12T19:53:00.173972 #13356]  INFO -- : thrId: 6, 6, 49, dropbox.com, latency: 10.233 ms
+D, [2018-06-12T19:53:00.381296 #13356] DEBUG -- : thrId: 4, nintendo.com failCounter=19
+I, [2018-06-12T19:53:00.381884 #13356]  INFO -- : thrId: 4, 4, 25, nintendo.com, latency: -1 ms
+I, [2018-06-12T19:53:00.383921 #13356]  INFO -- : thrId: 5, 5, 48, ruby-doc.org, latency: 129.374 ms
+I, [2018-06-12T19:53:00.990859 #13356]  INFO -- : thrId: 2, 2, 49, facebook.com, latency: 25.148 ms
+I, [2018-06-12T19:53:01.084073 #13356]  INFO -- : thrId: 1, 1, 48, youtube.com, latency: 8.755 ms
+I, [2018-06-12T19:53:01.313966 #13356]  INFO -- : thrId: 9, 9, 47, cisco.com, latency: 122.555 ms
+D, [2018-06-12T19:53:02.320416 #13356] DEBUG -- : thrId: 8, apple.com failCounter=23
+I, [2018-06-12T19:53:02.320663 #13356]  INFO -- : thrId: 8, 8, 22, apple.com, latency: -1 ms
+I, [2018-06-12T19:53:05.076626 #13356]  INFO -- : thrId: 3, 3, 49, yahoo.com, latency: 111.164 ms
+I, [2018-06-12T19:53:05.139922 #13356]  INFO -- : thrId: 7, 7, 50, twitch.tv, latency: 11.895 ms
+I, [2018-06-12T19:53:05.181683 #13356]  INFO -- : thrId: 0, 0, 50, google.com, latency: 16.906 ms
+I, [2018-06-12T19:53:05.206810 #13356]  INFO -- : thrId: 6, 6, 50, dropbox.com, latency: 18.434 ms
+I, [2018-06-12T19:53:05.594960 #13356]  INFO -- : thrId: 5, 5, 49, ruby-doc.org, latency: 197.120 ms
+I, [2018-06-12T19:53:06.033902 #13356]  INFO -- : thrId: 2, 2, 50, facebook.com, latency: 26.415 ms
+I, [2018-06-12T19:53:06.105680 #13356]  INFO -- : thrId: 1, 1, 49, youtube.com, latency: 9.658 ms
+I, [2018-06-12T19:53:06.451859 #13356]  INFO -- : thrId: 9, 9, 48, cisco.com, latency: 124.231 ms
+I, [2018-06-12T19:53:10.162363 #13356]  INFO -- : thrId: 7, 7, 51, twitch.tv, latency: 8.811 ms
+I, [2018-06-12T19:53:10.195672 #13356]  INFO -- : thrId: 3, 3, 50, yahoo.com, latency: 109.499 ms
+I, [2018-06-12T19:53:10.205626 #13356]  INFO -- : thrId: 0, 0, 51, google.com, latency: 11.744 ms
+I, [2018-06-12T19:53:10.224460 #13356]  INFO -- : thrId: 6, 6, 51, dropbox.com, latency: 10.283 ms
+I, [2018-06-12T19:53:10.724389 #13356]  INFO -- : thrId: 5, 5, 50, ruby-doc.org, latency: 115.559 ms
+I, [2018-06-12T19:53:11.087867 #13356]  INFO -- : thrId: 2, 2, 51, facebook.com, latency: 41.151 ms
+I, [2018-06-12T19:53:11.133066 #13356]  INFO -- : thrId: 1, 1, 50, youtube.com, latency: 14.329 ms
+D, [2018-06-12T19:53:11.399018 #13356] DEBUG -- : thrId: 4, nintendo.com failCounter=20
+I, [2018-06-12T19:53:11.399312 #13356]  INFO -- : thrId: 4, 4, 26, nintendo.com, latency: -1 ms
+I, [2018-06-12T19:53:11.588595 #13356]  INFO -- : thrId: 9, 9, 49, cisco.com, latency: 123.643 ms
+D, [2018-06-12T19:53:13.338545 #13356] DEBUG -- : thrId: 8, apple.com failCounter=24
+I, [2018-06-12T19:53:13.338769 #13356]  INFO -- : thrId: 8, 8, 23, apple.com, latency: -1 ms
+I, [2018-06-12T19:53:15.185207 #13356]  INFO -- : thrId: 7, 7, 52, twitch.tv, latency: 10.639 ms
+I, [2018-06-12T19:53:15.229555 #13356]  INFO -- : thrId: 0, 0, 52, google.com, latency: 9.506 ms
+I, [2018-06-12T19:53:15.244866 #13356]  INFO -- : thrId: 6, 6, 52, dropbox.com, latency: 10.597 ms
+I, [2018-06-12T19:53:15.320817 #13356]  INFO -- : thrId: 3, 3, 51, yahoo.com, latency: 112.033 ms
+I, [2018-06-12T19:53:15.870309 #13356]  INFO -- : thrId: 5, 5, 51, ruby-doc.org, latency: 132.951 ms
+I, [2018-06-12T19:53:16.130611 #13356]  INFO -- : thrId: 2, 2, 52, facebook.com, latency: 28.473 ms
+I, [2018-06-12T19:53:16.153856 #13356]  INFO -- : thrId: 1, 1, 51, youtube.com, latency: 9.976 ms
+I, [2018-06-12T19:53:16.724530 #13356]  INFO -- : thrId: 9, 9, 50, cisco.com, latency: 122.400 ms
+I, [2018-06-12T19:53:20.209927 #13356]  INFO -- : thrId: 7, 7, 53, twitch.tv, latency: 9.643 ms
+I, [2018-06-12T19:53:20.252116 #13356]  INFO -- : thrId: 0, 0, 53, google.com, latency: 8.787 ms
+I, [2018-06-12T19:53:20.266351 #13356]  INFO -- : thrId: 6, 6, 53, dropbox.com, latency: 9.836 ms
+I, [2018-06-12T19:53:20.451641 #13356]  INFO -- : thrId: 3, 3, 52, yahoo.com, latency: 120.101 ms
+I, [2018-06-12T19:53:20.998346 #13356]  INFO -- : thrId: 5, 5, 52, ruby-doc.org, latency: 116.148 ms
+I, [2018-06-12T19:53:21.169171 #13356]  INFO -- : thrId: 2, 2, 53, facebook.com, latency: 25.235 ms
+I, [2018-06-12T19:53:21.178705 #13356]  INFO -- : thrId: 1, 1, 52, youtube.com, latency: 9.536 ms
+I, [2018-06-12T19:53:21.861208 #13356]  INFO -- : thrId: 9, 9, 51, cisco.com, latency: 122.830 ms
+D, [2018-06-12T19:53:22.432875 #13356] DEBUG -- : thrId: 4, nintendo.com failCounter=21
+I, [2018-06-12T19:53:22.433164 #13356]  INFO -- : thrId: 4, 4, 27, nintendo.com, latency: -1 ms
+D, [2018-06-12T19:53:24.358558 #13356] DEBUG -- : thrId: 8, apple.com failCounter=25
+I, [2018-06-12T19:53:24.358947 #13356]  INFO -- : thrId: 8, 8, 24, apple.com, latency: -1 ms
+I, [2018-06-12T19:53:25.236647 #13356]  INFO -- : thrId: 7, 7, 54, twitch.tv, latency: 10.220 ms
+I, [2018-06-12T19:53:25.277015 #13356]  INFO -- : thrId: 0, 0, 54, google.com, latency: 8.995 ms
+I, [2018-06-12T19:53:25.290202 #13356]  INFO -- : thrId: 6, 6, 54, dropbox.com, latency: 9.740 ms
+I, [2018-06-12T19:53:25.574504 #13356]  INFO -- : thrId: 3, 3, 53, yahoo.com, latency: 110.459 ms
+I, [2018-06-12T19:53:26.129120 #13356]  INFO -- : thrId: 5, 5, 53, ruby-doc.org, latency: 119.562 ms
+I, [2018-06-12T19:53:26.214523 #13356]  INFO -- : thrId: 1, 1, 53, youtube.com, latency: 21.596 ms
+I, [2018-06-12T19:53:26.216453 #13356]  INFO -- : thrId: 2, 2, 54, facebook.com, latency: 36.019 ms
+I, [2018-06-12T19:53:26.998707 #13356]  INFO -- : thrId: 9, 9, 52, cisco.com, latency: 122.796 ms
+I, [2018-06-12T19:53:30.261304 #13356]  INFO -- : thrId: 7, 7, 55, twitch.tv, latency: 8.896 ms
+I, [2018-06-12T19:53:30.298631 #13356]  INFO -- : thrId: 0, 0, 55, google.com, latency: 9.735 ms
+I, [2018-06-12T19:53:30.310845 #13356]  INFO -- : thrId: 6, 6, 55, dropbox.com, latency: 10.962 ms
+I, [2018-06-12T19:53:30.700093 #13356]  INFO -- : thrId: 3, 3, 54, yahoo.com, latency: 110.511 ms
+I, [2018-06-12T19:53:31.236887 #13356]  INFO -- : thrId: 1, 1, 54, youtube.com, latency: 9.311 ms
+I, [2018-06-12T19:53:31.256177 #13356]  INFO -- : thrId: 2, 2, 55, facebook.com, latency: 24.575 ms
+I, [2018-06-12T19:53:31.260571 #13356]  INFO -- : thrId: 5, 5, 54, ruby-doc.org, latency: 115.506 ms
+I, [2018-06-12T19:53:32.155926 #13356]  INFO -- : thrId: 9, 9, 53, cisco.com, latency: 129.874 ms
+D, [2018-06-12T19:53:33.449741 #13356] DEBUG -- : thrId: 4, nintendo.com failCounter=22
+I, [2018-06-12T19:53:33.450031 #13356]  INFO -- : thrId: 4, 4, 28, nintendo.com, latency: -1 ms
+I, [2018-06-12T19:53:35.286762 #13356]  INFO -- : thrId: 7, 7, 56, twitch.tv, latency: 10.368 ms
+I, [2018-06-12T19:53:35.323789 #13356]  INFO -- : thrId: 0, 0, 56, google.com, latency: 9.335 ms
+I, [2018-06-12T19:53:35.336767 #13356]  INFO -- : thrId: 6, 6, 56, dropbox.com, latency: 9.940 ms
+D, [2018-06-12T19:53:35.380864 #13356] DEBUG -- : thrId: 8, apple.com failCounter=26
+I, [2018-06-12T19:53:35.381395 #13356]  INFO -- : thrId: 8, 8, 25, apple.com, latency: -1 ms
+I, [2018-06-12T19:53:35.824483 #13356]  INFO -- : thrId: 3, 3, 55, yahoo.com, latency: 110.378 ms
+I, [2018-06-12T19:53:36.258207 #13356]  INFO -- : thrId: 1, 1, 55, youtube.com, latency: 9.672 ms
+I, [2018-06-12T19:53:36.297067 #13356]  INFO -- : thrId: 2, 2, 56, facebook.com, latency: 24.917 ms
+I, [2018-06-12T19:53:36.390683 #13356]  INFO -- : thrId: 5, 5, 55, ruby-doc.org, latency: 116.742 ms
+I, [2018-06-12T19:53:37.294809 #13356]  INFO -- : thrId: 9, 9, 54, cisco.com, latency: 123.360 ms
+I, [2018-06-12T19:53:40.310540 #13356]  INFO -- : thrId: 7, 7, 57, twitch.tv, latency: 10.108 ms
+I, [2018-06-12T19:53:40.348515 #13356]  INFO -- : thrId: 0, 0, 57, google.com, latency: 9.053 ms
+I, [2018-06-12T19:53:40.356982 #13356]  INFO -- : thrId: 6, 6, 57, dropbox.com, latency: 9.813 ms
+I, [2018-06-12T19:53:40.945938 #13356]  INFO -- : thrId: 3, 3, 56, yahoo.com, latency: 110.379 ms
+I, [2018-06-12T19:53:41.289390 #13356]  INFO -- : thrId: 1, 1, 56, youtube.com, latency: 16.742 ms
+I, [2018-06-12T19:53:41.341408 #13356]  INFO -- : thrId: 2, 2, 57, facebook.com, latency: 32.796 ms
+I, [2018-06-12T19:53:41.538309 #13356]  INFO -- : thrId: 5, 5, 56, ruby-doc.org, latency: 135.869 ms
+I, [2018-06-12T19:53:42.432274 #13356]  INFO -- : thrId: 9, 9, 55, cisco.com, latency: 121.687 ms
+D, [2018-06-12T19:53:44.469666 #13356] DEBUG -- : thrId: 4, nintendo.com failCounter=23
+I, [2018-06-12T19:53:44.470026 #13356]  INFO -- : thrId: 4, 4, 29, nintendo.com, latency: -1 ms
+I, [2018-06-12T19:53:45.349359 #13356]  INFO -- : thrId: 7, 7, 58, twitch.tv, latency: 9.432 ms
+I, [2018-06-12T19:53:45.371995 #13356]  INFO -- : thrId: 0, 0, 58, google.com, latency: 9.944 ms
+I, [2018-06-12T19:53:45.382490 #13356]  INFO -- : thrId: 6, 6, 58, dropbox.com, latency: 9.799 ms
+I, [2018-06-12T19:53:46.078132 #13356]  INFO -- : thrId: 3, 3, 57, yahoo.com, latency: 117.652 ms
+I, [2018-06-12T19:53:46.309922 #13356]  INFO -- : thrId: 1, 1, 57, youtube.com, latency: 10.592 ms
+I, [2018-06-12T19:53:46.379712 #13356]  INFO -- : thrId: 2, 2, 58, facebook.com, latency: 24.408 ms
+D, [2018-06-12T19:53:46.402565 #13356] DEBUG -- : thrId: 8, apple.com failCounter=27
+I, [2018-06-12T19:53:46.402721 #13356]  INFO -- : thrId: 8, 8, 26, apple.com, latency: -1 ms
+I, [2018-06-12T19:53:46.667338 #13356]  INFO -- : thrId: 5, 5, 57, ruby-doc.org, latency: 116.303 ms
+I, [2018-06-12T19:53:47.571477 #13356]  INFO -- : thrId: 9, 9, 56, cisco.com, latency: 123.463 ms
+I, [2018-06-12T19:53:50.375705 #13356]  INFO -- : thrId: 7, 7, 59, twitch.tv, latency: 11.120 ms
+I, [2018-06-12T19:53:50.396793 #13356]  INFO -- : thrId: 0, 0, 59, google.com, latency: 9.536 ms
+I, [2018-06-12T19:53:50.407242 #13356]  INFO -- : thrId: 6, 6, 59, dropbox.com, latency: 10.036 ms
+I, [2018-06-12T19:53:51.264158 #13356]  INFO -- : thrId: 3, 3, 58, yahoo.com, latency: 173.587 ms
+I, [2018-06-12T19:53:51.330887 #13356]  INFO -- : thrId: 1, 1, 58, youtube.com, latency: 10.042 ms
+I, [2018-06-12T19:53:51.432170 #13356]  INFO -- : thrId: 2, 2, 59, facebook.com, latency: 24.936 ms
+I, [2018-06-12T19:53:51.799268 #13356]  INFO -- : thrId: 5, 5, 58, ruby-doc.org, latency: 117.113 ms
+I, [2018-06-12T19:53:52.709282 #13356]  INFO -- : thrId: 9, 9, 57, cisco.com, latency: 122.276 ms
+I, [2018-06-12T19:53:55.391516 #13356]  INFO -- : thrId: 7, 7, 60, twitch.tv, latency: 8.273 ms
+I, [2018-06-12T19:53:55.414497 #13356]  INFO -- : thrId: 0, 0, 60, google.com, latency: 9.000 ms
+I, [2018-06-12T19:53:55.428405 #13356]  INFO -- : thrId: 6, 6, 60, dropbox.com, latency: 9.588 ms
+D, [2018-06-12T19:53:55.484881 #13356] DEBUG -- : thrId: 4, nintendo.com failCounter=24
+I, [2018-06-12T19:53:55.485074 #13356]  INFO -- : thrId: 4, 4, 30, nintendo.com, latency: -1 ms
+I, [2018-06-12T19:53:56.356668 #13356]  INFO -- : thrId: 1, 1, 59, youtube.com, latency: 10.433 ms
+I, [2018-06-12T19:53:56.387017 #13356]  INFO -- : thrId: 3, 3, 59, yahoo.com, latency: 109.969 ms
+I, [2018-06-12T19:53:56.472312 #13356]  INFO -- : thrId: 2, 2, 60, facebook.com, latency: 24.642 ms
+I, [2018-06-12T19:53:56.928230 #13356]  INFO -- : thrId: 5, 5, 59, ruby-doc.org, latency: 114.948 ms
+D, [2018-06-12T19:53:57.419310 #13356] DEBUG -- : thrId: 8, apple.com failCounter=28
+I, [2018-06-12T19:53:57.419636 #13356]  INFO -- : thrId: 8, 8, 27, apple.com, latency: -1 ms
+I, [2018-06-12T19:53:57.848818 #13356]  INFO -- : thrId: 9, 9, 58, cisco.com, latency: 123.045 ms
+I, [2018-06-12T19:54:00.417077 #13356]  INFO -- : thrId: 7, 7, 61, twitch.tv, latency: 11.565 ms
+I, [2018-06-12T19:54:00.438992 #13356]  INFO -- : thrId: 0, 0, 61, google.com, latency: 9.885 ms
+I, [2018-06-12T19:54:00.450606 #13356]  INFO -- : thrId: 6, 6, 61, dropbox.com, latency: 10.639 ms
+I, [2018-06-12T19:54:01.380351 #13356]  INFO -- : thrId: 1, 1, 60, youtube.com, latency: 11.141 ms
+I, [2018-06-12T19:54:01.510971 #13356]  INFO -- : thrId: 2, 2, 61, facebook.com, latency: 26.118 ms
+I, [2018-06-12T19:54:01.511867 #13356]  INFO -- : thrId: 3, 3, 60, yahoo.com, latency: 110.729 ms
+I, [2018-06-12T19:54:02.060699 #13356]  INFO -- : thrId: 5, 5, 60, ruby-doc.org, latency: 117.099 ms
+I, [2018-06-12T19:54:02.984880 #13356]  INFO -- : thrId: 9, 9, 59, cisco.com, latency: 122.491 ms
+I, [2018-06-12T19:54:05.443817 #13356]  INFO -- : thrId: 7, 7, 62, twitch.tv, latency: 10.150 ms
+I, [2018-06-12T19:54:05.460276 #13356]  INFO -- : thrId: 0, 0, 62, google.com, latency: 9.541 ms
+I, [2018-06-12T19:54:05.476196 #13356]  INFO -- : thrId: 6, 6, 62, dropbox.com, latency: 10.412 ms
+I, [2018-06-12T19:54:06.415791 #13356]  INFO -- : thrId: 1, 1, 61, youtube.com, latency: 20.175 ms
+D, [2018-06-12T19:54:06.504089 #13356] DEBUG -- : thrId: 4, nintendo.com failCounter=25
+I, [2018-06-12T19:54:06.504404 #13356]  INFO -- : thrId: 4, 4, 31, nintendo.com, latency: -1 ms
+I, [2018-06-12T19:54:06.567774 #13356]  INFO -- : thrId: 2, 2, 62, facebook.com, latency: 40.771 ms
+I, [2018-06-12T19:54:06.634184 #13356]  INFO -- : thrId: 3, 3, 61, yahoo.com, latency: 110.399 ms
+I, [2018-06-12T19:54:07.189965 #13356]  INFO -- : thrId: 5, 5, 61, ruby-doc.org, latency: 115.106 ms
+I, [2018-06-12T19:54:08.122800 #13356]  INFO -- : thrId: 9, 9, 60, cisco.com, latency: 124.760 ms
+D, [2018-06-12T19:54:08.432001 #13356] DEBUG -- : thrId: 8, apple.com failCounter=29
+I, [2018-06-12T19:54:08.432294 #13356]  INFO -- : thrId: 8, 8, 28, apple.com, latency: -1 ms
+I, [2018-06-12T19:54:10.467962 #13356]  INFO -- : thrId: 7, 7, 63, twitch.tv, latency: 10.367 ms
+I, [2018-06-12T19:54:10.484670 #13356]  INFO -- : thrId: 0, 0, 63, google.com, latency: 10.294 ms
+I, [2018-06-12T19:54:10.501289 #13356]  INFO -- : thrId: 6, 6, 63, dropbox.com, latency: 10.259 ms
+I, [2018-06-12T19:54:11.437816 #13356]  INFO -- : thrId: 1, 1, 62, youtube.com, latency: 10.348 ms
+I, [2018-06-12T19:54:11.606414 #13356]  INFO -- : thrId: 2, 2, 63, facebook.com, latency: 24.558 ms
+I, [2018-06-12T19:54:11.760129 #13356]  INFO -- : thrId: 3, 3, 62, yahoo.com, latency: 110.235 ms
+I, [2018-06-12T19:54:12.344754 #13356]  INFO -- : thrId: 5, 5, 62, ruby-doc.org, latency: 139.763 ms
+I, [2018-06-12T19:54:13.254587 #13356]  INFO -- : thrId: 9, 9, 61, cisco.com, latency: 122.029 ms
+I, [2018-06-12T19:54:15.492851 #13356]  INFO -- : thrId: 7, 7, 64, twitch.tv, latency: 9.989 ms
+I, [2018-06-12T19:54:15.509366 #13356]  INFO -- : thrId: 0, 0, 64, google.com, latency: 9.642 ms
+I, [2018-06-12T19:54:15.525906 #13356]  INFO -- : thrId: 6, 6, 64, dropbox.com, latency: 10.120 ms
+I, [2018-06-12T19:54:16.459693 #13356]  INFO -- : thrId: 1, 1, 63, youtube.com, latency: 10.416 ms
+I, [2018-06-12T19:54:16.637981 #13356]  INFO -- : thrId: 2, 2, 64, facebook.com, latency: 23.795 ms
+I, [2018-06-12T19:54:16.883358 #13356]  INFO -- : thrId: 3, 3, 63, yahoo.com, latency: 110.098 ms
+I, [2018-06-12T19:54:17.493477 #13356]  INFO -- : thrId: 5, 5, 63, ruby-doc.org, latency: 133.886 ms
+D, [2018-06-12T19:54:17.523815 #13356] DEBUG -- : thrId: 4, nintendo.com failCounter=26
+I, [2018-06-12T19:54:17.524109 #13356]  INFO -- : thrId: 4, 4, 32, nintendo.com, latency: -1 ms
+I, [2018-06-12T19:54:18.391011 #13356]  INFO -- : thrId: 9, 9, 62, cisco.com, latency: 121.233 ms
+D, [2018-06-12T19:54:19.450692 #13356] DEBUG -- : thrId: 8, apple.com failCounter=30
+I, [2018-06-12T19:54:19.451012 #13356]  INFO -- : thrId: 8, 8, 29, apple.com, latency: -1 ms
+I, [2018-06-12T19:54:20.517332 #13356]  INFO -- : thrId: 7, 7, 65, twitch.tv, latency: 10.887 ms
+I, [2018-06-12T19:54:20.534954 #13356]  INFO -- : thrId: 0, 0, 65, google.com, latency: 9.023 ms
+I, [2018-06-12T19:54:20.551639 #13356]  INFO -- : thrId: 6, 6, 65, dropbox.com, latency: 10.012 ms
+I, [2018-06-12T19:54:21.484954 #13356]  INFO -- : thrId: 1, 1, 64, youtube.com, latency: 9.995 ms
+I, [2018-06-12T19:54:21.677730 #13356]  INFO -- : thrId: 2, 2, 65, facebook.com, latency: 26.160 ms
+I, [2018-06-12T19:54:22.015653 #13356]  INFO -- : thrId: 3, 3, 64, yahoo.com, latency: 116.620 ms
+I, [2018-06-12T19:54:22.626272 #13356]  INFO -- : thrId: 5, 5, 64, ruby-doc.org, latency: 117.080 ms
+I, [2018-06-12T19:54:23.524733 #13356]  INFO -- : thrId: 9, 9, 63, cisco.com, latency: 122.863 ms
+I, [2018-06-12T19:54:25.537873 #13356]  INFO -- : thrId: 7, 7, 66, twitch.tv, latency: 9.270 ms
+I, [2018-06-12T19:54:25.552334 #13356]  INFO -- : thrId: 0, 0, 66, google.com, latency: 8.411 ms
+I, [2018-06-12T19:54:25.572684 #13356]  INFO -- : thrId: 6, 6, 66, dropbox.com, latency: 9.640 ms
+I, [2018-06-12T19:54:26.516445 #13356]  INFO -- : thrId: 1, 1, 65, youtube.com, latency: 10.984 ms
+I, [2018-06-12T19:54:26.717924 #13356]  INFO -- : thrId: 2, 2, 66, facebook.com, latency: 26.293 ms
+I, [2018-06-12T19:54:27.152736 #13356]  INFO -- : thrId: 3, 3, 65, yahoo.com, latency: 122.614 ms
+I, [2018-06-12T19:54:27.755453 #13356]  INFO -- : thrId: 5, 5, 65, ruby-doc.org, latency: 116.496 ms
+D, [2018-06-12T19:54:28.563874 #13356] DEBUG -- : thrId: 4, nintendo.com failCounter=27
+I, [2018-06-12T19:54:28.564217 #13356]  INFO -- : thrId: 4, 4, 33, nintendo.com, latency: -1 ms
+I, [2018-06-12T19:54:28.660159 #13356]  INFO -- : thrId: 9, 9, 64, cisco.com, latency: 123.308 ms
+D, [2018-06-12T19:54:30.479753 #13356] DEBUG -- : thrId: 8, apple.com failCounter=31
+I, [2018-06-12T19:54:30.480219 #13356]  INFO -- : thrId: 8, 8, 30, apple.com, latency: -1 ms
+I, [2018-06-12T19:54:30.564796 #13356]  INFO -- : thrId: 7, 7, 67, twitch.tv, latency: 11.837 ms
+I, [2018-06-12T19:54:30.582892 #13356]  INFO -- : thrId: 0, 0, 67, google.com, latency: 8.962 ms
+I, [2018-06-12T19:54:30.599463 #13356]  INFO -- : thrId: 6, 6, 67, dropbox.com, latency: 9.929 ms
+I, [2018-06-12T19:54:31.538233 #13356]  INFO -- : thrId: 1, 1, 66, youtube.com, latency: 9.693 ms
+I, [2018-06-12T19:54:31.760796 #13356]  INFO -- : thrId: 2, 2, 67, facebook.com, latency: 24.764 ms
+I, [2018-06-12T19:54:32.292612 #13356]  INFO -- : thrId: 3, 3, 66, yahoo.com, latency: 126.905 ms
+I, [2018-06-12T19:54:32.888504 #13356]  INFO -- : thrId: 5, 5, 66, ruby-doc.org, latency: 115.669 ms
+I, [2018-06-12T19:54:33.802843 #13356]  INFO -- : thrId: 9, 9, 65, cisco.com, latency: 122.590 ms
+I, [2018-06-12T19:54:35.595747 #13356]  INFO -- : thrId: 7, 7, 68, twitch.tv, latency: 9.841 ms
+I, [2018-06-12T19:54:35.613244 #13356]  INFO -- : thrId: 0, 0, 68, google.com, latency: 10.495 ms
+I, [2018-06-12T19:54:35.630707 #13356]  INFO -- : thrId: 6, 6, 68, dropbox.com, latency: 10.920 ms
+I, [2018-06-12T19:54:36.558543 #13356]  INFO -- : thrId: 1, 1, 67, youtube.com, latency: 8.448 ms
+I, [2018-06-12T19:54:36.813276 #13356]  INFO -- : thrId: 2, 2, 68, facebook.com, latency: 39.714 ms
+I, [2018-06-12T19:54:37.419901 #13356]  INFO -- : thrId: 3, 3, 67, yahoo.com, latency: 107.118 ms
+I, [2018-06-12T19:54:38.016701 #13356]  INFO -- : thrId: 5, 5, 67, ruby-doc.org, latency: 116.385 ms
+I, [2018-06-12T19:54:38.942616 #13356]  INFO -- : thrId: 9, 9, 66, cisco.com, latency: 124.580 ms
+D, [2018-06-12T19:54:39.584493 #13356] DEBUG -- : thrId: 4, nintendo.com failCounter=28
+I, [2018-06-12T19:54:39.584856 #13356]  INFO -- : thrId: 4, 4, 34, nintendo.com, latency: -1 ms
+I, [2018-06-12T19:54:40.623098 #13356]  INFO -- : thrId: 7, 7, 69, twitch.tv, latency: 9.625 ms
+I, [2018-06-12T19:54:40.643311 #13356]  INFO -- : thrId: 0, 0, 69, google.com, latency: 9.870 ms
+I, [2018-06-12T19:54:40.659711 #13356]  INFO -- : thrId: 6, 6, 69, dropbox.com, latency: 9.962 ms
+D, [2018-06-12T19:54:41.507411 #13356] DEBUG -- : thrId: 8, apple.com failCounter=32
+I, [2018-06-12T19:54:41.507800 #13356]  INFO -- : thrId: 8, 8, 31, apple.com, latency: -1 ms
+I, [2018-06-12T19:54:41.584132 #13356]  INFO -- : thrId: 1, 1, 68, youtube.com, latency: 10.445 ms
+I, [2018-06-12T19:54:41.872511 #13356]  INFO -- : thrId: 2, 2, 69, facebook.com, latency: 42.284 ms
+I, [2018-06-12T19:54:42.551204 #13356]  INFO -- : thrId: 3, 3, 68, yahoo.com, latency: 110.762 ms
+I, [2018-06-12T19:54:43.148972 #13356]  INFO -- : thrId: 5, 5, 68, ruby-doc.org, latency: 116.975 ms
+I, [2018-06-12T19:54:44.085700 #13356]  INFO -- : thrId: 9, 9, 67, cisco.com, latency: 125.238 ms
+I, [2018-06-12T19:54:45.648330 #13356]  INFO -- : thrId: 7, 7, 70, twitch.tv, latency: 10.554 ms
+I, [2018-06-12T19:54:45.667550 #13356]  INFO -- : thrId: 0, 0, 70, google.com, latency: 9.748 ms
+I, [2018-06-12T19:54:45.683957 #13356]  INFO -- : thrId: 6, 6, 70, dropbox.com, latency: 9.942 ms
+I, [2018-06-12T19:54:46.606357 #13356]  INFO -- : thrId: 1, 1, 69, youtube.com, latency: 10.566 ms
+I, [2018-06-12T19:54:46.933591 #13356]  INFO -- : thrId: 2, 2, 70, facebook.com, latency: 49.706 ms
+I, [2018-06-12T19:54:47.681565 #13356]  INFO -- : thrId: 3, 3, 69, yahoo.com, latency: 110.790 ms
+I, [2018-06-12T19:54:48.278851 #13356]  INFO -- : thrId: 5, 5, 69, ruby-doc.org, latency: 116.589 ms
+I, [2018-06-12T19:54:49.226494 #13356]  INFO -- : thrId: 9, 9, 68, cisco.com, latency: 124.569 ms
+D, [2018-06-12T19:54:50.611385 #13356] DEBUG -- : thrId: 4, nintendo.com failCounter=29
+I, [2018-06-12T19:54:50.611646 #13356]  INFO -- : thrId: 4, 4, 35, nintendo.com, latency: -1 ms
+I, [2018-06-12T19:54:50.673743 #13356]  INFO -- : thrId: 7, 7, 71, twitch.tv, latency: 10.623 ms
+I, [2018-06-12T19:54:50.692264 #13356]  INFO -- : thrId: 0, 0, 71, google.com, latency: 9.524 ms
+I, [2018-06-12T19:54:50.710040 #13356]  INFO -- : thrId: 6, 6, 71, dropbox.com, latency: 11.319 ms
+I, [2018-06-12T19:54:51.652019 #13356]  INFO -- : thrId: 1, 1, 70, youtube.com, latency: 29.648 ms
+I, [2018-06-12T19:54:51.999700 #13356]  INFO -- : thrId: 2, 2, 71, facebook.com, latency: 47.036 ms
+D, [2018-06-12T19:54:52.525096 #13356] DEBUG -- : thrId: 8, apple.com failCounter=33
+I, [2018-06-12T19:54:52.525286 #13356]  INFO -- : thrId: 8, 8, 32, apple.com, latency: -1 ms
+I, [2018-06-12T19:54:52.810159 #13356]  INFO -- : thrId: 3, 3, 70, yahoo.com, latency: 108.068 ms
+I, [2018-06-12T19:54:53.410551 #13356]  INFO -- : thrId: 5, 5, 70, ruby-doc.org, latency: 116.575 ms
+I, [2018-06-12T19:54:54.364134 #13356]  INFO -- : thrId: 9, 9, 69, cisco.com, latency: 124.430 ms
+I, [2018-06-12T19:54:55.691613 #13356]  INFO -- : thrId: 7, 7, 72, twitch.tv, latency: 9.846 ms
+I, [2018-06-12T19:54:55.710806 #13356]  INFO -- : thrId: 0, 0, 72, google.com, latency: 10.101 ms
+I, [2018-06-12T19:54:55.733182 #13356]  INFO -- : thrId: 6, 6, 72, dropbox.com, latency: 9.270 ms
+I, [2018-06-12T19:54:56.677153 #13356]  INFO -- : thrId: 1, 1, 71, youtube.com, latency: 10.060 ms
+I, [2018-06-12T19:54:57.039958 #13356]  INFO -- : thrId: 2, 2, 72, facebook.com, latency: 26.475 ms
+I, [2018-06-12T19:54:57.947178 #13356]  INFO -- : thrId: 3, 3, 71, yahoo.com, latency: 125.976 ms
+I, [2018-06-12T19:54:58.548504 #13356]  INFO -- : thrId: 5, 5, 71, ruby-doc.org, latency: 115.943 ms
+I, [2018-06-12T19:54:59.500588 #13356]  INFO -- : thrId: 9, 9, 70, cisco.com, latency: 124.297 ms
+I, [2018-06-12T19:55:00.715351 #13356]  INFO -- : thrId: 7, 7, 73, twitch.tv, latency: 9.993 ms
+I, [2018-06-12T19:55:00.732890 #13356]  INFO -- : thrId: 0, 0, 73, google.com, latency: 10.882 ms
+I, [2018-06-12T19:55:00.755963 #13356]  INFO -- : thrId: 6, 6, 73, dropbox.com, latency: 10.805 ms
+D, [2018-06-12T19:55:01.642471 #13356] DEBUG -- : thrId: 4, nintendo.com failCounter=30
+I, [2018-06-12T19:55:01.642807 #13356]  INFO -- : thrId: 4, 4, 36, nintendo.com, latency: -1 ms
+I, [2018-06-12T19:55:01.702423 #13356]  INFO -- : thrId: 1, 1, 72, youtube.com, latency: 10.441 ms
+I, [2018-06-12T19:55:02.079118 #13356]  INFO -- : thrId: 2, 2, 73, facebook.com, latency: 24.602 ms
+I, [2018-06-12T19:55:03.089005 #13356]  INFO -- : thrId: 3, 3, 72, yahoo.com, latency: 125.766 ms
+D, [2018-06-12T19:55:03.550746 #13356] DEBUG -- : thrId: 8, apple.com failCounter=34
+I, [2018-06-12T19:55:03.551061 #13356]  INFO -- : thrId: 8, 8, 33, apple.com, latency: -1 ms
+I, [2018-06-12T19:55:03.684428 #13356]  INFO -- : thrId: 5, 5, 72, ruby-doc.org, latency: 116.043 ms
+I, [2018-06-12T19:55:04.642106 #13356]  INFO -- : thrId: 9, 9, 71, cisco.com, latency: 124.260 ms
+I, [2018-06-12T19:55:05.746451 #13356]  INFO -- : thrId: 7, 7, 74, twitch.tv, latency: 9.065 ms
+I, [2018-06-12T19:55:05.761743 #13356]  INFO -- : thrId: 0, 0, 74, google.com, latency: 8.880 ms
+I, [2018-06-12T19:55:05.780059 #13356]  INFO -- : thrId: 6, 6, 74, dropbox.com, latency: 11.251 ms
+I, [2018-06-12T19:55:06.730784 #13356]  INFO -- : thrId: 1, 1, 73, youtube.com, latency: 9.950 ms
+I, [2018-06-12T19:55:07.125359 #13356]  INFO -- : thrId: 2, 2, 74, facebook.com, latency: 25.095 ms
+I, [2018-06-12T19:55:08.218963 #13356]  INFO -- : thrId: 3, 3, 73, yahoo.com, latency: 109.556 ms
+I, [2018-06-12T19:55:08.820111 #13356]  INFO -- : thrId: 5, 5, 73, ruby-doc.org, latency: 116.812 ms
+I, [2018-06-12T19:55:09.780014 #13356]  INFO -- : thrId: 9, 9, 72, cisco.com, latency: 126.294 ms
+I, [2018-06-12T19:55:10.774083 #13356]  INFO -- : thrId: 7, 7, 75, twitch.tv, latency: 10.582 ms
+I, [2018-06-12T19:55:10.783154 #13356]  INFO -- : thrId: 0, 0, 75, google.com, latency: 10.139 ms
+I, [2018-06-12T19:55:10.825775 #13356]  INFO -- : thrId: 6, 6, 75, dropbox.com, latency: 10.617 ms
+I, [2018-06-12T19:55:11.753075 #13356]  INFO -- : thrId: 1, 1, 74, youtube.com, latency: 10.170 ms
+I, [2018-06-12T19:55:12.167367 #13356]  INFO -- : thrId: 2, 2, 75, facebook.com, latency: 24.828 ms
+D, [2018-06-12T19:55:12.673333 #13356] DEBUG -- : thrId: 4, nintendo.com failCounter=31
+I, [2018-06-12T19:55:12.673626 #13356]  INFO -- : thrId: 4, 4, 37, nintendo.com, latency: -1 ms
+I, [2018-06-12T19:55:13.349753 #13356]  INFO -- : thrId: 3, 3, 74, yahoo.com, latency: 112.792 ms
+I, [2018-06-12T19:55:13.956504 #13356]  INFO -- : thrId: 5, 5, 74, ruby-doc.org, latency: 116.892 ms
+D, [2018-06-12T19:55:14.580429 #13356] DEBUG -- : thrId: 8, apple.com failCounter=35
+I, [2018-06-12T19:55:14.580813 #13356]  INFO -- : thrId: 8, 8, 34, apple.com, latency: -1 ms
+I, [2018-06-12T19:55:14.912400 #13356]  INFO -- : thrId: 9, 9, 73, cisco.com, latency: 122.713 ms
+I, [2018-06-12T19:55:15.795696 #13356]  INFO -- : thrId: 7, 7, 76, twitch.tv, latency: 10.757 ms
+I, [2018-06-12T19:55:15.811138 #13356]  INFO -- : thrId: 0, 0, 76, google.com, latency: 10.041 ms
+I, [2018-06-12T19:55:15.851440 #13356]  INFO -- : thrId: 6, 6, 76, dropbox.com, latency: 9.740 ms
+I, [2018-06-12T19:55:16.777072 #13356]  INFO -- : thrId: 1, 1, 75, youtube.com, latency: 9.305 ms
+I, [2018-06-12T19:55:17.210152 #13356]  INFO -- : thrId: 2, 2, 76, facebook.com, latency: 26.828 ms
+I, [2018-06-12T19:55:18.473622 #13356]  INFO -- : thrId: 3, 3, 75, yahoo.com, latency: 112.075 ms
+I, [2018-06-12T19:55:19.087882 #13356]  INFO -- : thrId: 5, 5, 75, ruby-doc.org, latency: 116.998 ms
+I, [2018-06-12T19:55:20.046794 #13356]  INFO -- : thrId: 9, 9, 74, cisco.com, latency: 123.647 ms
+I, [2018-06-12T19:55:20.822520 #13356]  INFO -- : thrId: 7, 7, 77, twitch.tv, latency: 10.642 ms
+I, [2018-06-12T19:55:20.836938 #13356]  INFO -- : thrId: 0, 0, 77, google.com, latency: 9.796 ms
+I, [2018-06-12T19:55:20.879679 #13356]  INFO -- : thrId: 6, 6, 77, dropbox.com, latency: 10.560 ms
+I, [2018-06-12T19:55:21.802513 #13356]  INFO -- : thrId: 1, 1, 76, youtube.com, latency: 9.698 ms
+I, [2018-06-12T19:55:22.246604 #13356]  INFO -- : thrId: 2, 2, 77, facebook.com, latency: 24.955 ms
+I, [2018-06-12T19:55:23.595575 #13356]  INFO -- : thrId: 3, 3, 76, yahoo.com, latency: 110.354 ms
+D, [2018-06-12T19:55:23.743444 #13356] DEBUG -- : thrId: 4, nintendo.com failCounter=32
+I, [2018-06-12T19:55:23.743828 #13356]  INFO -- : thrId: 4, 4, 38, nintendo.com, latency: -1 ms
+I, [2018-06-12T19:55:24.219706 #13356]  INFO -- : thrId: 5, 5, 76, ruby-doc.org, latency: 117.979 ms
+I, [2018-06-12T19:55:25.181124 #13356]  INFO -- : thrId: 9, 9, 75, cisco.com, latency: 122.919 ms
+D, [2018-06-12T19:55:25.595075 #13356] DEBUG -- : thrId: 8, apple.com failCounter=36
+I, [2018-06-12T19:55:25.595324 #13356]  INFO -- : thrId: 8, 8, 35, apple.com, latency: -1 ms
+I, [2018-06-12T19:55:25.848206 #13356]  INFO -- : thrId: 7, 7, 78, twitch.tv, latency: 9.997 ms
+I, [2018-06-12T19:55:25.865471 #13356]  INFO -- : thrId: 0, 0, 78, google.com, latency: 10.258 ms
+I, [2018-06-12T19:55:25.901207 #13356]  INFO -- : thrId: 6, 6, 78, dropbox.com, latency: 10.905 ms
+I, [2018-06-12T19:55:26.823314 #13356]  INFO -- : thrId: 1, 1, 77, youtube.com, latency: 9.896 ms
+I, [2018-06-12T19:55:27.289367 #13356]  INFO -- : thrId: 2, 2, 78, facebook.com, latency: 24.635 ms
+I, [2018-06-12T19:55:28.723103 #13356]  INFO -- : thrId: 3, 3, 77, yahoo.com, latency: 111.248 ms
+I, [2018-06-12T19:55:29.349197 #13356]  INFO -- : thrId: 5, 5, 77, ruby-doc.org, latency: 116.343 ms
+I, [2018-06-12T19:55:30.315979 #13356]  INFO -- : thrId: 9, 9, 76, cisco.com, latency: 121.096 ms
+I, [2018-06-12T19:55:30.875320 #13356]  INFO -- : thrId: 7, 7, 79, twitch.tv, latency: 11.376 ms
+I, [2018-06-12T19:55:30.891316 #13356]  INFO -- : thrId: 0, 0, 79, google.com, latency: 9.485 ms
+I, [2018-06-12T19:55:30.931954 #13356]  INFO -- : thrId: 6, 6, 79, dropbox.com, latency: 10.291 ms
+I, [2018-06-12T19:55:31.848951 #13356]  INFO -- : thrId: 1, 1, 78, youtube.com, latency: 11.005 ms
+I, [2018-06-12T19:55:32.333300 #13356]  INFO -- : thrId: 2, 2, 79, facebook.com, latency: 25.335 ms
+I, [2018-06-12T19:55:33.849937 #13356]  INFO -- : thrId: 3, 3, 78, yahoo.com, latency: 112.946 ms
+I, [2018-06-12T19:55:34.485843 #13356]  INFO -- : thrId: 5, 5, 78, ruby-doc.org, latency: 115.729 ms
+D, [2018-06-12T19:55:34.771829 #13356] DEBUG -- : thrId: 4, nintendo.com failCounter=33
+I, [2018-06-12T19:55:34.772100 #13356]  INFO -- : thrId: 4, 4, 39, nintendo.com, latency: -1 ms
+I, [2018-06-12T19:55:35.456773 #13356]  INFO -- : thrId: 9, 9, 77, cisco.com, latency: 123.415 ms
+I, [2018-06-12T19:55:35.898229 #13356]  INFO -- : thrId: 7, 7, 80, twitch.tv, latency: 9.141 ms
+I, [2018-06-12T19:55:35.907532 #13356]  INFO -- : thrId: 0, 0, 80, google.com, latency: 8.510 ms
+I, [2018-06-12T19:55:35.958601 #13356]  INFO -- : thrId: 6, 6, 80, dropbox.com, latency: 9.053 ms
+D, [2018-06-12T19:55:36.623769 #13356] DEBUG -- : thrId: 8, apple.com failCounter=37
+I, [2018-06-12T19:55:36.624069 #13356]  INFO -- : thrId: 8, 8, 36, apple.com, latency: -1 ms
+I, [2018-06-12T19:55:36.873691 #13356]  INFO -- : thrId: 1, 1, 79, youtube.com, latency: 10.878 ms
+I, [2018-06-12T19:55:37.380695 #13356]  INFO -- : thrId: 2, 2, 80, facebook.com, latency: 26.394 ms
+I, [2018-06-12T19:55:38.972956 #13356]  INFO -- : thrId: 3, 3, 79, yahoo.com, latency: 111.538 ms
+I, [2018-06-12T19:55:39.620188 #13356]  INFO -- : thrId: 5, 5, 79, ruby-doc.org, latency: 116.805 ms
+I, [2018-06-12T19:55:40.596405 #13356]  INFO -- : thrId: 9, 9, 78, cisco.com, latency: 121.653 ms
+I, [2018-06-12T19:55:40.920314 #13356]  INFO -- : thrId: 7, 7, 81, twitch.tv, latency: 9.521 ms
+I, [2018-06-12T19:55:40.924511 #13356]  INFO -- : thrId: 0, 0, 81, google.com, latency: 8.754 ms
+I, [2018-06-12T19:55:40.976584 #13356]  INFO -- : thrId: 6, 6, 81, dropbox.com, latency: 9.997 ms
+I, [2018-06-12T19:55:41.900772 #13356]  INFO -- : thrId: 1, 1, 80, youtube.com, latency: 10.643 ms
+I, [2018-06-12T19:55:42.421051 #13356]  INFO -- : thrId: 2, 2, 81, facebook.com, latency: 25.136 ms
+I, [2018-06-12T19:55:44.105220 #13356]  INFO -- : thrId: 3, 3, 80, yahoo.com, latency: 111.607 ms
+I, [2018-06-12T19:55:44.748813 #13356]  INFO -- : thrId: 5, 5, 80, ruby-doc.org, latency: 115.136 ms
+I, [2018-06-12T19:55:45.734646 #13356]  INFO -- : thrId: 9, 9, 79, cisco.com, latency: 122.941 ms
+D, [2018-06-12T19:55:45.799362 #13356] DEBUG -- : thrId: 4, nintendo.com failCounter=34
+I, [2018-06-12T19:55:45.799641 #13356]  INFO -- : thrId: 4, 4, 40, nintendo.com, latency: -1 ms
+I, [2018-06-12T19:55:45.950054 #13356]  INFO -- : thrId: 7, 7, 82, twitch.tv, latency: 8.999 ms
+I, [2018-06-12T19:55:45.953685 #13356]  INFO -- : thrId: 0, 0, 82, google.com, latency: 9.015 ms
+I, [2018-06-12T19:55:46.004952 #13356]  INFO -- : thrId: 6, 6, 82, dropbox.com, latency: 10.704 ms
+I, [2018-06-12T19:55:46.925809 #13356]  INFO -- : thrId: 1, 1, 81, youtube.com, latency: 11.726 ms
+I, [2018-06-12T19:55:47.464633 #13356]  INFO -- : thrId: 2, 2, 82, facebook.com, latency: 26.053 ms
+D, [2018-06-12T19:55:47.654312 #13356] DEBUG -- : thrId: 8, apple.com failCounter=38
+I, [2018-06-12T19:55:47.654554 #13356]  INFO -- : thrId: 8, 8, 37, apple.com, latency: -1 ms
+I, [2018-06-12T19:55:49.228804 #13356]  INFO -- : thrId: 3, 3, 81, yahoo.com, latency: 110.919 ms
+I, [2018-06-12T19:55:49.877692 #13356]  INFO -- : thrId: 5, 5, 81, ruby-doc.org, latency: 116.534 ms
+I, [2018-06-12T19:55:50.875495 #13356]  INFO -- : thrId: 9, 9, 80, cisco.com, latency: 121.866 ms
+I, [2018-06-12T19:55:50.974399 #13356]  INFO -- : thrId: 7, 7, 83, twitch.tv, latency: 9.998 ms
+I, [2018-06-12T19:55:50.977010 #13356]  INFO -- : thrId: 0, 0, 83, google.com, latency: 8.604 ms
+I, [2018-06-12T19:55:51.032880 #13356]  INFO -- : thrId: 6, 6, 83, dropbox.com, latency: 9.887 ms
+I, [2018-06-12T19:55:51.951483 #13356]  INFO -- : thrId: 1, 1, 82, youtube.com, latency: 12.201 ms
+I, [2018-06-12T19:55:52.503257 #13356]  INFO -- : thrId: 2, 2, 83, facebook.com, latency: 26.163 ms
+I, [2018-06-12T19:55:54.358979 #13356]  INFO -- : thrId: 3, 3, 82, yahoo.com, latency: 109.623 ms
+I, [2018-06-12T19:55:55.011345 #13356]  INFO -- : thrId: 5, 5, 82, ruby-doc.org, latency: 116.730 ms
+I, [2018-06-12T19:55:56.002052 #13356]  INFO -- : thrId: 7, 7, 84, twitch.tv, latency: 9.894 ms
+I, [2018-06-12T19:55:56.004024 #13356]  INFO -- : thrId: 0, 0, 84, google.com, latency: 9.737 ms
+I, [2018-06-12T19:55:56.015034 #13356]  INFO -- : thrId: 9, 9, 81, cisco.com, latency: 126.078 ms
+I, [2018-06-12T19:55:56.057590 #13356]  INFO -- : thrId: 6, 6, 84, dropbox.com, latency: 10.262 ms
+D, [2018-06-12T19:55:56.821334 #13356] DEBUG -- : thrId: 4, nintendo.com failCounter=35
+I, [2018-06-12T19:55:56.821602 #13356]  INFO -- : thrId: 4, 4, 41, nintendo.com, latency: -1 ms
+I, [2018-06-12T19:55:56.970534 #13356]  INFO -- : thrId: 1, 1, 83, youtube.com, latency: 11.087 ms
+I, [2018-06-12T19:55:57.546399 #13356]  INFO -- : thrId: 2, 2, 84, facebook.com, latency: 24.433 ms
+D, [2018-06-12T19:55:58.679590 #13356] DEBUG -- : thrId: 8, apple.com failCounter=39
+I, [2018-06-12T19:55:58.679872 #13356]  INFO -- : thrId: 8, 8, 38, apple.com, latency: -1 ms
+I, [2018-06-12T19:55:59.483545 #13356]  INFO -- : thrId: 3, 3, 83, yahoo.com, latency: 109.921 ms
+I, [2018-06-12T19:56:00.140163 #13356]  INFO -- : thrId: 5, 5, 83, ruby-doc.org, latency: 116.928 ms
+I, [2018-06-12T19:56:01.027852 #13356]  INFO -- : thrId: 7, 7, 85, twitch.tv, latency: 10.726 ms
+I, [2018-06-12T19:56:01.029296 #13356]  INFO -- : thrId: 0, 0, 85, google.com, latency: 9.785 ms
+I, [2018-06-12T19:56:01.094800 #13356]  INFO -- : thrId: 6, 6, 85, dropbox.com, latency: 10.289 ms
+I, [2018-06-12T19:56:01.148659 #13356]  INFO -- : thrId: 9, 9, 82, cisco.com, latency: 123.526 ms
+I, [2018-06-12T19:56:02.002041 #13356]  INFO -- : thrId: 1, 1, 84, youtube.com, latency: 10.301 ms
+I, [2018-06-12T19:56:02.585361 #13356]  INFO -- : thrId: 2, 2, 85, facebook.com, latency: 25.043 ms
+I, [2018-06-12T19:56:04.605817 #13356]  INFO -- : thrId: 3, 3, 84, yahoo.com, latency: 108.887 ms
+I, [2018-06-12T19:56:05.305103 #13356]  INFO -- : thrId: 5, 5, 84, ruby-doc.org, latency: 150.546 ms
+I, [2018-06-12T19:56:06.052460 #13356]  INFO -- : thrId: 7, 7, 86, twitch.tv, latency: 9.517 ms
+I, [2018-06-12T19:56:06.055592 #13356]  INFO -- : thrId: 0, 0, 86, google.com, latency: 9.271 ms
+I, [2018-06-12T19:56:06.124940 #13356]  INFO -- : thrId: 6, 6, 86, dropbox.com, latency: 11.960 ms
+I, [2018-06-12T19:56:06.283167 #13356]  INFO -- : thrId: 9, 9, 83, cisco.com, latency: 122.699 ms
+I, [2018-06-12T19:56:07.028018 #13356]  INFO -- : thrId: 1, 1, 85, youtube.com, latency: 7.902 ms
+I, [2018-06-12T19:56:07.621912 #13356]  INFO -- : thrId: 2, 2, 86, facebook.com, latency: 24.735 ms
+D, [2018-06-12T19:56:07.844694 #13356] DEBUG -- : thrId: 4, nintendo.com failCounter=36
+I, [2018-06-12T19:56:07.845059 #13356]  INFO -- : thrId: 4, 4, 42, nintendo.com, latency: -1 ms
+D, [2018-06-12T19:56:09.697730 #13356] DEBUG -- : thrId: 8, apple.com failCounter=40
+I, [2018-06-12T19:56:09.698058 #13356]  INFO -- : thrId: 8, 8, 39, apple.com, latency: -1 ms
+I, [2018-06-12T19:56:09.734058 #13356]  INFO -- : thrId: 3, 3, 85, yahoo.com, latency: 109.709 ms
+I, [2018-06-12T19:56:10.442153 #13356]  INFO -- : thrId: 5, 5, 85, ruby-doc.org, latency: 115.731 ms
+I, [2018-06-12T19:56:11.080407 #13356]  INFO -- : thrId: 7, 7, 87, twitch.tv, latency: 11.022 ms
+I, [2018-06-12T19:56:11.083999 #13356]  INFO -- : thrId: 0, 0, 87, google.com, latency: 9.661 ms
+I, [2018-06-12T19:56:11.155042 #13356]  INFO -- : thrId: 6, 6, 87, dropbox.com, latency: 10.682 ms
+I, [2018-06-12T19:56:11.423907 #13356]  INFO -- : thrId: 9, 9, 84, cisco.com, latency: 122.529 ms
+I, [2018-06-12T19:56:12.049876 #13356]  INFO -- : thrId: 1, 1, 86, youtube.com, latency: 9.502 ms
+I, [2018-06-12T19:56:12.672823 #13356]  INFO -- : thrId: 2, 2, 87, facebook.com, latency: 24.572 ms
+I, [2018-06-12T19:56:14.866746 #13356]  INFO -- : thrId: 3, 3, 86, yahoo.com, latency: 112.340 ms
+I, [2018-06-12T19:56:15.572014 #13356]  INFO -- : thrId: 5, 5, 86, ruby-doc.org, latency: 116.230 ms
+I, [2018-06-12T19:56:16.103363 #13356]  INFO -- : thrId: 7, 7, 88, twitch.tv, latency: 8.957 ms
+I, [2018-06-12T19:56:16.113347 #13356]  INFO -- : thrId: 0, 0, 88, google.com, latency: 10.322 ms
+I, [2018-06-12T19:56:16.196988 #13356]  INFO -- : thrId: 6, 6, 88, dropbox.com, latency: 10.119 ms
+I, [2018-06-12T19:56:16.569069 #13356]  INFO -- : thrId: 9, 9, 85, cisco.com, latency: 125.750 ms
+I, [2018-06-12T19:56:17.075962 #13356]  INFO -- : thrId: 1, 1, 87, youtube.com, latency: 11.777 ms
+I, [2018-06-12T19:56:17.711146 #13356]  INFO -- : thrId: 2, 2, 88, facebook.com, latency: 25.885 ms
+D, [2018-06-12T19:56:18.877207 #13356] DEBUG -- : thrId: 4, nintendo.com failCounter=37
+I, [2018-06-12T19:56:18.877510 #13356]  INFO -- : thrId: 4, 4, 43, nintendo.com, latency: -1 ms
+I, [2018-06-12T19:56:19.988649 #13356]  INFO -- : thrId: 3, 3, 87, yahoo.com, latency: 109.468 ms
+I, [2018-06-12T19:56:20.704228 #13356]  INFO -- : thrId: 5, 5, 87, ruby-doc.org, latency: 117.383 ms
+D, [2018-06-12T19:56:20.716750 #13356] DEBUG -- : thrId: 8, apple.com failCounter=41
+I, [2018-06-12T19:56:20.716975 #13356]  INFO -- : thrId: 8, 8, 40, apple.com, latency: -1 ms
+I, [2018-06-12T19:56:21.127821 #13356]  INFO -- : thrId: 7, 7, 89, twitch.tv, latency: 11.790 ms
+I, [2018-06-12T19:56:21.136462 #13356]  INFO -- : thrId: 0, 0, 89, google.com, latency: 10.172 ms
+I, [2018-06-12T19:56:21.227896 #13356]  INFO -- : thrId: 6, 6, 89, dropbox.com, latency: 10.558 ms
+I, [2018-06-12T19:56:21.791450 #13356]  INFO -- : thrId: 9, 9, 86, cisco.com, latency: 205.624 ms
+I, [2018-06-12T19:56:22.102941 #13356]  INFO -- : thrId: 1, 1, 88, youtube.com, latency: 11.140 ms
+I, [2018-06-12T19:56:22.748694 #13356]  INFO -- : thrId: 2, 2, 89, facebook.com, latency: 24.509 ms
+I, [2018-06-12T19:56:25.109949 #13356]  INFO -- : thrId: 3, 3, 88, yahoo.com, latency: 110.512 ms
+I, [2018-06-12T19:56:25.836888 #13356]  INFO -- : thrId: 5, 5, 88, ruby-doc.org, latency: 116.359 ms
+I, [2018-06-12T19:56:26.152087 #13356]  INFO -- : thrId: 7, 7, 90, twitch.tv, latency: 9.916 ms
+I, [2018-06-12T19:56:26.166172 #13356]  INFO -- : thrId: 0, 0, 90, google.com, latency: 9.519 ms
+I, [2018-06-12T19:56:26.253628 #13356]  INFO -- : thrId: 6, 6, 90, dropbox.com, latency: 9.490 ms
+I, [2018-06-12T19:56:26.922356 #13356]  INFO -- : thrId: 9, 9, 87, cisco.com, latency: 122.460 ms
+I, [2018-06-12T19:56:27.126675 #13356]  INFO -- : thrId: 1, 1, 89, youtube.com, latency: 9.167 ms
+I, [2018-06-12T19:56:27.787052 #13356]  INFO -- : thrId: 2, 2, 90, facebook.com, latency: 25.628 ms
+D, [2018-06-12T19:56:29.906300 #13356] DEBUG -- : thrId: 4, nintendo.com failCounter=38
+I, [2018-06-12T19:56:29.906640 #13356]  INFO -- : thrId: 4, 4, 44, nintendo.com, latency: -1 ms
+I, [2018-06-12T19:56:30.240755 #13356]  INFO -- : thrId: 3, 3, 89, yahoo.com, latency: 111.054 ms
+I, [2018-06-12T19:56:30.964015 #13356]  INFO -- : thrId: 5, 5, 89, ruby-doc.org, latency: 116.495 ms
+I, [2018-06-12T19:56:31.181030 #13356]  INFO -- : thrId: 7, 7, 91, twitch.tv, latency: 13.578 ms
+I, [2018-06-12T19:56:31.189200 #13356]  INFO -- : thrId: 0, 0, 91, google.com, latency: 10.386 ms
+I, [2018-06-12T19:56:31.284648 #13356]  INFO -- : thrId: 6, 6, 91, dropbox.com, latency: 11.101 ms
+D, [2018-06-12T19:56:31.736545 #13356] DEBUG -- : thrId: 8, apple.com failCounter=42
+I, [2018-06-12T19:56:31.736828 #13356]  INFO -- : thrId: 8, 8, 41, apple.com, latency: -1 ms
+I, [2018-06-12T19:56:32.057674 #13356]  INFO -- : thrId: 9, 9, 88, cisco.com, latency: 123.562 ms
+I, [2018-06-12T19:56:32.151858 #13356]  INFO -- : thrId: 1, 1, 90, youtube.com, latency: 9.076 ms
+I, [2018-06-12T19:56:32.823689 #13356]  INFO -- : thrId: 2, 2, 91, facebook.com, latency: 24.767 ms
+I, [2018-06-12T19:56:35.372913 #13356]  INFO -- : thrId: 3, 3, 90, yahoo.com, latency: 111.485 ms
+I, [2018-06-12T19:56:36.096070 #13356]  INFO -- : thrId: 5, 5, 90, ruby-doc.org, latency: 116.999 ms
+I, [2018-06-12T19:56:36.210000 #13356]  INFO -- : thrId: 7, 7, 92, twitch.tv, latency: 11.517 ms
+I, [2018-06-12T19:56:36.217629 #13356]  INFO -- : thrId: 0, 0, 92, google.com, latency: 12.012 ms
+I, [2018-06-12T19:56:36.311280 #13356]  INFO -- : thrId: 6, 6, 92, dropbox.com, latency: 12.664 ms
+I, [2018-06-12T19:56:37.175718 #13356]  INFO -- : thrId: 1, 1, 91, youtube.com, latency: 11.350 ms
+I, [2018-06-12T19:56:37.197570 #13356]  INFO -- : thrId: 9, 9, 89, cisco.com, latency: 122.380 ms
+I, [2018-06-12T19:56:37.867612 #13356]  INFO -- : thrId: 2, 2, 92, facebook.com, latency: 25.025 ms
+I, [2018-06-12T19:56:40.496372 #13356]  INFO -- : thrId: 3, 3, 91, yahoo.com, latency: 110.975 ms
+D, [2018-06-12T19:56:40.933914 #13356] DEBUG -- : thrId: 4, nintendo.com failCounter=39
+I, [2018-06-12T19:56:40.934263 #13356]  INFO -- : thrId: 4, 4, 45, nintendo.com, latency: -1 ms
+I, [2018-06-12T19:56:41.230764 #13356]  INFO -- : thrId: 5, 5, 91, ruby-doc.org, latency: 115.224 ms
+I, [2018-06-12T19:56:41.235263 #13356]  INFO -- : thrId: 7, 7, 93, twitch.tv, latency: 8.234 ms
+I, [2018-06-12T19:56:41.245494 #13356]  INFO -- : thrId: 0, 0, 93, google.com, latency: 11.120 ms
+I, [2018-06-12T19:56:41.341702 #13356]  INFO -- : thrId: 6, 6, 93, dropbox.com, latency: 10.236 ms
+I, [2018-06-12T19:56:42.207200 #13356]  INFO -- : thrId: 1, 1, 92, youtube.com, latency: 10.797 ms
+I, [2018-06-12T19:56:42.335668 #13356]  INFO -- : thrId: 9, 9, 90, cisco.com, latency: 122.035 ms
+D, [2018-06-12T19:56:42.767093 #13356] DEBUG -- : thrId: 8, apple.com failCounter=43
+I, [2018-06-12T19:56:42.767388 #13356]  INFO -- : thrId: 8, 8, 42, apple.com, latency: -1 ms
+I, [2018-06-12T19:56:42.905703 #13356]  INFO -- : thrId: 2, 2, 93, facebook.com, latency: 25.388 ms
+I, [2018-06-12T19:56:45.624286 #13356]  INFO -- : thrId: 3, 3, 92, yahoo.com, latency: 111.473 ms
+I, [2018-06-12T19:56:46.263450 #13356]  INFO -- : thrId: 7, 7, 94, twitch.tv, latency: 11.464 ms
+I, [2018-06-12T19:56:46.273469 #13356]  INFO -- : thrId: 0, 0, 94, google.com, latency: 9.554 ms
+I, [2018-06-12T19:56:46.366819 #13356]  INFO -- : thrId: 5, 5, 92, ruby-doc.org, latency: 119.091 ms
+I, [2018-06-12T19:56:46.368413 #13356]  INFO -- : thrId: 6, 6, 94, dropbox.com, latency: 10.393 ms
+I, [2018-06-12T19:56:47.234595 #13356]  INFO -- : thrId: 1, 1, 93, youtube.com, latency: 11.067 ms
+I, [2018-06-12T19:56:47.479692 #13356]  INFO -- : thrId: 9, 9, 91, cisco.com, latency: 123.491 ms
+I, [2018-06-12T19:56:47.942938 #13356]  INFO -- : thrId: 2, 2, 94, facebook.com, latency: 24.303 ms
+I, [2018-06-12T19:56:50.745316 #13356]  INFO -- : thrId: 3, 3, 93, yahoo.com, latency: 109.968 ms
+I, [2018-06-12T19:56:51.286713 #13356]  INFO -- : thrId: 7, 7, 95, twitch.tv, latency: 9.559 ms
+I, [2018-06-12T19:56:51.301340 #13356]  INFO -- : thrId: 0, 0, 95, google.com, latency: 9.178 ms
+I, [2018-06-12T19:56:51.398765 #13356]  INFO -- : thrId: 6, 6, 95, dropbox.com, latency: 10.721 ms
+I, [2018-06-12T19:56:51.500348 #13356]  INFO -- : thrId: 5, 5, 93, ruby-doc.org, latency: 116.205 ms
+D, [2018-06-12T19:56:51.965732 #13356] DEBUG -- : thrId: 4, nintendo.com failCounter=40
+I, [2018-06-12T19:56:51.965977 #13356]  INFO -- : thrId: 4, 4, 46, nintendo.com, latency: -1 ms
+I, [2018-06-12T19:56:52.266230 #13356]  INFO -- : thrId: 1, 1, 94, youtube.com, latency: 10.702 ms
+I, [2018-06-12T19:56:52.621472 #13356]  INFO -- : thrId: 9, 9, 92, cisco.com, latency: 125.458 ms
+I, [2018-06-12T19:56:52.989251 #13356]  INFO -- : thrId: 2, 2, 95, facebook.com, latency: 25.631 ms
+D, [2018-06-12T19:56:53.801846 #13356] DEBUG -- : thrId: 8, apple.com failCounter=44
+I, [2018-06-12T19:56:53.802115 #13356]  INFO -- : thrId: 8, 8, 43, apple.com, latency: -1 ms
+I, [2018-06-12T19:56:55.876351 #13356]  INFO -- : thrId: 3, 3, 94, yahoo.com, latency: 111.135 ms
+I, [2018-06-12T19:56:56.317541 #13356]  INFO -- : thrId: 7, 7, 96, twitch.tv, latency: 12.002 ms
+I, [2018-06-12T19:56:56.327463 #13356]  INFO -- : thrId: 0, 0, 96, google.com, latency: 9.686 ms
+I, [2018-06-12T19:56:56.439874 #13356]  INFO -- : thrId: 6, 6, 96, dropbox.com, latency: 11.894 ms
+I, [2018-06-12T19:56:56.630556 #13356]  INFO -- : thrId: 5, 5, 94, ruby-doc.org, latency: 115.814 ms
+I, [2018-06-12T19:56:57.291227 #13356]  INFO -- : thrId: 1, 1, 95, youtube.com, latency: 10.077 ms
+I, [2018-06-12T19:56:57.757273 #13356]  INFO -- : thrId: 9, 9, 93, cisco.com, latency: 122.723 ms
+I, [2018-06-12T19:56:58.027470 #13356]  INFO -- : thrId: 2, 2, 96, facebook.com, latency: 24.122 ms
+I, [2018-06-12T19:57:01.003875 #13356]  INFO -- : thrId: 3, 3, 95, yahoo.com, latency: 110.516 ms
+I, [2018-06-12T19:57:01.346856 #13356]  INFO -- : thrId: 7, 7, 97, twitch.tv, latency: 12.845 ms
+I, [2018-06-12T19:57:01.353865 #13356]  INFO -- : thrId: 0, 0, 97, google.com, latency: 9.722 ms
+I, [2018-06-12T19:57:01.465474 #13356]  INFO -- : thrId: 6, 6, 97, dropbox.com, latency: 10.505 ms
+I, [2018-06-12T19:57:01.760416 #13356]  INFO -- : thrId: 5, 5, 95, ruby-doc.org, latency: 114.727 ms
+I, [2018-06-12T19:57:02.316765 #13356]  INFO -- : thrId: 1, 1, 96, youtube.com, latency: 9.798 ms
+I, [2018-06-12T19:57:02.895423 #13356]  INFO -- : thrId: 9, 9, 94, cisco.com, latency: 123.842 ms
+D, [2018-06-12T19:57:02.988055 #13356] DEBUG -- : thrId: 4, nintendo.com failCounter=41
+I, [2018-06-12T19:57:02.988318 #13356]  INFO -- : thrId: 4, 4, 47, nintendo.com, latency: -1 ms
+I, [2018-06-12T19:57:03.063619 #13356]  INFO -- : thrId: 2, 2, 97, facebook.com, latency: 25.576 ms
+D, [2018-06-12T19:57:04.822321 #13356] DEBUG -- : thrId: 8, apple.com failCounter=45
+I, [2018-06-12T19:57:04.822930 #13356]  INFO -- : thrId: 8, 8, 44, apple.com, latency: -1 ms
+I, [2018-06-12T19:57:06.133750 #13356]  INFO -- : thrId: 3, 3, 96, yahoo.com, latency: 111.610 ms
+I, [2018-06-12T19:57:06.377510 #13356]  INFO -- : thrId: 7, 7, 98, twitch.tv, latency: 10.945 ms
+I, [2018-06-12T19:57:06.379422 #13356]  INFO -- : thrId: 0, 0, 98, google.com, latency: 9.295 ms
+I, [2018-06-12T19:57:06.496345 #13356]  INFO -- : thrId: 6, 6, 98, dropbox.com, latency: 11.052 ms
+I, [2018-06-12T19:57:06.894511 #13356]  INFO -- : thrId: 5, 5, 96, ruby-doc.org, latency: 117.222 ms
+I, [2018-06-12T19:57:07.344689 #13356]  INFO -- : thrId: 1, 1, 97, youtube.com, latency: 11.143 ms
+I, [2018-06-12T19:57:08.038019 #13356]  INFO -- : thrId: 9, 9, 95, cisco.com, latency: 122.347 ms
+I, [2018-06-12T19:57:08.108119 #13356]  INFO -- : thrId: 2, 2, 98, facebook.com, latency: 25.002 ms
+I, [2018-06-12T19:57:11.255772 #13356]  INFO -- : thrId: 3, 3, 97, yahoo.com, latency: 110.270 ms
+I, [2018-06-12T19:57:11.406012 #13356]  INFO -- : thrId: 7, 7, 99, twitch.tv, latency: 8.626 ms
+I, [2018-06-12T19:57:11.406458 #13356]  INFO -- : thrId: 7 has completed 100 PING operations, twitch.tv
+I, [2018-06-12T19:57:11.409937 #13356]  INFO -- : thrId: 0, 0, 99, google.com, latency: 9.715 ms
+I, [2018-06-12T19:57:11.410154 #13356]  INFO -- : thrId: 0 has completed 100 PING operations, google.com
+I, [2018-06-12T19:57:11.519284 #13356]  INFO -- : thrId: 6, 6, 99, dropbox.com, latency: 11.244 ms
+I, [2018-06-12T19:57:11.519660 #13356]  INFO -- : thrId: 6 has completed 100 PING operations, dropbox.com
+I, [2018-06-12T19:57:12.029486 #13356]  INFO -- : thrId: 5, 5, 97, ruby-doc.org, latency: 116.281 ms
+I, [2018-06-12T19:57:12.373942 #13356]  INFO -- : thrId: 1, 1, 98, youtube.com, latency: 9.726 ms
+I, [2018-06-12T19:57:13.145552 #13356]  INFO -- : thrId: 2, 2, 99, facebook.com, latency: 24.706 ms
+I, [2018-06-12T19:57:13.145814 #13356]  INFO -- : thrId: 2 has completed 100 PING operations, facebook.com
+I, [2018-06-12T19:57:13.179793 #13356]  INFO -- : thrId: 9, 9, 96, cisco.com, latency: 122.164 ms
+D, [2018-06-12T19:57:14.026380 #13356] DEBUG -- : thrId: 4, nintendo.com failCounter=42
+I, [2018-06-12T19:57:14.026685 #13356]  INFO -- : thrId: 4, 4, 48, nintendo.com, latency: -1 ms
+D, [2018-06-12T19:57:15.845636 #13356] DEBUG -- : thrId: 8, apple.com failCounter=46
+I, [2018-06-12T19:57:15.845893 #13356]  INFO -- : thrId: 8, 8, 45, apple.com, latency: -1 ms
+I, [2018-06-12T19:57:16.384378 #13356]  INFO -- : thrId: 3, 3, 98, yahoo.com, latency: 111.404 ms
+I, [2018-06-12T19:57:17.162332 #13356]  INFO -- : thrId: 5, 5, 98, ruby-doc.org, latency: 117.670 ms
+I, [2018-06-12T19:57:17.405969 #13356]  INFO -- : thrId: 1, 1, 99, youtube.com, latency: 10.176 ms
+I, [2018-06-12T19:57:17.406322 #13356]  INFO -- : thrId: 1 has completed 100 PING operations, youtube.com
+I, [2018-06-12T19:57:18.317014 #13356]  INFO -- : thrId: 9, 9, 97, cisco.com, latency: 122.866 ms
+I, [2018-06-12T19:57:21.512749 #13356]  INFO -- : thrId: 3, 3, 99, yahoo.com, latency: 109.955 ms
+I, [2018-06-12T19:57:21.513104 #13356]  INFO -- : thrId: 3 has completed 100 PING operations, yahoo.com
+I, [2018-06-12T19:57:22.299984 #13356]  INFO -- : thrId: 5, 5, 99, ruby-doc.org, latency: 116.648 ms
+I, [2018-06-12T19:57:22.300280 #13356]  INFO -- : thrId: 5 has completed 100 PING operations, ruby-doc.org
+I, [2018-06-12T19:57:23.458869 #13356]  INFO -- : thrId: 9, 9, 98, cisco.com, latency: 122.852 ms
+D, [2018-06-12T19:57:25.054680 #13356] DEBUG -- : thrId: 4, nintendo.com failCounter=43
+I, [2018-06-12T19:57:25.054958 #13356]  INFO -- : thrId: 4, 4, 49, nintendo.com, latency: -1 ms
+D, [2018-06-12T19:57:26.873115 #13356] DEBUG -- : thrId: 8, apple.com failCounter=47
+I, [2018-06-12T19:57:26.873407 #13356]  INFO -- : thrId: 8, 8, 46, apple.com, latency: -1 ms
+I, [2018-06-12T19:57:28.602952 #13356]  INFO -- : thrId: 9, 9, 99, cisco.com, latency: 124.633 ms
+I, [2018-06-12T19:57:28.603381 #13356]  INFO -- : thrId: 9 has completed 100 PING operations, cisco.com
+D, [2018-06-12T19:57:36.076809 #13356] DEBUG -- : thrId: 4, nintendo.com failCounter=44
+I, [2018-06-12T19:57:36.077118 #13356]  INFO -- : thrId: 4, 4, 50, nintendo.com, latency: -1 ms
+D, [2018-06-12T19:57:37.898923 #13356] DEBUG -- : thrId: 8, apple.com failCounter=48
+I, [2018-06-12T19:57:37.899173 #13356]  INFO -- : thrId: 8, 8, 47, apple.com, latency: -1 ms
+D, [2018-06-12T19:57:47.126736 #13356] DEBUG -- : thrId: 4, nintendo.com failCounter=45
+I, [2018-06-12T19:57:47.127064 #13356]  INFO -- : thrId: 4, 4, 51, nintendo.com, latency: -1 ms
+D, [2018-06-12T19:57:48.928107 #13356] DEBUG -- : thrId: 8, apple.com failCounter=49
+I, [2018-06-12T19:57:48.928348 #13356]  INFO -- : thrId: 8, 8, 48, apple.com, latency: -1 ms
+D, [2018-06-12T19:57:58.157468 #13356] DEBUG -- : thrId: 4, nintendo.com failCounter=46
+I, [2018-06-12T19:57:58.157973 #13356]  INFO -- : thrId: 4, 4, 52, nintendo.com, latency: -1 ms
+D, [2018-06-12T19:57:59.957563 #13356] DEBUG -- : thrId: 8, apple.com failCounter=50
+I, [2018-06-12T19:57:59.957845 #13356]  INFO -- : thrId: 8, 8, 49, apple.com, latency: -1 ms
+D, [2018-06-12T19:58:09.185804 #13356] DEBUG -- : thrId: 4, nintendo.com failCounter=47
+I, [2018-06-12T19:58:09.186097 #13356]  INFO -- : thrId: 4, 4, 53, nintendo.com, latency: -1 ms
+D, [2018-06-12T19:58:10.990499 #13356] DEBUG -- : thrId: 8, apple.com failCounter=51
+I, [2018-06-12T19:58:10.990747 #13356]  INFO -- : thrId: 8, 8, 50, apple.com, latency: -1 ms
+D, [2018-06-12T19:58:20.214250 #13356] DEBUG -- : thrId: 4, nintendo.com failCounter=48
+I, [2018-06-12T19:58:20.214548 #13356]  INFO -- : thrId: 4, 4, 54, nintendo.com, latency: -1 ms
+D, [2018-06-12T19:58:22.012018 #13356] DEBUG -- : thrId: 8, apple.com failCounter=52
+I, [2018-06-12T19:58:22.012299 #13356]  INFO -- : thrId: 8, 8, 51, apple.com, latency: -1 ms
+D, [2018-06-12T19:58:31.242793 #13356] DEBUG -- : thrId: 4, nintendo.com failCounter=49
+I, [2018-06-12T19:58:31.243541 #13356]  INFO -- : thrId: 4, 4, 55, nintendo.com, latency: -1 ms
+D, [2018-06-12T19:58:33.034705 #13356] DEBUG -- : thrId: 8, apple.com failCounter=53
+I, [2018-06-12T19:58:33.034888 #13356]  INFO -- : thrId: 8, 8, 52, apple.com, latency: -1 ms
+D, [2018-06-12T19:58:42.268811 #13356] DEBUG -- : thrId: 4, nintendo.com failCounter=50
+I, [2018-06-12T19:58:42.269197 #13356]  INFO -- : thrId: 4, 4, 56, nintendo.com, latency: -1 ms
+D, [2018-06-12T19:58:44.058612 #13356] DEBUG -- : thrId: 8, apple.com failCounter=54
+I, [2018-06-12T19:58:44.058841 #13356]  INFO -- : thrId: 8, 8, 53, apple.com, latency: -1 ms
+D, [2018-06-12T19:58:53.300959 #13356] DEBUG -- : thrId: 4, nintendo.com failCounter=51
+I, [2018-06-12T19:58:53.301309 #13356]  INFO -- : thrId: 4, 4, 57, nintendo.com, latency: -1 ms
+D, [2018-06-12T19:58:55.084085 #13356] DEBUG -- : thrId: 8, apple.com failCounter=55
+I, [2018-06-12T19:58:55.084327 #13356]  INFO -- : thrId: 8, 8, 54, apple.com, latency: -1 ms
+I, [2018-06-12T19:58:58.492298 #13356]  INFO -- : thrId: 4, 4, 58, nintendo.com, latency: 145.998 ms
+I, [2018-06-12T19:59:03.658450 #13356]  INFO -- : thrId: 4, 4, 59, nintendo.com, latency: 148.499 ms
+D, [2018-06-12T19:59:06.112618 #13356] DEBUG -- : thrId: 8, apple.com failCounter=56
+I, [2018-06-12T19:59:06.113026 #13356]  INFO -- : thrId: 8, 8, 55, apple.com, latency: -1 ms
+I, [2018-06-12T19:59:08.817175 #13356]  INFO -- : thrId: 4, 4, 60, nintendo.com, latency: 147.661 ms
+I, [2018-06-12T19:59:13.974664 #13356]  INFO -- : thrId: 4, 4, 61, nintendo.com, latency: 146.030 ms
+D, [2018-06-12T19:59:17.148572 #13356] DEBUG -- : thrId: 8, apple.com failCounter=57
+I, [2018-06-12T19:59:17.148872 #13356]  INFO -- : thrId: 8, 8, 56, apple.com, latency: -1 ms
+I, [2018-06-12T19:59:19.135828 #13356]  INFO -- : thrId: 4, 4, 62, nintendo.com, latency: 146.744 ms
+I, [2018-06-12T19:59:24.295564 #13356]  INFO -- : thrId: 4, 4, 63, nintendo.com, latency: 147.174 ms
+D, [2018-06-12T19:59:28.174249 #13356] DEBUG -- : thrId: 8, apple.com failCounter=58
+I, [2018-06-12T19:59:28.174497 #13356]  INFO -- : thrId: 8, 8, 57, apple.com, latency: -1 ms
+I, [2018-06-12T19:59:29.455319 #13356]  INFO -- : thrId: 4, 4, 64, nintendo.com, latency: 146.357 ms
+I, [2018-06-12T19:59:34.617000 #13356]  INFO -- : thrId: 4, 4, 65, nintendo.com, latency: 147.912 ms
+D, [2018-06-12T19:59:39.200615 #13356] DEBUG -- : thrId: 8, apple.com failCounter=59
+I, [2018-06-12T19:59:39.200899 #13356]  INFO -- : thrId: 8, 8, 58, apple.com, latency: -1 ms
+I, [2018-06-12T19:59:39.777882 #13356]  INFO -- : thrId: 4, 4, 66, nintendo.com, latency: 146.326 ms
+I, [2018-06-12T19:59:44.943277 #13356]  INFO -- : thrId: 4, 4, 67, nintendo.com, latency: 147.254 ms
+I, [2018-06-12T19:59:50.107504 #13356]  INFO -- : thrId: 4, 4, 68, nintendo.com, latency: 145.900 ms
+D, [2018-06-12T19:59:50.223008 #13356] DEBUG -- : thrId: 8, apple.com failCounter=60
+I, [2018-06-12T19:59:50.223286 #13356]  INFO -- : thrId: 8, 8, 59, apple.com, latency: -1 ms
+I, [2018-06-12T19:59:55.266963 #13356]  INFO -- : thrId: 4, 4, 69, nintendo.com, latency: 146.968 ms
+I, [2018-06-12T20:00:00.430613 #13356]  INFO -- : thrId: 4, 4, 70, nintendo.com, latency: 148.898 ms
+D, [2018-06-12T20:00:01.250630 #13356] DEBUG -- : thrId: 8, apple.com failCounter=61
+I, [2018-06-12T20:00:01.250892 #13356]  INFO -- : thrId: 8, 8, 60, apple.com, latency: -1 ms
+I, [2018-06-12T20:00:05.592214 #13356]  INFO -- : thrId: 4, 4, 71, nintendo.com, latency: 146.135 ms
+I, [2018-06-12T20:00:10.751968 #13356]  INFO -- : thrId: 4, 4, 72, nintendo.com, latency: 147.732 ms
+D, [2018-06-12T20:00:12.286743 #13356] DEBUG -- : thrId: 8, apple.com failCounter=62
+I, [2018-06-12T20:00:12.286975 #13356]  INFO -- : thrId: 8, 8, 61, apple.com, latency: -1 ms
+D, [2018-06-12T20:00:21.804692 #13356] DEBUG -- : thrId: 4, nintendo.com failCounter=1
+I, [2018-06-12T20:00:21.805049 #13356]  INFO -- : thrId: 4, 4, 73, nintendo.com, latency: -1 ms
+D, [2018-06-12T20:00:23.313733 #13356] DEBUG -- : thrId: 8, apple.com failCounter=63
+I, [2018-06-12T20:00:23.313957 #13356]  INFO -- : thrId: 8, 8, 62, apple.com, latency: -1 ms
+D, [2018-06-12T20:00:32.841118 #13356] DEBUG -- : thrId: 4, nintendo.com failCounter=2
+I, [2018-06-12T20:00:32.841445 #13356]  INFO -- : thrId: 4, 4, 74, nintendo.com, latency: -1 ms
+D, [2018-06-12T20:00:34.352849 #13356] DEBUG -- : thrId: 8, apple.com failCounter=64
+I, [2018-06-12T20:00:34.353075 #13356]  INFO -- : thrId: 8, 8, 63, apple.com, latency: -1 ms
+D, [2018-06-12T20:00:43.866257 #13356] DEBUG -- : thrId: 4, nintendo.com failCounter=3
+I, [2018-06-12T20:00:43.866557 #13356]  INFO -- : thrId: 4, 4, 75, nintendo.com, latency: -1 ms
+D, [2018-06-12T20:00:45.380321 #13356] DEBUG -- : thrId: 8, apple.com failCounter=65
+I, [2018-06-12T20:00:45.380666 #13356]  INFO -- : thrId: 8, 8, 64, apple.com, latency: -1 ms
+D, [2018-06-12T20:00:54.890983 #13356] DEBUG -- : thrId: 4, nintendo.com failCounter=4
+I, [2018-06-12T20:00:54.891273 #13356]  INFO -- : thrId: 4, 4, 76, nintendo.com, latency: -1 ms
+D, [2018-06-12T20:00:56.408149 #13356] DEBUG -- : thrId: 8, apple.com failCounter=66
+I, [2018-06-12T20:00:56.408507 #13356]  INFO -- : thrId: 8, 8, 65, apple.com, latency: -1 ms
+D, [2018-06-12T20:01:05.915348 #13356] DEBUG -- : thrId: 4, nintendo.com failCounter=5
+I, [2018-06-12T20:01:05.915674 #13356]  INFO -- : thrId: 4, 4, 77, nintendo.com, latency: -1 ms
+D, [2018-06-12T20:01:07.430368 #13356] DEBUG -- : thrId: 8, apple.com failCounter=67
+I, [2018-06-12T20:01:07.430733 #13356]  INFO -- : thrId: 8, 8, 66, apple.com, latency: -1 ms
+D, [2018-06-12T20:01:16.949950 #13356] DEBUG -- : thrId: 4, nintendo.com failCounter=6
+I, [2018-06-12T20:01:16.950344 #13356]  INFO -- : thrId: 4, 4, 78, nintendo.com, latency: -1 ms
+D, [2018-06-12T20:01:18.463270 #13356] DEBUG -- : thrId: 8, apple.com failCounter=68
+I, [2018-06-12T20:01:18.463514 #13356]  INFO -- : thrId: 8, 8, 67, apple.com, latency: -1 ms
+D, [2018-06-12T20:01:27.964603 #13356] DEBUG -- : thrId: 4, nintendo.com failCounter=7
+I, [2018-06-12T20:01:27.965200 #13356]  INFO -- : thrId: 4, 4, 79, nintendo.com, latency: -1 ms
+D, [2018-06-12T20:01:29.485886 #13356] DEBUG -- : thrId: 8, apple.com failCounter=69
+I, [2018-06-12T20:01:29.486194 #13356]  INFO -- : thrId: 8, 8, 68, apple.com, latency: -1 ms
+D, [2018-06-12T20:01:39.022741 #13356] DEBUG -- : thrId: 4, nintendo.com failCounter=8
+I, [2018-06-12T20:01:39.023076 #13356]  INFO -- : thrId: 4, 4, 80, nintendo.com, latency: -1 ms
+D, [2018-06-12T20:01:40.519493 #13356] DEBUG -- : thrId: 8, apple.com failCounter=70
+I, [2018-06-12T20:01:40.519767 #13356]  INFO -- : thrId: 8, 8, 69, apple.com, latency: -1 ms
+D, [2018-06-12T20:01:50.049841 #13356] DEBUG -- : thrId: 4, nintendo.com failCounter=9
+I, [2018-06-12T20:01:50.050158 #13356]  INFO -- : thrId: 4, 4, 81, nintendo.com, latency: -1 ms
+D, [2018-06-12T20:01:51.548286 #13356] DEBUG -- : thrId: 8, apple.com failCounter=71
+I, [2018-06-12T20:01:51.548606 #13356]  INFO -- : thrId: 8, 8, 70, apple.com, latency: -1 ms
+D, [2018-06-12T20:02:01.072120 #13356] DEBUG -- : thrId: 4, nintendo.com failCounter=10
+I, [2018-06-12T20:02:01.147681 #13356]  INFO -- : thrId: 4, PING Alert sent, nintendo.com
+I, [2018-06-12T20:02:01.148042 #13356]  INFO -- : thrId: 4, 4, 82, nintendo.com, latency: -1 ms
+D, [2018-06-12T20:02:02.567681 #13356] DEBUG -- : thrId: 8, apple.com failCounter=72
+I, [2018-06-12T20:02:02.567946 #13356]  INFO -- : thrId: 8, 8, 71, apple.com, latency: -1 ms
+I, [2018-06-12T20:02:06.334788 #13356]  INFO -- : thrId: 4, 4, 83, nintendo.com, latency: 146.732 ms
+I, [2018-06-12T20:02:11.496545 #13356]  INFO -- : thrId: 4, 4, 84, nintendo.com, latency: 147.451 ms
+D, [2018-06-12T20:02:13.599420 #13356] DEBUG -- : thrId: 8, apple.com failCounter=73
+I, [2018-06-12T20:02:13.599663 #13356]  INFO -- : thrId: 8, 8, 72, apple.com, latency: -1 ms
+I, [2018-06-12T20:02:16.659916 #13356]  INFO -- : thrId: 4, 4, 85, nintendo.com, latency: 145.984 ms
+I, [2018-06-12T20:02:21.825521 #13356]  INFO -- : thrId: 4, 4, 86, nintendo.com, latency: 147.458 ms
+D, [2018-06-12T20:02:24.623992 #13356] DEBUG -- : thrId: 8, apple.com failCounter=74
+I, [2018-06-12T20:02:24.624247 #13356]  INFO -- : thrId: 8, 8, 73, apple.com, latency: -1 ms
+I, [2018-06-12T20:02:26.987451 #13356]  INFO -- : thrId: 4, 4, 87, nintendo.com, latency: 147.738 ms
+I, [2018-06-12T20:02:32.148378 #13356]  INFO -- : thrId: 4, 4, 88, nintendo.com, latency: 147.189 ms
+D, [2018-06-12T20:02:35.648196 #13356] DEBUG -- : thrId: 8, apple.com failCounter=75
+I, [2018-06-12T20:02:35.648489 #13356]  INFO -- : thrId: 8, 8, 74, apple.com, latency: -1 ms
+I, [2018-06-12T20:02:37.307499 #13356]  INFO -- : thrId: 4, 4, 89, nintendo.com, latency: 147.188 ms
+I, [2018-06-12T20:02:42.464076 #13356]  INFO -- : thrId: 4, 4, 90, nintendo.com, latency: 146.834 ms
+D, [2018-06-12T20:02:46.673194 #13356] DEBUG -- : thrId: 8, apple.com failCounter=76
+I, [2018-06-12T20:02:46.673358 #13356]  INFO -- : thrId: 8, 8, 75, apple.com, latency: -1 ms
+I, [2018-06-12T20:02:47.626416 #13356]  INFO -- : thrId: 4, 4, 91, nintendo.com, latency: 146.422 ms
+I, [2018-06-12T20:02:52.790388 #13356]  INFO -- : thrId: 4, 4, 92, nintendo.com, latency: 145.804 ms
+D, [2018-06-12T20:02:57.714685 #13356] DEBUG -- : thrId: 8, apple.com failCounter=77
+I, [2018-06-12T20:02:57.714917 #13356]  INFO -- : thrId: 8, 8, 76, apple.com, latency: -1 ms
+I, [2018-06-12T20:02:57.954093 #13356]  INFO -- : thrId: 4, 4, 93, nintendo.com, latency: 147.475 ms
+I, [2018-06-12T20:03:03.122598 #13356]  INFO -- : thrId: 4, 4, 94, nintendo.com, latency: 147.722 ms
+I, [2018-06-12T20:03:08.281933 #13356]  INFO -- : thrId: 4, 4, 95, nintendo.com, latency: 146.802 ms
+D, [2018-06-12T20:03:08.737159 #13356] DEBUG -- : thrId: 8, apple.com failCounter=78
+I, [2018-06-12T20:03:08.737446 #13356]  INFO -- : thrId: 8, 8, 77, apple.com, latency: -1 ms
+I, [2018-06-12T20:03:13.442262 #13356]  INFO -- : thrId: 4, 4, 96, nintendo.com, latency: 147.436 ms
+I, [2018-06-12T20:03:18.604192 #13356]  INFO -- : thrId: 4, 4, 97, nintendo.com, latency: 147.054 ms
+D, [2018-06-12T20:03:19.753682 #13356] DEBUG -- : thrId: 8, apple.com failCounter=79
+I, [2018-06-12T20:03:19.754040 #13356]  INFO -- : thrId: 8, 8, 78, apple.com, latency: -1 ms
+D, [2018-06-12T20:03:29.655282 #13356] DEBUG -- : thrId: 4, nintendo.com failCounter=1
+I, [2018-06-12T20:03:29.655614 #13356]  INFO -- : thrId: 4, 4, 98, nintendo.com, latency: -1 ms
+D, [2018-06-12T20:03:30.775787 #13356] DEBUG -- : thrId: 8, apple.com failCounter=80
+I, [2018-06-12T20:03:30.776043 #13356]  INFO -- : thrId: 8, 8, 79, apple.com, latency: -1 ms
+D, [2018-06-12T20:03:40.676712 #13356] DEBUG -- : thrId: 4, nintendo.com failCounter=2
+I, [2018-06-12T20:03:40.677113 #13356]  INFO -- : thrId: 4, 4, 99, nintendo.com, latency: -1 ms
+I, [2018-06-12T20:03:40.677281 #13356]  INFO -- : thrId: 4 has completed 100 PING operations, nintendo.com
+D, [2018-06-12T20:03:41.796702 #13356] DEBUG -- : thrId: 8, apple.com failCounter=81
+I, [2018-06-12T20:03:41.797001 #13356]  INFO -- : thrId: 8, 8, 80, apple.com, latency: -1 ms
+D, [2018-06-12T20:03:52.834593 #13356] DEBUG -- : thrId: 8, apple.com failCounter=82
+I, [2018-06-12T20:03:52.835413 #13356]  INFO -- : thrId: 8, 8, 81, apple.com, latency: -1 ms
+D, [2018-06-12T20:04:03.858649 #13356] DEBUG -- : thrId: 8, apple.com failCounter=83
+I, [2018-06-12T20:04:03.859005 #13356]  INFO -- : thrId: 8, 8, 82, apple.com, latency: -1 ms
+D, [2018-06-12T20:04:14.886733 #13356] DEBUG -- : thrId: 8, apple.com failCounter=84
+I, [2018-06-12T20:04:14.887079 #13356]  INFO -- : thrId: 8, 8, 83, apple.com, latency: -1 ms
+D, [2018-06-12T20:04:25.908775 #13356] DEBUG -- : thrId: 8, apple.com failCounter=85
+I, [2018-06-12T20:04:25.909118 #13356]  INFO -- : thrId: 8, 8, 84, apple.com, latency: -1 ms
+D, [2018-06-12T20:04:36.930831 #13356] DEBUG -- : thrId: 8, apple.com failCounter=86
+I, [2018-06-12T20:04:36.931204 #13356]  INFO -- : thrId: 8, 8, 85, apple.com, latency: -1 ms
+D, [2018-06-12T20:04:47.964279 #13356] DEBUG -- : thrId: 8, apple.com failCounter=87
+I, [2018-06-12T20:04:47.964628 #13356]  INFO -- : thrId: 8, 8, 86, apple.com, latency: -1 ms
+D, [2018-06-12T20:04:58.993777 #13356] DEBUG -- : thrId: 8, apple.com failCounter=88
+I, [2018-06-12T20:04:58.994188 #13356]  INFO -- : thrId: 8, 8, 87, apple.com, latency: -1 ms
+D, [2018-06-12T20:05:10.019949 #13356] DEBUG -- : thrId: 8, apple.com failCounter=89
+I, [2018-06-12T20:05:10.020264 #13356]  INFO -- : thrId: 8, 8, 88, apple.com, latency: -1 ms
+D, [2018-06-12T20:05:21.059674 #13356] DEBUG -- : thrId: 8, apple.com failCounter=90
+I, [2018-06-12T20:05:21.059996 #13356]  INFO -- : thrId: 8, 8, 89, apple.com, latency: -1 ms
+D, [2018-06-12T20:05:32.087303 #13356] DEBUG -- : thrId: 8, apple.com failCounter=91
+I, [2018-06-12T20:05:32.087708 #13356]  INFO -- : thrId: 8, 8, 90, apple.com, latency: -1 ms
+D, [2018-06-12T20:05:43.108749 #13356] DEBUG -- : thrId: 8, apple.com failCounter=92
+I, [2018-06-12T20:05:43.109060 #13356]  INFO -- : thrId: 8, 8, 91, apple.com, latency: -1 ms
+D, [2018-06-12T20:05:54.137310 #13356] DEBUG -- : thrId: 8, apple.com failCounter=93
+I, [2018-06-12T20:05:54.137754 #13356]  INFO -- : thrId: 8, 8, 92, apple.com, latency: -1 ms
+D, [2018-06-12T20:06:05.159360 #13356] DEBUG -- : thrId: 8, apple.com failCounter=94
+I, [2018-06-12T20:06:05.159802 #13356]  INFO -- : thrId: 8, 8, 93, apple.com, latency: -1 ms
+D, [2018-06-12T20:06:16.187793 #13356] DEBUG -- : thrId: 8, apple.com failCounter=95
+I, [2018-06-12T20:06:16.188144 #13356]  INFO -- : thrId: 8, 8, 94, apple.com, latency: -1 ms
+D, [2018-06-12T20:06:27.209469 #13356] DEBUG -- : thrId: 8, apple.com failCounter=96
+I, [2018-06-12T20:06:27.209776 #13356]  INFO -- : thrId: 8, 8, 95, apple.com, latency: -1 ms
+D, [2018-06-12T20:06:38.243412 #13356] DEBUG -- : thrId: 8, apple.com failCounter=97
+I, [2018-06-12T20:06:38.243737 #13356]  INFO -- : thrId: 8, 8, 96, apple.com, latency: -1 ms
+D, [2018-06-12T20:06:49.277907 #13356] DEBUG -- : thrId: 8, apple.com failCounter=98
+I, [2018-06-12T20:06:49.279110 #13356]  INFO -- : thrId: 8, 8, 97, apple.com, latency: -1 ms
+D, [2018-06-12T20:07:00.317324 #13356] DEBUG -- : thrId: 8, apple.com failCounter=99
+I, [2018-06-12T20:07:00.317722 #13356]  INFO -- : thrId: 8, 8, 98, apple.com, latency: -1 ms
+D, [2018-06-12T20:07:11.349324 #13356] DEBUG -- : thrId: 8, apple.com failCounter=100
+I, [2018-06-12T20:07:11.349667 #13356]  INFO -- : thrId: 8, 8, 99, apple.com, latency: -1 ms
+I, [2018-06-12T20:07:11.349994 #13356]  INFO -- : thrId: 8 has completed 100 PING operations, apple.com
