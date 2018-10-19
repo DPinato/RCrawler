@@ -3,9 +3,7 @@
 class Alerter
 
   def initialize(emails, maxPings=-1, maxHTTPs=-1)
-    @emailAddresses = emails
-    @maxPingsBeforeAlert = maxPings
-    @maxHTTPBeforeAlert = maxHTTPs
+    @emailAddresses, @maxPingsBeforeAlert, @maxHTTPBeforeAlert = emails, maxPings, maxHTTPs
 
   end
 
@@ -13,8 +11,8 @@ class Alerter
   def readEmailTemplate(templateLocation)
 		# load the alert template from the file in the specified location
 		@alertTemplatelocation = templateLocation
-		puts "Reading template..." + alertTemplatelocation.to_s
-		@alertTemplate = File.read(alertTemplatelocation.to_s)
+		puts "Reading template..." + @alertTemplatelocation.to_s
+		@alertTemplate = File.read(@alertTemplatelocation.to_s)
 
   end
 
@@ -48,13 +46,8 @@ class Alerter
 
 
 
-  attr_accessor :emailAddresses
-	attr_accessor :alertTemplatelocation
-  attr_accessor :maxPingsBeforeAlert
-  attr_accessor :maxHTTPBeforeAlert
-	attr_accessor :alertTemplatelocation
+  attr_accessor :emailAddresses, :alertTemplateLocation, :maxPingsBeforeAlert, :maxHTTPBeforeAlert, :alertTemplateLocation
 
-	attr_accessor :emailMessage
-	attr_accessor :emailSubject
+	attr_accessor :emailMessage, :emailSubject
 
 end
