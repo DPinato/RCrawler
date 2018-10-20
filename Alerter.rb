@@ -2,8 +2,8 @@
 
 class Alerter
 
-  def initialize(emails, maxPings=-1, maxHTTPs=-1)
-    @emailAddresses, @maxPingsBeforeAlert, @maxHTTPBeforeAlert = emails, maxPings, maxHTTPs
+  def initialize(emails, maxPings=-1, maxHTTPs=-1, send=true)
+    @emailAddresses, @maxPingsBeforeAlert, @maxHTTPBeforeAlert, @sendAlerts = emails, maxPings, maxHTTPs, send
 
   end
 
@@ -46,8 +46,8 @@ class Alerter
 
 
 
-  attr_accessor :emailAddresses, :alertTemplateLocation, :maxPingsBeforeAlert, :maxHTTPBeforeAlert, :alertTemplateLocation
+  attr_accessor :emailAddresses, :alertTemplateLocation, :maxPingsBeforeAlert, :maxHTTPBeforeAlert, :sendAlerts
 
-	attr_accessor :emailMessage, :emailSubject
+	attr_accessor :alertTemplateLocation, :emailMessage, :emailSubject
 
 end

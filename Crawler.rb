@@ -20,7 +20,6 @@ class Crawler
     @pingLatency = Array.new  # latency for ping
     @pingReturnEpoch = Array.new     	# date in which ping result was taken
 		@pingReturnEpochDay = Array.new		# milliseconds after the start of the day in which ping result was taken
-    @pingBaseOutputDir = opInput.outputDir.to_s # directory to store output files in
     @pingDstIsIP = false
 
     begin
@@ -48,37 +47,45 @@ class Crawler
     else
       pingDstIsIP = false
     end
-    ######################################################################################################
+    ###############################################################################################
 
     # start the pings
     # stores a -1 if the ping does not succeeds, i.e. timeout
 		failCounter = 0			# count how many times the operation failed
 		alertSent = false		# flag whether the alert was sent for the last occurrence
     loop do
-			tmpLatency = -1
-      now = `ping #{pingDest.to_s} -c 1 -W 5000` # anything above 5 seconds is really high
-																									# remember that Mac OS has that value in milliseconds
-			#puts "now #{now.size}" + ": " + now.to_s
+			tmpLatency = -1.0
+
+			# anything above 5 seconds timeout is really high
+			# remember that Mac OS has that value in milliseconds
+			pingCmd = "ping #{pingDest.to_s} -c 1 -W 5000"
+      # now = `ping #{pingDest.to_s} -c 1 -W 5000`
+
+			stdout, stderr, status = Open3.capture3("#{pingCmd}")
+			# puts "stdout: #{stdout}"
+			# puts "stderr: #{stderr}"
+			# puts "status: #{status}"
+			# puts status.exitstatus
+
 
 			# if now has no size, we could not resolve the hostname or something OS-related happened
-			unless now.size == 0 || now.index("100.0% packet loss")
-	      tmpStr = now.split("\n")[1] # get second line of output "64 bytes from 8.8.8.8: icmp_seq=1 ttl=59 time=13.7 ms"
+			if stderr.size == 0
+	      tmpStr = stdout.split("\n")[1] # get second line of output "64 bytes from 8.8.8.8: icmp_seq=1 ttl=59 time=13.7 ms"
 	      index = tmpStr.rindex("time").to_i
-				#puts "tmpStr: " + tmpStr
-	      #puts "index: " + index.to_s
-
 	      pos1 = index.to_i + "time".length.to_i + 1
 	      tmpLatency = tmpStr[pos1, tmpStr.length - pos1 - 3].to_f	# make it a float right here
 				tmpTimestamp = DateTime.now.strftime('%Q').to_i
 
+				# reset alert variables
 				failCounter = 0
 				alertSent = false
+
 			else
 				failCounter += 1
-				logObj.debug("thrId: #{@objId}, #{pingDest.to_s} failCounter=#{failCounter}")
+				logObj.debug("thrId: #{@objId}, #{pingDest.to_s} failCounter=#{failCounter}, exitstatus=#{status.exitstatus}")
 
-				#puts "FAILED, " + "#{failCounter}\t" + "#{alertObj.maxPingsBeforeAlert.to_i}"
-				if failCounter >= alertObj.maxPingsBeforeAlert.to_i && !alertSent
+				# check if alert needs to be sent
+				if alertObj.sendAlerts && (failCounter >= alertObj.maxPingsBeforeAlert.to_i && !alertSent)
 					# send alert, but only one per-occurrence
 					currEpoch = DateTime.now.strftime('%Q')	# this so that logs and email alert have the same timestamp
 					alertObj.sendEmailAlert("PING", pingDest.to_s, failCounter, currEpoch.to_s, DateTime.strptime(currEpoch,'%Q'))
@@ -87,28 +94,27 @@ class Crawler
 					logObj.info("thrId: #{@objId}, PING Alert sent, #{pingDest.to_s}")
 
 				end
-
 			end
 
 
 			# store data in influxDB
 			data = {
-				values: {latency: tmpLatency},
-				timestamp: tmpTimestamp
+				values: {latency: tmpLatency, exitStatus: status.exitstatus},
+				timestamp: tmpTimestamp,
 			}
 			influxDBObj.write_point("PING_"+pingDest.to_s, data)
+
 
       # show something in the terminal
 			pingOutput = objId.to_s + ", " + pingCounter.to_s + ", " + pingDest
 			pingOutput += ", latency: #{tmpLatency.to_s} ms"
+			pingOutput += ", code: #{status.exitstatus}"
       puts pingOutput
 			logObj.info("thrId: #{@objId}, #{pingOutput.to_s}")
 
 
-
 			# increase counters and see if the loop needs to continue
       @pingCounter += 1
-
       if pingLimit > 0 && pingCounter >= pingLimit
 				puts "thrId: #{@objId} has completed #{pingLimit} PING operations, #{pingDest}"
 				logObj.info("thrId: #{@objId} has completed #{pingLimit} PING operations, #{pingDest}")
@@ -117,11 +123,7 @@ class Crawler
 				sleep pingDelay
 			end
 
-
     end
-
-		outFile.close
-
   end
 
 
@@ -309,7 +311,7 @@ class Crawler
   # accessors for instance variables
   attr_accessor :objId, :alertObj, :logObj, :influxDBObj
 
-  attr_accessor :pingDelay, :pingDest, :pingCounter, :pingLimit, :pingLatency, :pingReturnEpoch, :pingReturnEpochDay, :pingBaseOutputDir, :pingFileHeader, :pingDstIsIP
+  attr_accessor :pingDelay, :pingDest, :pingCounter, :pingLimit, :pingLatency, :pingReturnEpoch, :pingReturnEpochDay, :pingFileHeader, :pingDstIsIP
 
   attr_accessor :httpUrl, :httpDelay, :httpCounter, :httpLimit, :httpDuration, :httpReturnCode, :httpReturnSize, :httpReturnEpoch, :httpReturnEpochDay, :httpBaseOutputDir, :httpFileHeader
 

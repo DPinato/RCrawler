@@ -7,6 +7,7 @@ require 'csv'
 require 'logger'
 require 'fileutils'		# so that I can use FileUtils.mkpath
 require 'influxdb'
+require 'open3'
 
 load 'Operation.rb'
 load 'Alerter.rb'
@@ -32,9 +33,9 @@ END {
 
 
 # read config file and create the appropriate instance objects
-tmpStatsDir = ""
 tmpLogsDir = ""
 tmpHttpFileHeader = ""
+tmpSendAlerts = ""
 tmpAlertTemplateLocation = ""
 tmpEmailAddresses = ""
 tmpMaxPingsBeforeAlert = ""
@@ -54,16 +55,11 @@ rescue => e
 end
 
 confFile.readlines().each do |line|
-
   # lines beginning with '#' in the config file, are used as a comment
   unless line.size < 3 || line[0] == '#'
 		# print "#{line}"
 
-		# variables indicating directories where to save stuff
-    if line.include?("statsDir")
-      pos = line.index('=')
-      tmpStatsDir = line[pos+1, line.size - (pos+1)].chomp!  # last character is newline
-    end
+		# read variables from config file
 		if line.include?("logsDir")
 			pos = line.index('=')
 			tmpLogsDir = line[pos+1, line.size - (pos+1)].chomp!  # last character is newline
@@ -75,6 +71,17 @@ confFile.readlines().each do |line|
     end
 
     # read variables related to alerts
+		if line.include?("sendAlerts")
+			pos = line.index('=')
+			tmpSendAlerts = line[pos+1, line.size - (pos+1)].chomp!  # last character is newline
+			if tmpSendAlerts == "true"
+				tmpSendAlerts = true
+			elsif tmpSendAlerts == "false"
+				tmpSendAlerts = false
+			else
+				puts "Bad sendAlerts value in config file"
+			end
+		end
 		if line.include?("alertTemplateLocation")
       pos = line.index('=')
       tmpAlertTemplateLocation = line[pos+1, line.size - (pos+1)].chomp!  # last character is newline
@@ -103,7 +110,7 @@ confFile.readlines().each do |line|
       # process these lines as if they were a CSV file
       # format is: <operation>,<destination>,<interval>,<reps>
       tmpArray = CSV.parse_line(line)
-      tmpOps = Operation.new(tmpArray[0], tmpArray[1], tmpArray[2], tmpArray[3], tmpStatsDir, tmpHttpFileHeader)
+      tmpOps = Operation.new(tmpArray[0], tmpArray[1], tmpArray[2], tmpArray[3], tmpHttpFileHeader)
       ops.push(tmpOps)
     end
 
@@ -118,8 +125,8 @@ ops.each do |op|
 	#tmpStr = op.opType + ", " + op.dest + ", " + op.interval.to_s + ", " + op.reps.to_s
 end
 
-puts "tmpStatsDir: " + tmpStatsDir
 puts "tmpLogsDir: " + tmpLogsDir
+puts "tmpSendAlerts: #{tmpSendAlerts}"
 puts "tmpAlertTemplateLocation: " + tmpAlertTemplateLocation
 puts "tmpEmailAddresses: " + tmpEmailAddresses
 puts "tmpMaxPingsBeforeAlert: " + tmpMaxPingsBeforeAlert
@@ -157,7 +164,7 @@ puts "Doing operations from index " + "#{firstOp}" + " to " + "#{lastOp}"
 
 # these objects will be referenced by all the threads running the operations
 # initialise the Alerter object
-tmpAlertObj = Alerter.new(tmpEmailAddresses, tmpMaxPingsBeforeAlert, tmpMaxHTTPBeforeAlert)
+tmpAlertObj = Alerter.new(tmpEmailAddresses, tmpMaxPingsBeforeAlert, tmpMaxHTTPBeforeAlert, tmpSendAlerts)
 tmpAlertObj.readEmailTemplate(tmpAlertTemplateLocation)
 
 # initialise the Logger object, store logs in a separate directory for every instance
@@ -182,7 +189,6 @@ tmpLoggerObj.level = Logger::DEBUG
 tmpLoggerObj.info("Logger has started")
 tmpLoggerObj.info("instanceId: #{instanceId}")
 tmpLoggerObj.info("I have " + ops.size.to_s + " operations to do")
-tmpLoggerObj.info("tmpStatsDir: " + tmpStatsDir)
 tmpLoggerObj.info("tmpLogsDir: " + tmpLogsDir)
 tmpLoggerObj.info("tmpAlertTemplateLocation: " + tmpAlertTemplateLocation)
 tmpLoggerObj.info("tmpEmailAddresses: " + tmpEmailAddresses)
@@ -207,21 +213,8 @@ tmpLoggerObj.info("Creating DB #{dbName} ...")
 influxdb.create_database(dbName)	# create influxdb database for RCrawler
 
 
-data = {
-  values: { value: 20 },
-  timestamp: DateTime.now.strftime('%Q')
-}
-
-tmpLoggerObj.debug("Writing data ...")
-# influxdb.write_point(nameSeries, data)
-# response = influxdb.query("select * from #{nameSeries}")
-# puts response
-
-
-
 
 # create an array containing the threads that will run what is specified in the config file
-# start the threads
 crawlArray = Array.new
 
 #threadArray = (0...ops.size).map do |i| # this is equivalent to for (int i = 0; i < ops.size() i++)
@@ -235,12 +228,12 @@ threadArray = (firstOp..lastOp).map do |i|
     elsif ops[i].opType == "HTTP"
       crawlArray[i].runHttpQueries(ops[i])
     else
-      puts "I do not understand operation: " + ops[i].opType
-			tmpLoggerObj.error("I do not understand operation: " + ops[i].opType)
+      puts "I do not understand operation: #{ops[i].opType}"
+			tmpLoggerObj.error("I do not understand operation: #{ops[i].opType}")
     end
-
   end
 end
 
+# start the threads
 tmpLoggerObj.info("Starting #{threadArray.size} threads...")
 threadArray.each {|t| t.join}
