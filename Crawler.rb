@@ -203,6 +203,7 @@ class Crawler
       	duration = currEpoch.to_i - startTime.to_i  # time taken to do the HTTP GET, in milliseconds
 				hValues = {length: queryResponse.body.length,
 					code: queryResponse.code,
+					duration: duration
 					# message: queryResponse.message,
 					# headers: queryResponse.headers
 				}
