@@ -185,6 +185,7 @@ class Crawler
 				end
 
 				#raise e  # TODO: re-raise exception previously ignored and process properly
+				next
 
 			else
 				# no exceptions
