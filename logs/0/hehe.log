@@ -1152,3 +1152,273 @@ I, [2018-10-22T13:49:16.741120 #74594]  INFO -- : Creating DB RCrawler ...
 D, [2018-10-22T13:49:16.745463 #74594] DEBUG -- : thrId: 0, #<Alerter:0x007fc69a082330 @emailAddresses="dvdpnt16+alerts@gmail.com", @maxPingsBeforeAlert="10", @maxHTTPBeforeAlert="5", @sendAlerts=false, @alertTemplatelocation="/Users/davide/Desktop/Code/RUBY/RCrawler/alerts/template1.txt", @alertTemplate="\noperation: <op>\ndestination: <dest>\nfailuresInARow: <fails>\nstartEpoch: <sEpoch>\nstartDate: <sDate>\n\n\nRCrawler\n">, #<Logger:0x007fc69a081fe8 @progname=nil, @level=0, @default_formatter=#<Logger::Formatter:0x007fc69a081f98 @datetime_format=nil>, @formatter=nil, @logdev=#<Logger::LogDevice:0x007fc69a081ea8 @shift_size=1048576, @shift_age=10, @filename="/Users/davide/Desktop/Code/RUBY/RCrawler/logs/0/hehe.log", @dev=#<File:/Users/davide/Desktop/Code/RUBY/RCrawler/logs/0/hehe.log>, @mon_owner=nil, @mon_count=0, @mon_mutex=#<Thread::Mutex:0x007fc69a081de0>>>
 D, [2018-10-22T13:49:16.746660 #74594] DEBUG -- : thrId: 1, #<Alerter:0x007fc69a082330 @emailAddresses="dvdpnt16+alerts@gmail.com", @maxPingsBeforeAlert="10", @maxHTTPBeforeAlert="5", @sendAlerts=false, @alertTemplatelocation="/Users/davide/Desktop/Code/RUBY/RCrawler/alerts/template1.txt", @alertTemplate="\noperation: <op>\ndestination: <dest>\nfailuresInARow: <fails>\nstartEpoch: <sEpoch>\nstartDate: <sDate>\n\n\nRCrawler\n">, #<Logger:0x007fc69a081fe8 @progname=nil, @level=0, @default_formatter=#<Logger::Formatter:0x007fc69a081f98 @datetime_format=nil>, @formatter=nil, @logdev=#<Logger::LogDevice:0x007fc69a081ea8 @shift_size=1048576, @shift_age=10, @filename="/Users/davide/Desktop/Code/RUBY/RCrawler/logs/0/hehe.log", @dev=#<File:/Users/davide/Desktop/Code/RUBY/RCrawler/logs/0/hehe.log>, @mon_owner=nil, @mon_count=0, @mon_mutex=#<Thread::Mutex:0x007fc69a081de0>>>
 I, [2018-10-22T13:49:16.746829 #74594]  INFO -- : Starting 2 threads...
+I, [2018-12-10T09:33:21.892175 #10236]  INFO -- : Logger has started
+I, [2018-12-10T09:33:21.892465 #10236]  INFO -- : instanceId: 0
+I, [2018-12-10T09:33:21.892641 #10236]  INFO -- : I have 2 operations to do
+I, [2018-12-10T09:33:21.892781 #10236]  INFO -- : tmpLogsDir: /Users/davide/Desktop/Code/RUBY/RCrawler/logs/
+I, [2018-12-10T09:33:21.892969 #10236]  INFO -- : tmpAlertTemplateLocation: /Users/davide/Desktop/Code/RUBY/RCrawler/alerts/template1.txt
+I, [2018-12-10T09:33:21.893164 #10236]  INFO -- : tmpEmailAddresses: dvdpnt16+alerts@gmail.com
+I, [2018-12-10T09:33:21.893284 #10236]  INFO -- : tmpMaxPingsBeforeAlert: 10
+I, [2018-12-10T09:33:21.893444 #10236]  INFO -- : tmpMaxHTTPBeforeAlert: 5
+I, [2018-12-10T09:33:21.893551 #10236]  INFO -- : tmpOperationsPerInstance: 20
+I, [2018-12-10T09:33:21.893623 #10236]  INFO -- : Doing operations from index 0 to 2
+I, [2018-12-10T09:33:21.893722 #10236]  INFO -- : Connecting to influxDB at localhost...
+I, [2018-12-10T09:33:21.893992 #10236]  INFO -- : Creating DB RCrawler ...
+D, [2018-12-10T09:33:22.016596 #10236] DEBUG -- : thrId: 0, #<Alerter:0x007fb0f00c3c78 @emailAddresses="dvdpnt16+alerts@gmail.com", @maxPingsBeforeAlert="10", @maxHTTPBeforeAlert="5", @sendAlerts=false, @alertTemplatelocation="/Users/davide/Desktop/Code/RUBY/RCrawler/alerts/template1.txt", @alertTemplate="\noperation: <op>\ndestination: <dest>\nfailuresInARow: <fails>\nstartEpoch: <sEpoch>\nstartDate: <sDate>\n\n\nRCrawler\n">, #<Logger:0x007fb0f00c3908 @progname=nil, @level=0, @default_formatter=#<Logger::Formatter:0x007fb0f00c38e0 @datetime_format=nil>, @formatter=nil, @logdev=#<Logger::LogDevice:0x007fb0f00c3868 @shift_size=1048576, @shift_age=10, @filename="/Users/davide/Desktop/Code/RUBY/RCrawler/logs/0/hehe.log", @dev=#<File:/Users/davide/Desktop/Code/RUBY/RCrawler/logs/0/hehe.log>, @mon_owner=nil, @mon_count=0, @mon_mutex=#<Thread::Mutex:0x007fb0f00c3818>>>
+D, [2018-12-10T09:33:22.021267 #10236] DEBUG -- : thrId: 1, #<Alerter:0x007fb0f00c3c78 @emailAddresses="dvdpnt16+alerts@gmail.com", @maxPingsBeforeAlert="10", @maxHTTPBeforeAlert="5", @sendAlerts=false, @alertTemplatelocation="/Users/davide/Desktop/Code/RUBY/RCrawler/alerts/template1.txt", @alertTemplate="\noperation: <op>\ndestination: <dest>\nfailuresInARow: <fails>\nstartEpoch: <sEpoch>\nstartDate: <sDate>\n\n\nRCrawler\n">, #<Logger:0x007fb0f00c3908 @progname=nil, @level=0, @default_formatter=#<Logger::Formatter:0x007fb0f00c38e0 @datetime_format=nil>, @formatter=nil, @logdev=#<Logger::LogDevice:0x007fb0f00c3868 @shift_size=1048576, @shift_age=10, @filename="/Users/davide/Desktop/Code/RUBY/RCrawler/logs/0/hehe.log", @dev=#<File:/Users/davide/Desktop/Code/RUBY/RCrawler/logs/0/hehe.log>, @mon_owner=nil, @mon_count=0, @mon_mutex=#<Thread::Mutex:0x007fb0f00c3818>>>
+D, [2018-12-10T09:33:22.022338 #10236] DEBUG -- : thrId: 2, #<Alerter:0x007fb0f00c3c78 @emailAddresses="dvdpnt16+alerts@gmail.com", @maxPingsBeforeAlert="10", @maxHTTPBeforeAlert="5", @sendAlerts=false, @alertTemplatelocation="/Users/davide/Desktop/Code/RUBY/RCrawler/alerts/template1.txt", @alertTemplate="\noperation: <op>\ndestination: <dest>\nfailuresInARow: <fails>\nstartEpoch: <sEpoch>\nstartDate: <sDate>\n\n\nRCrawler\n">, #<Logger:0x007fb0f00c3908 @progname=nil, @level=0, @default_formatter=#<Logger::Formatter:0x007fb0f00c38e0 @datetime_format=nil>, @formatter=nil, @logdev=#<Logger::LogDevice:0x007fb0f00c3868 @shift_size=1048576, @shift_age=10, @filename="/Users/davide/Desktop/Code/RUBY/RCrawler/logs/0/hehe.log", @dev=#<File:/Users/davide/Desktop/Code/RUBY/RCrawler/logs/0/hehe.log>, @mon_owner=nil, @mon_count=0, @mon_mutex=#<Thread::Mutex:0x007fb0f00c3818>>>
+I, [2018-12-10T09:33:22.022543 #10236]  INFO -- : Starting 3 threads...
+I, [2018-12-10T09:33:22.501108 #10236]  INFO -- : thrId: 0, 0, 0, n2.meraki.cn, latency: 322.658 ms, code: 0
+I, [2018-12-10T09:33:23.846897 #10236]  INFO -- : thrId: 0, 0, 1, n2.meraki.cn, latency: 323.692 ms, code: 0
+I, [2018-12-10T09:33:25.166890 #10236]  INFO -- : thrId: 0, 0, 2, n2.meraki.cn, latency: 300.645 ms, code: 0
+I, [2018-12-10T09:33:26.607874 #10236]  INFO -- : thrId: 0, 0, 3, n2.meraki.cn, latency: 418.442 ms, code: 0
+I, [2018-12-10T09:33:28.042733 #10236]  INFO -- : thrId: 0, 0, 4, n2.meraki.cn, latency: 412.371 ms, code: 0
+I, [2018-12-10T09:35:56.994654 #10431]  INFO -- : Logger has started
+I, [2018-12-10T09:35:56.994748 #10431]  INFO -- : instanceId: 0
+I, [2018-12-10T09:35:56.994810 #10431]  INFO -- : I have 2 operations to do
+I, [2018-12-10T09:35:56.994887 #10431]  INFO -- : tmpLogsDir: /Users/davide/Desktop/Code/RUBY/RCrawler/logs/
+I, [2018-12-10T09:35:56.994943 #10431]  INFO -- : tmpAlertTemplateLocation: /Users/davide/Desktop/Code/RUBY/RCrawler/alerts/template1.txt
+I, [2018-12-10T09:35:56.994988 #10431]  INFO -- : tmpEmailAddresses: dvdpnt16+alerts@gmail.com
+I, [2018-12-10T09:35:56.995018 #10431]  INFO -- : tmpMaxPingsBeforeAlert: 10
+I, [2018-12-10T09:35:56.995047 #10431]  INFO -- : tmpMaxHTTPBeforeAlert: 5
+I, [2018-12-10T09:35:56.995076 #10431]  INFO -- : tmpOperationsPerInstance: 20
+I, [2018-12-10T09:35:56.995127 #10431]  INFO -- : Doing operations from index 0 to 2
+I, [2018-12-10T09:35:56.995184 #10431]  INFO -- : Connecting to influxDB at localhost...
+I, [2018-12-10T09:35:56.995349 #10431]  INFO -- : Creating DB RCrawler ...
+D, [2018-12-10T09:35:57.001881 #10431] DEBUG -- : thrId: 0, #<Alerter:0x007fd8930833d8 @emailAddresses="dvdpnt16+alerts@gmail.com", @maxPingsBeforeAlert="10", @maxHTTPBeforeAlert="5", @sendAlerts=false, @alertTemplatelocation="/Users/davide/Desktop/Code/RUBY/RCrawler/alerts/template1.txt", @alertTemplate="\noperation: <op>\ndestination: <dest>\nfailuresInARow: <fails>\nstartEpoch: <sEpoch>\nstartDate: <sDate>\n\n\nRCrawler\n">, #<Logger:0x007fd893082f78 @progname=nil, @level=0, @default_formatter=#<Logger::Formatter:0x007fd893082f50 @datetime_format=nil>, @formatter=nil, @logdev=#<Logger::LogDevice:0x007fd893082f00 @shift_size=1048576, @shift_age=10, @filename="/Users/davide/Desktop/Code/RUBY/RCrawler/logs/0/hehe.log", @dev=#<File:/Users/davide/Desktop/Code/RUBY/RCrawler/logs/0/hehe.log>, @mon_owner=nil, @mon_count=0, @mon_mutex=#<Thread::Mutex:0x007fd893082e60>>>
+D, [2018-12-10T09:35:57.002115 #10431] DEBUG -- : thrId: 1, #<Alerter:0x007fd8930833d8 @emailAddresses="dvdpnt16+alerts@gmail.com", @maxPingsBeforeAlert="10", @maxHTTPBeforeAlert="5", @sendAlerts=false, @alertTemplatelocation="/Users/davide/Desktop/Code/RUBY/RCrawler/alerts/template1.txt", @alertTemplate="\noperation: <op>\ndestination: <dest>\nfailuresInARow: <fails>\nstartEpoch: <sEpoch>\nstartDate: <sDate>\n\n\nRCrawler\n">, #<Logger:0x007fd893082f78 @progname=nil, @level=0, @default_formatter=#<Logger::Formatter:0x007fd893082f50 @datetime_format=nil>, @formatter=nil, @logdev=#<Logger::LogDevice:0x007fd893082f00 @shift_size=1048576, @shift_age=10, @filename="/Users/davide/Desktop/Code/RUBY/RCrawler/logs/0/hehe.log", @dev=#<File:/Users/davide/Desktop/Code/RUBY/RCrawler/logs/0/hehe.log>, @mon_owner=nil, @mon_count=0, @mon_mutex=#<Thread::Mutex:0x007fd893082e60>>>
+D, [2018-12-10T09:35:57.002276 #10431] DEBUG -- : thrId: 2, #<Alerter:0x007fd8930833d8 @emailAddresses="dvdpnt16+alerts@gmail.com", @maxPingsBeforeAlert="10", @maxHTTPBeforeAlert="5", @sendAlerts=false, @alertTemplatelocation="/Users/davide/Desktop/Code/RUBY/RCrawler/alerts/template1.txt", @alertTemplate="\noperation: <op>\ndestination: <dest>\nfailuresInARow: <fails>\nstartEpoch: <sEpoch>\nstartDate: <sDate>\n\n\nRCrawler\n">, #<Logger:0x007fd893082f78 @progname=nil, @level=0, @default_formatter=#<Logger::Formatter:0x007fd893082f50 @datetime_format=nil>, @formatter=nil, @logdev=#<Logger::LogDevice:0x007fd893082f00 @shift_size=1048576, @shift_age=10, @filename="/Users/davide/Desktop/Code/RUBY/RCrawler/logs/0/hehe.log", @dev=#<File:/Users/davide/Desktop/Code/RUBY/RCrawler/logs/0/hehe.log>, @mon_owner=nil, @mon_count=0, @mon_mutex=#<Thread::Mutex:0x007fd893082e60>>>
+I, [2018-12-10T09:35:57.002372 #10431]  INFO -- : Starting 3 threads...
+I, [2018-12-10T09:35:57.504327 #10431]  INFO -- : thrId: 0, 0, 0, n2.meraki.cn, latency: 367.605 ms, code: 0
+I, [2018-12-10T09:35:58.852160 #10431]  INFO -- : thrId: 0, 0, 1, n2.meraki.cn, latency: 323.711 ms, code: 0
+I, [2018-12-10T09:36:00.205054 #10431]  INFO -- : thrId: 0, 0, 2, n2.meraki.cn, latency: 323.725 ms, code: 0
+I, [2018-12-10T09:36:01.640426 #10431]  INFO -- : thrId: 0, 0, 3, n2.meraki.cn, latency: 415.041 ms, code: 0
+I, [2018-12-10T09:36:02.986636 #10431]  INFO -- : thrId: 0, 0, 4, n2.meraki.cn, latency: 325.503 ms, code: 0
+I, [2018-12-10T09:36:04.334400 #10431]  INFO -- : thrId: 0, 0, 5, n2.meraki.cn, latency: 324.585 ms, code: 0
+I, [2018-12-10T09:36:05.733982 #10431]  INFO -- : thrId: 0, 0, 6, n2.meraki.cn, latency: 375.585 ms, code: 0
+I, [2018-12-10T09:36:07.273975 #10431]  INFO -- : thrId: 0, 0, 7, n2.meraki.cn, latency: 512.29 ms, code: 0
+I, [2018-12-10T09:36:08.623217 #10431]  INFO -- : thrId: 0, 0, 8, n2.meraki.cn, latency: 325.092 ms, code: 0
+I, [2018-12-10T09:36:10.036157 #10431]  INFO -- : thrId: 0, 0, 9, n2.meraki.cn, latency: 386.596 ms, code: 0
+I, [2018-12-10T09:36:11.468636 #10431]  INFO -- : thrId: 0, 0, 10, n2.meraki.cn, latency: 407.775 ms, code: 0
+I, [2018-12-10T09:36:12.903015 #10431]  INFO -- : thrId: 0, 0, 11, n2.meraki.cn, latency: 413.278 ms, code: 0
+I, [2018-12-10T09:36:14.438053 #10431]  INFO -- : thrId: 0, 0, 12, n2.meraki.cn, latency: 511.758 ms, code: 0
+I, [2018-12-10T09:36:16.752864 #10454]  INFO -- : Logger has started
+I, [2018-12-10T09:36:16.752983 #10454]  INFO -- : instanceId: 0
+I, [2018-12-10T09:36:16.753049 #10454]  INFO -- : I have 1 operations to do
+I, [2018-12-10T09:36:16.753086 #10454]  INFO -- : tmpLogsDir: /Users/davide/Desktop/Code/RUBY/RCrawler/logs/
+I, [2018-12-10T09:36:16.753126 #10454]  INFO -- : tmpAlertTemplateLocation: /Users/davide/Desktop/Code/RUBY/RCrawler/alerts/template1.txt
+I, [2018-12-10T09:36:16.753156 #10454]  INFO -- : tmpEmailAddresses: dvdpnt16+alerts@gmail.com
+I, [2018-12-10T09:36:16.753185 #10454]  INFO -- : tmpMaxPingsBeforeAlert: 10
+I, [2018-12-10T09:36:16.753216 #10454]  INFO -- : tmpMaxHTTPBeforeAlert: 5
+I, [2018-12-10T09:36:16.753245 #10454]  INFO -- : tmpOperationsPerInstance: 20
+I, [2018-12-10T09:36:16.753275 #10454]  INFO -- : Doing operations from index 0 to 1
+I, [2018-12-10T09:36:16.753340 #10454]  INFO -- : Connecting to influxDB at localhost...
+I, [2018-12-10T09:36:16.753498 #10454]  INFO -- : Creating DB RCrawler ...
+D, [2018-12-10T09:36:16.757575 #10454] DEBUG -- : thrId: 0, #<Alerter:0x007fadb102aa38 @emailAddresses="dvdpnt16+alerts@gmail.com", @maxPingsBeforeAlert="10", @maxHTTPBeforeAlert="5", @sendAlerts=false, @alertTemplatelocation="/Users/davide/Desktop/Code/RUBY/RCrawler/alerts/template1.txt", @alertTemplate="\noperation: <op>\ndestination: <dest>\nfailuresInARow: <fails>\nstartEpoch: <sEpoch>\nstartDate: <sDate>\n\n\nRCrawler\n">, #<Logger:0x007fadb102a588 @progname=nil, @level=0, @default_formatter=#<Logger::Formatter:0x007fadb102a560 @datetime_format=nil>, @formatter=nil, @logdev=#<Logger::LogDevice:0x007fadb102a510 @shift_size=1048576, @shift_age=10, @filename="/Users/davide/Desktop/Code/RUBY/RCrawler/logs/0/hehe.log", @dev=#<File:/Users/davide/Desktop/Code/RUBY/RCrawler/logs/0/hehe.log>, @mon_owner=nil, @mon_count=0, @mon_mutex=#<Thread::Mutex:0x007fadb102a4c0>>>
+D, [2018-12-10T09:36:16.757778 #10454] DEBUG -- : thrId: 1, #<Alerter:0x007fadb102aa38 @emailAddresses="dvdpnt16+alerts@gmail.com", @maxPingsBeforeAlert="10", @maxHTTPBeforeAlert="5", @sendAlerts=false, @alertTemplatelocation="/Users/davide/Desktop/Code/RUBY/RCrawler/alerts/template1.txt", @alertTemplate="\noperation: <op>\ndestination: <dest>\nfailuresInARow: <fails>\nstartEpoch: <sEpoch>\nstartDate: <sDate>\n\n\nRCrawler\n">, #<Logger:0x007fadb102a588 @progname=nil, @level=0, @default_formatter=#<Logger::Formatter:0x007fadb102a560 @datetime_format=nil>, @formatter=nil, @logdev=#<Logger::LogDevice:0x007fadb102a510 @shift_size=1048576, @shift_age=10, @filename="/Users/davide/Desktop/Code/RUBY/RCrawler/logs/0/hehe.log", @dev=#<File:/Users/davide/Desktop/Code/RUBY/RCrawler/logs/0/hehe.log>, @mon_owner=nil, @mon_count=0, @mon_mutex=#<Thread::Mutex:0x007fadb102a4c0>>>
+I, [2018-12-10T09:36:16.757871 #10454]  INFO -- : Starting 2 threads...
+I, [2018-12-10T09:38:04.188730 #10481]  INFO -- : Logger has started
+I, [2018-12-10T09:38:04.188830 #10481]  INFO -- : instanceId: 0
+I, [2018-12-10T09:38:04.188886 #10481]  INFO -- : I have 1 operations to do
+I, [2018-12-10T09:38:04.188920 #10481]  INFO -- : tmpLogsDir: /Users/davide/Desktop/Code/RUBY/RCrawler/logs/
+I, [2018-12-10T09:38:04.188952 #10481]  INFO -- : tmpAlertTemplateLocation: /Users/davide/Desktop/Code/RUBY/RCrawler/alerts/template1.txt
+I, [2018-12-10T09:38:04.188984 #10481]  INFO -- : tmpEmailAddresses: dvdpnt16+alerts@gmail.com
+I, [2018-12-10T09:38:04.189015 #10481]  INFO -- : tmpMaxPingsBeforeAlert: 10
+I, [2018-12-10T09:38:04.189068 #10481]  INFO -- : tmpMaxHTTPBeforeAlert: 5
+I, [2018-12-10T09:38:04.189098 #10481]  INFO -- : tmpOperationsPerInstance: 20
+I, [2018-12-10T09:38:04.189156 #10481]  INFO -- : Doing operations from index 0 to 1
+I, [2018-12-10T09:38:04.189234 #10481]  INFO -- : Connecting to influxDB at localhost...
+I, [2018-12-10T09:38:04.189394 #10481]  INFO -- : Creating DB RCrawler ...
+D, [2018-12-10T09:38:04.193356 #10481] DEBUG -- : thrId: 0, #<Alerter:0x007f9089842120 @emailAddresses="dvdpnt16+alerts@gmail.com", @maxPingsBeforeAlert="10", @maxHTTPBeforeAlert="5", @sendAlerts=false, @alertTemplatelocation="/Users/davide/Desktop/Code/RUBY/RCrawler/alerts/template1.txt", @alertTemplate="\noperation: <op>\ndestination: <dest>\nfailuresInARow: <fails>\nstartEpoch: <sEpoch>\nstartDate: <sDate>\n\n\nRCrawler\n">, #<Logger:0x007f9089841d10 @progname=nil, @level=0, @default_formatter=#<Logger::Formatter:0x007f9089841ce8 @datetime_format=nil>, @formatter=nil, @logdev=#<Logger::LogDevice:0x007f9089841c48 @shift_size=1048576, @shift_age=10, @filename="/Users/davide/Desktop/Code/RUBY/RCrawler/logs/0/hehe.log", @dev=#<File:/Users/davide/Desktop/Code/RUBY/RCrawler/logs/0/hehe.log>, @mon_owner=nil, @mon_count=0, @mon_mutex=#<Thread::Mutex:0x007f9089841bd0>>>
+D, [2018-12-10T09:38:04.194315 #10481] DEBUG -- : thrId: 1, #<Alerter:0x007f9089842120 @emailAddresses="dvdpnt16+alerts@gmail.com", @maxPingsBeforeAlert="10", @maxHTTPBeforeAlert="5", @sendAlerts=false, @alertTemplatelocation="/Users/davide/Desktop/Code/RUBY/RCrawler/alerts/template1.txt", @alertTemplate="\noperation: <op>\ndestination: <dest>\nfailuresInARow: <fails>\nstartEpoch: <sEpoch>\nstartDate: <sDate>\n\n\nRCrawler\n">, #<Logger:0x007f9089841d10 @progname=nil, @level=0, @default_formatter=#<Logger::Formatter:0x007f9089841ce8 @datetime_format=nil>, @formatter=nil, @logdev=#<Logger::LogDevice:0x007f9089841c48 @shift_size=1048576, @shift_age=10, @filename="/Users/davide/Desktop/Code/RUBY/RCrawler/logs/0/hehe.log", @dev=#<File:/Users/davide/Desktop/Code/RUBY/RCrawler/logs/0/hehe.log>, @mon_owner=nil, @mon_count=0, @mon_mutex=#<Thread::Mutex:0x007f9089841bd0>>>
+I, [2018-12-10T09:38:04.194470 #10481]  INFO -- : Starting 2 threads...
+I, [2018-12-10T09:38:17.636684 #10511]  INFO -- : Logger has started
+I, [2018-12-10T09:38:17.636774 #10511]  INFO -- : instanceId: 0
+I, [2018-12-10T09:38:17.636889 #10511]  INFO -- : I have 1 operations to do
+I, [2018-12-10T09:38:17.636979 #10511]  INFO -- : tmpLogsDir: /Users/davide/Desktop/Code/RUBY/RCrawler/logs/
+I, [2018-12-10T09:38:17.637014 #10511]  INFO -- : tmpAlertTemplateLocation: /Users/davide/Desktop/Code/RUBY/RCrawler/alerts/template1.txt
+I, [2018-12-10T09:38:17.637046 #10511]  INFO -- : tmpEmailAddresses: dvdpnt16+alerts@gmail.com
+I, [2018-12-10T09:38:17.637076 #10511]  INFO -- : tmpMaxPingsBeforeAlert: 10
+I, [2018-12-10T09:38:17.637125 #10511]  INFO -- : tmpMaxHTTPBeforeAlert: 5
+I, [2018-12-10T09:38:17.637155 #10511]  INFO -- : tmpOperationsPerInstance: 20
+I, [2018-12-10T09:38:17.637185 #10511]  INFO -- : Doing operations from index 0 to 1
+I, [2018-12-10T09:38:17.637240 #10511]  INFO -- : Connecting to influxDB at localhost...
+I, [2018-12-10T09:38:17.637401 #10511]  INFO -- : Creating DB RCrawler ...
+D, [2018-12-10T09:38:17.641126 #10511] DEBUG -- : thrId: 0, #<Alerter:0x007f86858562c8 @emailAddresses="dvdpnt16+alerts@gmail.com", @maxPingsBeforeAlert="10", @maxHTTPBeforeAlert="5", @sendAlerts=false, @alertTemplatelocation="/Users/davide/Desktop/Code/RUBY/RCrawler/alerts/template1.txt", @alertTemplate="\noperation: <op>\ndestination: <dest>\nfailuresInARow: <fails>\nstartEpoch: <sEpoch>\nstartDate: <sDate>\n\n\nRCrawler\n">, #<Logger:0x007f8685856020 @progname=nil, @level=0, @default_formatter=#<Logger::Formatter:0x007f8685855ff8 @datetime_format=nil>, @formatter=nil, @logdev=#<Logger::LogDevice:0x007f8685855f58 @shift_size=1048576, @shift_age=10, @filename="/Users/davide/Desktop/Code/RUBY/RCrawler/logs/0/hehe.log", @dev=#<File:/Users/davide/Desktop/Code/RUBY/RCrawler/logs/0/hehe.log>, @mon_owner=nil, @mon_count=0, @mon_mutex=#<Thread::Mutex:0x007f8685855f08>>>
+D, [2018-12-10T09:38:17.642069 #10511] DEBUG -- : thrId: 1, #<Alerter:0x007f86858562c8 @emailAddresses="dvdpnt16+alerts@gmail.com", @maxPingsBeforeAlert="10", @maxHTTPBeforeAlert="5", @sendAlerts=false, @alertTemplatelocation="/Users/davide/Desktop/Code/RUBY/RCrawler/alerts/template1.txt", @alertTemplate="\noperation: <op>\ndestination: <dest>\nfailuresInARow: <fails>\nstartEpoch: <sEpoch>\nstartDate: <sDate>\n\n\nRCrawler\n">, #<Logger:0x007f8685856020 @progname=nil, @level=0, @default_formatter=#<Logger::Formatter:0x007f8685855ff8 @datetime_format=nil>, @formatter=nil, @logdev=#<Logger::LogDevice:0x007f8685855f58 @shift_size=1048576, @shift_age=10, @filename="/Users/davide/Desktop/Code/RUBY/RCrawler/logs/0/hehe.log", @dev=#<File:/Users/davide/Desktop/Code/RUBY/RCrawler/logs/0/hehe.log>, @mon_owner=nil, @mon_count=0, @mon_mutex=#<Thread::Mutex:0x007f8685855f08>>>
+I, [2018-12-10T09:38:17.642189 #10511]  INFO -- : Starting 2 threads...
+I, [2018-12-10T09:39:02.749138 #10530]  INFO -- : Logger has started
+I, [2018-12-10T09:39:02.749232 #10530]  INFO -- : instanceId: 0
+I, [2018-12-10T09:39:02.749273 #10530]  INFO -- : I have 1 operations to do
+I, [2018-12-10T09:39:02.749322 #10530]  INFO -- : tmpLogsDir: /Users/davide/Desktop/Code/RUBY/RCrawler/logs/
+I, [2018-12-10T09:39:02.749353 #10530]  INFO -- : tmpAlertTemplateLocation: /Users/davide/Desktop/Code/RUBY/RCrawler/alerts/template1.txt
+I, [2018-12-10T09:39:02.749383 #10530]  INFO -- : tmpEmailAddresses: dvdpnt16+alerts@gmail.com
+I, [2018-12-10T09:39:02.749411 #10530]  INFO -- : tmpMaxPingsBeforeAlert: 10
+I, [2018-12-10T09:39:02.749440 #10530]  INFO -- : tmpMaxHTTPBeforeAlert: 5
+I, [2018-12-10T09:39:02.749488 #10530]  INFO -- : tmpOperationsPerInstance: 20
+I, [2018-12-10T09:39:02.749518 #10530]  INFO -- : Doing operations from index 0 to 1
+I, [2018-12-10T09:39:02.749574 #10530]  INFO -- : Connecting to influxDB at localhost...
+I, [2018-12-10T09:39:02.749710 #10530]  INFO -- : Creating DB RCrawler ...
+D, [2018-12-10T09:39:02.753702 #10530] DEBUG -- : thrId: 0, #<Alerter:0x007fbe6a065f60 @emailAddresses="dvdpnt16+alerts@gmail.com", @maxPingsBeforeAlert="10", @maxHTTPBeforeAlert="5", @sendAlerts=false, @alertTemplatelocation="/Users/davide/Desktop/Code/RUBY/RCrawler/alerts/template1.txt", @alertTemplate="\noperation: <op>\ndestination: <dest>\nfailuresInARow: <fails>\nstartEpoch: <sEpoch>\nstartDate: <sDate>\n\n\nRCrawler\n">, #<Logger:0x007fbe6a065c68 @progname=nil, @level=0, @default_formatter=#<Logger::Formatter:0x007fbe6a065ba0 @datetime_format=nil>, @formatter=nil, @logdev=#<Logger::LogDevice:0x007fbe6a065b50 @shift_size=1048576, @shift_age=10, @filename="/Users/davide/Desktop/Code/RUBY/RCrawler/logs/0/hehe.log", @dev=#<File:/Users/davide/Desktop/Code/RUBY/RCrawler/logs/0/hehe.log>, @mon_owner=nil, @mon_count=0, @mon_mutex=#<Thread::Mutex:0x007fbe6a065a88>>>
+D, [2018-12-10T09:39:02.759700 #10530] DEBUG -- : thrId: 1, #<Alerter:0x007fbe6a065f60 @emailAddresses="dvdpnt16+alerts@gmail.com", @maxPingsBeforeAlert="10", @maxHTTPBeforeAlert="5", @sendAlerts=false, @alertTemplatelocation="/Users/davide/Desktop/Code/RUBY/RCrawler/alerts/template1.txt", @alertTemplate="\noperation: <op>\ndestination: <dest>\nfailuresInARow: <fails>\nstartEpoch: <sEpoch>\nstartDate: <sDate>\n\n\nRCrawler\n">, #<Logger:0x007fbe6a065c68 @progname=nil, @level=0, @default_formatter=#<Logger::Formatter:0x007fbe6a065ba0 @datetime_format=nil>, @formatter=nil, @logdev=#<Logger::LogDevice:0x007fbe6a065b50 @shift_size=1048576, @shift_age=10, @filename="/Users/davide/Desktop/Code/RUBY/RCrawler/logs/0/hehe.log", @dev=#<File:/Users/davide/Desktop/Code/RUBY/RCrawler/logs/0/hehe.log>, @mon_owner=nil, @mon_count=0, @mon_mutex=#<Thread::Mutex:0x007fbe6a065a88>>>
+I, [2018-12-10T09:39:02.759849 #10530]  INFO -- : Starting 2 threads...
+I, [2018-12-10T09:39:48.530050 #10547]  INFO -- : Logger has started
+I, [2018-12-10T09:39:48.530156 #10547]  INFO -- : instanceId: 0
+I, [2018-12-10T09:39:48.530233 #10547]  INFO -- : I have 1 operations to do
+I, [2018-12-10T09:39:48.530307 #10547]  INFO -- : tmpLogsDir: /Users/davide/Desktop/Code/RUBY/RCrawler/logs/
+I, [2018-12-10T09:39:48.530344 #10547]  INFO -- : tmpAlertTemplateLocation: /Users/davide/Desktop/Code/RUBY/RCrawler/alerts/template1.txt
+I, [2018-12-10T09:39:48.530377 #10547]  INFO -- : tmpEmailAddresses: dvdpnt16+alerts@gmail.com
+I, [2018-12-10T09:39:48.530407 #10547]  INFO -- : tmpMaxPingsBeforeAlert: 10
+I, [2018-12-10T09:39:48.530457 #10547]  INFO -- : tmpMaxHTTPBeforeAlert: 5
+I, [2018-12-10T09:39:48.530487 #10547]  INFO -- : tmpOperationsPerInstance: 20
+I, [2018-12-10T09:39:48.530525 #10547]  INFO -- : Doing operations from index 0 to 1
+I, [2018-12-10T09:39:48.530573 #10547]  INFO -- : Connecting to influxDB at localhost...
+I, [2018-12-10T09:39:48.530737 #10547]  INFO -- : Creating DB RCrawler ...
+D, [2018-12-10T09:39:48.534984 #10547] DEBUG -- : thrId: 0, #<Alerter:0x007f88da985f70 @emailAddresses="dvdpnt16+alerts@gmail.com", @maxPingsBeforeAlert="10", @maxHTTPBeforeAlert="5", @sendAlerts=false, @alertTemplatelocation="/Users/davide/Desktop/Code/RUBY/RCrawler/alerts/template1.txt", @alertTemplate="\noperation: <op>\ndestination: <dest>\nfailuresInARow: <fails>\nstartEpoch: <sEpoch>\nstartDate: <sDate>\n\n\nRCrawler\n">, #<Logger:0x007f88da985bb0 @progname=nil, @level=0, @default_formatter=#<Logger::Formatter:0x007f88da985b10 @datetime_format=nil>, @formatter=nil, @logdev=#<Logger::LogDevice:0x007f88da985ac0 @shift_size=1048576, @shift_age=10, @filename="/Users/davide/Desktop/Code/RUBY/RCrawler/logs/0/hehe.log", @dev=#<File:/Users/davide/Desktop/Code/RUBY/RCrawler/logs/0/hehe.log>, @mon_owner=nil, @mon_count=0, @mon_mutex=#<Thread::Mutex:0x007f88da985a48>>>
+D, [2018-12-10T09:39:48.535965 #10547] DEBUG -- : thrId: 1, #<Alerter:0x007f88da985f70 @emailAddresses="dvdpnt16+alerts@gmail.com", @maxPingsBeforeAlert="10", @maxHTTPBeforeAlert="5", @sendAlerts=false, @alertTemplatelocation="/Users/davide/Desktop/Code/RUBY/RCrawler/alerts/template1.txt", @alertTemplate="\noperation: <op>\ndestination: <dest>\nfailuresInARow: <fails>\nstartEpoch: <sEpoch>\nstartDate: <sDate>\n\n\nRCrawler\n">, #<Logger:0x007f88da985bb0 @progname=nil, @level=0, @default_formatter=#<Logger::Formatter:0x007f88da985b10 @datetime_format=nil>, @formatter=nil, @logdev=#<Logger::LogDevice:0x007f88da985ac0 @shift_size=1048576, @shift_age=10, @filename="/Users/davide/Desktop/Code/RUBY/RCrawler/logs/0/hehe.log", @dev=#<File:/Users/davide/Desktop/Code/RUBY/RCrawler/logs/0/hehe.log>, @mon_owner=nil, @mon_count=0, @mon_mutex=#<Thread::Mutex:0x007f88da985a48>>>
+I, [2018-12-10T09:39:48.536099 #10547]  INFO -- : Starting 2 threads...
+I, [2018-12-10T09:40:19.038344 #10557]  INFO -- : Logger has started
+I, [2018-12-10T09:40:19.038443 #10557]  INFO -- : instanceId: 0
+I, [2018-12-10T09:40:19.038503 #10557]  INFO -- : I have 1 operations to do
+I, [2018-12-10T09:40:19.038538 #10557]  INFO -- : tmpLogsDir: /Users/davide/Desktop/Code/RUBY/RCrawler/logs/
+I, [2018-12-10T09:40:19.038570 #10557]  INFO -- : tmpAlertTemplateLocation: /Users/davide/Desktop/Code/RUBY/RCrawler/alerts/template1.txt
+I, [2018-12-10T09:40:19.038602 #10557]  INFO -- : tmpEmailAddresses: dvdpnt16+alerts@gmail.com
+I, [2018-12-10T09:40:19.038631 #10557]  INFO -- : tmpMaxPingsBeforeAlert: 10
+I, [2018-12-10T09:40:19.038683 #10557]  INFO -- : tmpMaxHTTPBeforeAlert: 5
+I, [2018-12-10T09:40:19.038712 #10557]  INFO -- : tmpOperationsPerInstance: 20
+I, [2018-12-10T09:40:19.038743 #10557]  INFO -- : Doing operations from index 0 to 1
+I, [2018-12-10T09:40:19.038800 #10557]  INFO -- : Connecting to influxDB at localhost...
+I, [2018-12-10T09:40:19.038936 #10557]  INFO -- : Creating DB RCrawler ...
+D, [2018-12-10T09:40:19.045173 #10557] DEBUG -- : thrId: 0, #<Alerter:0x007fd1890662d0 @emailAddresses="dvdpnt16+alerts@gmail.com", @maxPingsBeforeAlert="10", @maxHTTPBeforeAlert="5", @sendAlerts=false, @alertTemplatelocation="/Users/davide/Desktop/Code/RUBY/RCrawler/alerts/template1.txt", @alertTemplate="\noperation: <op>\ndestination: <dest>\nfailuresInARow: <fails>\nstartEpoch: <sEpoch>\nstartDate: <sDate>\n\n\nRCrawler\n">, #<Logger:0x007fd189065f38 @progname=nil, @level=0, @default_formatter=#<Logger::Formatter:0x007fd189065f10 @datetime_format=nil>, @formatter=nil, @logdev=#<Logger::LogDevice:0x007fd189065e20 @shift_size=1048576, @shift_age=10, @filename="/Users/davide/Desktop/Code/RUBY/RCrawler/logs/0/hehe.log", @dev=#<File:/Users/davide/Desktop/Code/RUBY/RCrawler/logs/0/hehe.log>, @mon_owner=nil, @mon_count=0, @mon_mutex=#<Thread::Mutex:0x007fd189065d58>>>
+D, [2018-12-10T09:40:19.046202 #10557] DEBUG -- : thrId: 1, #<Alerter:0x007fd1890662d0 @emailAddresses="dvdpnt16+alerts@gmail.com", @maxPingsBeforeAlert="10", @maxHTTPBeforeAlert="5", @sendAlerts=false, @alertTemplatelocation="/Users/davide/Desktop/Code/RUBY/RCrawler/alerts/template1.txt", @alertTemplate="\noperation: <op>\ndestination: <dest>\nfailuresInARow: <fails>\nstartEpoch: <sEpoch>\nstartDate: <sDate>\n\n\nRCrawler\n">, #<Logger:0x007fd189065f38 @progname=nil, @level=0, @default_formatter=#<Logger::Formatter:0x007fd189065f10 @datetime_format=nil>, @formatter=nil, @logdev=#<Logger::LogDevice:0x007fd189065e20 @shift_size=1048576, @shift_age=10, @filename="/Users/davide/Desktop/Code/RUBY/RCrawler/logs/0/hehe.log", @dev=#<File:/Users/davide/Desktop/Code/RUBY/RCrawler/logs/0/hehe.log>, @mon_owner=nil, @mon_count=0, @mon_mutex=#<Thread::Mutex:0x007fd189065d58>>>
+I, [2018-12-10T09:40:19.046359 #10557]  INFO -- : Starting 2 threads...
+I, [2018-12-10T09:40:22.247111 #10557]  INFO -- : thrId: 0, 0, http://n2.meraki.cn, 3191 ms, code: 200	length: 7744
+I, [2018-12-10T09:40:27.010017 #10557]  INFO -- : thrId: 0, 1, http://n2.meraki.cn, 2754 ms, code: 200	length: 7744
+I, [2018-12-10T09:40:45.950540 #10569]  INFO -- : Logger has started
+I, [2018-12-10T09:40:45.950648 #10569]  INFO -- : instanceId: 0
+I, [2018-12-10T09:40:45.950692 #10569]  INFO -- : I have 2 operations to do
+I, [2018-12-10T09:40:45.950726 #10569]  INFO -- : tmpLogsDir: /Users/davide/Desktop/Code/RUBY/RCrawler/logs/
+I, [2018-12-10T09:40:45.950758 #10569]  INFO -- : tmpAlertTemplateLocation: /Users/davide/Desktop/Code/RUBY/RCrawler/alerts/template1.txt
+I, [2018-12-10T09:40:45.950789 #10569]  INFO -- : tmpEmailAddresses: dvdpnt16+alerts@gmail.com
+I, [2018-12-10T09:40:45.950818 #10569]  INFO -- : tmpMaxPingsBeforeAlert: 10
+I, [2018-12-10T09:40:45.950847 #10569]  INFO -- : tmpMaxHTTPBeforeAlert: 5
+I, [2018-12-10T09:40:45.950876 #10569]  INFO -- : tmpOperationsPerInstance: 20
+I, [2018-12-10T09:40:45.950906 #10569]  INFO -- : Doing operations from index 0 to 2
+I, [2018-12-10T09:40:45.950961 #10569]  INFO -- : Connecting to influxDB at localhost...
+I, [2018-12-10T09:40:45.951125 #10569]  INFO -- : Creating DB RCrawler ...
+D, [2018-12-10T09:40:45.954831 #10569] DEBUG -- : thrId: 0, #<Alerter:0x007feaae0586b0 @emailAddresses="dvdpnt16+alerts@gmail.com", @maxPingsBeforeAlert="10", @maxHTTPBeforeAlert="5", @sendAlerts=false, @alertTemplatelocation="/Users/davide/Desktop/Code/RUBY/RCrawler/alerts/template1.txt", @alertTemplate="\noperation: <op>\ndestination: <dest>\nfailuresInARow: <fails>\nstartEpoch: <sEpoch>\nstartDate: <sDate>\n\n\nRCrawler\n">, #<Logger:0x007feaae053f70 @progname=nil, @level=0, @default_formatter=#<Logger::Formatter:0x007feaae053f20 @datetime_format=nil>, @formatter=nil, @logdev=#<Logger::LogDevice:0x007feaae053ed0 @shift_size=1048576, @shift_age=10, @filename="/Users/davide/Desktop/Code/RUBY/RCrawler/logs/0/hehe.log", @dev=#<File:/Users/davide/Desktop/Code/RUBY/RCrawler/logs/0/hehe.log>, @mon_owner=nil, @mon_count=0, @mon_mutex=#<Thread::Mutex:0x007feaae053e80>>>
+D, [2018-12-10T09:40:45.958073 #10569] DEBUG -- : thrId: 1, #<Alerter:0x007feaae0586b0 @emailAddresses="dvdpnt16+alerts@gmail.com", @maxPingsBeforeAlert="10", @maxHTTPBeforeAlert="5", @sendAlerts=false, @alertTemplatelocation="/Users/davide/Desktop/Code/RUBY/RCrawler/alerts/template1.txt", @alertTemplate="\noperation: <op>\ndestination: <dest>\nfailuresInARow: <fails>\nstartEpoch: <sEpoch>\nstartDate: <sDate>\n\n\nRCrawler\n">, #<Logger:0x007feaae053f70 @progname=nil, @level=0, @default_formatter=#<Logger::Formatter:0x007feaae053f20 @datetime_format=nil>, @formatter=nil, @logdev=#<Logger::LogDevice:0x007feaae053ed0 @shift_size=1048576, @shift_age=10, @filename="/Users/davide/Desktop/Code/RUBY/RCrawler/logs/0/hehe.log", @dev=#<File:/Users/davide/Desktop/Code/RUBY/RCrawler/logs/0/hehe.log>, @mon_owner=nil, @mon_count=0, @mon_mutex=#<Thread::Mutex:0x007feaae053e80>>>
+D, [2018-12-10T09:40:45.958429 #10569] DEBUG -- : thrId: 2, #<Alerter:0x007feaae0586b0 @emailAddresses="dvdpnt16+alerts@gmail.com", @maxPingsBeforeAlert="10", @maxHTTPBeforeAlert="5", @sendAlerts=false, @alertTemplatelocation="/Users/davide/Desktop/Code/RUBY/RCrawler/alerts/template1.txt", @alertTemplate="\noperation: <op>\ndestination: <dest>\nfailuresInARow: <fails>\nstartEpoch: <sEpoch>\nstartDate: <sDate>\n\n\nRCrawler\n">, #<Logger:0x007feaae053f70 @progname=nil, @level=0, @default_formatter=#<Logger::Formatter:0x007feaae053f20 @datetime_format=nil>, @formatter=nil, @logdev=#<Logger::LogDevice:0x007feaae053ed0 @shift_size=1048576, @shift_age=10, @filename="/Users/davide/Desktop/Code/RUBY/RCrawler/logs/0/hehe.log", @dev=#<File:/Users/davide/Desktop/Code/RUBY/RCrawler/logs/0/hehe.log>, @mon_owner=nil, @mon_count=0, @mon_mutex=#<Thread::Mutex:0x007feaae053e80>>>
+I, [2018-12-10T09:40:45.960131 #10569]  INFO -- : Starting 3 threads...
+I, [2018-12-10T09:40:46.306823 #10569]  INFO -- : thrId: 0, 0, 0, n2.meraki.cn, latency: 336.873 ms, code: 0
+I, [2018-12-10T09:40:47.561478 #10569]  INFO -- : thrId: 0, 0, 1, n2.meraki.cn, latency: 233.912 ms, code: 0
+I, [2018-12-10T09:40:48.559321 #10569]  INFO -- : thrId: 1, 0, http://n2.meraki.cn, 2595 ms, code: 200	length: 7744
+I, [2018-12-10T09:40:48.807691 #10569]  INFO -- : thrId: 0, 0, 2, n2.meraki.cn, latency: 224.144 ms, code: 0
+I, [2018-12-10T09:40:50.096769 #10569]  INFO -- : thrId: 0, 0, 3, n2.meraki.cn, latency: 265.156 ms, code: 0
+I, [2018-12-10T09:40:51.340268 #10569]  INFO -- : thrId: 0, 0, 4, n2.meraki.cn, latency: 222.648 ms, code: 0
+I, [2018-12-10T09:40:52.658115 #10569]  INFO -- : thrId: 0, 0, 5, n2.meraki.cn, latency: 295.904 ms, code: 0
+I, [2018-12-10T09:40:53.577505 #10569]  INFO -- : thrId: 1, 1, http://n2.meraki.cn, 3012 ms, code: 200	length: 7744
+I, [2018-12-10T09:40:53.925101 #10569]  INFO -- : thrId: 0, 0, 6, n2.meraki.cn, latency: 225.397 ms, code: 0
+I, [2018-12-10T09:40:55.213343 #10569]  INFO -- : thrId: 0, 0, 7, n2.meraki.cn, latency: 268.276 ms, code: 0
+I, [2018-12-10T09:40:56.460348 #10569]  INFO -- : thrId: 0, 0, 8, n2.meraki.cn, latency: 223.639 ms, code: 0
+I, [2018-12-10T09:40:57.714406 #10569]  INFO -- : thrId: 0, 0, 9, n2.meraki.cn, latency: 227.605 ms, code: 0
+I, [2018-12-10T09:40:58.390997 #10569]  INFO -- : thrId: 1, 2, http://n2.meraki.cn, 2804 ms, code: 200	length: 7744
+I, [2018-12-10T09:40:58.967438 #10569]  INFO -- : thrId: 0, 0, 10, n2.meraki.cn, latency: 229.195 ms, code: 0
+I, [2018-12-10T09:41:00.242926 #10569]  INFO -- : thrId: 0, 0, 11, n2.meraki.cn, latency: 223.497 ms, code: 0
+I, [2018-12-10T09:41:01.581054 #10569]  INFO -- : thrId: 0, 0, 12, n2.meraki.cn, latency: 302.682 ms, code: 0
+I, [2018-12-10T09:41:02.832751 #10569]  INFO -- : thrId: 0, 0, 13, n2.meraki.cn, latency: 228.437 ms, code: 0
+I, [2018-12-10T09:41:03.310133 #10569]  INFO -- : thrId: 1, 3, http://n2.meraki.cn, 2908 ms, code: 200	length: 7744
+I, [2018-12-10T09:41:04.227001 #10569]  INFO -- : thrId: 0, 0, 14, n2.meraki.cn, latency: 328.521 ms, code: 0
+I, [2018-12-10T09:41:05.476194 #10569]  INFO -- : thrId: 0, 0, 15, n2.meraki.cn, latency: 223.438 ms, code: 0
+I, [2018-12-10T09:41:13.115832 #10591]  INFO -- : Logger has started
+I, [2018-12-10T09:41:13.115977 #10591]  INFO -- : instanceId: 0
+I, [2018-12-10T09:41:13.116059 #10591]  INFO -- : I have 2 operations to do
+I, [2018-12-10T09:41:13.116094 #10591]  INFO -- : tmpLogsDir: /Users/davide/Desktop/Code/RUBY/RCrawler/logs/
+I, [2018-12-10T09:41:13.116124 #10591]  INFO -- : tmpAlertTemplateLocation: /Users/davide/Desktop/Code/RUBY/RCrawler/alerts/template1.txt
+I, [2018-12-10T09:41:13.116155 #10591]  INFO -- : tmpEmailAddresses: dvdpnt16+alerts@gmail.com
+I, [2018-12-10T09:41:13.116183 #10591]  INFO -- : tmpMaxPingsBeforeAlert: 10
+I, [2018-12-10T09:41:13.116212 #10591]  INFO -- : tmpMaxHTTPBeforeAlert: 5
+I, [2018-12-10T09:41:13.116241 #10591]  INFO -- : tmpOperationsPerInstance: 20
+I, [2018-12-10T09:41:13.116271 #10591]  INFO -- : Doing operations from index 0 to 2
+I, [2018-12-10T09:41:13.116327 #10591]  INFO -- : Connecting to influxDB at localhost...
+I, [2018-12-10T09:41:13.116496 #10591]  INFO -- : Creating DB RCrawler ...
+D, [2018-12-10T09:41:13.120326 #10591] DEBUG -- : thrId: 0, #<Alerter:0x007fa02c990948 @emailAddresses="dvdpnt16+alerts@gmail.com", @maxPingsBeforeAlert="10", @maxHTTPBeforeAlert="5", @sendAlerts=false, @alertTemplatelocation="/Users/davide/Desktop/Code/RUBY/RCrawler/alerts/template1.txt", @alertTemplate="\noperation: <op>\ndestination: <dest>\nfailuresInARow: <fails>\nstartEpoch: <sEpoch>\nstartDate: <sDate>\n\n\nRCrawler\n">, #<Logger:0x007fa02c990358 @progname=nil, @level=0, @default_formatter=#<Logger::Formatter:0x007fa02c990330 @datetime_format=nil>, @formatter=nil, @logdev=#<Logger::LogDevice:0x007fa02c990240 @shift_size=1048576, @shift_age=10, @filename="/Users/davide/Desktop/Code/RUBY/RCrawler/logs/0/hehe.log", @dev=#<File:/Users/davide/Desktop/Code/RUBY/RCrawler/logs/0/hehe.log>, @mon_owner=nil, @mon_count=0, @mon_mutex=#<Thread::Mutex:0x007fa02c990178>>>
+D, [2018-12-10T09:41:13.123451 #10591] DEBUG -- : thrId: 1, #<Alerter:0x007fa02c990948 @emailAddresses="dvdpnt16+alerts@gmail.com", @maxPingsBeforeAlert="10", @maxHTTPBeforeAlert="5", @sendAlerts=false, @alertTemplatelocation="/Users/davide/Desktop/Code/RUBY/RCrawler/alerts/template1.txt", @alertTemplate="\noperation: <op>\ndestination: <dest>\nfailuresInARow: <fails>\nstartEpoch: <sEpoch>\nstartDate: <sDate>\n\n\nRCrawler\n">, #<Logger:0x007fa02c990358 @progname=nil, @level=0, @default_formatter=#<Logger::Formatter:0x007fa02c990330 @datetime_format=nil>, @formatter=nil, @logdev=#<Logger::LogDevice:0x007fa02c990240 @shift_size=1048576, @shift_age=10, @filename="/Users/davide/Desktop/Code/RUBY/RCrawler/logs/0/hehe.log", @dev=#<File:/Users/davide/Desktop/Code/RUBY/RCrawler/logs/0/hehe.log>, @mon_owner=nil, @mon_count=0, @mon_mutex=#<Thread::Mutex:0x007fa02c990178>>>
+D, [2018-12-10T09:41:13.123832 #10591] DEBUG -- : thrId: 2, #<Alerter:0x007fa02c990948 @emailAddresses="dvdpnt16+alerts@gmail.com", @maxPingsBeforeAlert="10", @maxHTTPBeforeAlert="5", @sendAlerts=false, @alertTemplatelocation="/Users/davide/Desktop/Code/RUBY/RCrawler/alerts/template1.txt", @alertTemplate="\noperation: <op>\ndestination: <dest>\nfailuresInARow: <fails>\nstartEpoch: <sEpoch>\nstartDate: <sDate>\n\n\nRCrawler\n">, #<Logger:0x007fa02c990358 @progname=nil, @level=0, @default_formatter=#<Logger::Formatter:0x007fa02c990330 @datetime_format=nil>, @formatter=nil, @logdev=#<Logger::LogDevice:0x007fa02c990240 @shift_size=1048576, @shift_age=10, @filename="/Users/davide/Desktop/Code/RUBY/RCrawler/logs/0/hehe.log", @dev=#<File:/Users/davide/Desktop/Code/RUBY/RCrawler/logs/0/hehe.log>, @mon_owner=nil, @mon_count=0, @mon_mutex=#<Thread::Mutex:0x007fa02c990178>>>
+I, [2018-12-10T09:41:13.125851 #10591]  INFO -- : Starting 3 threads...
+I, [2018-12-10T09:41:13.443515 #10591]  INFO -- : thrId: 0, 0, 0, n2.meraki.cn, latency: 308.451 ms, code: 0
+I, [2018-12-10T09:41:14.689040 #10591]  INFO -- : thrId: 0, 0, 1, n2.meraki.cn, latency: 224.918 ms, code: 0
+I, [2018-12-10T09:41:16.003815 #10591]  INFO -- : thrId: 0, 0, 2, n2.meraki.cn, latency: 275.227 ms, code: 0
+I, [2018-12-10T09:41:16.309868 #10591]  INFO -- : thrId: 1, 0, http://n2.meraki.cn, 3179 ms, code: 200	length: 7744
+I, [2018-12-10T09:41:17.249827 #10591]  INFO -- : thrId: 0, 0, 3, n2.meraki.cn, latency: 225.108 ms, code: 0
+I, [2018-12-10T09:41:18.492116 #10591]  INFO -- : thrId: 0, 0, 4, n2.meraki.cn, latency: 224.406 ms, code: 0
+I, [2018-12-10T09:41:19.802551 #10591]  INFO -- : thrId: 0, 0, 5, n2.meraki.cn, latency: 275.071 ms, code: 0
+I, [2018-12-10T09:41:21.020037 #10591]  INFO -- : thrId: 1, 1, http://n2.meraki.cn, 2699 ms, code: 200	length: 7744
+I, [2018-12-10T09:41:21.045441 #10591]  INFO -- : thrId: 0, 0, 6, n2.meraki.cn, latency: 222.566 ms, code: 0
+I, [2018-12-10T09:41:22.353183 #10591]  INFO -- : thrId: 0, 0, 7, n2.meraki.cn, latency: 285.575 ms, code: 0
+I, [2018-12-10T09:41:23.598603 #10591]  INFO -- : thrId: 0, 0, 8, n2.meraki.cn, latency: 222.697 ms, code: 0
+I, [2018-12-10T09:41:24.911174 #10591]  INFO -- : thrId: 0, 0, 9, n2.meraki.cn, latency: 290.447 ms, code: 0
+I, [2018-12-10T09:41:25.839537 #10591]  INFO -- : thrId: 1, 2, http://n2.meraki.cn, 2812 ms, code: 200	length: 7744
+I, [2018-12-10T09:41:26.150761 #10591]  INFO -- : thrId: 0, 0, 10, n2.meraki.cn, latency: 224.793 ms, code: 0
+I, [2018-12-10T09:41:27.474150 #10591]  INFO -- : thrId: 0, 0, 11, n2.meraki.cn, latency: 298.132 ms, code: 0
+I, [2018-12-10T09:41:28.715112 #10591]  INFO -- : thrId: 0, 0, 12, n2.meraki.cn, latency: 222.554 ms, code: 0
+I, [2018-12-10T09:41:29.965711 #10591]  INFO -- : thrId: 0, 0, 13, n2.meraki.cn, latency: 224.955 ms, code: 0
+I, [2018-12-10T09:41:30.344187 #10591]  INFO -- : thrId: 1, 3, http://n2.meraki.cn, 2488 ms, code: 200	length: 7882
+I, [2018-12-10T09:41:31.260262 #10591]  INFO -- : thrId: 0, 0, 14, n2.meraki.cn, latency: 271.353 ms, code: 0
+I, [2018-12-10T09:41:32.510515 #10591]  INFO -- : thrId: 0, 0, 15, n2.meraki.cn, latency: 226.407 ms, code: 0
+I, [2018-12-10T09:41:33.820283 #10591]  INFO -- : thrId: 0, 0, 16, n2.meraki.cn, latency: 277.944 ms, code: 0
+I, [2018-12-10T09:41:35.064784 #10591]  INFO -- : thrId: 0, 0, 17, n2.meraki.cn, latency: 223.492 ms, code: 0
+I, [2018-12-10T09:41:35.360412 #10591]  INFO -- : thrId: 1, 4, http://n2.meraki.cn, 3001 ms, code: 200	length: 7744
+I, [2018-12-10T09:41:36.379771 #10591]  INFO -- : thrId: 0, 0, 18, n2.meraki.cn, latency: 290.771 ms, code: 0
+I, [2018-12-10T09:41:37.627108 #10591]  INFO -- : thrId: 0, 0, 19, n2.meraki.cn, latency: 222.072 ms, code: 0
+I, [2018-12-10T09:41:37.627324 #10591]  INFO -- : thrId: 0 has completed 20 PING operations, n2.meraki.cn
+I, [2018-12-10T09:41:40.115056 #10591]  INFO -- : thrId: 1, 5, http://n2.meraki.cn, 2744 ms, code: 200	length: 7744
+I, [2018-12-10T09:41:44.320403 #10591]  INFO -- : thrId: 1, 6, http://n2.meraki.cn, 2196 ms, code: 200	length: 7744
+I, [2018-12-10T09:41:49.383859 #10591]  INFO -- : thrId: 1, 7, http://n2.meraki.cn, 3055 ms, code: 200	length: 7744
+I, [2018-12-10T09:41:54.401235 #10591]  INFO -- : thrId: 1, 8, http://n2.meraki.cn, 3008 ms, code: 200	length: 7744
+I, [2018-12-10T09:41:59.010703 #10591]  INFO -- : thrId: 1, 9, http://n2.meraki.cn, 2603 ms, code: 200	length: 7744
+I, [2018-12-10T09:42:00.837428 #10628]  INFO -- : Logger has started
+I, [2018-12-10T09:42:00.837535 #10628]  INFO -- : instanceId: 0
+I, [2018-12-10T09:42:00.837587 #10628]  INFO -- : I have 2 operations to do
+I, [2018-12-10T09:42:00.837630 #10628]  INFO -- : tmpLogsDir: /Users/davide/Desktop/Code/RUBY/RCrawler/logs/
+I, [2018-12-10T09:42:00.837662 #10628]  INFO -- : tmpAlertTemplateLocation: /Users/davide/Desktop/Code/RUBY/RCrawler/alerts/template1.txt
+I, [2018-12-10T09:42:00.837694 #10628]  INFO -- : tmpEmailAddresses: dvdpnt16+alerts@gmail.com
+I, [2018-12-10T09:42:00.837725 #10628]  INFO -- : tmpMaxPingsBeforeAlert: 10
+I, [2018-12-10T09:42:00.837755 #10628]  INFO -- : tmpMaxHTTPBeforeAlert: 5
+I, [2018-12-10T09:42:00.837785 #10628]  INFO -- : tmpOperationsPerInstance: 20
+I, [2018-12-10T09:42:00.837816 #10628]  INFO -- : Doing operations from index 0 to 2
+I, [2018-12-10T09:42:00.837865 #10628]  INFO -- : Connecting to influxDB at localhost...
+I, [2018-12-10T09:42:00.838051 #10628]  INFO -- : Creating DB RCrawler ...
+D, [2018-12-10T09:42:00.842009 #10628] DEBUG -- : thrId: 0, #<Alerter:0x007fe50a8acef0 @emailAddresses="dvdpnt16+alerts@gmail.com", @maxPingsBeforeAlert="10", @maxHTTPBeforeAlert="5", @sendAlerts=false, @alertTemplatelocation="/Users/davide/Desktop/Code/RUBY/RCrawler/alerts/template1.txt", @alertTemplate="\noperation: <op>\ndestination: <dest>\nfailuresInARow: <fails>\nstartEpoch: <sEpoch>\nstartDate: <sDate>\n\n\nRCrawler\n">, #<Logger:0x007fe50a8a7b30 @progname=nil, @level=0, @default_formatter=#<Logger::Formatter:0x007fe50a8a7a68 @datetime_format=nil>, @formatter=nil, @logdev=#<Logger::LogDevice:0x007fe50a8a79c8 @shift_size=1048576, @shift_age=10, @filename="/Users/davide/Desktop/Code/RUBY/RCrawler/logs/0/hehe.log", @dev=#<File:/Users/davide/Desktop/Code/RUBY/RCrawler/logs/0/hehe.log>, @mon_owner=nil, @mon_count=0, @mon_mutex=#<Thread::Mutex:0x007fe50a8a7978>>>
+D, [2018-12-10T09:42:00.844886 #10628] DEBUG -- : thrId: 1, #<Alerter:0x007fe50a8acef0 @emailAddresses="dvdpnt16+alerts@gmail.com", @maxPingsBeforeAlert="10", @maxHTTPBeforeAlert="5", @sendAlerts=false, @alertTemplatelocation="/Users/davide/Desktop/Code/RUBY/RCrawler/alerts/template1.txt", @alertTemplate="\noperation: <op>\ndestination: <dest>\nfailuresInARow: <fails>\nstartEpoch: <sEpoch>\nstartDate: <sDate>\n\n\nRCrawler\n">, #<Logger:0x007fe50a8a7b30 @progname=nil, @level=0, @default_formatter=#<Logger::Formatter:0x007fe50a8a7a68 @datetime_format=nil>, @formatter=nil, @logdev=#<Logger::LogDevice:0x007fe50a8a79c8 @shift_size=1048576, @shift_age=10, @filename="/Users/davide/Desktop/Code/RUBY/RCrawler/logs/0/hehe.log", @dev=#<File:/Users/davide/Desktop/Code/RUBY/RCrawler/logs/0/hehe.log>, @mon_owner=nil, @mon_count=0, @mon_mutex=#<Thread::Mutex:0x007fe50a8a7978>>>
+D, [2018-12-10T09:42:00.845139 #10628] DEBUG -- : thrId: 2, #<Alerter:0x007fe50a8acef0 @emailAddresses="dvdpnt16+alerts@gmail.com", @maxPingsBeforeAlert="10", @maxHTTPBeforeAlert="5", @sendAlerts=false, @alertTemplatelocation="/Users/davide/Desktop/Code/RUBY/RCrawler/alerts/template1.txt", @alertTemplate="\noperation: <op>\ndestination: <dest>\nfailuresInARow: <fails>\nstartEpoch: <sEpoch>\nstartDate: <sDate>\n\n\nRCrawler\n">, #<Logger:0x007fe50a8a7b30 @progname=nil, @level=0, @default_formatter=#<Logger::Formatter:0x007fe50a8a7a68 @datetime_format=nil>, @formatter=nil, @logdev=#<Logger::LogDevice:0x007fe50a8a79c8 @shift_size=1048576, @shift_age=10, @filename="/Users/davide/Desktop/Code/RUBY/RCrawler/logs/0/hehe.log", @dev=#<File:/Users/davide/Desktop/Code/RUBY/RCrawler/logs/0/hehe.log>, @mon_owner=nil, @mon_count=0, @mon_mutex=#<Thread::Mutex:0x007fe50a8a7978>>>
+I, [2018-12-10T09:42:00.845299 #10628]  INFO -- : Starting 3 threads...
+I, [2018-12-10T09:42:01.079430 #10628]  INFO -- : thrId: 0, 0, 0, n2.meraki.cn, latency: 222.835 ms, code: 0
+I, [2018-12-10T09:42:02.328018 #10628]  INFO -- : thrId: 0, 0, 1, n2.meraki.cn, latency: 223.726 ms, code: 0
+I, [2018-12-10T09:42:03.573966 #10628]  INFO -- : thrId: 0, 0, 2, n2.meraki.cn, latency: 223.089 ms, code: 0
+I, [2018-12-10T09:42:03.710987 #10628]  INFO -- : 1, 0, http://n2.meraki.cn, 2857 ms, code: 200	length: 7882
+I, [2018-12-10T09:42:04.846665 #10628]  INFO -- : thrId: 0, 0, 3, n2.meraki.cn, latency: 247.903 ms, code: 0
+I, [2018-12-10T09:42:06.092854 #10628]  INFO -- : thrId: 0, 0, 4, n2.meraki.cn, latency: 222.697 ms, code: 0
+I, [2018-12-10T09:42:07.341852 #10628]  INFO -- : thrId: 0, 0, 5, n2.meraki.cn, latency: 225.326 ms, code: 0
+I, [2018-12-10T09:42:51.615310 #10651]  INFO -- : Logger has started
+I, [2018-12-10T09:42:51.615402 #10651]  INFO -- : instanceId: 0
+I, [2018-12-10T09:42:51.615460 #10651]  INFO -- : I have 2 operations to do
+I, [2018-12-10T09:42:51.615513 #10651]  INFO -- : tmpLogsDir: /Users/davide/Desktop/Code/RUBY/RCrawler/logs/
+I, [2018-12-10T09:42:51.615589 #10651]  INFO -- : tmpAlertTemplateLocation: /Users/davide/Desktop/Code/RUBY/RCrawler/alerts/template1.txt
+I, [2018-12-10T09:42:51.615644 #10651]  INFO -- : tmpEmailAddresses: dvdpnt16+alerts@gmail.com
+I, [2018-12-10T09:42:51.615682 #10651]  INFO -- : tmpMaxPingsBeforeAlert: 10
+I, [2018-12-10T09:42:51.615722 #10651]  INFO -- : tmpMaxHTTPBeforeAlert: 5
+I, [2018-12-10T09:42:51.615765 #10651]  INFO -- : tmpOperationsPerInstance: 20
+I, [2018-12-10T09:42:51.615796 #10651]  INFO -- : Doing operations from index 0 to 2
+I, [2018-12-10T09:42:51.615846 #10651]  INFO -- : Connecting to influxDB at localhost...
+I, [2018-12-10T09:42:51.616008 #10651]  INFO -- : Creating DB RCrawler ...
+D, [2018-12-10T09:42:51.620088 #10651] DEBUG -- : thrId: 0, #<Alerter:0x007fa3d29032b0 @emailAddresses="dvdpnt16+alerts@gmail.com", @maxPingsBeforeAlert="10", @maxHTTPBeforeAlert="5", @sendAlerts=false, @alertTemplatelocation="/Users/davide/Desktop/Code/RUBY/RCrawler/alerts/template1.txt", @alertTemplate="\noperation: <op>\ndestination: <dest>\nfailuresInARow: <fails>\nstartEpoch: <sEpoch>\nstartDate: <sDate>\n\n\nRCrawler\n">, #<Logger:0x007fa3d2902ec8 @progname=nil, @level=0, @default_formatter=#<Logger::Formatter:0x007fa3d2902ea0 @datetime_format=nil>, @formatter=nil, @logdev=#<Logger::LogDevice:0x007fa3d2902dd8 @shift_size=1048576, @shift_age=10, @filename="/Users/davide/Desktop/Code/RUBY/RCrawler/logs/0/hehe.log", @dev=#<File:/Users/davide/Desktop/Code/RUBY/RCrawler/logs/0/hehe.log>, @mon_owner=nil, @mon_count=0, @mon_mutex=#<Thread::Mutex:0x007fa3d2902d60>>>
+D, [2018-12-10T09:42:51.622949 #10651] DEBUG -- : thrId: 1, #<Alerter:0x007fa3d29032b0 @emailAddresses="dvdpnt16+alerts@gmail.com", @maxPingsBeforeAlert="10", @maxHTTPBeforeAlert="5", @sendAlerts=false, @alertTemplatelocation="/Users/davide/Desktop/Code/RUBY/RCrawler/alerts/template1.txt", @alertTemplate="\noperation: <op>\ndestination: <dest>\nfailuresInARow: <fails>\nstartEpoch: <sEpoch>\nstartDate: <sDate>\n\n\nRCrawler\n">, #<Logger:0x007fa3d2902ec8 @progname=nil, @level=0, @default_formatter=#<Logger::Formatter:0x007fa3d2902ea0 @datetime_format=nil>, @formatter=nil, @logdev=#<Logger::LogDevice:0x007fa3d2902dd8 @shift_size=1048576, @shift_age=10, @filename="/Users/davide/Desktop/Code/RUBY/RCrawler/logs/0/hehe.log", @dev=#<File:/Users/davide/Desktop/Code/RUBY/RCrawler/logs/0/hehe.log>, @mon_owner=nil, @mon_count=0, @mon_mutex=#<Thread::Mutex:0x007fa3d2902d60>>>
+D, [2018-12-10T09:42:51.623392 #10651] DEBUG -- : thrId: 2, #<Alerter:0x007fa3d29032b0 @emailAddresses="dvdpnt16+alerts@gmail.com", @maxPingsBeforeAlert="10", @maxHTTPBeforeAlert="5", @sendAlerts=false, @alertTemplatelocation="/Users/davide/Desktop/Code/RUBY/RCrawler/alerts/template1.txt", @alertTemplate="\noperation: <op>\ndestination: <dest>\nfailuresInARow: <fails>\nstartEpoch: <sEpoch>\nstartDate: <sDate>\n\n\nRCrawler\n">, #<Logger:0x007fa3d2902ec8 @progname=nil, @level=0, @default_formatter=#<Logger::Formatter:0x007fa3d2902ea0 @datetime_format=nil>, @formatter=nil, @logdev=#<Logger::LogDevice:0x007fa3d2902dd8 @shift_size=1048576, @shift_age=10, @filename="/Users/davide/Desktop/Code/RUBY/RCrawler/logs/0/hehe.log", @dev=#<File:/Users/davide/Desktop/Code/RUBY/RCrawler/logs/0/hehe.log>, @mon_owner=nil, @mon_count=0, @mon_mutex=#<Thread::Mutex:0x007fa3d2902d60>>>
+I, [2018-12-10T09:42:51.623817 #10651]  INFO -- : Starting 3 threads...
+I, [2018-12-10T09:42:51.949777 #10651]  INFO -- : thrId: 0, 0, 0, n2.meraki.cn, latency: 276.886 ms, code: 0
+I, [2018-12-10T09:42:53.200144 #10651]  INFO -- : thrId: 0, 0, 1, n2.meraki.cn, latency: 224.004 ms, code: 0
+I, [2018-12-10T09:42:54.510835 #10651]  INFO -- : thrId: 0, 0, 2, n2.meraki.cn, latency: 273.653 ms, code: 0
+I, [2018-12-10T09:42:54.817151 #10651]  INFO -- : 1, 0, http://n2.meraki.cn, 3188 ms, code: 200	length: 7744
+I, [2018-12-10T09:42:55.840217 #10651]  INFO -- : thrId: 0, 0, 3, n2.meraki.cn, latency: 304.583 ms, code: 0
+I, [2018-12-10T09:42:57.085634 #10651]  INFO -- : thrId: 0, 0, 4, n2.meraki.cn, latency: 224.531 ms, code: 0

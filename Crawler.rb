@@ -166,7 +166,7 @@ class Crawler
 				# puts "body: #{queryResponse.body}"
 				# puts "code: #{queryResponse.code}"
 				# puts "message: #{queryResponse.message}"
-				puts "headers: #{queryResponse.headers.class}"
+				# puts "headers: #{queryResponse.headers.class}"
 
 
       # try to rescue from any exceptions, but keep trying
@@ -202,8 +202,9 @@ class Crawler
       	duration = currEpoch.to_i - startTime.to_i  # time taken to do the HTTP GET, in milliseconds
 				hValues = {length: queryResponse.body.length,
 					code: queryResponse.code,
-					message: queryResponse.message,
-					headers: queryResponse.headers}
+					# message: queryResponse.message,
+					# headers: queryResponse.headers
+				}
 
 				# reset flags and variables
 				@alertSent = false
@@ -220,12 +221,12 @@ class Crawler
 
 
 			# show some output in the terminal
-			httpOutput = "thrId: #{objId}" + ", " + httpCounter.to_s + ", " + httpUrl + ", " + duration.to_s + " ms"
+			httpOutput = objId.to_s + ", " + httpCounter.to_s + ", " + httpUrl + ", " + duration.to_s + " ms"
 			httpOutput += ", code: #{hValues[:code]}\tlength: #{hValues[:length]}"
       puts httpOutput
 			logObj.info(httpOutput)
 
-			puts "\talertSent: #{@alertSent}\tfailCounter: #{@failCounter}"
+			# puts "\talertSent: #{@alertSent}\tfailCounter: #{@failCounter}"
 
 
 			# increase counters and see if the loop needs to continue
