@@ -172,3 +172,983 @@ I, [2018-10-20T21:41:36.836724 #64386]  INFO -- : thrId: 2, 2, 19, world3.runesc
 I, [2018-10-20T21:41:36.836955 #64386]  INFO -- : thrId: 3, 3, 19, world4.runescape.com, latency: 145.296 ms, code: 0
 I, [2018-10-20T21:41:36.837249 #64386]  INFO -- : thrId: 2 has completed 20 PING operations, world3.runescape.com
 I, [2018-10-20T21:41:36.837378 #64386]  INFO -- : thrId: 3 has completed 20 PING operations, world4.runescape.com
+I, [2018-10-22T09:46:43.478632 #69176]  INFO -- : Logger has started
+I, [2018-10-22T09:46:43.482018 #69176]  INFO -- : instanceId: 0
+I, [2018-10-22T09:46:43.482131 #69176]  INFO -- : I have 1 operations to do
+I, [2018-10-22T09:46:43.482185 #69176]  INFO -- : tmpLogsDir: /Users/davide/Desktop/Code/RUBY/RCrawler/logs/
+I, [2018-10-22T09:46:43.482233 #69176]  INFO -- : tmpAlertTemplateLocation: /Users/davide/Desktop/Code/RUBY/RCrawler/alerts/template1.txt
+I, [2018-10-22T09:46:43.482282 #69176]  INFO -- : tmpEmailAddresses: dvdpnt16+alerts@gmail.com
+I, [2018-10-22T09:46:43.482328 #69176]  INFO -- : tmpMaxPingsBeforeAlert: 10
+I, [2018-10-22T09:46:43.482373 #69176]  INFO -- : tmpMaxHTTPBeforeAlert: 5
+I, [2018-10-22T09:46:43.482418 #69176]  INFO -- : tmpOperationsPerInstance: 20
+I, [2018-10-22T09:46:43.482551 #69176]  INFO -- : Doing operations from index 0 to 1
+I, [2018-10-22T09:46:43.482630 #69176]  INFO -- : Connecting to influxDB at localhost...
+I, [2018-10-22T09:46:43.482857 #69176]  INFO -- : Creating DB RCrawler ...
+I, [2018-10-22T09:47:39.070958 #69509]  INFO -- : Logger has started
+I, [2018-10-22T09:47:39.071067 #69509]  INFO -- : instanceId: 0
+I, [2018-10-22T09:47:39.071106 #69509]  INFO -- : I have 1 operations to do
+I, [2018-10-22T09:47:39.071137 #69509]  INFO -- : tmpLogsDir: /Users/davide/Desktop/Code/RUBY/RCrawler/logs/
+I, [2018-10-22T09:47:39.071165 #69509]  INFO -- : tmpAlertTemplateLocation: /Users/davide/Desktop/Code/RUBY/RCrawler/alerts/template1.txt
+I, [2018-10-22T09:47:39.071194 #69509]  INFO -- : tmpEmailAddresses: dvdpnt16+alerts@gmail.com
+I, [2018-10-22T09:47:39.071222 #69509]  INFO -- : tmpMaxPingsBeforeAlert: 10
+I, [2018-10-22T09:47:39.071250 #69509]  INFO -- : tmpMaxHTTPBeforeAlert: 5
+I, [2018-10-22T09:47:39.071277 #69509]  INFO -- : tmpOperationsPerInstance: 20
+I, [2018-10-22T09:47:39.071306 #69509]  INFO -- : Doing operations from index 0 to 1
+I, [2018-10-22T09:47:39.071366 #69509]  INFO -- : Connecting to influxDB at localhost...
+I, [2018-10-22T09:47:39.071496 #69509]  INFO -- : Creating DB RCrawler ...
+D, [2018-10-22T09:47:39.081743 #69509] DEBUG -- : thrId: 0, #<Alerter:0x007fe3c71240a0 @emailAddresses="dvdpnt16+alerts@gmail.com", @maxPingsBeforeAlert="10", @maxHTTPBeforeAlert="5", @sendAlerts=true, @alertTemplatelocation="/Users/davide/Desktop/Code/RUBY/RCrawler/alerts/template1.txt", @alertTemplate="\noperation: <op>\ndestination: <dest>\nfailuresInARow: <fails>\nstartEpoch: <sEpoch>\nstartDate: <sDate>\n\n\nRCrawler\n">, #<Logger:0x007fe3c711fed8 @progname=nil, @level=0, @default_formatter=#<Logger::Formatter:0x007fe3c711feb0 @datetime_format=nil>, @formatter=nil, @logdev=#<Logger::LogDevice:0x007fe3c711fe60 @shift_size=1048576, @shift_age=10, @filename="/Users/davide/Desktop/Code/RUBY/RCrawler/logs/0/hehe.log", @dev=#<File:/Users/davide/Desktop/Code/RUBY/RCrawler/logs/0/hehe.log>, @mon_owner=nil, @mon_count=0, @mon_mutex=#<Thread::Mutex:0x007fe3c711fe10>>>
+D, [2018-10-22T09:47:39.081969 #69509] DEBUG -- : thrId: 1, #<Alerter:0x007fe3c71240a0 @emailAddresses="dvdpnt16+alerts@gmail.com", @maxPingsBeforeAlert="10", @maxHTTPBeforeAlert="5", @sendAlerts=true, @alertTemplatelocation="/Users/davide/Desktop/Code/RUBY/RCrawler/alerts/template1.txt", @alertTemplate="\noperation: <op>\ndestination: <dest>\nfailuresInARow: <fails>\nstartEpoch: <sEpoch>\nstartDate: <sDate>\n\n\nRCrawler\n">, #<Logger:0x007fe3c711fed8 @progname=nil, @level=0, @default_formatter=#<Logger::Formatter:0x007fe3c711feb0 @datetime_format=nil>, @formatter=nil, @logdev=#<Logger::LogDevice:0x007fe3c711fe60 @shift_size=1048576, @shift_age=10, @filename="/Users/davide/Desktop/Code/RUBY/RCrawler/logs/0/hehe.log", @dev=#<File:/Users/davide/Desktop/Code/RUBY/RCrawler/logs/0/hehe.log>, @mon_owner=nil, @mon_count=0, @mon_mutex=#<Thread::Mutex:0x007fe3c711fe10>>>
+I, [2018-10-22T09:47:39.082095 #69509]  INFO -- : Starting 2 threads...
+I, [2018-10-22T09:47:39.226665 #69509]  INFO -- : thrId: 0, 0, 0, world1.runescape.com, latency: 84.385 ms, code: 0
+I, [2018-10-22T09:47:40.332424 #69509]  INFO -- : thrId: 0, 0, 1, world1.runescape.com, latency: 83.757 ms, code: 0
+I, [2018-10-22T09:47:41.439677 #69509]  INFO -- : thrId: 0, 0, 2, world1.runescape.com, latency: 85.093 ms, code: 0
+I, [2018-10-22T09:47:42.541153 #69509]  INFO -- : thrId: 0, 0, 3, world1.runescape.com, latency: 83.777 ms, code: 0
+I, [2018-10-22T09:47:43.641901 #69509]  INFO -- : thrId: 0, 0, 4, world1.runescape.com, latency: 83.782 ms, code: 0
+I, [2018-10-22T09:47:44.742230 #69509]  INFO -- : thrId: 0, 0, 5, world1.runescape.com, latency: 83.185 ms, code: 0
+I, [2018-10-22T09:47:45.918929 #69509]  INFO -- : thrId: 0, 0, 6, world1.runescape.com, latency: 160.317 ms, code: 0
+D, [2018-10-22T09:47:46.927478 #69509] DEBUG -- : thrId: 0, world1.runescape.com failCounter=1, exitstatus=68
+I, [2018-10-22T09:47:46.932508 #69509]  INFO -- : thrId: 0, 0, 7, world1.runescape.com, latency: -1.0 ms, code: 68
+D, [2018-10-22T09:47:47.941446 #69509] DEBUG -- : thrId: 0, world1.runescape.com failCounter=2, exitstatus=68
+I, [2018-10-22T09:47:47.946709 #69509]  INFO -- : thrId: 0, 0, 8, world1.runescape.com, latency: -1.0 ms, code: 68
+D, [2018-10-22T09:47:48.961686 #69509] DEBUG -- : thrId: 0, world1.runescape.com failCounter=3, exitstatus=68
+I, [2018-10-22T09:47:48.967171 #69509]  INFO -- : thrId: 0, 0, 9, world1.runescape.com, latency: -1.0 ms, code: 68
+D, [2018-10-22T09:47:49.982701 #69509] DEBUG -- : thrId: 0, world1.runescape.com failCounter=4, exitstatus=68
+I, [2018-10-22T09:47:49.988804 #69509]  INFO -- : thrId: 0, 0, 10, world1.runescape.com, latency: -1.0 ms, code: 68
+D, [2018-10-22T09:47:51.004074 #69509] DEBUG -- : thrId: 0, world1.runescape.com failCounter=5, exitstatus=68
+I, [2018-10-22T09:47:51.010169 #69509]  INFO -- : thrId: 0, 0, 11, world1.runescape.com, latency: -1.0 ms, code: 68
+D, [2018-10-22T09:47:52.023870 #69509] DEBUG -- : thrId: 0, world1.runescape.com failCounter=6, exitstatus=68
+I, [2018-10-22T09:47:52.029670 #69509]  INFO -- : thrId: 0, 0, 12, world1.runescape.com, latency: -1.0 ms, code: 68
+D, [2018-10-22T09:47:53.043708 #69509] DEBUG -- : thrId: 0, world1.runescape.com failCounter=7, exitstatus=68
+I, [2018-10-22T09:47:53.049929 #69509]  INFO -- : thrId: 0, 0, 13, world1.runescape.com, latency: -1.0 ms, code: 68
+D, [2018-10-22T09:47:54.060774 #69509] DEBUG -- : thrId: 0, world1.runescape.com failCounter=8, exitstatus=68
+I, [2018-10-22T09:47:54.066641 #69509]  INFO -- : thrId: 0, 0, 14, world1.runescape.com, latency: -1.0 ms, code: 68
+D, [2018-10-22T09:47:55.078684 #69509] DEBUG -- : thrId: 0, world1.runescape.com failCounter=9, exitstatus=68
+I, [2018-10-22T09:47:55.084479 #69509]  INFO -- : thrId: 0, 0, 15, world1.runescape.com, latency: -1.0 ms, code: 68
+D, [2018-10-22T09:47:56.094900 #69509] DEBUG -- : thrId: 0, world1.runescape.com failCounter=10, exitstatus=68
+I, [2018-10-22T09:47:56.173661 #69509]  INFO -- : thrId: 0, PING Alert sent, world1.runescape.com
+I, [2018-10-22T09:47:56.181892 #69509]  INFO -- : thrId: 0, 0, 16, world1.runescape.com, latency: -1.0 ms, code: 68
+D, [2018-10-22T09:47:57.193961 #69509] DEBUG -- : thrId: 0, world1.runescape.com failCounter=11, exitstatus=68
+I, [2018-10-22T09:47:57.199937 #69509]  INFO -- : thrId: 0, 0, 17, world1.runescape.com, latency: -1.0 ms, code: 68
+D, [2018-10-22T09:47:58.211640 #69509] DEBUG -- : thrId: 0, world1.runescape.com failCounter=12, exitstatus=68
+I, [2018-10-22T09:47:58.217551 #69509]  INFO -- : thrId: 0, 0, 18, world1.runescape.com, latency: -1.0 ms, code: 68
+D, [2018-10-22T09:47:59.228981 #69509] DEBUG -- : thrId: 0, world1.runescape.com failCounter=13, exitstatus=68
+I, [2018-10-22T09:47:59.234983 #69509]  INFO -- : thrId: 0, 0, 19, world1.runescape.com, latency: -1.0 ms, code: 68
+I, [2018-10-22T09:47:59.235269 #69509]  INFO -- : thrId: 0 has completed 20 PING operations, world1.runescape.com
+I, [2018-10-22T10:21:06.667103 #69933]  INFO -- : Logger has started
+I, [2018-10-22T10:21:06.670473 #69933]  INFO -- : instanceId: 0
+I, [2018-10-22T10:21:06.670620 #69933]  INFO -- : I have 1 operations to do
+I, [2018-10-22T10:21:06.670734 #69933]  INFO -- : tmpLogsDir: /Users/davide/Desktop/Code/RUBY/RCrawler/logs/
+I, [2018-10-22T10:21:06.670797 #69933]  INFO -- : tmpAlertTemplateLocation: /Users/davide/Desktop/Code/RUBY/RCrawler/alerts/template1.txt
+I, [2018-10-22T10:21:06.670856 #69933]  INFO -- : tmpEmailAddresses: dvdpnt16+alerts@gmail.com
+I, [2018-10-22T10:21:06.670915 #69933]  INFO -- : tmpMaxPingsBeforeAlert: 10
+I, [2018-10-22T10:21:06.670974 #69933]  INFO -- : tmpMaxHTTPBeforeAlert: 5
+I, [2018-10-22T10:21:06.671031 #69933]  INFO -- : tmpOperationsPerInstance: 20
+I, [2018-10-22T10:21:06.671092 #69933]  INFO -- : Doing operations from index 0 to 1
+I, [2018-10-22T10:21:06.671187 #69933]  INFO -- : Connecting to influxDB at localhost...
+I, [2018-10-22T10:21:06.671474 #69933]  INFO -- : Creating DB RCrawler ...
+D, [2018-10-22T10:21:06.698483 #69933] DEBUG -- : thrId: 0, #<Alerter:0x007fc8d82a4b50 @emailAddresses="dvdpnt16+alerts@gmail.com", @maxPingsBeforeAlert="10", @maxHTTPBeforeAlert="5", @sendAlerts=true, @alertTemplatelocation="/Users/davide/Desktop/Code/RUBY/RCrawler/alerts/template1.txt", @alertTemplate="\noperation: <op>\ndestination: <dest>\nfailuresInARow: <fails>\nstartEpoch: <sEpoch>\nstartDate: <sDate>\n\n\nRCrawler\n">, #<Logger:0x007fc8d82a48d0 @progname=nil, @level=0, @default_formatter=#<Logger::Formatter:0x007fc8d82a48a8 @datetime_format=nil>, @formatter=nil, @logdev=#<Logger::LogDevice:0x007fc8d82a4858 @shift_size=1048576, @shift_age=10, @filename="/Users/davide/Desktop/Code/RUBY/RCrawler/logs/0/hehe.log", @dev=#<File:/Users/davide/Desktop/Code/RUBY/RCrawler/logs/0/hehe.log>, @mon_owner=nil, @mon_count=0, @mon_mutex=#<Thread::Mutex:0x007fc8d82a4808>>>
+D, [2018-10-22T10:21:06.704047 #69933] DEBUG -- : thrId: 1, #<Alerter:0x007fc8d82a4b50 @emailAddresses="dvdpnt16+alerts@gmail.com", @maxPingsBeforeAlert="10", @maxHTTPBeforeAlert="5", @sendAlerts=true, @alertTemplatelocation="/Users/davide/Desktop/Code/RUBY/RCrawler/alerts/template1.txt", @alertTemplate="\noperation: <op>\ndestination: <dest>\nfailuresInARow: <fails>\nstartEpoch: <sEpoch>\nstartDate: <sDate>\n\n\nRCrawler\n">, #<Logger:0x007fc8d82a48d0 @progname=nil, @level=0, @default_formatter=#<Logger::Formatter:0x007fc8d82a48a8 @datetime_format=nil>, @formatter=nil, @logdev=#<Logger::LogDevice:0x007fc8d82a4858 @shift_size=1048576, @shift_age=10, @filename="/Users/davide/Desktop/Code/RUBY/RCrawler/logs/0/hehe.log", @dev=#<File:/Users/davide/Desktop/Code/RUBY/RCrawler/logs/0/hehe.log>, @mon_owner=nil, @mon_count=0, @mon_mutex=#<Thread::Mutex:0x007fc8d82a4808>>>
+I, [2018-10-22T10:21:06.704278 #69933]  INFO -- : Starting 2 threads...
+I, [2018-10-22T10:21:06.812245 #69933]  INFO -- : thrId: 0, 0, 0, world1.runescape.com, latency: 82.567 ms, code: 0
+I, [2018-10-22T10:21:07.917604 #69933]  INFO -- : thrId: 0, 0, 1, world1.runescape.com, latency: 84.26 ms, code: 0
+I, [2018-10-22T10:21:09.024594 #69933]  INFO -- : thrId: 0, 0, 2, world1.runescape.com, latency: 85.012 ms, code: 0
+I, [2018-10-22T10:21:10.130919 #69933]  INFO -- : thrId: 0, 0, 3, world1.runescape.com, latency: 84.313 ms, code: 0
+I, [2018-10-22T10:34:16.428835 #70217]  INFO -- : Logger has started
+I, [2018-10-22T10:34:16.428926 #70217]  INFO -- : instanceId: 0
+I, [2018-10-22T10:34:16.428967 #70217]  INFO -- : I have 1 operations to do
+I, [2018-10-22T10:34:16.429008 #70217]  INFO -- : tmpLogsDir: /Users/davide/Desktop/Code/RUBY/RCrawler/logs/
+I, [2018-10-22T10:34:16.429038 #70217]  INFO -- : tmpAlertTemplateLocation: /Users/davide/Desktop/Code/RUBY/RCrawler/alerts/template1.txt
+I, [2018-10-22T10:34:16.429067 #70217]  INFO -- : tmpEmailAddresses: dvdpnt16+alerts@gmail.com
+I, [2018-10-22T10:34:16.429095 #70217]  INFO -- : tmpMaxPingsBeforeAlert: 10
+I, [2018-10-22T10:34:16.429123 #70217]  INFO -- : tmpMaxHTTPBeforeAlert: 5
+I, [2018-10-22T10:34:16.429151 #70217]  INFO -- : tmpOperationsPerInstance: 20
+I, [2018-10-22T10:34:16.429180 #70217]  INFO -- : Doing operations from index 0 to 1
+I, [2018-10-22T10:34:16.429235 #70217]  INFO -- : Connecting to influxDB at localhost...
+I, [2018-10-22T10:34:16.429427 #70217]  INFO -- : Creating DB RCrawler ...
+D, [2018-10-22T10:34:16.433014 #70217] DEBUG -- : thrId: 0, #<Alerter:0x007ffdbb23bb38 @emailAddresses="dvdpnt16+alerts@gmail.com", @maxPingsBeforeAlert="10", @maxHTTPBeforeAlert="5", @sendAlerts=true, @alertTemplatelocation="/Users/davide/Desktop/Code/RUBY/RCrawler/alerts/template1.txt", @alertTemplate="\noperation: <op>\ndestination: <dest>\nfailuresInARow: <fails>\nstartEpoch: <sEpoch>\nstartDate: <sDate>\n\n\nRCrawler\n">, #<Logger:0x007ffdbb23b868 @progname=nil, @level=0, @default_formatter=#<Logger::Formatter:0x007ffdbb23b840 @datetime_format=nil>, @formatter=nil, @logdev=#<Logger::LogDevice:0x007ffdbb23b7f0 @shift_size=1048576, @shift_age=10, @filename="/Users/davide/Desktop/Code/RUBY/RCrawler/logs/0/hehe.log", @dev=#<File:/Users/davide/Desktop/Code/RUBY/RCrawler/logs/0/hehe.log>, @mon_owner=nil, @mon_count=0, @mon_mutex=#<Thread::Mutex:0x007ffdbb23b7a0>>>
+D, [2018-10-22T10:34:16.434066 #70217] DEBUG -- : thrId: 1, #<Alerter:0x007ffdbb23bb38 @emailAddresses="dvdpnt16+alerts@gmail.com", @maxPingsBeforeAlert="10", @maxHTTPBeforeAlert="5", @sendAlerts=true, @alertTemplatelocation="/Users/davide/Desktop/Code/RUBY/RCrawler/alerts/template1.txt", @alertTemplate="\noperation: <op>\ndestination: <dest>\nfailuresInARow: <fails>\nstartEpoch: <sEpoch>\nstartDate: <sDate>\n\n\nRCrawler\n">, #<Logger:0x007ffdbb23b868 @progname=nil, @level=0, @default_formatter=#<Logger::Formatter:0x007ffdbb23b840 @datetime_format=nil>, @formatter=nil, @logdev=#<Logger::LogDevice:0x007ffdbb23b7f0 @shift_size=1048576, @shift_age=10, @filename="/Users/davide/Desktop/Code/RUBY/RCrawler/logs/0/hehe.log", @dev=#<File:/Users/davide/Desktop/Code/RUBY/RCrawler/logs/0/hehe.log>, @mon_owner=nil, @mon_count=0, @mon_mutex=#<Thread::Mutex:0x007ffdbb23b7a0>>>
+I, [2018-10-22T10:34:16.434195 #70217]  INFO -- : Starting 2 threads...
+I, [2018-10-22T10:34:16.777138 #70217]  INFO -- : thrId: 0, 0, http://world1.runescape.com, 316 ms, code: 200, size: 39514
+D, [2018-10-22T10:34:16.777317 #70217] DEBUG -- : thrId: 0, clearing HTTP arrays...
+I, [2018-10-22T10:34:19.072986 #70217]  INFO -- : thrId: 0, 1, http://world1.runescape.com, 286 ms, code: 200, size: 39515
+I, [2018-10-22T10:34:21.363300 #70217]  INFO -- : thrId: 0, 2, http://world1.runescape.com, 280 ms, code: 200, size: 39515
+I, [2018-10-22T10:34:23.646730 #70217]  INFO -- : thrId: 0, 3, http://world1.runescape.com, 273 ms, code: 200, size: 39515
+I, [2018-10-22T10:34:25.935242 #70217]  INFO -- : thrId: 0, 4, http://world1.runescape.com, 281 ms, code: 200, size: 39516
+I, [2018-10-22T10:34:28.222894 #70217]  INFO -- : thrId: 0, 5, http://world1.runescape.com, 280 ms, code: 200, size: 39515
+I, [2018-10-22T10:34:30.503193 #70217]  INFO -- : thrId: 0, 6, http://world1.runescape.com, 274 ms, code: 200, size: 39516
+I, [2018-10-22T10:34:32.784208 #70217]  INFO -- : thrId: 0, 7, http://world1.runescape.com, 269 ms, code: 200, size: 39515
+I, [2018-10-22T10:34:35.063369 #70217]  INFO -- : thrId: 0, 8, http://world1.runescape.com, 271 ms, code: 200, size: 39515
+I, [2018-10-22T10:34:37.342665 #70217]  INFO -- : thrId: 0, 9, http://world1.runescape.com, 268 ms, code: 200, size: 39514
+I, [2018-10-22T10:34:37.342883 #70217]  INFO -- : thrId: 0 has completed 10 HTTP operations, http://world1.runescape.com
+I, [2018-10-22T11:12:44.444081 #70893]  INFO -- : Logger has started
+I, [2018-10-22T11:12:44.446792 #70893]  INFO -- : instanceId: 0
+I, [2018-10-22T11:12:44.446906 #70893]  INFO -- : I have 1 operations to do
+I, [2018-10-22T11:12:44.446959 #70893]  INFO -- : tmpLogsDir: /Users/davide/Desktop/Code/RUBY/RCrawler/logs/
+I, [2018-10-22T11:12:44.447008 #70893]  INFO -- : tmpAlertTemplateLocation: /Users/davide/Desktop/Code/RUBY/RCrawler/alerts/template1.txt
+I, [2018-10-22T11:12:44.447057 #70893]  INFO -- : tmpEmailAddresses: dvdpnt16+alerts@gmail.com
+I, [2018-10-22T11:12:44.447105 #70893]  INFO -- : tmpMaxPingsBeforeAlert: 10
+I, [2018-10-22T11:12:44.447150 #70893]  INFO -- : tmpMaxHTTPBeforeAlert: 5
+I, [2018-10-22T11:12:44.447195 #70893]  INFO -- : tmpOperationsPerInstance: 20
+I, [2018-10-22T11:12:44.447242 #70893]  INFO -- : Doing operations from index 0 to 1
+I, [2018-10-22T11:12:44.447321 #70893]  INFO -- : Connecting to influxDB at localhost...
+I, [2018-10-22T11:12:44.447551 #70893]  INFO -- : Creating DB RCrawler ...
+D, [2018-10-22T11:12:44.458025 #70893] DEBUG -- : thrId: 0, #<Alerter:0x007f91430642b8 @emailAddresses="dvdpnt16+alerts@gmail.com", @maxPingsBeforeAlert="10", @maxHTTPBeforeAlert="5", @sendAlerts=true, @alertTemplatelocation="/Users/davide/Desktop/Code/RUBY/RCrawler/alerts/template1.txt", @alertTemplate="\noperation: <op>\ndestination: <dest>\nfailuresInARow: <fails>\nstartEpoch: <sEpoch>\nstartDate: <sDate>\n\n\nRCrawler\n">, #<Logger:0x007f9143064060 @progname=nil, @level=0, @default_formatter=#<Logger::Formatter:0x007f9143064218 @datetime_format=nil>, @formatter=nil, @logdev=#<Logger::LogDevice:0x007f9143064560 @shift_size=1048576, @shift_age=10, @filename="/Users/davide/Desktop/Code/RUBY/RCrawler/logs/0/hehe.log", @dev=#<File:/Users/davide/Desktop/Code/RUBY/RCrawler/logs/0/hehe.log>, @mon_owner=nil, @mon_count=0, @mon_mutex=#<Thread::Mutex:0x007f9143064858>>>
+D, [2018-10-22T11:12:44.458964 #70893] DEBUG -- : thrId: 1, #<Alerter:0x007f91430642b8 @emailAddresses="dvdpnt16+alerts@gmail.com", @maxPingsBeforeAlert="10", @maxHTTPBeforeAlert="5", @sendAlerts=true, @alertTemplatelocation="/Users/davide/Desktop/Code/RUBY/RCrawler/alerts/template1.txt", @alertTemplate="\noperation: <op>\ndestination: <dest>\nfailuresInARow: <fails>\nstartEpoch: <sEpoch>\nstartDate: <sDate>\n\n\nRCrawler\n">, #<Logger:0x007f9143064060 @progname=nil, @level=0, @default_formatter=#<Logger::Formatter:0x007f9143064218 @datetime_format=nil>, @formatter=nil, @logdev=#<Logger::LogDevice:0x007f9143064560 @shift_size=1048576, @shift_age=10, @filename="/Users/davide/Desktop/Code/RUBY/RCrawler/logs/0/hehe.log", @dev=#<File:/Users/davide/Desktop/Code/RUBY/RCrawler/logs/0/hehe.log>, @mon_owner=nil, @mon_count=0, @mon_mutex=#<Thread::Mutex:0x007f9143064858>>>
+I, [2018-10-22T11:12:44.459113 #70893]  INFO -- : Starting 2 threads...
+I, [2018-10-22T11:12:44.785721 #70893]  INFO -- : thrId: 0, 0, http://world1.runescape.com, 318 ms, code: 200, size: 39515
+D, [2018-10-22T11:12:44.785896 #70893] DEBUG -- : thrId: 0, clearing HTTP arrays...
+I, [2018-10-22T11:12:47.068017 #70893]  INFO -- : thrId: 0, 1, http://world1.runescape.com, 274 ms, code: 200, size: 39515
+I, [2018-10-22T11:13:35.287564 #70912]  INFO -- : Logger has started
+I, [2018-10-22T11:13:35.287677 #70912]  INFO -- : instanceId: 0
+I, [2018-10-22T11:13:35.287727 #70912]  INFO -- : I have 1 operations to do
+I, [2018-10-22T11:13:35.287758 #70912]  INFO -- : tmpLogsDir: /Users/davide/Desktop/Code/RUBY/RCrawler/logs/
+I, [2018-10-22T11:13:35.287788 #70912]  INFO -- : tmpAlertTemplateLocation: /Users/davide/Desktop/Code/RUBY/RCrawler/alerts/template1.txt
+I, [2018-10-22T11:13:35.287817 #70912]  INFO -- : tmpEmailAddresses: dvdpnt16+alerts@gmail.com
+I, [2018-10-22T11:13:35.287845 #70912]  INFO -- : tmpMaxPingsBeforeAlert: 10
+I, [2018-10-22T11:13:35.287873 #70912]  INFO -- : tmpMaxHTTPBeforeAlert: 5
+I, [2018-10-22T11:13:35.287901 #70912]  INFO -- : tmpOperationsPerInstance: 20
+I, [2018-10-22T11:13:35.287929 #70912]  INFO -- : Doing operations from index 0 to 1
+I, [2018-10-22T11:13:35.287978 #70912]  INFO -- : Connecting to influxDB at localhost...
+I, [2018-10-22T11:13:35.288136 #70912]  INFO -- : Creating DB RCrawler ...
+D, [2018-10-22T11:13:35.292130 #70912] DEBUG -- : thrId: 0, #<Alerter:0x007fca38a14348 @emailAddresses="dvdpnt16+alerts@gmail.com", @maxPingsBeforeAlert="10", @maxHTTPBeforeAlert="5", @sendAlerts=true, @alertTemplatelocation="/Users/davide/Desktop/Code/RUBY/RCrawler/alerts/template1.txt", @alertTemplate="\noperation: <op>\ndestination: <dest>\nfailuresInARow: <fails>\nstartEpoch: <sEpoch>\nstartDate: <sDate>\n\n\nRCrawler\n">, #<Logger:0x007fca38a140f0 @progname=nil, @level=0, @default_formatter=#<Logger::Formatter:0x007fca38a140c8 @datetime_format=nil>, @formatter=nil, @logdev=#<Logger::LogDevice:0x007fca38a14078 @shift_size=1048576, @shift_age=10, @filename="/Users/davide/Desktop/Code/RUBY/RCrawler/logs/0/hehe.log", @dev=#<File:/Users/davide/Desktop/Code/RUBY/RCrawler/logs/0/hehe.log>, @mon_owner=nil, @mon_count=0, @mon_mutex=#<Thread::Mutex:0x007fca38a14028>>>
+D, [2018-10-22T11:13:35.293157 #70912] DEBUG -- : thrId: 1, #<Alerter:0x007fca38a14348 @emailAddresses="dvdpnt16+alerts@gmail.com", @maxPingsBeforeAlert="10", @maxHTTPBeforeAlert="5", @sendAlerts=true, @alertTemplatelocation="/Users/davide/Desktop/Code/RUBY/RCrawler/alerts/template1.txt", @alertTemplate="\noperation: <op>\ndestination: <dest>\nfailuresInARow: <fails>\nstartEpoch: <sEpoch>\nstartDate: <sDate>\n\n\nRCrawler\n">, #<Logger:0x007fca38a140f0 @progname=nil, @level=0, @default_formatter=#<Logger::Formatter:0x007fca38a140c8 @datetime_format=nil>, @formatter=nil, @logdev=#<Logger::LogDevice:0x007fca38a14078 @shift_size=1048576, @shift_age=10, @filename="/Users/davide/Desktop/Code/RUBY/RCrawler/logs/0/hehe.log", @dev=#<File:/Users/davide/Desktop/Code/RUBY/RCrawler/logs/0/hehe.log>, @mon_owner=nil, @mon_count=0, @mon_mutex=#<Thread::Mutex:0x007fca38a14028>>>
+I, [2018-10-22T11:13:35.293356 #70912]  INFO -- : Starting 2 threads...
+I, [2018-10-22T11:13:35.595502 #70912]  INFO -- : thrId: 0, 0, http://world1.runescape.com, 298 ms, code: 200, size: 39515
+D, [2018-10-22T11:13:35.595595 #70912] DEBUG -- : thrId: 0, clearing HTTP arrays...
+I, [2018-10-22T11:13:37.866672 #70912]  INFO -- : thrId: 0, 1, http://world1.runescape.com, 261 ms, code: 200, size: 39514
+I, [2018-10-22T11:13:40.148901 #70912]  INFO -- : thrId: 0, 2, http://world1.runescape.com, 273 ms, code: 200, size: 39515
+I, [2018-10-22T11:13:42.419334 #70912]  INFO -- : thrId: 0, 3, http://world1.runescape.com, 264 ms, code: 200, size: 39515
+I, [2018-10-22T11:13:44.719142 #70912]  INFO -- : thrId: 0, 4, http://world1.runescape.com, 288 ms, code: 200, size: 39515
+I, [2018-10-22T12:24:09.815580 #73110]  INFO -- : Logger has started
+I, [2018-10-22T12:24:09.815898 #73110]  INFO -- : instanceId: 0
+I, [2018-10-22T12:24:09.816035 #73110]  INFO -- : I have 1 operations to do
+I, [2018-10-22T12:24:09.816166 #73110]  INFO -- : tmpLogsDir: /Users/davide/Desktop/Code/RUBY/RCrawler/logs/
+I, [2018-10-22T12:24:09.816226 #73110]  INFO -- : tmpAlertTemplateLocation: /Users/davide/Desktop/Code/RUBY/RCrawler/alerts/template1.txt
+I, [2018-10-22T12:24:09.816278 #73110]  INFO -- : tmpEmailAddresses: dvdpnt16+alerts@gmail.com
+I, [2018-10-22T12:24:09.816324 #73110]  INFO -- : tmpMaxPingsBeforeAlert: 10
+I, [2018-10-22T12:24:09.816373 #73110]  INFO -- : tmpMaxHTTPBeforeAlert: 5
+I, [2018-10-22T12:24:09.816421 #73110]  INFO -- : tmpOperationsPerInstance: 20
+I, [2018-10-22T12:24:09.816470 #73110]  INFO -- : Doing operations from index 0 to 1
+I, [2018-10-22T12:24:09.816556 #73110]  INFO -- : Connecting to influxDB at localhost...
+I, [2018-10-22T12:24:09.816791 #73110]  INFO -- : Creating DB RCrawler ...
+D, [2018-10-22T12:24:09.832925 #73110] DEBUG -- : thrId: 0, #<Alerter:0x007ffcfb9d8280 @emailAddresses="dvdpnt16+alerts@gmail.com", @maxPingsBeforeAlert="10", @maxHTTPBeforeAlert="5", @sendAlerts=true, @alertTemplatelocation="/Users/davide/Desktop/Code/RUBY/RCrawler/alerts/template1.txt", @alertTemplate="\noperation: <op>\ndestination: <dest>\nfailuresInARow: <fails>\nstartEpoch: <sEpoch>\nstartDate: <sDate>\n\n\nRCrawler\n">, #<Logger:0x007ffcfb9dac10 @progname=nil, @level=0, @default_formatter=#<Logger::Formatter:0x007ffcfb9d3fa0 @datetime_format=nil>, @formatter=nil, @logdev=#<Logger::LogDevice:0x007ffcfb9d3f50 @shift_size=1048576, @shift_age=10, @filename="/Users/davide/Desktop/Code/RUBY/RCrawler/logs/0/hehe.log", @dev=#<File:/Users/davide/Desktop/Code/RUBY/RCrawler/logs/0/hehe.log>, @mon_owner=nil, @mon_count=0, @mon_mutex=#<Thread::Mutex:0x007ffcfb9d3f00>>>
+D, [2018-10-22T12:24:09.835941 #73110] DEBUG -- : thrId: 1, #<Alerter:0x007ffcfb9d8280 @emailAddresses="dvdpnt16+alerts@gmail.com", @maxPingsBeforeAlert="10", @maxHTTPBeforeAlert="5", @sendAlerts=true, @alertTemplatelocation="/Users/davide/Desktop/Code/RUBY/RCrawler/alerts/template1.txt", @alertTemplate="\noperation: <op>\ndestination: <dest>\nfailuresInARow: <fails>\nstartEpoch: <sEpoch>\nstartDate: <sDate>\n\n\nRCrawler\n">, #<Logger:0x007ffcfb9dac10 @progname=nil, @level=0, @default_formatter=#<Logger::Formatter:0x007ffcfb9d3fa0 @datetime_format=nil>, @formatter=nil, @logdev=#<Logger::LogDevice:0x007ffcfb9d3f50 @shift_size=1048576, @shift_age=10, @filename="/Users/davide/Desktop/Code/RUBY/RCrawler/logs/0/hehe.log", @dev=#<File:/Users/davide/Desktop/Code/RUBY/RCrawler/logs/0/hehe.log>, @mon_owner=nil, @mon_count=0, @mon_mutex=#<Thread::Mutex:0x007ffcfb9d3f00>>>
+I, [2018-10-22T12:24:09.836070 #73110]  INFO -- : Starting 2 threads...
+I, [2018-10-22T12:24:10.157865 #73110]  INFO -- : thrId: 0, 0, http://world1.runescape.com, 315 ms, code: 200, size: 39516
+D, [2018-10-22T12:24:10.157975 #73110] DEBUG -- : thrId: 0, clearing HTTP arrays...
+I, [2018-10-22T12:24:12.407722 #73110]  INFO -- : thrId: 0, 1, http://world1.runescape.com, 240 ms, code: 200, size: 39515
+I, [2018-10-22T12:24:43.950016 #73121]  INFO -- : Logger has started
+I, [2018-10-22T12:24:43.950098 #73121]  INFO -- : instanceId: 0
+I, [2018-10-22T12:24:43.950139 #73121]  INFO -- : I have 1 operations to do
+I, [2018-10-22T12:24:43.950171 #73121]  INFO -- : tmpLogsDir: /Users/davide/Desktop/Code/RUBY/RCrawler/logs/
+I, [2018-10-22T12:24:43.950209 #73121]  INFO -- : tmpAlertTemplateLocation: /Users/davide/Desktop/Code/RUBY/RCrawler/alerts/template1.txt
+I, [2018-10-22T12:24:43.950237 #73121]  INFO -- : tmpEmailAddresses: dvdpnt16+alerts@gmail.com
+I, [2018-10-22T12:24:43.950265 #73121]  INFO -- : tmpMaxPingsBeforeAlert: 10
+I, [2018-10-22T12:24:43.950293 #73121]  INFO -- : tmpMaxHTTPBeforeAlert: 5
+I, [2018-10-22T12:24:43.950320 #73121]  INFO -- : tmpOperationsPerInstance: 20
+I, [2018-10-22T12:24:43.950348 #73121]  INFO -- : Doing operations from index 0 to 1
+I, [2018-10-22T12:24:43.950393 #73121]  INFO -- : Connecting to influxDB at localhost...
+I, [2018-10-22T12:24:43.950556 #73121]  INFO -- : Creating DB RCrawler ...
+D, [2018-10-22T12:24:43.956546 #73121] DEBUG -- : thrId: 0, #<Alerter:0x007fc4ef184370 @emailAddresses="dvdpnt16+alerts@gmail.com", @maxPingsBeforeAlert="10", @maxHTTPBeforeAlert="5", @sendAlerts=true, @alertTemplatelocation="/Users/davide/Desktop/Code/RUBY/RCrawler/alerts/template1.txt", @alertTemplate="\noperation: <op>\ndestination: <dest>\nfailuresInARow: <fails>\nstartEpoch: <sEpoch>\nstartDate: <sDate>\n\n\nRCrawler\n">, #<Logger:0x007fc4ef17ffa0 @progname=nil, @level=0, @default_formatter=#<Logger::Formatter:0x007fc4ef17ff78 @datetime_format=nil>, @formatter=nil, @logdev=#<Logger::LogDevice:0x007fc4ef17ff28 @shift_size=1048576, @shift_age=10, @filename="/Users/davide/Desktop/Code/RUBY/RCrawler/logs/0/hehe.log", @dev=#<File:/Users/davide/Desktop/Code/RUBY/RCrawler/logs/0/hehe.log>, @mon_owner=nil, @mon_count=0, @mon_mutex=#<Thread::Mutex:0x007fc4ef17feb0>>>
+D, [2018-10-22T12:24:43.957403 #73121] DEBUG -- : thrId: 1, #<Alerter:0x007fc4ef184370 @emailAddresses="dvdpnt16+alerts@gmail.com", @maxPingsBeforeAlert="10", @maxHTTPBeforeAlert="5", @sendAlerts=true, @alertTemplatelocation="/Users/davide/Desktop/Code/RUBY/RCrawler/alerts/template1.txt", @alertTemplate="\noperation: <op>\ndestination: <dest>\nfailuresInARow: <fails>\nstartEpoch: <sEpoch>\nstartDate: <sDate>\n\n\nRCrawler\n">, #<Logger:0x007fc4ef17ffa0 @progname=nil, @level=0, @default_formatter=#<Logger::Formatter:0x007fc4ef17ff78 @datetime_format=nil>, @formatter=nil, @logdev=#<Logger::LogDevice:0x007fc4ef17ff28 @shift_size=1048576, @shift_age=10, @filename="/Users/davide/Desktop/Code/RUBY/RCrawler/logs/0/hehe.log", @dev=#<File:/Users/davide/Desktop/Code/RUBY/RCrawler/logs/0/hehe.log>, @mon_owner=nil, @mon_count=0, @mon_mutex=#<Thread::Mutex:0x007fc4ef17feb0>>>
+I, [2018-10-22T12:24:43.957588 #73121]  INFO -- : Starting 2 threads...
+I, [2018-10-22T12:24:44.212222 #73121]  INFO -- : thrId: 0, 0, http://world1.runescape.com, 249 ms, code: 200, size: 39515
+D, [2018-10-22T12:24:44.212466 #73121] DEBUG -- : thrId: 0, clearing HTTP arrays...
+I, [2018-10-22T12:24:46.518466 #73121]  INFO -- : thrId: 0, 1, http://world1.runescape.com, 298 ms, code: 200, size: 39515
+I, [2018-10-22T12:28:40.404913 #73188]  INFO -- : Logger has started
+I, [2018-10-22T12:28:40.405016 #73188]  INFO -- : instanceId: 0
+I, [2018-10-22T12:28:40.405053 #73188]  INFO -- : I have 1 operations to do
+I, [2018-10-22T12:28:40.405084 #73188]  INFO -- : tmpLogsDir: /Users/davide/Desktop/Code/RUBY/RCrawler/logs/
+I, [2018-10-22T12:28:40.405113 #73188]  INFO -- : tmpAlertTemplateLocation: /Users/davide/Desktop/Code/RUBY/RCrawler/alerts/template1.txt
+I, [2018-10-22T12:28:40.405142 #73188]  INFO -- : tmpEmailAddresses: dvdpnt16+alerts@gmail.com
+I, [2018-10-22T12:28:40.405171 #73188]  INFO -- : tmpMaxPingsBeforeAlert: 10
+I, [2018-10-22T12:28:40.405198 #73188]  INFO -- : tmpMaxHTTPBeforeAlert: 5
+I, [2018-10-22T12:28:40.405226 #73188]  INFO -- : tmpOperationsPerInstance: 20
+I, [2018-10-22T12:28:40.405255 #73188]  INFO -- : Doing operations from index 0 to 1
+I, [2018-10-22T12:28:40.405325 #73188]  INFO -- : Connecting to influxDB at localhost...
+I, [2018-10-22T12:28:40.405482 #73188]  INFO -- : Creating DB RCrawler ...
+D, [2018-10-22T12:28:40.409274 #73188] DEBUG -- : thrId: 0, #<Alerter:0x007fd913871420 @emailAddresses="dvdpnt16+alerts@gmail.com", @maxPingsBeforeAlert="10", @maxHTTPBeforeAlert="5", @sendAlerts=true, @alertTemplatelocation="/Users/davide/Desktop/Code/RUBY/RCrawler/alerts/template1.txt", @alertTemplate="\noperation: <op>\ndestination: <dest>\nfailuresInARow: <fails>\nstartEpoch: <sEpoch>\nstartDate: <sDate>\n\n\nRCrawler\n">, #<Logger:0x007fd913870fe8 @progname=nil, @level=0, @default_formatter=#<Logger::Formatter:0x007fd913870fc0 @datetime_format=nil>, @formatter=nil, @logdev=#<Logger::LogDevice:0x007fd913870e80 @shift_size=1048576, @shift_age=10, @filename="/Users/davide/Desktop/Code/RUBY/RCrawler/logs/0/hehe.log", @dev=#<File:/Users/davide/Desktop/Code/RUBY/RCrawler/logs/0/hehe.log>, @mon_owner=nil, @mon_count=0, @mon_mutex=#<Thread::Mutex:0x007fd913870610>>>
+D, [2018-10-22T12:28:40.410186 #73188] DEBUG -- : thrId: 1, #<Alerter:0x007fd913871420 @emailAddresses="dvdpnt16+alerts@gmail.com", @maxPingsBeforeAlert="10", @maxHTTPBeforeAlert="5", @sendAlerts=true, @alertTemplatelocation="/Users/davide/Desktop/Code/RUBY/RCrawler/alerts/template1.txt", @alertTemplate="\noperation: <op>\ndestination: <dest>\nfailuresInARow: <fails>\nstartEpoch: <sEpoch>\nstartDate: <sDate>\n\n\nRCrawler\n">, #<Logger:0x007fd913870fe8 @progname=nil, @level=0, @default_formatter=#<Logger::Formatter:0x007fd913870fc0 @datetime_format=nil>, @formatter=nil, @logdev=#<Logger::LogDevice:0x007fd913870e80 @shift_size=1048576, @shift_age=10, @filename="/Users/davide/Desktop/Code/RUBY/RCrawler/logs/0/hehe.log", @dev=#<File:/Users/davide/Desktop/Code/RUBY/RCrawler/logs/0/hehe.log>, @mon_owner=nil, @mon_count=0, @mon_mutex=#<Thread::Mutex:0x007fd913870610>>>
+I, [2018-10-22T12:28:40.410338 #73188]  INFO -- : Starting 2 threads...
+I, [2018-10-22T12:28:40.803117 #73188]  INFO -- : thrId: 0, 0, http://world1.runescape.com, 388 ms, code: 200, size: 39515
+I, [2018-10-22T12:28:43.090308 #73188]  INFO -- : thrId: 0, 1, http://world1.runescape.com, 276 ms, code: 200, size: 39515
+I, [2018-10-22T12:28:45.378128 #73188]  INFO -- : thrId: 0, 2, http://world1.runescape.com, 282 ms, code: 200, size: 39515
+I, [2018-10-22T12:28:47.852688 #73188]  INFO -- : thrId: 0, 3, http://world1.runescape.com, 466 ms, code: 200, size: 39515
+E, [2018-10-22T12:28:49.856003 #73188] ERROR -- : thrId: 0, runHttpQueries() Failed to open TCP connection to world1.runescape.com:80 (getaddrinfo: nodename nor servname provided, or not known)
+D, [2018-10-22T12:28:49.856122 #73188] DEBUG -- : thrId: 0, http://world1.runescape.com failCounter=1
+I, [2018-10-22T12:30:09.749144 #73224]  INFO -- : Logger has started
+I, [2018-10-22T12:30:09.749265 #73224]  INFO -- : instanceId: 0
+I, [2018-10-22T12:30:09.749317 #73224]  INFO -- : I have 1 operations to do
+I, [2018-10-22T12:30:09.749360 #73224]  INFO -- : tmpLogsDir: /Users/davide/Desktop/Code/RUBY/RCrawler/logs/
+I, [2018-10-22T12:30:09.749407 #73224]  INFO -- : tmpAlertTemplateLocation: /Users/davide/Desktop/Code/RUBY/RCrawler/alerts/template1.txt
+I, [2018-10-22T12:30:09.749437 #73224]  INFO -- : tmpEmailAddresses: dvdpnt16+alerts@gmail.com
+I, [2018-10-22T12:30:09.749465 #73224]  INFO -- : tmpMaxPingsBeforeAlert: 10
+I, [2018-10-22T12:30:09.749493 #73224]  INFO -- : tmpMaxHTTPBeforeAlert: 5
+I, [2018-10-22T12:30:09.749520 #73224]  INFO -- : tmpOperationsPerInstance: 20
+I, [2018-10-22T12:30:09.749549 #73224]  INFO -- : Doing operations from index 0 to 1
+I, [2018-10-22T12:30:09.749603 #73224]  INFO -- : Connecting to influxDB at localhost...
+I, [2018-10-22T12:30:09.749770 #73224]  INFO -- : Creating DB RCrawler ...
+D, [2018-10-22T12:30:09.755419 #73224] DEBUG -- : thrId: 0, #<Alerter:0x007fc39828ea98 @emailAddresses="dvdpnt16+alerts@gmail.com", @maxPingsBeforeAlert="10", @maxHTTPBeforeAlert="5", @sendAlerts=true, @alertTemplatelocation="/Users/davide/Desktop/Code/RUBY/RCrawler/alerts/template1.txt", @alertTemplate="\noperation: <op>\ndestination: <dest>\nfailuresInARow: <fails>\nstartEpoch: <sEpoch>\nstartDate: <sDate>\n\n\nRCrawler\n">, #<Logger:0x007fc39828e7f0 @progname=nil, @level=0, @default_formatter=#<Logger::Formatter:0x007fc39828e7c8 @datetime_format=nil>, @formatter=nil, @logdev=#<Logger::LogDevice:0x007fc39828e778 @shift_size=1048576, @shift_age=10, @filename="/Users/davide/Desktop/Code/RUBY/RCrawler/logs/0/hehe.log", @dev=#<File:/Users/davide/Desktop/Code/RUBY/RCrawler/logs/0/hehe.log>, @mon_owner=nil, @mon_count=0, @mon_mutex=#<Thread::Mutex:0x007fc39828e728>>>
+D, [2018-10-22T12:30:09.755665 #73224] DEBUG -- : thrId: 1, #<Alerter:0x007fc39828ea98 @emailAddresses="dvdpnt16+alerts@gmail.com", @maxPingsBeforeAlert="10", @maxHTTPBeforeAlert="5", @sendAlerts=true, @alertTemplatelocation="/Users/davide/Desktop/Code/RUBY/RCrawler/alerts/template1.txt", @alertTemplate="\noperation: <op>\ndestination: <dest>\nfailuresInARow: <fails>\nstartEpoch: <sEpoch>\nstartDate: <sDate>\n\n\nRCrawler\n">, #<Logger:0x007fc39828e7f0 @progname=nil, @level=0, @default_formatter=#<Logger::Formatter:0x007fc39828e7c8 @datetime_format=nil>, @formatter=nil, @logdev=#<Logger::LogDevice:0x007fc39828e778 @shift_size=1048576, @shift_age=10, @filename="/Users/davide/Desktop/Code/RUBY/RCrawler/logs/0/hehe.log", @dev=#<File:/Users/davide/Desktop/Code/RUBY/RCrawler/logs/0/hehe.log>, @mon_owner=nil, @mon_count=0, @mon_mutex=#<Thread::Mutex:0x007fc39828e728>>>
+I, [2018-10-22T12:30:09.755759 #73224]  INFO -- : Starting 2 threads...
+E, [2018-10-22T12:30:09.758991 #73224] ERROR -- : thrId: 0, runHttpQueries() Failed to open TCP connection to world1.runescape.com:80 (getaddrinfo: nodename nor servname provided, or not known)
+D, [2018-10-22T12:30:09.759083 #73224] DEBUG -- : thrId: 0, http://world1.runescape.com failCounter=1
+I, [2018-10-22T12:31:11.243844 #73244]  INFO -- : Logger has started
+I, [2018-10-22T12:31:11.243966 #73244]  INFO -- : instanceId: 0
+I, [2018-10-22T12:31:11.244042 #73244]  INFO -- : I have 1 operations to do
+I, [2018-10-22T12:31:11.244088 #73244]  INFO -- : tmpLogsDir: /Users/davide/Desktop/Code/RUBY/RCrawler/logs/
+I, [2018-10-22T12:31:11.244118 #73244]  INFO -- : tmpAlertTemplateLocation: /Users/davide/Desktop/Code/RUBY/RCrawler/alerts/template1.txt
+I, [2018-10-22T12:31:11.244147 #73244]  INFO -- : tmpEmailAddresses: dvdpnt16+alerts@gmail.com
+I, [2018-10-22T12:31:11.244175 #73244]  INFO -- : tmpMaxPingsBeforeAlert: 10
+I, [2018-10-22T12:31:11.244202 #73244]  INFO -- : tmpMaxHTTPBeforeAlert: 5
+I, [2018-10-22T12:31:11.244235 #73244]  INFO -- : tmpOperationsPerInstance: 20
+I, [2018-10-22T12:31:11.244264 #73244]  INFO -- : Doing operations from index 0 to 1
+I, [2018-10-22T12:31:11.244310 #73244]  INFO -- : Connecting to influxDB at localhost...
+I, [2018-10-22T12:31:11.244467 #73244]  INFO -- : Creating DB RCrawler ...
+D, [2018-10-22T12:31:11.248111 #73244] DEBUG -- : thrId: 0, #<Alerter:0x007fc6bb1869b8 @emailAddresses="dvdpnt16+alerts@gmail.com", @maxPingsBeforeAlert="10", @maxHTTPBeforeAlert="5", @sendAlerts=true, @alertTemplatelocation="/Users/davide/Desktop/Code/RUBY/RCrawler/alerts/template1.txt", @alertTemplate="\noperation: <op>\ndestination: <dest>\nfailuresInARow: <fails>\nstartEpoch: <sEpoch>\nstartDate: <sDate>\n\n\nRCrawler\n">, #<Logger:0x007fc6bb186738 @progname=nil, @level=0, @default_formatter=#<Logger::Formatter:0x007fc6bb186710 @datetime_format=nil>, @formatter=nil, @logdev=#<Logger::LogDevice:0x007fc6bb186698 @shift_size=1048576, @shift_age=10, @filename="/Users/davide/Desktop/Code/RUBY/RCrawler/logs/0/hehe.log", @dev=#<File:/Users/davide/Desktop/Code/RUBY/RCrawler/logs/0/hehe.log>, @mon_owner=nil, @mon_count=0, @mon_mutex=#<Thread::Mutex:0x007fc6bb186648>>>
+D, [2018-10-22T12:31:11.249029 #73244] DEBUG -- : thrId: 1, #<Alerter:0x007fc6bb1869b8 @emailAddresses="dvdpnt16+alerts@gmail.com", @maxPingsBeforeAlert="10", @maxHTTPBeforeAlert="5", @sendAlerts=true, @alertTemplatelocation="/Users/davide/Desktop/Code/RUBY/RCrawler/alerts/template1.txt", @alertTemplate="\noperation: <op>\ndestination: <dest>\nfailuresInARow: <fails>\nstartEpoch: <sEpoch>\nstartDate: <sDate>\n\n\nRCrawler\n">, #<Logger:0x007fc6bb186738 @progname=nil, @level=0, @default_formatter=#<Logger::Formatter:0x007fc6bb186710 @datetime_format=nil>, @formatter=nil, @logdev=#<Logger::LogDevice:0x007fc6bb186698 @shift_size=1048576, @shift_age=10, @filename="/Users/davide/Desktop/Code/RUBY/RCrawler/logs/0/hehe.log", @dev=#<File:/Users/davide/Desktop/Code/RUBY/RCrawler/logs/0/hehe.log>, @mon_owner=nil, @mon_count=0, @mon_mutex=#<Thread::Mutex:0x007fc6bb186648>>>
+I, [2018-10-22T12:31:11.249177 #73244]  INFO -- : Starting 2 threads...
+E, [2018-10-22T12:31:11.251477 #73244] ERROR -- : thrId: 0, runHttpQueries() Failed to open TCP connection to world1.runescape.com:80 (getaddrinfo: nodename nor servname provided, or not known)
+D, [2018-10-22T12:31:11.251576 #73244] DEBUG -- : thrId: 0, http://world1.runescape.com failCounter=1
+I, [2018-10-22T12:32:35.568834 #73270]  INFO -- : Logger has started
+I, [2018-10-22T12:32:35.568934 #73270]  INFO -- : instanceId: 0
+I, [2018-10-22T12:32:35.568988 #73270]  INFO -- : I have 1 operations to do
+I, [2018-10-22T12:32:35.569021 #73270]  INFO -- : tmpLogsDir: /Users/davide/Desktop/Code/RUBY/RCrawler/logs/
+I, [2018-10-22T12:32:35.569052 #73270]  INFO -- : tmpAlertTemplateLocation: /Users/davide/Desktop/Code/RUBY/RCrawler/alerts/template1.txt
+I, [2018-10-22T12:32:35.569082 #73270]  INFO -- : tmpEmailAddresses: dvdpnt16+alerts@gmail.com
+I, [2018-10-22T12:32:35.569112 #73270]  INFO -- : tmpMaxPingsBeforeAlert: 10
+I, [2018-10-22T12:32:35.569141 #73270]  INFO -- : tmpMaxHTTPBeforeAlert: 5
+I, [2018-10-22T12:32:35.569168 #73270]  INFO -- : tmpOperationsPerInstance: 20
+I, [2018-10-22T12:32:35.569197 #73270]  INFO -- : Doing operations from index 0 to 1
+I, [2018-10-22T12:32:35.569245 #73270]  INFO -- : Connecting to influxDB at localhost...
+I, [2018-10-22T12:32:35.569428 #73270]  INFO -- : Creating DB RCrawler ...
+D, [2018-10-22T12:32:35.573335 #73270] DEBUG -- : thrId: 0, #<Alerter:0x007fa73311a670 @emailAddresses="dvdpnt16+alerts@gmail.com", @maxPingsBeforeAlert="10", @maxHTTPBeforeAlert="5", @sendAlerts=true, @alertTemplatelocation="/Users/davide/Desktop/Code/RUBY/RCrawler/alerts/template1.txt", @alertTemplate="\noperation: <op>\ndestination: <dest>\nfailuresInARow: <fails>\nstartEpoch: <sEpoch>\nstartDate: <sDate>\n\n\nRCrawler\n">, #<Logger:0x007fa73311a3f0 @progname=nil, @level=0, @default_formatter=#<Logger::Formatter:0x007fa73311a3c8 @datetime_format=nil>, @formatter=nil, @logdev=#<Logger::LogDevice:0x007fa73311a378 @shift_size=1048576, @shift_age=10, @filename="/Users/davide/Desktop/Code/RUBY/RCrawler/logs/0/hehe.log", @dev=#<File:/Users/davide/Desktop/Code/RUBY/RCrawler/logs/0/hehe.log>, @mon_owner=nil, @mon_count=0, @mon_mutex=#<Thread::Mutex:0x007fa73311a328>>>
+D, [2018-10-22T12:32:35.574251 #73270] DEBUG -- : thrId: 1, #<Alerter:0x007fa73311a670 @emailAddresses="dvdpnt16+alerts@gmail.com", @maxPingsBeforeAlert="10", @maxHTTPBeforeAlert="5", @sendAlerts=true, @alertTemplatelocation="/Users/davide/Desktop/Code/RUBY/RCrawler/alerts/template1.txt", @alertTemplate="\noperation: <op>\ndestination: <dest>\nfailuresInARow: <fails>\nstartEpoch: <sEpoch>\nstartDate: <sDate>\n\n\nRCrawler\n">, #<Logger:0x007fa73311a3f0 @progname=nil, @level=0, @default_formatter=#<Logger::Formatter:0x007fa73311a3c8 @datetime_format=nil>, @formatter=nil, @logdev=#<Logger::LogDevice:0x007fa73311a378 @shift_size=1048576, @shift_age=10, @filename="/Users/davide/Desktop/Code/RUBY/RCrawler/logs/0/hehe.log", @dev=#<File:/Users/davide/Desktop/Code/RUBY/RCrawler/logs/0/hehe.log>, @mon_owner=nil, @mon_count=0, @mon_mutex=#<Thread::Mutex:0x007fa73311a328>>>
+I, [2018-10-22T12:32:35.574395 #73270]  INFO -- : Starting 2 threads...
+E, [2018-10-22T12:32:35.576658 #73270] ERROR -- : thrId: 0, runHttpQueries() Failed to open TCP connection to world1.runescape.com:80 (getaddrinfo: nodename nor servname provided, or not known)
+D, [2018-10-22T12:32:35.576738 #73270] DEBUG -- : thrId: 0, http://world1.runescape.com failCounter=1
+I, [2018-10-22T12:32:53.756410 #73280]  INFO -- : Logger has started
+I, [2018-10-22T12:32:53.756549 #73280]  INFO -- : instanceId: 0
+I, [2018-10-22T12:32:53.756628 #73280]  INFO -- : I have 1 operations to do
+I, [2018-10-22T12:32:53.756673 #73280]  INFO -- : tmpLogsDir: /Users/davide/Desktop/Code/RUBY/RCrawler/logs/
+I, [2018-10-22T12:32:53.756716 #73280]  INFO -- : tmpAlertTemplateLocation: /Users/davide/Desktop/Code/RUBY/RCrawler/alerts/template1.txt
+I, [2018-10-22T12:32:53.756763 #73280]  INFO -- : tmpEmailAddresses: dvdpnt16+alerts@gmail.com
+I, [2018-10-22T12:32:53.756796 #73280]  INFO -- : tmpMaxPingsBeforeAlert: 10
+I, [2018-10-22T12:32:53.756827 #73280]  INFO -- : tmpMaxHTTPBeforeAlert: 5
+I, [2018-10-22T12:32:53.756864 #73280]  INFO -- : tmpOperationsPerInstance: 20
+I, [2018-10-22T12:32:53.756895 #73280]  INFO -- : Doing operations from index 0 to 1
+I, [2018-10-22T12:32:53.756951 #73280]  INFO -- : Connecting to influxDB at localhost...
+I, [2018-10-22T12:32:53.757147 #73280]  INFO -- : Creating DB RCrawler ...
+D, [2018-10-22T12:32:53.761546 #73280] DEBUG -- : thrId: 0, #<Alerter:0x007f8ea89925f8 @emailAddresses="dvdpnt16+alerts@gmail.com", @maxPingsBeforeAlert="10", @maxHTTPBeforeAlert="5", @sendAlerts=true, @alertTemplatelocation="/Users/davide/Desktop/Code/RUBY/RCrawler/alerts/template1.txt", @alertTemplate="\noperation: <op>\ndestination: <dest>\nfailuresInARow: <fails>\nstartEpoch: <sEpoch>\nstartDate: <sDate>\n\n\nRCrawler\n">, #<Logger:0x007f8ea8992378 @progname=nil, @level=0, @default_formatter=#<Logger::Formatter:0x007f8ea8992350 @datetime_format=nil>, @formatter=nil, @logdev=#<Logger::LogDevice:0x007f8ea89922d8 @shift_size=1048576, @shift_age=10, @filename="/Users/davide/Desktop/Code/RUBY/RCrawler/logs/0/hehe.log", @dev=#<File:/Users/davide/Desktop/Code/RUBY/RCrawler/logs/0/hehe.log>, @mon_owner=nil, @mon_count=0, @mon_mutex=#<Thread::Mutex:0x007f8ea8992288>>>
+D, [2018-10-22T12:32:53.762507 #73280] DEBUG -- : thrId: 1, #<Alerter:0x007f8ea89925f8 @emailAddresses="dvdpnt16+alerts@gmail.com", @maxPingsBeforeAlert="10", @maxHTTPBeforeAlert="5", @sendAlerts=true, @alertTemplatelocation="/Users/davide/Desktop/Code/RUBY/RCrawler/alerts/template1.txt", @alertTemplate="\noperation: <op>\ndestination: <dest>\nfailuresInARow: <fails>\nstartEpoch: <sEpoch>\nstartDate: <sDate>\n\n\nRCrawler\n">, #<Logger:0x007f8ea8992378 @progname=nil, @level=0, @default_formatter=#<Logger::Formatter:0x007f8ea8992350 @datetime_format=nil>, @formatter=nil, @logdev=#<Logger::LogDevice:0x007f8ea89922d8 @shift_size=1048576, @shift_age=10, @filename="/Users/davide/Desktop/Code/RUBY/RCrawler/logs/0/hehe.log", @dev=#<File:/Users/davide/Desktop/Code/RUBY/RCrawler/logs/0/hehe.log>, @mon_owner=nil, @mon_count=0, @mon_mutex=#<Thread::Mutex:0x007f8ea8992288>>>
+I, [2018-10-22T12:32:53.762660 #73280]  INFO -- : Starting 2 threads...
+I, [2018-10-22T12:32:54.168249 #73280]  INFO -- : thrId: 0, 0, http://world1.runescape.com, 398 ms, code: 200, size: 39515
+I, [2018-10-22T12:33:34.711133 #73308]  INFO -- : Logger has started
+I, [2018-10-22T12:33:34.713167 #73308]  INFO -- : instanceId: 0
+I, [2018-10-22T12:33:34.713289 #73308]  INFO -- : I have 1 operations to do
+I, [2018-10-22T12:33:34.713351 #73308]  INFO -- : tmpLogsDir: /Users/davide/Desktop/Code/RUBY/RCrawler/logs/
+I, [2018-10-22T12:33:34.713404 #73308]  INFO -- : tmpAlertTemplateLocation: /Users/davide/Desktop/Code/RUBY/RCrawler/alerts/template1.txt
+I, [2018-10-22T12:33:34.713456 #73308]  INFO -- : tmpEmailAddresses: dvdpnt16+alerts@gmail.com
+I, [2018-10-22T12:33:34.713506 #73308]  INFO -- : tmpMaxPingsBeforeAlert: 10
+I, [2018-10-22T12:33:34.713557 #73308]  INFO -- : tmpMaxHTTPBeforeAlert: 5
+I, [2018-10-22T12:33:34.713607 #73308]  INFO -- : tmpOperationsPerInstance: 20
+I, [2018-10-22T12:33:34.713817 #73308]  INFO -- : Doing operations from index 0 to 1
+I, [2018-10-22T12:33:34.714045 #73308]  INFO -- : Connecting to influxDB at localhost...
+I, [2018-10-22T12:33:34.714579 #73308]  INFO -- : Creating DB RCrawler ...
+D, [2018-10-22T12:33:34.732015 #73308] DEBUG -- : thrId: 0, #<Alerter:0x007fb2b5086690 @emailAddresses="dvdpnt16+alerts@gmail.com", @maxPingsBeforeAlert="10", @maxHTTPBeforeAlert="5", @sendAlerts=true, @alertTemplatelocation="/Users/davide/Desktop/Code/RUBY/RCrawler/alerts/template1.txt", @alertTemplate="\noperation: <op>\ndestination: <dest>\nfailuresInARow: <fails>\nstartEpoch: <sEpoch>\nstartDate: <sDate>\n\n\nRCrawler\n">, #<Logger:0x007fb2b5086410 @progname=nil, @level=0, @default_formatter=#<Logger::Formatter:0x007fb2b50863c0 @datetime_format=nil>, @formatter=nil, @logdev=#<Logger::LogDevice:0x007fb2b5086370 @shift_size=1048576, @shift_age=10, @filename="/Users/davide/Desktop/Code/RUBY/RCrawler/logs/0/hehe.log", @dev=#<File:/Users/davide/Desktop/Code/RUBY/RCrawler/logs/0/hehe.log>, @mon_owner=nil, @mon_count=0, @mon_mutex=#<Thread::Mutex:0x007fb2b5086320>>>
+D, [2018-10-22T12:33:34.733166 #73308] DEBUG -- : thrId: 1, #<Alerter:0x007fb2b5086690 @emailAddresses="dvdpnt16+alerts@gmail.com", @maxPingsBeforeAlert="10", @maxHTTPBeforeAlert="5", @sendAlerts=true, @alertTemplatelocation="/Users/davide/Desktop/Code/RUBY/RCrawler/alerts/template1.txt", @alertTemplate="\noperation: <op>\ndestination: <dest>\nfailuresInARow: <fails>\nstartEpoch: <sEpoch>\nstartDate: <sDate>\n\n\nRCrawler\n">, #<Logger:0x007fb2b5086410 @progname=nil, @level=0, @default_formatter=#<Logger::Formatter:0x007fb2b50863c0 @datetime_format=nil>, @formatter=nil, @logdev=#<Logger::LogDevice:0x007fb2b5086370 @shift_size=1048576, @shift_age=10, @filename="/Users/davide/Desktop/Code/RUBY/RCrawler/logs/0/hehe.log", @dev=#<File:/Users/davide/Desktop/Code/RUBY/RCrawler/logs/0/hehe.log>, @mon_owner=nil, @mon_count=0, @mon_mutex=#<Thread::Mutex:0x007fb2b5086320>>>
+I, [2018-10-22T12:33:34.733493 #73308]  INFO -- : Starting 2 threads...
+E, [2018-10-22T12:33:34.735855 #73308] ERROR -- : thrId: 0, runHttpQueries() Failed to open TCP connection to world1.runescape.com:80 (getaddrinfo: nodename nor servname provided, or not known)
+D, [2018-10-22T12:33:34.735991 #73308] DEBUG -- : thrId: 0, http://world1.runescape.com failCounter=1
+I, [2018-10-22T12:33:34.741487 #73308]  INFO -- : thrId: 0, 0, http://world1.runescape.com, -1 ms, code: -, size: 0
+E, [2018-10-22T12:33:36.747644 #73308] ERROR -- : thrId: 0, runHttpQueries() Failed to open TCP connection to world1.runescape.com:80 (getaddrinfo: nodename nor servname provided, or not known)
+D, [2018-10-22T12:33:36.747765 #73308] DEBUG -- : thrId: 0, http://world1.runescape.com failCounter=2
+I, [2018-10-22T12:33:36.754874 #73308]  INFO -- : thrId: 0, 1, http://world1.runescape.com, -1 ms, code: -, size: 0
+E, [2018-10-22T12:33:38.762286 #73308] ERROR -- : thrId: 0, runHttpQueries() Failed to open TCP connection to world1.runescape.com:80 (getaddrinfo: nodename nor servname provided, or not known)
+D, [2018-10-22T12:33:38.762425 #73308] DEBUG -- : thrId: 0, http://world1.runescape.com failCounter=3
+I, [2018-10-22T12:33:38.768573 #73308]  INFO -- : thrId: 0, 2, http://world1.runescape.com, -1 ms, code: -, size: 0
+E, [2018-10-22T12:33:40.772604 #73308] ERROR -- : thrId: 0, runHttpQueries() Failed to open TCP connection to world1.runescape.com:80 (getaddrinfo: nodename nor servname provided, or not known)
+D, [2018-10-22T12:33:40.772747 #73308] DEBUG -- : thrId: 0, http://world1.runescape.com failCounter=4
+I, [2018-10-22T12:33:40.778903 #73308]  INFO -- : thrId: 0, 3, http://world1.runescape.com, -1 ms, code: -, size: 0
+E, [2018-10-22T12:33:42.781554 #73308] ERROR -- : thrId: 0, runHttpQueries() Failed to open TCP connection to world1.runescape.com:80 (getaddrinfo: nodename nor servname provided, or not known)
+D, [2018-10-22T12:33:42.781694 #73308] DEBUG -- : thrId: 0, http://world1.runescape.com failCounter=5
+I, [2018-10-22T12:35:04.538246 #73360]  INFO -- : Logger has started
+I, [2018-10-22T12:35:04.540348 #73360]  INFO -- : instanceId: 0
+I, [2018-10-22T12:35:04.540444 #73360]  INFO -- : I have 1 operations to do
+I, [2018-10-22T12:35:04.540487 #73360]  INFO -- : tmpLogsDir: /Users/davide/Desktop/Code/RUBY/RCrawler/logs/
+I, [2018-10-22T12:35:04.540525 #73360]  INFO -- : tmpAlertTemplateLocation: /Users/davide/Desktop/Code/RUBY/RCrawler/alerts/template1.txt
+I, [2018-10-22T12:35:04.540564 #73360]  INFO -- : tmpEmailAddresses: dvdpnt16+alerts@gmail.com
+I, [2018-10-22T12:35:04.540604 #73360]  INFO -- : tmpMaxPingsBeforeAlert: 10
+I, [2018-10-22T12:35:04.540641 #73360]  INFO -- : tmpMaxHTTPBeforeAlert: 5
+I, [2018-10-22T12:35:04.540678 #73360]  INFO -- : tmpOperationsPerInstance: 20
+I, [2018-10-22T12:35:04.540715 #73360]  INFO -- : Doing operations from index 0 to 1
+I, [2018-10-22T12:35:04.540778 #73360]  INFO -- : Connecting to influxDB at localhost...
+I, [2018-10-22T12:35:04.540974 #73360]  INFO -- : Creating DB RCrawler ...
+D, [2018-10-22T12:35:04.550897 #73360] DEBUG -- : thrId: 0, #<Alerter:0x007f823325a7a8 @emailAddresses="dvdpnt16+alerts@gmail.com", @maxPingsBeforeAlert="10", @maxHTTPBeforeAlert="5", @sendAlerts=true, @alertTemplatelocation="/Users/davide/Desktop/Code/RUBY/RCrawler/alerts/template1.txt", @alertTemplate="\noperation: <op>\ndestination: <dest>\nfailuresInARow: <fails>\nstartEpoch: <sEpoch>\nstartDate: <sDate>\n\n\nRCrawler\n">, #<Logger:0x007f823325a528 @progname=nil, @level=0, @default_formatter=#<Logger::Formatter:0x007f823325a500 @datetime_format=nil>, @formatter=nil, @logdev=#<Logger::LogDevice:0x007f823325a4b0 @shift_size=1048576, @shift_age=10, @filename="/Users/davide/Desktop/Code/RUBY/RCrawler/logs/0/hehe.log", @dev=#<File:/Users/davide/Desktop/Code/RUBY/RCrawler/logs/0/hehe.log>, @mon_owner=nil, @mon_count=0, @mon_mutex=#<Thread::Mutex:0x007f823325a438>>>
+D, [2018-10-22T12:35:04.551076 #73360] DEBUG -- : thrId: 1, #<Alerter:0x007f823325a7a8 @emailAddresses="dvdpnt16+alerts@gmail.com", @maxPingsBeforeAlert="10", @maxHTTPBeforeAlert="5", @sendAlerts=true, @alertTemplatelocation="/Users/davide/Desktop/Code/RUBY/RCrawler/alerts/template1.txt", @alertTemplate="\noperation: <op>\ndestination: <dest>\nfailuresInARow: <fails>\nstartEpoch: <sEpoch>\nstartDate: <sDate>\n\n\nRCrawler\n">, #<Logger:0x007f823325a528 @progname=nil, @level=0, @default_formatter=#<Logger::Formatter:0x007f823325a500 @datetime_format=nil>, @formatter=nil, @logdev=#<Logger::LogDevice:0x007f823325a4b0 @shift_size=1048576, @shift_age=10, @filename="/Users/davide/Desktop/Code/RUBY/RCrawler/logs/0/hehe.log", @dev=#<File:/Users/davide/Desktop/Code/RUBY/RCrawler/logs/0/hehe.log>, @mon_owner=nil, @mon_count=0, @mon_mutex=#<Thread::Mutex:0x007f823325a438>>>
+I, [2018-10-22T12:35:04.551894 #73360]  INFO -- : Starting 2 threads...
+I, [2018-10-22T12:35:04.924315 #73360]  INFO -- : thrId: 0, 0, http://world1.runescape.com, 357 ms, code: 200, size: 39514
+I, [2018-10-22T12:35:07.200525 #73360]  INFO -- : thrId: 0, 1, http://world1.runescape.com, 264 ms, code: 200, size: 39513
+I, [2018-10-22T12:35:14.667218 #73364]  INFO -- : Logger has started
+I, [2018-10-22T12:35:14.667353 #73364]  INFO -- : instanceId: 0
+I, [2018-10-22T12:35:14.667419 #73364]  INFO -- : I have 1 operations to do
+I, [2018-10-22T12:35:14.667456 #73364]  INFO -- : tmpLogsDir: /Users/davide/Desktop/Code/RUBY/RCrawler/logs/
+I, [2018-10-22T12:35:14.667488 #73364]  INFO -- : tmpAlertTemplateLocation: /Users/davide/Desktop/Code/RUBY/RCrawler/alerts/template1.txt
+I, [2018-10-22T12:35:14.667520 #73364]  INFO -- : tmpEmailAddresses: dvdpnt16+alerts@gmail.com
+I, [2018-10-22T12:35:14.667550 #73364]  INFO -- : tmpMaxPingsBeforeAlert: 10
+I, [2018-10-22T12:35:14.667580 #73364]  INFO -- : tmpMaxHTTPBeforeAlert: 5
+I, [2018-10-22T12:35:14.667610 #73364]  INFO -- : tmpOperationsPerInstance: 20
+I, [2018-10-22T12:35:14.667682 #73364]  INFO -- : Doing operations from index 0 to 1
+I, [2018-10-22T12:35:14.667734 #73364]  INFO -- : Connecting to influxDB at localhost...
+I, [2018-10-22T12:35:14.667942 #73364]  INFO -- : Creating DB RCrawler ...
+D, [2018-10-22T12:35:14.671667 #73364] DEBUG -- : thrId: 0, #<Alerter:0x007f98e50424c0 @emailAddresses="dvdpnt16+alerts@gmail.com", @maxPingsBeforeAlert="10", @maxHTTPBeforeAlert="5", @sendAlerts=true, @alertTemplatelocation="/Users/davide/Desktop/Code/RUBY/RCrawler/alerts/template1.txt", @alertTemplate="\noperation: <op>\ndestination: <dest>\nfailuresInARow: <fails>\nstartEpoch: <sEpoch>\nstartDate: <sDate>\n\n\nRCrawler\n">, #<Logger:0x007f98e50421c8 @progname=nil, @level=0, @default_formatter=#<Logger::Formatter:0x007f98e50421a0 @datetime_format=nil>, @formatter=nil, @logdev=#<Logger::LogDevice:0x007f98e5042150 @shift_size=1048576, @shift_age=10, @filename="/Users/davide/Desktop/Code/RUBY/RCrawler/logs/0/hehe.log", @dev=#<File:/Users/davide/Desktop/Code/RUBY/RCrawler/logs/0/hehe.log>, @mon_owner=nil, @mon_count=0, @mon_mutex=#<Thread::Mutex:0x007f98e5042100>>>
+D, [2018-10-22T12:35:14.672655 #73364] DEBUG -- : thrId: 1, #<Alerter:0x007f98e50424c0 @emailAddresses="dvdpnt16+alerts@gmail.com", @maxPingsBeforeAlert="10", @maxHTTPBeforeAlert="5", @sendAlerts=true, @alertTemplatelocation="/Users/davide/Desktop/Code/RUBY/RCrawler/alerts/template1.txt", @alertTemplate="\noperation: <op>\ndestination: <dest>\nfailuresInARow: <fails>\nstartEpoch: <sEpoch>\nstartDate: <sDate>\n\n\nRCrawler\n">, #<Logger:0x007f98e50421c8 @progname=nil, @level=0, @default_formatter=#<Logger::Formatter:0x007f98e50421a0 @datetime_format=nil>, @formatter=nil, @logdev=#<Logger::LogDevice:0x007f98e5042150 @shift_size=1048576, @shift_age=10, @filename="/Users/davide/Desktop/Code/RUBY/RCrawler/logs/0/hehe.log", @dev=#<File:/Users/davide/Desktop/Code/RUBY/RCrawler/logs/0/hehe.log>, @mon_owner=nil, @mon_count=0, @mon_mutex=#<Thread::Mutex:0x007f98e5042100>>>
+I, [2018-10-22T12:35:14.672777 #73364]  INFO -- : Starting 2 threads...
+E, [2018-10-22T12:35:14.675144 #73364] ERROR -- : thrId: 0, runHttpQueries() Failed to open TCP connection to world1.runescape.com:80 (getaddrinfo: nodename nor servname provided, or not known)
+D, [2018-10-22T12:35:14.675251 #73364] DEBUG -- : thrId: 0, http://world1.runescape.com failCounter=1
+I, [2018-10-22T12:35:14.679761 #73364]  INFO -- : thrId: 0, 0, http://world1.runescape.com, -1 ms, code: -, size: 0
+I, [2018-10-22T12:35:43.964048 #73387]  INFO -- : Logger has started
+I, [2018-10-22T12:35:43.964142 #73387]  INFO -- : instanceId: 0
+I, [2018-10-22T12:35:43.964245 #73387]  INFO -- : I have 1 operations to do
+I, [2018-10-22T12:35:43.964300 #73387]  INFO -- : tmpLogsDir: /Users/davide/Desktop/Code/RUBY/RCrawler/logs/
+I, [2018-10-22T12:35:43.964330 #73387]  INFO -- : tmpAlertTemplateLocation: /Users/davide/Desktop/Code/RUBY/RCrawler/alerts/template1.txt
+I, [2018-10-22T12:35:43.964359 #73387]  INFO -- : tmpEmailAddresses: dvdpnt16+alerts@gmail.com
+I, [2018-10-22T12:35:43.964387 #73387]  INFO -- : tmpMaxPingsBeforeAlert: 10
+I, [2018-10-22T12:35:43.964414 #73387]  INFO -- : tmpMaxHTTPBeforeAlert: 5
+I, [2018-10-22T12:35:43.964441 #73387]  INFO -- : tmpOperationsPerInstance: 20
+I, [2018-10-22T12:35:43.964469 #73387]  INFO -- : Doing operations from index 0 to 1
+I, [2018-10-22T12:35:43.964524 #73387]  INFO -- : Connecting to influxDB at localhost...
+I, [2018-10-22T12:35:43.964719 #73387]  INFO -- : Creating DB RCrawler ...
+D, [2018-10-22T12:35:43.968543 #73387] DEBUG -- : thrId: 0, #<Alerter:0x007fc6758725d8 @emailAddresses="dvdpnt16+alerts@gmail.com", @maxPingsBeforeAlert="10", @maxHTTPBeforeAlert="5", @sendAlerts=true, @alertTemplatelocation="/Users/davide/Desktop/Code/RUBY/RCrawler/alerts/template1.txt", @alertTemplate="\noperation: <op>\ndestination: <dest>\nfailuresInARow: <fails>\nstartEpoch: <sEpoch>\nstartDate: <sDate>\n\n\nRCrawler\n">, #<Logger:0x007fc675872358 @progname=nil, @level=0, @default_formatter=#<Logger::Formatter:0x007fc675872330 @datetime_format=nil>, @formatter=nil, @logdev=#<Logger::LogDevice:0x007fc6758722e0 @shift_size=1048576, @shift_age=10, @filename="/Users/davide/Desktop/Code/RUBY/RCrawler/logs/0/hehe.log", @dev=#<File:/Users/davide/Desktop/Code/RUBY/RCrawler/logs/0/hehe.log>, @mon_owner=nil, @mon_count=0, @mon_mutex=#<Thread::Mutex:0x007fc675872290>>>
+D, [2018-10-22T12:35:43.969484 #73387] DEBUG -- : thrId: 1, #<Alerter:0x007fc6758725d8 @emailAddresses="dvdpnt16+alerts@gmail.com", @maxPingsBeforeAlert="10", @maxHTTPBeforeAlert="5", @sendAlerts=true, @alertTemplatelocation="/Users/davide/Desktop/Code/RUBY/RCrawler/alerts/template1.txt", @alertTemplate="\noperation: <op>\ndestination: <dest>\nfailuresInARow: <fails>\nstartEpoch: <sEpoch>\nstartDate: <sDate>\n\n\nRCrawler\n">, #<Logger:0x007fc675872358 @progname=nil, @level=0, @default_formatter=#<Logger::Formatter:0x007fc675872330 @datetime_format=nil>, @formatter=nil, @logdev=#<Logger::LogDevice:0x007fc6758722e0 @shift_size=1048576, @shift_age=10, @filename="/Users/davide/Desktop/Code/RUBY/RCrawler/logs/0/hehe.log", @dev=#<File:/Users/davide/Desktop/Code/RUBY/RCrawler/logs/0/hehe.log>, @mon_owner=nil, @mon_count=0, @mon_mutex=#<Thread::Mutex:0x007fc675872290>>>
+I, [2018-10-22T12:35:43.969631 #73387]  INFO -- : Starting 2 threads...
+E, [2018-10-22T12:35:43.970463 #73387] ERROR -- : thrId: 0, runHttpQueries() Failed to open TCP connection to world1.runescape.com:80 (getaddrinfo: nodename nor servname provided, or not known)
+D, [2018-10-22T12:35:43.970541 #73387] DEBUG -- : thrId: 0, http://world1.runescape.com failCounter=1
+I, [2018-10-22T12:35:43.974883 #73387]  INFO -- : thrId: 0, 0, http://world1.runescape.com, -1 ms, code: -, size: 0
+E, [2018-10-22T12:35:45.978920 #73387] ERROR -- : thrId: 0, runHttpQueries() Failed to open TCP connection to world1.runescape.com:80 (getaddrinfo: nodename nor servname provided, or not known)
+D, [2018-10-22T12:35:45.979126 #73387] DEBUG -- : thrId: 0, http://world1.runescape.com failCounter=2
+I, [2018-10-22T12:35:45.986197 #73387]  INFO -- : thrId: 0, 1, http://world1.runescape.com, -1 ms, code: -, size: 0
+E, [2018-10-22T12:35:47.990422 #73387] ERROR -- : thrId: 0, runHttpQueries() Failed to open TCP connection to world1.runescape.com:80 (getaddrinfo: nodename nor servname provided, or not known)
+D, [2018-10-22T12:35:47.990601 #73387] DEBUG -- : thrId: 0, http://world1.runescape.com failCounter=3
+I, [2018-10-22T12:35:47.997202 #73387]  INFO -- : thrId: 0, 2, http://world1.runescape.com, -1 ms, code: -, size: 0
+E, [2018-10-22T12:35:50.002180 #73387] ERROR -- : thrId: 0, runHttpQueries() Failed to open TCP connection to world1.runescape.com:80 (getaddrinfo: nodename nor servname provided, or not known)
+D, [2018-10-22T12:35:50.002263 #73387] DEBUG -- : thrId: 0, http://world1.runescape.com failCounter=4
+I, [2018-10-22T12:35:50.007003 #73387]  INFO -- : thrId: 0, 3, http://world1.runescape.com, -1 ms, code: -, size: 0
+E, [2018-10-22T12:35:52.010192 #73387] ERROR -- : thrId: 0, runHttpQueries() Failed to open TCP connection to world1.runescape.com:80 (getaddrinfo: nodename nor servname provided, or not known)
+D, [2018-10-22T12:35:52.010336 #73387] DEBUG -- : thrId: 0, http://world1.runescape.com failCounter=5
+I, [2018-10-22T12:35:52.128077 #73387]  INFO -- : thrId: 0, HTTP Alert sent, http://world1.runescape.com
+I, [2018-10-22T12:35:52.136847 #73387]  INFO -- : thrId: 0, 4, http://world1.runescape.com, -1 ms, code: -, size: 0
+I, [2018-10-22T12:35:56.193907 #73414]  INFO -- : Logger has started
+I, [2018-10-22T12:35:56.194004 #73414]  INFO -- : instanceId: 0
+I, [2018-10-22T12:35:56.194042 #73414]  INFO -- : I have 1 operations to do
+I, [2018-10-22T12:35:56.194072 #73414]  INFO -- : tmpLogsDir: /Users/davide/Desktop/Code/RUBY/RCrawler/logs/
+I, [2018-10-22T12:35:56.194101 #73414]  INFO -- : tmpAlertTemplateLocation: /Users/davide/Desktop/Code/RUBY/RCrawler/alerts/template1.txt
+I, [2018-10-22T12:35:56.194130 #73414]  INFO -- : tmpEmailAddresses: dvdpnt16+alerts@gmail.com
+I, [2018-10-22T12:35:56.194157 #73414]  INFO -- : tmpMaxPingsBeforeAlert: 10
+I, [2018-10-22T12:35:56.194184 #73414]  INFO -- : tmpMaxHTTPBeforeAlert: 5
+I, [2018-10-22T12:35:56.194211 #73414]  INFO -- : tmpOperationsPerInstance: 20
+I, [2018-10-22T12:35:56.194239 #73414]  INFO -- : Doing operations from index 0 to 1
+I, [2018-10-22T12:35:56.194286 #73414]  INFO -- : Connecting to influxDB at localhost...
+I, [2018-10-22T12:35:56.194444 #73414]  INFO -- : Creating DB RCrawler ...
+D, [2018-10-22T12:35:56.198046 #73414] DEBUG -- : thrId: 0, #<Alerter:0x007fc14a8e0540 @emailAddresses="dvdpnt16+alerts@gmail.com", @maxPingsBeforeAlert="10", @maxHTTPBeforeAlert="5", @sendAlerts=true, @alertTemplatelocation="/Users/davide/Desktop/Code/RUBY/RCrawler/alerts/template1.txt", @alertTemplate="\noperation: <op>\ndestination: <dest>\nfailuresInARow: <fails>\nstartEpoch: <sEpoch>\nstartDate: <sDate>\n\n\nRCrawler\n">, #<Logger:0x007fc14a8dbce8 @progname=nil, @level=0, @default_formatter=#<Logger::Formatter:0x007fc14a8dbc98 @datetime_format=nil>, @formatter=nil, @logdev=#<Logger::LogDevice:0x007fc14a8dbbf8 @shift_size=1048576, @shift_age=10, @filename="/Users/davide/Desktop/Code/RUBY/RCrawler/logs/0/hehe.log", @dev=#<File:/Users/davide/Desktop/Code/RUBY/RCrawler/logs/0/hehe.log>, @mon_owner=nil, @mon_count=0, @mon_mutex=#<Thread::Mutex:0x007fc14a8dbb80>>>
+D, [2018-10-22T12:35:56.198961 #73414] DEBUG -- : thrId: 1, #<Alerter:0x007fc14a8e0540 @emailAddresses="dvdpnt16+alerts@gmail.com", @maxPingsBeforeAlert="10", @maxHTTPBeforeAlert="5", @sendAlerts=true, @alertTemplatelocation="/Users/davide/Desktop/Code/RUBY/RCrawler/alerts/template1.txt", @alertTemplate="\noperation: <op>\ndestination: <dest>\nfailuresInARow: <fails>\nstartEpoch: <sEpoch>\nstartDate: <sDate>\n\n\nRCrawler\n">, #<Logger:0x007fc14a8dbce8 @progname=nil, @level=0, @default_formatter=#<Logger::Formatter:0x007fc14a8dbc98 @datetime_format=nil>, @formatter=nil, @logdev=#<Logger::LogDevice:0x007fc14a8dbbf8 @shift_size=1048576, @shift_age=10, @filename="/Users/davide/Desktop/Code/RUBY/RCrawler/logs/0/hehe.log", @dev=#<File:/Users/davide/Desktop/Code/RUBY/RCrawler/logs/0/hehe.log>, @mon_owner=nil, @mon_count=0, @mon_mutex=#<Thread::Mutex:0x007fc14a8dbb80>>>
+I, [2018-10-22T12:35:56.199149 #73414]  INFO -- : Starting 2 threads...
+E, [2018-10-22T12:35:56.200095 #73414] ERROR -- : thrId: 0, runHttpQueries() Failed to open TCP connection to world1.runescape.com:80 (getaddrinfo: nodename nor servname provided, or not known)
+D, [2018-10-22T12:35:56.200170 #73414] DEBUG -- : thrId: 0, http://world1.runescape.com failCounter=1
+I, [2018-10-22T12:35:56.204509 #73414]  INFO -- : thrId: 0, 0, http://world1.runescape.com, -1 ms, code: -1, size: 0
+E, [2018-10-22T12:35:58.211411 #73414] ERROR -- : thrId: 0, runHttpQueries() Failed to open TCP connection to world1.runescape.com:80 (getaddrinfo: nodename nor servname provided, or not known)
+D, [2018-10-22T12:35:58.211552 #73414] DEBUG -- : thrId: 0, http://world1.runescape.com failCounter=2
+I, [2018-10-22T12:35:58.217297 #73414]  INFO -- : thrId: 0, 1, http://world1.runescape.com, -1 ms, code: -1, size: 0
+E, [2018-10-22T12:36:00.224958 #73414] ERROR -- : thrId: 0, runHttpQueries() Failed to open TCP connection to world1.runescape.com:80 (getaddrinfo: nodename nor servname provided, or not known)
+D, [2018-10-22T12:36:00.232420 #73414] DEBUG -- : thrId: 0, http://world1.runescape.com failCounter=3
+I, [2018-10-22T12:36:00.238672 #73414]  INFO -- : thrId: 0, 2, http://world1.runescape.com, -1 ms, code: -1, size: 0
+E, [2018-10-22T12:36:02.244272 #73414] ERROR -- : thrId: 0, runHttpQueries() Failed to open TCP connection to world1.runescape.com:80 (getaddrinfo: nodename nor servname provided, or not known)
+D, [2018-10-22T12:36:02.244412 #73414] DEBUG -- : thrId: 0, http://world1.runescape.com failCounter=4
+I, [2018-10-22T12:36:02.250492 #73414]  INFO -- : thrId: 0, 3, http://world1.runescape.com, -1 ms, code: -1, size: 0
+E, [2018-10-22T12:36:04.252368 #73414] ERROR -- : thrId: 0, runHttpQueries() Failed to open TCP connection to world1.runescape.com:80 (getaddrinfo: nodename nor servname provided, or not known)
+D, [2018-10-22T12:36:04.252472 #73414] DEBUG -- : thrId: 0, http://world1.runescape.com failCounter=5
+I, [2018-10-22T12:36:04.314923 #73414]  INFO -- : thrId: 0, HTTP Alert sent, http://world1.runescape.com
+I, [2018-10-22T12:36:04.329640 #73414]  INFO -- : thrId: 0, 4, http://world1.runescape.com, -1 ms, code: -1, size: 0
+I, [2018-10-22T12:36:06.674570 #73414]  INFO -- : thrId: 0, 5, http://world1.runescape.com, -1 ms, code: -1, size: 0
+I, [2018-10-22T12:36:09.018964 #73414]  INFO -- : thrId: 0, 6, http://world1.runescape.com, -1 ms, code: -1, size: 0
+I, [2018-10-22T12:36:11.285712 #73414]  INFO -- : thrId: 0, 7, http://world1.runescape.com, -1 ms, code: -1, size: 0
+I, [2018-10-22T12:36:13.586282 #73414]  INFO -- : thrId: 0, 8, http://world1.runescape.com, -1 ms, code: -1, size: 0
+I, [2018-10-22T12:36:15.860354 #73414]  INFO -- : thrId: 0, 9, http://world1.runescape.com, -1 ms, code: -1, size: 0
+I, [2018-10-22T12:36:15.860613 #73414]  INFO -- : thrId: 0 has completed 10 HTTP operations, http://world1.runescape.com
+I, [2018-10-22T12:36:22.573676 #73436]  INFO -- : Logger has started
+I, [2018-10-22T12:36:22.575601 #73436]  INFO -- : instanceId: 0
+I, [2018-10-22T12:36:22.575713 #73436]  INFO -- : I have 1 operations to do
+I, [2018-10-22T12:36:22.575765 #73436]  INFO -- : tmpLogsDir: /Users/davide/Desktop/Code/RUBY/RCrawler/logs/
+I, [2018-10-22T12:36:22.575813 #73436]  INFO -- : tmpAlertTemplateLocation: /Users/davide/Desktop/Code/RUBY/RCrawler/alerts/template1.txt
+I, [2018-10-22T12:36:22.575861 #73436]  INFO -- : tmpEmailAddresses: dvdpnt16+alerts@gmail.com
+I, [2018-10-22T12:36:22.575907 #73436]  INFO -- : tmpMaxPingsBeforeAlert: 10
+I, [2018-10-22T12:36:22.575951 #73436]  INFO -- : tmpMaxHTTPBeforeAlert: 5
+I, [2018-10-22T12:36:22.575995 #73436]  INFO -- : tmpOperationsPerInstance: 20
+I, [2018-10-22T12:36:22.576042 #73436]  INFO -- : Doing operations from index 0 to 1
+I, [2018-10-22T12:36:22.576117 #73436]  INFO -- : Connecting to influxDB at localhost...
+I, [2018-10-22T12:36:22.576328 #73436]  INFO -- : Creating DB RCrawler ...
+D, [2018-10-22T12:36:22.585912 #73436] DEBUG -- : thrId: 0, #<Alerter:0x007f976d9de638 @emailAddresses="dvdpnt16+alerts@gmail.com", @maxPingsBeforeAlert="10", @maxHTTPBeforeAlert="5", @sendAlerts=true, @alertTemplatelocation="/Users/davide/Desktop/Code/RUBY/RCrawler/alerts/template1.txt", @alertTemplate="\noperation: <op>\ndestination: <dest>\nfailuresInARow: <fails>\nstartEpoch: <sEpoch>\nstartDate: <sDate>\n\n\nRCrawler\n">, #<Logger:0x007f976d9de3b8 @progname=nil, @level=0, @default_formatter=#<Logger::Formatter:0x007f976d9de368 @datetime_format=nil>, @formatter=nil, @logdev=#<Logger::LogDevice:0x007f976d9de318 @shift_size=1048576, @shift_age=10, @filename="/Users/davide/Desktop/Code/RUBY/RCrawler/logs/0/hehe.log", @dev=#<File:/Users/davide/Desktop/Code/RUBY/RCrawler/logs/0/hehe.log>, @mon_owner=nil, @mon_count=0, @mon_mutex=#<Thread::Mutex:0x007f976d9de2c8>>>
+D, [2018-10-22T12:36:22.586907 #73436] DEBUG -- : thrId: 1, #<Alerter:0x007f976d9de638 @emailAddresses="dvdpnt16+alerts@gmail.com", @maxPingsBeforeAlert="10", @maxHTTPBeforeAlert="5", @sendAlerts=true, @alertTemplatelocation="/Users/davide/Desktop/Code/RUBY/RCrawler/alerts/template1.txt", @alertTemplate="\noperation: <op>\ndestination: <dest>\nfailuresInARow: <fails>\nstartEpoch: <sEpoch>\nstartDate: <sDate>\n\n\nRCrawler\n">, #<Logger:0x007f976d9de3b8 @progname=nil, @level=0, @default_formatter=#<Logger::Formatter:0x007f976d9de368 @datetime_format=nil>, @formatter=nil, @logdev=#<Logger::LogDevice:0x007f976d9de318 @shift_size=1048576, @shift_age=10, @filename="/Users/davide/Desktop/Code/RUBY/RCrawler/logs/0/hehe.log", @dev=#<File:/Users/davide/Desktop/Code/RUBY/RCrawler/logs/0/hehe.log>, @mon_owner=nil, @mon_count=0, @mon_mutex=#<Thread::Mutex:0x007f976d9de2c8>>>
+I, [2018-10-22T12:36:22.587046 #73436]  INFO -- : Starting 2 threads...
+I, [2018-10-22T12:36:22.900770 #73436]  INFO -- : thrId: 0, 0, http://world1.runescape.com, 296 ms, code: 200, size: 39515
+I, [2018-10-22T12:36:25.415731 #73436]  INFO -- : thrId: 0, 1, http://world1.runescape.com, 504 ms, code: 200, size: 39516
+I, [2018-10-22T12:36:27.817363 #73436]  INFO -- : thrId: 0, 2, http://world1.runescape.com, 388 ms, code: 200, size: 39514
+I, [2018-10-22T12:36:30.228602 #73436]  INFO -- : thrId: 0, 3, http://world1.runescape.com, 405 ms, code: 200, size: 39515
+E, [2018-10-22T12:36:32.235478 #73436] ERROR -- : thrId: 0, runHttpQueries() Failed to open TCP connection to world1.runescape.com:80 (getaddrinfo: nodename nor servname provided, or not known)
+D, [2018-10-22T12:36:32.235642 #73436] DEBUG -- : thrId: 0, http://world1.runescape.com failCounter=1
+I, [2018-10-22T12:36:32.242105 #73436]  INFO -- : thrId: 0, 4, http://world1.runescape.com, -1 ms, code: -1, size: 0
+E, [2018-10-22T12:36:34.248019 #73436] ERROR -- : thrId: 0, runHttpQueries() Failed to open TCP connection to world1.runescape.com:80 (getaddrinfo: nodename nor servname provided, or not known)
+D, [2018-10-22T12:36:34.248173 #73436] DEBUG -- : thrId: 0, http://world1.runescape.com failCounter=2
+I, [2018-10-22T12:36:34.255374 #73436]  INFO -- : thrId: 0, 5, http://world1.runescape.com, -1 ms, code: -1, size: 0
+E, [2018-10-22T12:36:36.262471 #73436] ERROR -- : thrId: 0, runHttpQueries() Failed to open TCP connection to world1.runescape.com:80 (getaddrinfo: nodename nor servname provided, or not known)
+D, [2018-10-22T12:36:36.262613 #73436] DEBUG -- : thrId: 0, http://world1.runescape.com failCounter=3
+I, [2018-10-22T12:36:36.269029 #73436]  INFO -- : thrId: 0, 6, http://world1.runescape.com, -1 ms, code: -1, size: 0
+E, [2018-10-22T12:36:38.274408 #73436] ERROR -- : thrId: 0, runHttpQueries() Failed to open TCP connection to world1.runescape.com:80 (getaddrinfo: nodename nor servname provided, or not known)
+D, [2018-10-22T12:36:38.274624 #73436] DEBUG -- : thrId: 0, http://world1.runescape.com failCounter=4
+I, [2018-10-22T12:36:38.281351 #73436]  INFO -- : thrId: 0, 7, http://world1.runescape.com, -1 ms, code: -1, size: 0
+E, [2018-10-22T12:36:40.283476 #73436] ERROR -- : thrId: 0, runHttpQueries() Failed to open TCP connection to world1.runescape.com:80 (getaddrinfo: nodename nor servname provided, or not known)
+D, [2018-10-22T12:36:40.283617 #73436] DEBUG -- : thrId: 0, http://world1.runescape.com failCounter=5
+I, [2018-10-22T12:36:40.378771 #73436]  INFO -- : thrId: 0, HTTP Alert sent, http://world1.runescape.com
+I, [2018-10-22T12:36:40.394600 #73436]  INFO -- : thrId: 0, 8, http://world1.runescape.com, -1 ms, code: -1, size: 0
+E, [2018-10-22T12:36:42.399275 #73436] ERROR -- : thrId: 0, runHttpQueries() Failed to open TCP connection to world1.runescape.com:80 (getaddrinfo: nodename nor servname provided, or not known)
+D, [2018-10-22T12:36:42.399531 #73436] DEBUG -- : thrId: 0, http://world1.runescape.com failCounter=6
+I, [2018-10-22T12:36:42.406519 #73436]  INFO -- : thrId: 0, 9, http://world1.runescape.com, -1 ms, code: -1, size: 0
+I, [2018-10-22T12:36:42.406739 #73436]  INFO -- : thrId: 0 has completed 10 HTTP operations, http://world1.runescape.com
+I, [2018-10-22T12:39:32.259815 #73518]  INFO -- : Logger has started
+I, [2018-10-22T12:39:32.260154 #73518]  INFO -- : instanceId: 0
+I, [2018-10-22T12:39:32.260242 #73518]  INFO -- : I have 1 operations to do
+I, [2018-10-22T12:39:32.260297 #73518]  INFO -- : tmpLogsDir: /Users/davide/Desktop/Code/RUBY/RCrawler/logs/
+I, [2018-10-22T12:39:32.260354 #73518]  INFO -- : tmpAlertTemplateLocation: /Users/davide/Desktop/Code/RUBY/RCrawler/alerts/template1.txt
+I, [2018-10-22T12:39:32.260392 #73518]  INFO -- : tmpEmailAddresses: dvdpnt16+alerts@gmail.com
+I, [2018-10-22T12:39:32.260429 #73518]  INFO -- : tmpMaxPingsBeforeAlert: 10
+I, [2018-10-22T12:39:32.260465 #73518]  INFO -- : tmpMaxHTTPBeforeAlert: 5
+I, [2018-10-22T12:39:32.260500 #73518]  INFO -- : tmpOperationsPerInstance: 20
+I, [2018-10-22T12:39:32.260549 #73518]  INFO -- : Doing operations from index 0 to 1
+I, [2018-10-22T12:39:32.260611 #73518]  INFO -- : Connecting to influxDB at localhost...
+I, [2018-10-22T12:39:32.260771 #73518]  INFO -- : Creating DB RCrawler ...
+D, [2018-10-22T12:39:32.269904 #73518] DEBUG -- : thrId: 0, #<Alerter:0x007fee3813e8f8 @emailAddresses="dvdpnt16+alerts@gmail.com", @maxPingsBeforeAlert="10", @maxHTTPBeforeAlert="5", @sendAlerts=false, @alertTemplatelocation="/Users/davide/Desktop/Code/RUBY/RCrawler/alerts/template1.txt", @alertTemplate="\noperation: <op>\ndestination: <dest>\nfailuresInARow: <fails>\nstartEpoch: <sEpoch>\nstartDate: <sDate>\n\n\nRCrawler\n">, #<Logger:0x007fee3813e650 @progname=nil, @level=0, @default_formatter=#<Logger::Formatter:0x007fee3813e628 @datetime_format=nil>, @formatter=nil, @logdev=#<Logger::LogDevice:0x007fee3813e5d8 @shift_size=1048576, @shift_age=10, @filename="/Users/davide/Desktop/Code/RUBY/RCrawler/logs/0/hehe.log", @dev=#<File:/Users/davide/Desktop/Code/RUBY/RCrawler/logs/0/hehe.log>, @mon_owner=nil, @mon_count=0, @mon_mutex=#<Thread::Mutex:0x007fee3813e588>>>
+D, [2018-10-22T12:39:32.270079 #73518] DEBUG -- : thrId: 1, #<Alerter:0x007fee3813e8f8 @emailAddresses="dvdpnt16+alerts@gmail.com", @maxPingsBeforeAlert="10", @maxHTTPBeforeAlert="5", @sendAlerts=false, @alertTemplatelocation="/Users/davide/Desktop/Code/RUBY/RCrawler/alerts/template1.txt", @alertTemplate="\noperation: <op>\ndestination: <dest>\nfailuresInARow: <fails>\nstartEpoch: <sEpoch>\nstartDate: <sDate>\n\n\nRCrawler\n">, #<Logger:0x007fee3813e650 @progname=nil, @level=0, @default_formatter=#<Logger::Formatter:0x007fee3813e628 @datetime_format=nil>, @formatter=nil, @logdev=#<Logger::LogDevice:0x007fee3813e5d8 @shift_size=1048576, @shift_age=10, @filename="/Users/davide/Desktop/Code/RUBY/RCrawler/logs/0/hehe.log", @dev=#<File:/Users/davide/Desktop/Code/RUBY/RCrawler/logs/0/hehe.log>, @mon_owner=nil, @mon_count=0, @mon_mutex=#<Thread::Mutex:0x007fee3813e588>>>
+I, [2018-10-22T12:39:32.271587 #73518]  INFO -- : Starting 2 threads...
+I, [2018-10-22T12:39:32.984323 #73518]  INFO -- : thrId: 0, 0, http://world1.runescape.com, 699 ms, code: 200, size: 39516
+I, [2018-10-22T12:39:35.466246 #73518]  INFO -- : thrId: 0, 1, http://world1.runescape.com, 473 ms, code: 200, size: 39515
+I, [2018-10-22T12:39:37.753814 #73518]  INFO -- : thrId: 0, 2, http://world1.runescape.com, 277 ms, code: 200, size: 39515
+I, [2018-10-22T12:39:40.086261 #73518]  INFO -- : thrId: 0, 3, http://world1.runescape.com, 323 ms, code: 200, size: 39515
+I, [2018-10-22T12:39:42.585447 #73518]  INFO -- : thrId: 0, 4, http://world1.runescape.com, 493 ms, code: 200, size: 39515
+E, [2018-10-22T12:39:44.588672 #73518] ERROR -- : thrId: 0, runHttpQueries() Failed to open TCP connection to world1.runescape.com:80 (getaddrinfo: nodename nor servname provided, or not known)
+D, [2018-10-22T12:39:44.588832 #73518] DEBUG -- : thrId: 0, http://world1.runescape.com failCounter=1
+I, [2018-10-22T12:39:44.593589 #73518]  INFO -- : thrId: 0, 5, http://world1.runescape.com, -1 ms, code: -1, size: 0
+E, [2018-10-22T12:39:46.597665 #73518] ERROR -- : thrId: 0, runHttpQueries() Failed to open TCP connection to world1.runescape.com:80 (getaddrinfo: nodename nor servname provided, or not known)
+D, [2018-10-22T12:39:46.597806 #73518] DEBUG -- : thrId: 0, http://world1.runescape.com failCounter=2
+I, [2018-10-22T12:39:46.603513 #73518]  INFO -- : thrId: 0, 6, http://world1.runescape.com, -1 ms, code: -1, size: 0
+E, [2018-10-22T12:39:48.610494 #73518] ERROR -- : thrId: 0, runHttpQueries() Failed to open TCP connection to world1.runescape.com:80 (getaddrinfo: nodename nor servname provided, or not known)
+D, [2018-10-22T12:39:48.610636 #73518] DEBUG -- : thrId: 0, http://world1.runescape.com failCounter=3
+I, [2018-10-22T12:39:48.615992 #73518]  INFO -- : thrId: 0, 7, http://world1.runescape.com, -1 ms, code: -1, size: 0
+E, [2018-10-22T12:39:50.617613 #73518] ERROR -- : thrId: 0, runHttpQueries() Failed to open TCP connection to world1.runescape.com:80 (getaddrinfo: nodename nor servname provided, or not known)
+D, [2018-10-22T12:39:50.617726 #73518] DEBUG -- : thrId: 0, http://world1.runescape.com failCounter=4
+I, [2018-10-22T12:39:50.621949 #73518]  INFO -- : thrId: 0, 8, http://world1.runescape.com, -1 ms, code: -1, size: 0
+I, [2018-10-22T12:39:53.011218 #73518]  INFO -- : thrId: 0, 9, http://world1.runescape.com, -1 ms, code: -1, size: 0
+I, [2018-10-22T12:39:53.011370 #73518]  INFO -- : thrId: 0 has completed 10 HTTP operations, http://world1.runescape.com
+I, [2018-10-22T12:39:55.967617 #73526]  INFO -- : Logger has started
+I, [2018-10-22T12:39:55.967713 #73526]  INFO -- : instanceId: 0
+I, [2018-10-22T12:39:55.967769 #73526]  INFO -- : I have 1 operations to do
+I, [2018-10-22T12:39:55.967803 #73526]  INFO -- : tmpLogsDir: /Users/davide/Desktop/Code/RUBY/RCrawler/logs/
+I, [2018-10-22T12:39:55.967835 #73526]  INFO -- : tmpAlertTemplateLocation: /Users/davide/Desktop/Code/RUBY/RCrawler/alerts/template1.txt
+I, [2018-10-22T12:39:55.967865 #73526]  INFO -- : tmpEmailAddresses: dvdpnt16+alerts@gmail.com
+I, [2018-10-22T12:39:55.967895 #73526]  INFO -- : tmpMaxPingsBeforeAlert: 10
+I, [2018-10-22T12:39:55.967929 #73526]  INFO -- : tmpMaxHTTPBeforeAlert: 5
+I, [2018-10-22T12:39:55.967959 #73526]  INFO -- : tmpOperationsPerInstance: 20
+I, [2018-10-22T12:39:55.967989 #73526]  INFO -- : Doing operations from index 0 to 1
+I, [2018-10-22T12:39:55.968044 #73526]  INFO -- : Connecting to influxDB at localhost...
+I, [2018-10-22T12:39:55.968174 #73526]  INFO -- : Creating DB RCrawler ...
+D, [2018-10-22T12:39:55.971908 #73526] DEBUG -- : thrId: 0, #<Alerter:0x007f9a361e6a18 @emailAddresses="dvdpnt16+alerts@gmail.com", @maxPingsBeforeAlert="10", @maxHTTPBeforeAlert="5", @sendAlerts=false, @alertTemplatelocation="/Users/davide/Desktop/Code/RUBY/RCrawler/alerts/template1.txt", @alertTemplate="\noperation: <op>\ndestination: <dest>\nfailuresInARow: <fails>\nstartEpoch: <sEpoch>\nstartDate: <sDate>\n\n\nRCrawler\n">, #<Logger:0x007f9a361e6770 @progname=nil, @level=0, @default_formatter=#<Logger::Formatter:0x007f9a361e6748 @datetime_format=nil>, @formatter=nil, @logdev=#<Logger::LogDevice:0x007f9a361e66f8 @shift_size=1048576, @shift_age=10, @filename="/Users/davide/Desktop/Code/RUBY/RCrawler/logs/0/hehe.log", @dev=#<File:/Users/davide/Desktop/Code/RUBY/RCrawler/logs/0/hehe.log>, @mon_owner=nil, @mon_count=0, @mon_mutex=#<Thread::Mutex:0x007f9a361e66a8>>>
+D, [2018-10-22T12:39:55.972841 #73526] DEBUG -- : thrId: 1, #<Alerter:0x007f9a361e6a18 @emailAddresses="dvdpnt16+alerts@gmail.com", @maxPingsBeforeAlert="10", @maxHTTPBeforeAlert="5", @sendAlerts=false, @alertTemplatelocation="/Users/davide/Desktop/Code/RUBY/RCrawler/alerts/template1.txt", @alertTemplate="\noperation: <op>\ndestination: <dest>\nfailuresInARow: <fails>\nstartEpoch: <sEpoch>\nstartDate: <sDate>\n\n\nRCrawler\n">, #<Logger:0x007f9a361e6770 @progname=nil, @level=0, @default_formatter=#<Logger::Formatter:0x007f9a361e6748 @datetime_format=nil>, @formatter=nil, @logdev=#<Logger::LogDevice:0x007f9a361e66f8 @shift_size=1048576, @shift_age=10, @filename="/Users/davide/Desktop/Code/RUBY/RCrawler/logs/0/hehe.log", @dev=#<File:/Users/davide/Desktop/Code/RUBY/RCrawler/logs/0/hehe.log>, @mon_owner=nil, @mon_count=0, @mon_mutex=#<Thread::Mutex:0x007f9a361e66a8>>>
+I, [2018-10-22T12:39:55.972996 #73526]  INFO -- : Starting 2 threads...
+I, [2018-10-22T12:39:56.295055 #73526]  INFO -- : thrId: 0, 0, http://world1.runescape.com, 317 ms, code: 200, size: 39515
+I, [2018-10-22T12:39:58.573764 #73526]  INFO -- : thrId: 0, 1, http://world1.runescape.com, 271 ms, code: 200, size: 39515
+I, [2018-10-22T12:40:08.136932 #73526]  INFO -- : thrId: 0, 2, http://world1.runescape.com, 7554 ms, code: 200, size: 39515
+I, [2018-10-22T12:40:11.423920 #73526]  INFO -- : thrId: 0, 3, http://world1.runescape.com, 1281 ms, code: 200, size: 39514
+E, [2018-10-22T12:40:13.425997 #73526] ERROR -- : thrId: 0, runHttpQueries() Failed to open TCP connection to world1.runescape.com:80 (Network is down - connect(2) for "world1.runescape.com" port 80)
+D, [2018-10-22T12:40:13.426117 #73526] DEBUG -- : thrId: 0, http://world1.runescape.com failCounter=1
+I, [2018-10-22T12:40:13.430964 #73526]  INFO -- : thrId: 0, 4, http://world1.runescape.com, -1 ms, code: -1, size: 0
+E, [2018-10-22T12:40:15.439318 #73526] ERROR -- : thrId: 0, runHttpQueries() Failed to open TCP connection to world1.runescape.com:80 (getaddrinfo: nodename nor servname provided, or not known)
+D, [2018-10-22T12:40:15.439538 #73526] DEBUG -- : thrId: 0, http://world1.runescape.com failCounter=2
+I, [2018-10-22T12:40:15.445693 #73526]  INFO -- : thrId: 0, 5, http://world1.runescape.com, -1 ms, code: -1, size: 0
+I, [2018-10-22T12:40:17.790871 #73526]  INFO -- : thrId: 0, 6, http://world1.runescape.com, -1 ms, code: -1, size: 0
+I, [2018-10-22T12:40:20.064211 #73526]  INFO -- : thrId: 0, 7, http://world1.runescape.com, -1 ms, code: -1, size: 0
+I, [2018-10-22T12:40:22.335443 #73526]  INFO -- : thrId: 0, 8, http://world1.runescape.com, -1 ms, code: -1, size: 0
+I, [2018-10-22T12:40:24.624974 #73526]  INFO -- : thrId: 0, 9, http://world1.runescape.com, -1 ms, code: -1, size: 0
+I, [2018-10-22T12:40:24.625205 #73526]  INFO -- : thrId: 0 has completed 10 HTTP operations, http://world1.runescape.com
+I, [2018-10-22T12:40:37.651349 #73557]  INFO -- : Logger has started
+I, [2018-10-22T12:40:37.651464 #73557]  INFO -- : instanceId: 0
+I, [2018-10-22T12:40:37.651509 #73557]  INFO -- : I have 1 operations to do
+I, [2018-10-22T12:40:37.651542 #73557]  INFO -- : tmpLogsDir: /Users/davide/Desktop/Code/RUBY/RCrawler/logs/
+I, [2018-10-22T12:40:37.651573 #73557]  INFO -- : tmpAlertTemplateLocation: /Users/davide/Desktop/Code/RUBY/RCrawler/alerts/template1.txt
+I, [2018-10-22T12:40:37.651606 #73557]  INFO -- : tmpEmailAddresses: dvdpnt16+alerts@gmail.com
+I, [2018-10-22T12:40:37.651636 #73557]  INFO -- : tmpMaxPingsBeforeAlert: 10
+I, [2018-10-22T12:40:37.651666 #73557]  INFO -- : tmpMaxHTTPBeforeAlert: 5
+I, [2018-10-22T12:40:37.651695 #73557]  INFO -- : tmpOperationsPerInstance: 20
+I, [2018-10-22T12:40:37.651727 #73557]  INFO -- : Doing operations from index 0 to 1
+I, [2018-10-22T12:40:37.651776 #73557]  INFO -- : Connecting to influxDB at localhost...
+I, [2018-10-22T12:40:37.651981 #73557]  INFO -- : Creating DB RCrawler ...
+D, [2018-10-22T12:40:37.658335 #73557] DEBUG -- : thrId: 0, #<Alerter:0x007fde43066980 @emailAddresses="dvdpnt16+alerts@gmail.com", @maxPingsBeforeAlert="10", @maxHTTPBeforeAlert="5", @sendAlerts=false, @alertTemplatelocation="/Users/davide/Desktop/Code/RUBY/RCrawler/alerts/template1.txt", @alertTemplate="\noperation: <op>\ndestination: <dest>\nfailuresInARow: <fails>\nstartEpoch: <sEpoch>\nstartDate: <sDate>\n\n\nRCrawler\n">, #<Logger:0x007fde430666b0 @progname=nil, @level=0, @default_formatter=#<Logger::Formatter:0x007fde43066688 @datetime_format=nil>, @formatter=nil, @logdev=#<Logger::LogDevice:0x007fde43066638 @shift_size=1048576, @shift_age=10, @filename="/Users/davide/Desktop/Code/RUBY/RCrawler/logs/0/hehe.log", @dev=#<File:/Users/davide/Desktop/Code/RUBY/RCrawler/logs/0/hehe.log>, @mon_owner=nil, @mon_count=0, @mon_mutex=#<Thread::Mutex:0x007fde430665e8>>>
+D, [2018-10-22T12:40:37.659403 #73557] DEBUG -- : thrId: 1, #<Alerter:0x007fde43066980 @emailAddresses="dvdpnt16+alerts@gmail.com", @maxPingsBeforeAlert="10", @maxHTTPBeforeAlert="5", @sendAlerts=false, @alertTemplatelocation="/Users/davide/Desktop/Code/RUBY/RCrawler/alerts/template1.txt", @alertTemplate="\noperation: <op>\ndestination: <dest>\nfailuresInARow: <fails>\nstartEpoch: <sEpoch>\nstartDate: <sDate>\n\n\nRCrawler\n">, #<Logger:0x007fde430666b0 @progname=nil, @level=0, @default_formatter=#<Logger::Formatter:0x007fde43066688 @datetime_format=nil>, @formatter=nil, @logdev=#<Logger::LogDevice:0x007fde43066638 @shift_size=1048576, @shift_age=10, @filename="/Users/davide/Desktop/Code/RUBY/RCrawler/logs/0/hehe.log", @dev=#<File:/Users/davide/Desktop/Code/RUBY/RCrawler/logs/0/hehe.log>, @mon_owner=nil, @mon_count=0, @mon_mutex=#<Thread::Mutex:0x007fde430665e8>>>
+I, [2018-10-22T12:40:37.659540 #73557]  INFO -- : Starting 2 threads...
+I, [2018-10-22T12:40:38.040605 #73557]  INFO -- : thrId: 0, 0, http://world1.runescape.com, 377 ms, code: 200, size: 39515
+I, [2018-10-22T12:40:40.567273 #73557]  INFO -- : thrId: 0, 1, http://world1.runescape.com, 519 ms, code: 200, size: 39516
+I, [2018-10-22T12:40:42.876141 #73557]  INFO -- : thrId: 0, 2, http://world1.runescape.com, 302 ms, code: 200, size: 39515
+E, [2018-10-22T12:40:44.881417 #73557] ERROR -- : thrId: 0, runHttpQueries() Failed to open TCP connection to world1.runescape.com:80 (getaddrinfo: nodename nor servname provided, or not known)
+D, [2018-10-22T12:40:44.881602 #73557] DEBUG -- : thrId: 0, http://world1.runescape.com failCounter=1
+I, [2018-10-22T12:40:44.888767 #73557]  INFO -- : thrId: 0, 3, http://world1.runescape.com, -1 ms, code: -1, size: 0
+E, [2018-10-22T12:40:46.895248 #73557] ERROR -- : thrId: 0, runHttpQueries() Failed to open TCP connection to world1.runescape.com:80 (getaddrinfo: nodename nor servname provided, or not known)
+D, [2018-10-22T12:40:46.895506 #73557] DEBUG -- : thrId: 0, http://world1.runescape.com failCounter=2
+I, [2018-10-22T12:40:46.901319 #73557]  INFO -- : thrId: 0, 4, http://world1.runescape.com, -1 ms, code: -1, size: 0
+E, [2018-10-22T12:40:48.903604 #73557] ERROR -- : thrId: 0, runHttpQueries() Failed to open TCP connection to world1.runescape.com:80 (getaddrinfo: nodename nor servname provided, or not known)
+D, [2018-10-22T12:40:48.903744 #73557] DEBUG -- : thrId: 0, http://world1.runescape.com failCounter=3
+I, [2018-10-22T12:40:48.909445 #73557]  INFO -- : thrId: 0, 5, http://world1.runescape.com, -1 ms, code: -1, size: 0
+E, [2018-10-22T12:40:50.912002 #73557] ERROR -- : thrId: 0, runHttpQueries() Failed to open TCP connection to world1.runescape.com:80 (getaddrinfo: nodename nor servname provided, or not known)
+D, [2018-10-22T12:40:50.912139 #73557] DEBUG -- : thrId: 0, http://world1.runescape.com failCounter=4
+I, [2018-10-22T12:40:50.917696 #73557]  INFO -- : thrId: 0, 6, http://world1.runescape.com, -1 ms, code: -1, size: 0
+E, [2018-10-22T12:40:52.924169 #73557] ERROR -- : thrId: 0, runHttpQueries() Failed to open TCP connection to world1.runescape.com:80 (getaddrinfo: nodename nor servname provided, or not known)
+D, [2018-10-22T12:40:52.924290 #73557] DEBUG -- : thrId: 0, http://world1.runescape.com failCounter=5
+I, [2018-10-22T12:40:52.930682 #73557]  INFO -- : thrId: 0, 7, http://world1.runescape.com, -1 ms, code: -1, size: 0
+E, [2018-10-22T12:40:54.933694 #73557] ERROR -- : thrId: 0, runHttpQueries() Failed to open TCP connection to world1.runescape.com:80 (getaddrinfo: nodename nor servname provided, or not known)
+D, [2018-10-22T12:40:54.933833 #73557] DEBUG -- : thrId: 0, http://world1.runescape.com failCounter=6
+I, [2018-10-22T12:40:54.939334 #73557]  INFO -- : thrId: 0, 8, http://world1.runescape.com, -1 ms, code: -1, size: 0
+I, [2018-10-22T12:40:57.266201 #73557]  INFO -- : thrId: 0, 9, http://world1.runescape.com, -1 ms, code: -1, size: 0
+I, [2018-10-22T12:40:59.614282 #73557]  INFO -- : thrId: 0, 10, http://world1.runescape.com, -1 ms, code: -1, size: 0
+I, [2018-10-22T12:41:01.896771 #73557]  INFO -- : thrId: 0, 11, http://world1.runescape.com, -1 ms, code: -1, size: 0
+I, [2018-10-22T12:41:04.184158 #73557]  INFO -- : thrId: 0, 12, http://world1.runescape.com, -1 ms, code: -1, size: 0
+I, [2018-10-22T12:41:06.511135 #73557]  INFO -- : thrId: 0, 13, http://world1.runescape.com, -1 ms, code: -1, size: 0
+I, [2018-10-22T12:41:09.248771 #73557]  INFO -- : thrId: 0, 14, http://world1.runescape.com, -1 ms, code: -1, size: 0
+I, [2018-10-22T12:41:11.528259 #73557]  INFO -- : thrId: 0, 15, http://world1.runescape.com, -1 ms, code: -1, size: 0
+I, [2018-10-22T12:41:13.806965 #73557]  INFO -- : thrId: 0, 16, http://world1.runescape.com, -1 ms, code: -1, size: 0
+I, [2018-10-22T12:41:16.089488 #73557]  INFO -- : thrId: 0, 17, http://world1.runescape.com, -1 ms, code: -1, size: 0
+I, [2018-10-22T12:41:18.707193 #73557]  INFO -- : thrId: 0, 18, http://world1.runescape.com, -1 ms, code: -1, size: 0
+I, [2018-10-22T12:41:21.262994 #73557]  INFO -- : thrId: 0, 19, http://world1.runescape.com, -1 ms, code: -1, size: 0
+I, [2018-10-22T12:41:21.263273 #73557]  INFO -- : thrId: 0 has completed 20 HTTP operations, http://world1.runescape.com
+I, [2018-10-22T12:42:48.616279 #73603]  INFO -- : Logger has started
+I, [2018-10-22T12:42:48.619315 #73603]  INFO -- : instanceId: 0
+I, [2018-10-22T12:42:48.619426 #73603]  INFO -- : I have 1 operations to do
+I, [2018-10-22T12:42:48.619481 #73603]  INFO -- : tmpLogsDir: /Users/davide/Desktop/Code/RUBY/RCrawler/logs/
+I, [2018-10-22T12:42:48.619528 #73603]  INFO -- : tmpAlertTemplateLocation: /Users/davide/Desktop/Code/RUBY/RCrawler/alerts/template1.txt
+I, [2018-10-22T12:42:48.619576 #73603]  INFO -- : tmpEmailAddresses: dvdpnt16+alerts@gmail.com
+I, [2018-10-22T12:42:48.619621 #73603]  INFO -- : tmpMaxPingsBeforeAlert: 10
+I, [2018-10-22T12:42:48.619666 #73603]  INFO -- : tmpMaxHTTPBeforeAlert: 5
+I, [2018-10-22T12:42:48.619711 #73603]  INFO -- : tmpOperationsPerInstance: 20
+I, [2018-10-22T12:42:48.619758 #73603]  INFO -- : Doing operations from index 0 to 1
+I, [2018-10-22T12:42:48.619834 #73603]  INFO -- : Connecting to influxDB at localhost...
+I, [2018-10-22T12:42:48.620075 #73603]  INFO -- : Creating DB RCrawler ...
+D, [2018-10-22T12:42:48.630233 #73603] DEBUG -- : thrId: 0, #<Alerter:0x007fc2a415e618 @emailAddresses="dvdpnt16+alerts@gmail.com", @maxPingsBeforeAlert="10", @maxHTTPBeforeAlert="5", @sendAlerts=false, @alertTemplatelocation="/Users/davide/Desktop/Code/RUBY/RCrawler/alerts/template1.txt", @alertTemplate="\noperation: <op>\ndestination: <dest>\nfailuresInARow: <fails>\nstartEpoch: <sEpoch>\nstartDate: <sDate>\n\n\nRCrawler\n">, #<Logger:0x007fc2a415e398 @progname=nil, @level=0, @default_formatter=#<Logger::Formatter:0x007fc2a415e370 @datetime_format=nil>, @formatter=nil, @logdev=#<Logger::LogDevice:0x007fc2a415e320 @shift_size=1048576, @shift_age=10, @filename="/Users/davide/Desktop/Code/RUBY/RCrawler/logs/0/hehe.log", @dev=#<File:/Users/davide/Desktop/Code/RUBY/RCrawler/logs/0/hehe.log>, @mon_owner=nil, @mon_count=0, @mon_mutex=#<Thread::Mutex:0x007fc2a415e2d0>>>
+D, [2018-10-22T12:42:48.630422 #73603] DEBUG -- : thrId: 1, #<Alerter:0x007fc2a415e618 @emailAddresses="dvdpnt16+alerts@gmail.com", @maxPingsBeforeAlert="10", @maxHTTPBeforeAlert="5", @sendAlerts=false, @alertTemplatelocation="/Users/davide/Desktop/Code/RUBY/RCrawler/alerts/template1.txt", @alertTemplate="\noperation: <op>\ndestination: <dest>\nfailuresInARow: <fails>\nstartEpoch: <sEpoch>\nstartDate: <sDate>\n\n\nRCrawler\n">, #<Logger:0x007fc2a415e398 @progname=nil, @level=0, @default_formatter=#<Logger::Formatter:0x007fc2a415e370 @datetime_format=nil>, @formatter=nil, @logdev=#<Logger::LogDevice:0x007fc2a415e320 @shift_size=1048576, @shift_age=10, @filename="/Users/davide/Desktop/Code/RUBY/RCrawler/logs/0/hehe.log", @dev=#<File:/Users/davide/Desktop/Code/RUBY/RCrawler/logs/0/hehe.log>, @mon_owner=nil, @mon_count=0, @mon_mutex=#<Thread::Mutex:0x007fc2a415e2d0>>>
+I, [2018-10-22T12:42:48.630531 #73603]  INFO -- : Starting 2 threads...
+I, [2018-10-22T12:42:48.897134 #73603]  INFO -- : thrId: 0, 0, http://world1.runescape.com, 258 ms, code: 200, size: 39515
+I, [2018-10-22T12:43:04.370346 #73610]  INFO -- : Logger has started
+I, [2018-10-22T12:43:04.370438 #73610]  INFO -- : instanceId: 0
+I, [2018-10-22T12:43:04.370478 #73610]  INFO -- : I have 1 operations to do
+I, [2018-10-22T12:43:04.370518 #73610]  INFO -- : tmpLogsDir: /Users/davide/Desktop/Code/RUBY/RCrawler/logs/
+I, [2018-10-22T12:43:04.370546 #73610]  INFO -- : tmpAlertTemplateLocation: /Users/davide/Desktop/Code/RUBY/RCrawler/alerts/template1.txt
+I, [2018-10-22T12:43:04.370575 #73610]  INFO -- : tmpEmailAddresses: dvdpnt16+alerts@gmail.com
+I, [2018-10-22T12:43:04.370603 #73610]  INFO -- : tmpMaxPingsBeforeAlert: 10
+I, [2018-10-22T12:43:04.370629 #73610]  INFO -- : tmpMaxHTTPBeforeAlert: 5
+I, [2018-10-22T12:43:04.370668 #73610]  INFO -- : tmpOperationsPerInstance: 20
+I, [2018-10-22T12:43:04.370701 #73610]  INFO -- : Doing operations from index 0 to 1
+I, [2018-10-22T12:43:04.370755 #73610]  INFO -- : Connecting to influxDB at localhost...
+I, [2018-10-22T12:43:04.370977 #73610]  INFO -- : Creating DB RCrawler ...
+D, [2018-10-22T12:43:04.375226 #73610] DEBUG -- : thrId: 0, #<Alerter:0x007ff16302a790 @emailAddresses="dvdpnt16+alerts@gmail.com", @maxPingsBeforeAlert="10", @maxHTTPBeforeAlert="5", @sendAlerts=false, @alertTemplatelocation="/Users/davide/Desktop/Code/RUBY/RCrawler/alerts/template1.txt", @alertTemplate="\noperation: <op>\ndestination: <dest>\nfailuresInARow: <fails>\nstartEpoch: <sEpoch>\nstartDate: <sDate>\n\n\nRCrawler\n">, #<Logger:0x007ff16302a510 @progname=nil, @level=0, @default_formatter=#<Logger::Formatter:0x007ff16302a4e8 @datetime_format=nil>, @formatter=nil, @logdev=#<Logger::LogDevice:0x007ff16302a498 @shift_size=1048576, @shift_age=10, @filename="/Users/davide/Desktop/Code/RUBY/RCrawler/logs/0/hehe.log", @dev=#<File:/Users/davide/Desktop/Code/RUBY/RCrawler/logs/0/hehe.log>, @mon_owner=nil, @mon_count=0, @mon_mutex=#<Thread::Mutex:0x007ff16302a420>>>
+D, [2018-10-22T12:43:04.375487 #73610] DEBUG -- : thrId: 1, #<Alerter:0x007ff16302a790 @emailAddresses="dvdpnt16+alerts@gmail.com", @maxPingsBeforeAlert="10", @maxHTTPBeforeAlert="5", @sendAlerts=false, @alertTemplatelocation="/Users/davide/Desktop/Code/RUBY/RCrawler/alerts/template1.txt", @alertTemplate="\noperation: <op>\ndestination: <dest>\nfailuresInARow: <fails>\nstartEpoch: <sEpoch>\nstartDate: <sDate>\n\n\nRCrawler\n">, #<Logger:0x007ff16302a510 @progname=nil, @level=0, @default_formatter=#<Logger::Formatter:0x007ff16302a4e8 @datetime_format=nil>, @formatter=nil, @logdev=#<Logger::LogDevice:0x007ff16302a498 @shift_size=1048576, @shift_age=10, @filename="/Users/davide/Desktop/Code/RUBY/RCrawler/logs/0/hehe.log", @dev=#<File:/Users/davide/Desktop/Code/RUBY/RCrawler/logs/0/hehe.log>, @mon_owner=nil, @mon_count=0, @mon_mutex=#<Thread::Mutex:0x007ff16302a420>>>
+I, [2018-10-22T12:43:04.376284 #73610]  INFO -- : Starting 2 threads...
+I, [2018-10-22T12:43:04.641064 #73610]  INFO -- : thrId: 0, 0, http://world1.runescape.com, 260 ms, code: 200, size: 39515
+I, [2018-10-22T12:43:06.915858 #73610]  INFO -- : thrId: 0, 1, http://world1.runescape.com, 264 ms, code: 200, size: 39515
+I, [2018-10-22T12:43:09.403002 #73610]  INFO -- : thrId: 0, 2, http://world1.runescape.com, 478 ms, code: 200, size: 39515
+E, [2018-10-22T12:43:11.409403 #73610] ERROR -- : thrId: 0, runHttpQueries() Failed to open TCP connection to world1.runescape.com:80 (getaddrinfo: nodename nor servname provided, or not known)
+D, [2018-10-22T12:43:11.409542 #73610] DEBUG -- : thrId: 0, http://world1.runescape.com failCounter=1
+I, [2018-10-22T12:43:11.414827 #73610]  INFO -- : thrId: 0, 3, http://world1.runescape.com, -1 ms, code: -1, size: 0
+E, [2018-10-22T12:43:13.417056 #73610] ERROR -- : thrId: 0, runHttpQueries() Failed to open TCP connection to world1.runescape.com:80 (getaddrinfo: nodename nor servname provided, or not known)
+D, [2018-10-22T12:43:13.417197 #73610] DEBUG -- : thrId: 0, http://world1.runescape.com failCounter=2
+I, [2018-10-22T12:43:13.422756 #73610]  INFO -- : thrId: 0, 4, http://world1.runescape.com, -1 ms, code: -1, size: 0
+E, [2018-10-22T12:43:15.426197 #73610] ERROR -- : thrId: 0, runHttpQueries() Failed to open TCP connection to world1.runescape.com:80 (getaddrinfo: nodename nor servname provided, or not known)
+D, [2018-10-22T12:43:15.426461 #73610] DEBUG -- : thrId: 0, http://world1.runescape.com failCounter=3
+I, [2018-10-22T12:43:15.432260 #73610]  INFO -- : thrId: 0, 5, http://world1.runescape.com, -1 ms, code: -1, size: 0
+E, [2018-10-22T12:43:17.437690 #73610] ERROR -- : thrId: 0, runHttpQueries() Failed to open TCP connection to world1.runescape.com:80 (getaddrinfo: nodename nor servname provided, or not known)
+D, [2018-10-22T12:43:17.439922 #73610] DEBUG -- : thrId: 0, http://world1.runescape.com failCounter=4
+I, [2018-10-22T12:43:17.471368 #73610]  INFO -- : thrId: 0, 6, http://world1.runescape.com, -1 ms, code: -1, size: 0
+E, [2018-10-22T12:43:19.476966 #73610] ERROR -- : thrId: 0, runHttpQueries() Failed to open TCP connection to world1.runescape.com:80 (getaddrinfo: nodename nor servname provided, or not known)
+D, [2018-10-22T12:43:19.477067 #73610] DEBUG -- : thrId: 0, http://world1.runescape.com failCounter=5
+I, [2018-10-22T12:43:19.481203 #73610]  INFO -- : thrId: 0, 7, http://world1.runescape.com, -1 ms, code: -1, size: 0
+E, [2018-10-22T12:43:21.486443 #73610] ERROR -- : thrId: 0, runHttpQueries() Failed to open TCP connection to world1.runescape.com:80 (getaddrinfo: nodename nor servname provided, or not known)
+D, [2018-10-22T12:43:21.486618 #73610] DEBUG -- : thrId: 0, http://world1.runescape.com failCounter=6
+I, [2018-10-22T12:43:21.492334 #73610]  INFO -- : thrId: 0, 8, http://world1.runescape.com, -1 ms, code: -1, size: 0
+I, [2018-10-22T12:43:23.901504 #73610]  INFO -- : thrId: 0, 9, http://world1.runescape.com, -1 ms, code: -1, size: 0
+I, [2018-10-22T12:43:26.167809 #73610]  INFO -- : thrId: 0, 10, http://world1.runescape.com, -1 ms, code: -1, size: 0
+I, [2018-10-22T12:43:28.443911 #73610]  INFO -- : thrId: 0, 11, http://world1.runescape.com, -1 ms, code: -1, size: 0
+I, [2018-10-22T12:43:30.723628 #73610]  INFO -- : thrId: 0, 12, http://world1.runescape.com, -1 ms, code: -1, size: 0
+I, [2018-10-22T12:43:33.129702 #73610]  INFO -- : thrId: 0, 13, http://world1.runescape.com, -1 ms, code: -1, size: 0
+I, [2018-10-22T12:43:36.385048 #73610]  INFO -- : thrId: 0, 14, http://world1.runescape.com, -1 ms, code: -1, size: 0
+I, [2018-10-22T12:43:38.657998 #73610]  INFO -- : thrId: 0, 15, http://world1.runescape.com, -1 ms, code: -1, size: 0
+I, [2018-10-22T12:43:40.905122 #73610]  INFO -- : thrId: 0, 16, http://world1.runescape.com, -1 ms, code: -1, size: 0
+I, [2018-10-22T12:43:43.188008 #73610]  INFO -- : thrId: 0, 17, http://world1.runescape.com, -1 ms, code: -1, size: 0
+I, [2018-10-22T12:43:45.821843 #73610]  INFO -- : thrId: 0, 18, http://world1.runescape.com, -1 ms, code: -1, size: 0
+I, [2018-10-22T12:44:51.202033 #73668]  INFO -- : Logger has started
+I, [2018-10-22T12:44:51.202302 #73668]  INFO -- : instanceId: 0
+I, [2018-10-22T12:44:51.202374 #73668]  INFO -- : I have 1 operations to do
+I, [2018-10-22T12:44:51.202417 #73668]  INFO -- : tmpLogsDir: /Users/davide/Desktop/Code/RUBY/RCrawler/logs/
+I, [2018-10-22T12:44:51.202456 #73668]  INFO -- : tmpAlertTemplateLocation: /Users/davide/Desktop/Code/RUBY/RCrawler/alerts/template1.txt
+I, [2018-10-22T12:44:51.202494 #73668]  INFO -- : tmpEmailAddresses: dvdpnt16+alerts@gmail.com
+I, [2018-10-22T12:44:51.202531 #73668]  INFO -- : tmpMaxPingsBeforeAlert: 10
+I, [2018-10-22T12:44:51.202567 #73668]  INFO -- : tmpMaxHTTPBeforeAlert: 5
+I, [2018-10-22T12:44:51.202603 #73668]  INFO -- : tmpOperationsPerInstance: 20
+I, [2018-10-22T12:44:51.202641 #73668]  INFO -- : Doing operations from index 0 to 1
+I, [2018-10-22T12:44:51.202703 #73668]  INFO -- : Connecting to influxDB at localhost...
+I, [2018-10-22T12:44:51.202892 #73668]  INFO -- : Creating DB RCrawler ...
+D, [2018-10-22T12:44:51.218709 #73668] DEBUG -- : thrId: 0, #<Alerter:0x007fa6c3aca460 @emailAddresses="dvdpnt16+alerts@gmail.com", @maxPingsBeforeAlert="10", @maxHTTPBeforeAlert="5", @sendAlerts=false, @alertTemplatelocation="/Users/davide/Desktop/Code/RUBY/RCrawler/alerts/template1.txt", @alertTemplate="\noperation: <op>\ndestination: <dest>\nfailuresInARow: <fails>\nstartEpoch: <sEpoch>\nstartDate: <sDate>\n\n\nRCrawler\n">, #<Logger:0x007fa6c3aca1b8 @progname=nil, @level=0, @default_formatter=#<Logger::Formatter:0x007fa6c3aca190 @datetime_format=nil>, @formatter=nil, @logdev=#<Logger::LogDevice:0x007fa6c3aca140 @shift_size=1048576, @shift_age=10, @filename="/Users/davide/Desktop/Code/RUBY/RCrawler/logs/0/hehe.log", @dev=#<File:/Users/davide/Desktop/Code/RUBY/RCrawler/logs/0/hehe.log>, @mon_owner=nil, @mon_count=0, @mon_mutex=#<Thread::Mutex:0x007fa6c3aca0c8>>>
+D, [2018-10-22T12:44:51.218907 #73668] DEBUG -- : thrId: 1, #<Alerter:0x007fa6c3aca460 @emailAddresses="dvdpnt16+alerts@gmail.com", @maxPingsBeforeAlert="10", @maxHTTPBeforeAlert="5", @sendAlerts=false, @alertTemplatelocation="/Users/davide/Desktop/Code/RUBY/RCrawler/alerts/template1.txt", @alertTemplate="\noperation: <op>\ndestination: <dest>\nfailuresInARow: <fails>\nstartEpoch: <sEpoch>\nstartDate: <sDate>\n\n\nRCrawler\n">, #<Logger:0x007fa6c3aca1b8 @progname=nil, @level=0, @default_formatter=#<Logger::Formatter:0x007fa6c3aca190 @datetime_format=nil>, @formatter=nil, @logdev=#<Logger::LogDevice:0x007fa6c3aca140 @shift_size=1048576, @shift_age=10, @filename="/Users/davide/Desktop/Code/RUBY/RCrawler/logs/0/hehe.log", @dev=#<File:/Users/davide/Desktop/Code/RUBY/RCrawler/logs/0/hehe.log>, @mon_owner=nil, @mon_count=0, @mon_mutex=#<Thread::Mutex:0x007fa6c3aca0c8>>>
+I, [2018-10-22T12:44:51.221205 #73668]  INFO -- : Starting 2 threads...
+I, [2018-10-22T12:44:51.530612 #73668]  INFO -- : thrId: 0, 0, http://world1.runescape.com, 296 ms, code: 200, size: 39515
+I, [2018-10-22T12:44:53.817748 #73668]  INFO -- : thrId: 0, 1, http://world1.runescape.com, 276 ms, code: 200, size: 39515
+I, [2018-10-22T12:44:56.126880 #73668]  INFO -- : thrId: 0, 2, http://world1.runescape.com, 295 ms, code: 200, size: 39514
+I, [2018-10-22T12:44:58.497985 #73668]  INFO -- : thrId: 0, 3, http://world1.runescape.com, 358 ms, code: 200, size: 39515
+I, [2018-10-22T12:45:00.950893 #73668]  INFO -- : thrId: 0, 4, http://world1.runescape.com, 444 ms, code: 200, size: 39515
+I, [2018-10-22T12:45:03.245621 #73668]  INFO -- : thrId: 0, 5, http://world1.runescape.com, 284 ms, code: 200, size: 39514
+I, [2018-10-22T12:45:05.521328 #73668]  INFO -- : thrId: 0, 6, http://world1.runescape.com, 266 ms, code: 200, size: 39515
+I, [2018-10-22T12:45:07.800876 #73668]  INFO -- : thrId: 0, 7, http://world1.runescape.com, 267 ms, code: 200, size: 39515
+I, [2018-10-22T12:45:10.170576 #73668]  INFO -- : thrId: 0, 8, http://world1.runescape.com, 361 ms, code: 200, size: 39515
+I, [2018-10-22T12:45:12.590227 #73668]  INFO -- : thrId: 0, 9, http://world1.runescape.com, 412 ms, code: 200, size: 39514
+I, [2018-10-22T12:45:14.991573 #73668]  INFO -- : thrId: 0, 10, http://world1.runescape.com, 393 ms, code: 200, size: 39515
+I, [2018-10-22T12:45:17.254538 #73668]  INFO -- : thrId: 0, 11, http://world1.runescape.com, 253 ms, code: 200, size: 39515
+I, [2018-10-22T12:45:19.684718 #73668]  INFO -- : thrId: 0, 12, http://world1.runescape.com, 420 ms, code: 200, size: 39515
+I, [2018-10-22T12:45:22.040585 #73668]  INFO -- : thrId: 0, 13, http://world1.runescape.com, 346 ms, code: 200, size: 39515
+I, [2018-10-22T12:46:13.188013 #73705]  INFO -- : Logger has started
+I, [2018-10-22T12:46:13.188161 #73705]  INFO -- : instanceId: 0
+I, [2018-10-22T12:46:13.188251 #73705]  INFO -- : I have 1 operations to do
+I, [2018-10-22T12:46:13.188285 #73705]  INFO -- : tmpLogsDir: /Users/davide/Desktop/Code/RUBY/RCrawler/logs/
+I, [2018-10-22T12:46:13.188314 #73705]  INFO -- : tmpAlertTemplateLocation: /Users/davide/Desktop/Code/RUBY/RCrawler/alerts/template1.txt
+I, [2018-10-22T12:46:13.188344 #73705]  INFO -- : tmpEmailAddresses: dvdpnt16+alerts@gmail.com
+I, [2018-10-22T12:46:13.188372 #73705]  INFO -- : tmpMaxPingsBeforeAlert: 10
+I, [2018-10-22T12:46:13.188399 #73705]  INFO -- : tmpMaxHTTPBeforeAlert: 5
+I, [2018-10-22T12:46:13.188426 #73705]  INFO -- : tmpOperationsPerInstance: 20
+I, [2018-10-22T12:46:13.188454 #73705]  INFO -- : Doing operations from index 0 to 1
+I, [2018-10-22T12:46:13.188502 #73705]  INFO -- : Connecting to influxDB at localhost...
+I, [2018-10-22T12:46:13.188660 #73705]  INFO -- : Creating DB RCrawler ...
+D, [2018-10-22T12:46:13.192393 #73705] DEBUG -- : thrId: 0, #<Alerter:0x007f98341c3f80 @emailAddresses="dvdpnt16+alerts@gmail.com", @maxPingsBeforeAlert="10", @maxHTTPBeforeAlert="5", @sendAlerts=false, @alertTemplatelocation="/Users/davide/Desktop/Code/RUBY/RCrawler/alerts/template1.txt", @alertTemplate="\noperation: <op>\ndestination: <dest>\nfailuresInARow: <fails>\nstartEpoch: <sEpoch>\nstartDate: <sDate>\n\n\nRCrawler\n">, #<Logger:0x007f98341c3b48 @progname=nil, @level=0, @default_formatter=#<Logger::Formatter:0x007f98341c3b20 @datetime_format=nil>, @formatter=nil, @logdev=#<Logger::LogDevice:0x007f98341c3aa8 @shift_size=1048576, @shift_age=10, @filename="/Users/davide/Desktop/Code/RUBY/RCrawler/logs/0/hehe.log", @dev=#<File:/Users/davide/Desktop/Code/RUBY/RCrawler/logs/0/hehe.log>, @mon_owner=nil, @mon_count=0, @mon_mutex=#<Thread::Mutex:0x007f98341c39e0>>>
+D, [2018-10-22T12:46:13.193397 #73705] DEBUG -- : thrId: 1, #<Alerter:0x007f98341c3f80 @emailAddresses="dvdpnt16+alerts@gmail.com", @maxPingsBeforeAlert="10", @maxHTTPBeforeAlert="5", @sendAlerts=false, @alertTemplatelocation="/Users/davide/Desktop/Code/RUBY/RCrawler/alerts/template1.txt", @alertTemplate="\noperation: <op>\ndestination: <dest>\nfailuresInARow: <fails>\nstartEpoch: <sEpoch>\nstartDate: <sDate>\n\n\nRCrawler\n">, #<Logger:0x007f98341c3b48 @progname=nil, @level=0, @default_formatter=#<Logger::Formatter:0x007f98341c3b20 @datetime_format=nil>, @formatter=nil, @logdev=#<Logger::LogDevice:0x007f98341c3aa8 @shift_size=1048576, @shift_age=10, @filename="/Users/davide/Desktop/Code/RUBY/RCrawler/logs/0/hehe.log", @dev=#<File:/Users/davide/Desktop/Code/RUBY/RCrawler/logs/0/hehe.log>, @mon_owner=nil, @mon_count=0, @mon_mutex=#<Thread::Mutex:0x007f98341c39e0>>>
+I, [2018-10-22T12:46:13.193576 #73705]  INFO -- : Starting 2 threads...
+E, [2018-10-22T12:46:13.195949 #73705] ERROR -- : thrId: 0, runHttpQueries() Failed to open TCP connection to world1.runescape.com:80 (getaddrinfo: nodename nor servname provided, or not known)
+D, [2018-10-22T12:46:13.196063 #73705] DEBUG -- : thrId: 0, http://world1.runescape.com failCounter=1
+I, [2018-10-22T12:46:13.200108 #73705]  INFO -- : thrId: 0, 0, http://world1.runescape.com, -1 ms, code: -1, size: 0
+E, [2018-10-22T12:46:15.204976 #73705] ERROR -- : thrId: 0, runHttpQueries() Failed to open TCP connection to world1.runescape.com:80 (getaddrinfo: nodename nor servname provided, or not known)
+D, [2018-10-22T12:46:15.205120 #73705] DEBUG -- : thrId: 0, http://world1.runescape.com failCounter=2
+I, [2018-10-22T12:46:15.210708 #73705]  INFO -- : thrId: 0, 1, http://world1.runescape.com, -1 ms, code: -1, size: 0
+E, [2018-10-22T12:46:17.217723 #73705] ERROR -- : thrId: 0, runHttpQueries() Failed to open TCP connection to world1.runescape.com:80 (getaddrinfo: nodename nor servname provided, or not known)
+D, [2018-10-22T12:46:17.217864 #73705] DEBUG -- : thrId: 0, http://world1.runescape.com failCounter=3
+I, [2018-10-22T12:46:17.223508 #73705]  INFO -- : thrId: 0, 2, http://world1.runescape.com, -1 ms, code: -1, size: 0
+E, [2018-10-22T12:46:19.226727 #73705] ERROR -- : thrId: 0, runHttpQueries() Failed to open TCP connection to world1.runescape.com:80 (getaddrinfo: nodename nor servname provided, or not known)
+D, [2018-10-22T12:46:19.226974 #73705] DEBUG -- : thrId: 0, http://world1.runescape.com failCounter=4
+I, [2018-10-22T12:46:19.233199 #73705]  INFO -- : thrId: 0, 3, http://world1.runescape.com, -1 ms, code: -1, size: 0
+E, [2018-10-22T12:46:21.239117 #73705] ERROR -- : thrId: 0, runHttpQueries() Failed to open TCP connection to world1.runescape.com:80 (getaddrinfo: nodename nor servname provided, or not known)
+D, [2018-10-22T12:46:21.239256 #73705] DEBUG -- : thrId: 0, http://world1.runescape.com failCounter=5
+I, [2018-10-22T12:46:21.245151 #73705]  INFO -- : thrId: 0, 4, http://world1.runescape.com, -1 ms, code: -1, size: 0
+E, [2018-10-22T12:46:23.248789 #73705] ERROR -- : thrId: 0, runHttpQueries() Failed to open TCP connection to world1.runescape.com:80 (getaddrinfo: nodename nor servname provided, or not known)
+D, [2018-10-22T12:46:23.248925 #73705] DEBUG -- : thrId: 0, http://world1.runescape.com failCounter=6
+I, [2018-10-22T12:46:23.254426 #73705]  INFO -- : thrId: 0, 5, http://world1.runescape.com, -1 ms, code: -1, size: 0
+I, [2018-10-22T12:46:25.561506 #73705]  INFO -- : thrId: 0, 6, http://world1.runescape.com, 297 ms, code: 200, size: 39515
+I, [2018-10-22T12:46:28.053767 #73705]  INFO -- : thrId: 0, 7, http://world1.runescape.com, 480 ms, code: 200, size: 39515
+I, [2018-10-22T12:46:30.314346 #73705]  INFO -- : thrId: 0, 8, http://world1.runescape.com, 249 ms, code: 200, size: 39515
+I, [2018-10-22T12:46:32.594056 #73705]  INFO -- : thrId: 0, 9, http://world1.runescape.com, 272 ms, code: 200, size: 39515
+I, [2018-10-22T12:46:34.874040 #73705]  INFO -- : thrId: 0, 10, http://world1.runescape.com, 268 ms, code: 200, size: 39515
+I, [2018-10-22T12:46:37.169418 #73705]  INFO -- : thrId: 0, 11, http://world1.runescape.com, 289 ms, code: 200, size: 39514
+I, [2018-10-22T12:46:39.445247 #73705]  INFO -- : thrId: 0, 12, http://world1.runescape.com, 268 ms, code: 200, size: 39515
+I, [2018-10-22T12:47:17.024372 #73705]  INFO -- : thrId: 0, 13, http://world1.runescape.com, 35566 ms, code: 200, size: 39515
+I, [2018-10-22T12:47:19.545985 #73705]  INFO -- : thrId: 0, 14, http://world1.runescape.com, 511 ms, code: 200, size: 39515
+I, [2018-10-22T12:47:21.846986 #73705]  INFO -- : thrId: 0, 15, http://world1.runescape.com, 288 ms, code: 200, size: 39514
+I, [2018-10-22T12:47:24.125929 #73705]  INFO -- : thrId: 0, 16, http://world1.runescape.com, 270 ms, code: 200, size: 39515
+I, [2018-10-22T12:47:26.414574 #73705]  INFO -- : thrId: 0, 17, http://world1.runescape.com, 278 ms, code: 200, size: 39515
+I, [2018-10-22T12:47:28.656168 #73705]  INFO -- : thrId: 0, 18, http://world1.runescape.com, 235 ms, code: 200, size: 39515
+I, [2018-10-22T12:47:30.934367 #73705]  INFO -- : thrId: 0, 19, http://world1.runescape.com, 270 ms, code: 200, size: 39515
+I, [2018-10-22T12:47:30.934624 #73705]  INFO -- : thrId: 0 has completed 20 HTTP operations, http://world1.runescape.com
+I, [2018-10-22T13:30:09.085505 #74161]  INFO -- : Logger has started
+I, [2018-10-22T13:30:09.085813 #74161]  INFO -- : instanceId: 0
+I, [2018-10-22T13:30:09.085893 #74161]  INFO -- : I have 1 operations to do
+I, [2018-10-22T13:30:09.085938 #74161]  INFO -- : tmpLogsDir: /Users/davide/Desktop/Code/RUBY/RCrawler/logs/
+I, [2018-10-22T13:30:09.085979 #74161]  INFO -- : tmpAlertTemplateLocation: /Users/davide/Desktop/Code/RUBY/RCrawler/alerts/template1.txt
+I, [2018-10-22T13:30:09.086019 #74161]  INFO -- : tmpEmailAddresses: dvdpnt16+alerts@gmail.com
+I, [2018-10-22T13:30:09.086057 #74161]  INFO -- : tmpMaxPingsBeforeAlert: 10
+I, [2018-10-22T13:30:09.086095 #74161]  INFO -- : tmpMaxHTTPBeforeAlert: 5
+I, [2018-10-22T13:30:09.086133 #74161]  INFO -- : tmpOperationsPerInstance: 20
+I, [2018-10-22T13:30:09.086173 #74161]  INFO -- : Doing operations from index 0 to 1
+I, [2018-10-22T13:30:09.086244 #74161]  INFO -- : Connecting to influxDB at localhost...
+I, [2018-10-22T13:30:09.086473 #74161]  INFO -- : Creating DB RCrawler ...
+D, [2018-10-22T13:30:09.098689 #74161] DEBUG -- : thrId: 0, #<Alerter:0x007fa44c18e488 @emailAddresses="dvdpnt16+alerts@gmail.com", @maxPingsBeforeAlert="10", @maxHTTPBeforeAlert="5", @sendAlerts=false, @alertTemplatelocation="/Users/davide/Desktop/Code/RUBY/RCrawler/alerts/template1.txt", @alertTemplate="\noperation: <op>\ndestination: <dest>\nfailuresInARow: <fails>\nstartEpoch: <sEpoch>\nstartDate: <sDate>\n\n\nRCrawler\n">, #<Logger:0x007fa44c18e1e0 @progname=nil, @level=0, @default_formatter=#<Logger::Formatter:0x007fa44c18e1b8 @datetime_format=nil>, @formatter=nil, @logdev=#<Logger::LogDevice:0x007fa44c18e168 @shift_size=1048576, @shift_age=10, @filename="/Users/davide/Desktop/Code/RUBY/RCrawler/logs/0/hehe.log", @dev=#<File:/Users/davide/Desktop/Code/RUBY/RCrawler/logs/0/hehe.log>, @mon_owner=nil, @mon_count=0, @mon_mutex=#<Thread::Mutex:0x007fa44c18e118>>>
+D, [2018-10-22T13:30:09.098902 #74161] DEBUG -- : thrId: 1, #<Alerter:0x007fa44c18e488 @emailAddresses="dvdpnt16+alerts@gmail.com", @maxPingsBeforeAlert="10", @maxHTTPBeforeAlert="5", @sendAlerts=false, @alertTemplatelocation="/Users/davide/Desktop/Code/RUBY/RCrawler/alerts/template1.txt", @alertTemplate="\noperation: <op>\ndestination: <dest>\nfailuresInARow: <fails>\nstartEpoch: <sEpoch>\nstartDate: <sDate>\n\n\nRCrawler\n">, #<Logger:0x007fa44c18e1e0 @progname=nil, @level=0, @default_formatter=#<Logger::Formatter:0x007fa44c18e1b8 @datetime_format=nil>, @formatter=nil, @logdev=#<Logger::LogDevice:0x007fa44c18e168 @shift_size=1048576, @shift_age=10, @filename="/Users/davide/Desktop/Code/RUBY/RCrawler/logs/0/hehe.log", @dev=#<File:/Users/davide/Desktop/Code/RUBY/RCrawler/logs/0/hehe.log>, @mon_owner=nil, @mon_count=0, @mon_mutex=#<Thread::Mutex:0x007fa44c18e118>>>
+I, [2018-10-22T13:30:09.100908 #74161]  INFO -- : Starting 2 threads...
+I, [2018-10-22T13:30:09.446762 #74161]  INFO -- : thrId: 0, 0, http://world1.runescape.com, 339 ms, code: 200, size: 39515
+I, [2018-10-22T13:30:11.721925 #74161]  INFO -- : thrId: 0, 1, http://world1.runescape.com, 264 ms, code: 200, size: 39515
+I, [2018-10-22T13:30:14.006431 #74161]  INFO -- : thrId: 0, 2, http://world1.runescape.com, 275 ms, code: 200, size: 39515
+E, [2018-10-22T13:30:16.014650 #74161] ERROR -- : thrId: 0, runHttpQueries() Failed to open TCP connection to world1.runescape.com:80 (getaddrinfo: nodename nor servname provided, or not known)
+D, [2018-10-22T13:30:16.014824 #74161] DEBUG -- : thrId: 0, http://world1.runescape.com failCounter=1
+I, [2018-10-22T13:30:16.019677 #74161]  INFO -- : thrId: 0, 3, http://world1.runescape.com, -1 ms, code: -1, size: 0
+E, [2018-10-22T13:30:18.024188 #74161] ERROR -- : thrId: 0, runHttpQueries() Failed to open TCP connection to world1.runescape.com:80 (getaddrinfo: nodename nor servname provided, or not known)
+D, [2018-10-22T13:30:18.024330 #74161] DEBUG -- : thrId: 0, http://world1.runescape.com failCounter=2
+I, [2018-10-22T13:30:18.030112 #74161]  INFO -- : thrId: 0, 4, http://world1.runescape.com, -1 ms, code: -1, size: 0
+E, [2018-10-22T13:30:20.033823 #74161] ERROR -- : thrId: 0, runHttpQueries() Failed to open TCP connection to world1.runescape.com:80 (getaddrinfo: nodename nor servname provided, or not known)
+D, [2018-10-22T13:30:20.033965 #74161] DEBUG -- : thrId: 0, http://world1.runescape.com failCounter=3
+I, [2018-10-22T13:30:20.039486 #74161]  INFO -- : thrId: 0, 5, http://world1.runescape.com, -1 ms, code: -1, size: 0
+E, [2018-10-22T13:30:22.044037 #74161] ERROR -- : thrId: 0, runHttpQueries() Failed to open TCP connection to world1.runescape.com:80 (getaddrinfo: nodename nor servname provided, or not known)
+D, [2018-10-22T13:30:22.044373 #74161] DEBUG -- : thrId: 0, http://world1.runescape.com failCounter=4
+I, [2018-10-22T13:30:22.053674 #74161]  INFO -- : thrId: 0, 6, http://world1.runescape.com, -1 ms, code: -1, size: 0
+E, [2018-10-22T13:30:24.056939 #74161] ERROR -- : thrId: 0, runHttpQueries() Failed to open TCP connection to world1.runescape.com:80 (getaddrinfo: nodename nor servname provided, or not known)
+D, [2018-10-22T13:30:24.057054 #74161] DEBUG -- : thrId: 0, http://world1.runescape.com failCounter=5
+I, [2018-10-22T13:30:24.062036 #74161]  INFO -- : thrId: 0, 7, http://world1.runescape.com, -1 ms, code: -1, size: 0
+I, [2018-10-22T13:30:26.410096 #74161]  INFO -- : thrId: 0, 8, http://world1.runescape.com, 325 ms, code: 200, size: 39513
+I, [2018-10-22T13:30:28.699632 #74161]  INFO -- : thrId: 0, 9, http://world1.runescape.com, 278 ms, code: 200, size: 39515
+I, [2018-10-22T13:30:30.984537 #74161]  INFO -- : thrId: 0, 10, http://world1.runescape.com, 271 ms, code: 200, size: 39515
+I, [2018-10-22T13:30:33.259768 #74161]  INFO -- : thrId: 0, 11, http://world1.runescape.com, 264 ms, code: 200, size: 39514
+I, [2018-10-22T13:30:35.543522 #74161]  INFO -- : thrId: 0, 12, http://world1.runescape.com, 276 ms, code: 200, size: 39515
+I, [2018-10-22T13:30:37.826682 #74161]  INFO -- : thrId: 0, 13, http://world1.runescape.com, 273 ms, code: 200, size: 39515
+I, [2018-10-22T13:30:40.125109 #74161]  INFO -- : thrId: 0, 14, http://world1.runescape.com, 290 ms, code: 200, size: 39515
+I, [2018-10-22T13:30:42.389997 #74161]  INFO -- : thrId: 0, 15, http://world1.runescape.com, 259 ms, code: 200, size: 39515
+I, [2018-10-22T13:30:44.680717 #74161]  INFO -- : thrId: 0, 16, http://world1.runescape.com, 282 ms, code: 200, size: 39515
+I, [2018-10-22T13:30:47.336826 #74161]  INFO -- : thrId: 0, 17, http://world1.runescape.com, 648 ms, code: 200, size: 39515
+I, [2018-10-22T13:30:51.477894 #74209]  INFO -- : Logger has started
+I, [2018-10-22T13:30:51.478423 #74209]  INFO -- : instanceId: 0
+I, [2018-10-22T13:30:51.478552 #74209]  INFO -- : I have 1 operations to do
+I, [2018-10-22T13:30:51.478655 #74209]  INFO -- : tmpLogsDir: /Users/davide/Desktop/Code/RUBY/RCrawler/logs/
+I, [2018-10-22T13:30:51.478750 #74209]  INFO -- : tmpAlertTemplateLocation: /Users/davide/Desktop/Code/RUBY/RCrawler/alerts/template1.txt
+I, [2018-10-22T13:30:51.478845 #74209]  INFO -- : tmpEmailAddresses: dvdpnt16+alerts@gmail.com
+I, [2018-10-22T13:30:51.478931 #74209]  INFO -- : tmpMaxPingsBeforeAlert: 10
+I, [2018-10-22T13:30:51.479025 #74209]  INFO -- : tmpMaxHTTPBeforeAlert: 5
+I, [2018-10-22T13:30:51.479118 #74209]  INFO -- : tmpOperationsPerInstance: 20
+I, [2018-10-22T13:30:51.479215 #74209]  INFO -- : Doing operations from index 0 to 1
+I, [2018-10-22T13:30:51.479358 #74209]  INFO -- : Connecting to influxDB at localhost...
+I, [2018-10-22T13:30:51.479831 #74209]  INFO -- : Creating DB RCrawler ...
+D, [2018-10-22T13:30:51.486281 #74209] DEBUG -- : thrId: 0, #<Alerter:0x007fe8960b6608 @emailAddresses="dvdpnt16+alerts@gmail.com", @maxPingsBeforeAlert="10", @maxHTTPBeforeAlert="5", @sendAlerts=false, @alertTemplatelocation="/Users/davide/Desktop/Code/RUBY/RCrawler/alerts/template1.txt", @alertTemplate="\noperation: <op>\ndestination: <dest>\nfailuresInARow: <fails>\nstartEpoch: <sEpoch>\nstartDate: <sDate>\n\n\nRCrawler\n">, #<Logger:0x007fe8960b6360 @progname=nil, @level=0, @default_formatter=#<Logger::Formatter:0x007fe8960b6310 @datetime_format=nil>, @formatter=nil, @logdev=#<Logger::LogDevice:0x007fe8960b6298 @shift_size=1048576, @shift_age=10, @filename="/Users/davide/Desktop/Code/RUBY/RCrawler/logs/0/hehe.log", @dev=#<File:/Users/davide/Desktop/Code/RUBY/RCrawler/logs/0/hehe.log>, @mon_owner=nil, @mon_count=0, @mon_mutex=#<Thread::Mutex:0x007fe8960b6248>>>
+D, [2018-10-22T13:30:51.486536 #74209] DEBUG -- : thrId: 1, #<Alerter:0x007fe8960b6608 @emailAddresses="dvdpnt16+alerts@gmail.com", @maxPingsBeforeAlert="10", @maxHTTPBeforeAlert="5", @sendAlerts=false, @alertTemplatelocation="/Users/davide/Desktop/Code/RUBY/RCrawler/alerts/template1.txt", @alertTemplate="\noperation: <op>\ndestination: <dest>\nfailuresInARow: <fails>\nstartEpoch: <sEpoch>\nstartDate: <sDate>\n\n\nRCrawler\n">, #<Logger:0x007fe8960b6360 @progname=nil, @level=0, @default_formatter=#<Logger::Formatter:0x007fe8960b6310 @datetime_format=nil>, @formatter=nil, @logdev=#<Logger::LogDevice:0x007fe8960b6298 @shift_size=1048576, @shift_age=10, @filename="/Users/davide/Desktop/Code/RUBY/RCrawler/logs/0/hehe.log", @dev=#<File:/Users/davide/Desktop/Code/RUBY/RCrawler/logs/0/hehe.log>, @mon_owner=nil, @mon_count=0, @mon_mutex=#<Thread::Mutex:0x007fe8960b6248>>>
+I, [2018-10-22T13:30:51.487502 #74209]  INFO -- : Starting 2 threads...
+I, [2018-10-22T13:30:53.755259 #74209]  INFO -- : thrId: 0, 0, http://world1.runescape.com, 2259 ms, code: 200, size: 39515
+I, [2018-10-22T13:30:56.033234 #74209]  INFO -- : thrId: 0, 1, http://world1.runescape.com, 265 ms, code: 200, size: 39515
+I, [2018-10-22T13:30:58.415674 #74209]  INFO -- : thrId: 0, 2, http://world1.runescape.com, 372 ms, code: 200, size: 39515
+E, [2018-10-22T13:31:00.422386 #74209] ERROR -- : thrId: 0, runHttpQueries() Failed to open TCP connection to world1.runescape.com:80 (getaddrinfo: nodename nor servname provided, or not known)
+D, [2018-10-22T13:31:00.422590 #74209] DEBUG -- : thrId: 0, http://world1.runescape.com failCounter=1
+I, [2018-10-22T13:31:00.427506 #74209]  INFO -- : thrId: 0, 3, http://world1.runescape.com, -1 ms, code: -1, size: 0
+E, [2018-10-22T13:31:02.434081 #74209] ERROR -- : thrId: 0, runHttpQueries() Failed to open TCP connection to world1.runescape.com:80 (getaddrinfo: nodename nor servname provided, or not known)
+D, [2018-10-22T13:31:02.434224 #74209] DEBUG -- : thrId: 0, http://world1.runescape.com failCounter=2
+I, [2018-10-22T13:31:02.439792 #74209]  INFO -- : thrId: 0, 4, http://world1.runescape.com, -1 ms, code: -1, size: 0
+E, [2018-10-22T13:31:04.441658 #74209] ERROR -- : thrId: 0, runHttpQueries() Failed to open TCP connection to world1.runescape.com:80 (getaddrinfo: nodename nor servname provided, or not known)
+D, [2018-10-22T13:31:04.441800 #74209] DEBUG -- : thrId: 0, http://world1.runescape.com failCounter=3
+I, [2018-10-22T13:31:04.446606 #74209]  INFO -- : thrId: 0, 5, http://world1.runescape.com, -1 ms, code: -1, size: 0
+I, [2018-10-22T13:31:06.739080 #74209]  INFO -- : thrId: 0, 6, http://world1.runescape.com, 287 ms, code: 200, size: 39515
+I, [2018-10-22T13:31:09.020435 #74209]  INFO -- : thrId: 0, 7, http://world1.runescape.com, 272 ms, code: 200, size: 39515
+I, [2018-10-22T13:31:11.301494 #74209]  INFO -- : thrId: 0, 8, http://world1.runescape.com, 273 ms, code: 200, size: 39515
+I, [2018-10-22T13:31:13.608905 #74209]  INFO -- : thrId: 0, 9, http://world1.runescape.com, 297 ms, code: 200, size: 39515
+I, [2018-10-22T13:31:15.904672 #74209]  INFO -- : thrId: 0, 10, http://world1.runescape.com, 284 ms, code: 200, size: 39515
+I, [2018-10-22T13:31:37.390926 #74209]  INFO -- : thrId: 0, 11, http://world1.runescape.com, 19474 ms, code: 200, size: 39514
+E, [2018-10-22T13:31:39.721956 #74209] ERROR -- : thrId: 0, runHttpQueries() Failed to open TCP connection to world1.runescape.com:80 (getaddrinfo: nodename nor servname provided, or not known)
+D, [2018-10-22T13:31:39.722066 #74209] DEBUG -- : thrId: 0, http://world1.runescape.com failCounter=1
+I, [2018-10-22T13:31:39.735177 #74209]  INFO -- : thrId: 0, 12, http://world1.runescape.com, -1 ms, code: -1, size: 0
+E, [2018-10-22T13:31:41.740121 #74209] ERROR -- : thrId: 0, runHttpQueries() Failed to open TCP connection to world1.runescape.com:80 (getaddrinfo: nodename nor servname provided, or not known)
+D, [2018-10-22T13:31:41.740266 #74209] DEBUG -- : thrId: 0, http://world1.runescape.com failCounter=2
+I, [2018-10-22T13:31:41.745684 #74209]  INFO -- : thrId: 0, 13, http://world1.runescape.com, -1 ms, code: -1, size: 0
+E, [2018-10-22T13:31:43.749180 #74209] ERROR -- : thrId: 0, runHttpQueries() Failed to open TCP connection to world1.runescape.com:80 (getaddrinfo: nodename nor servname provided, or not known)
+D, [2018-10-22T13:31:43.749340 #74209] DEBUG -- : thrId: 0, http://world1.runescape.com failCounter=3
+I, [2018-10-22T13:31:43.754453 #74209]  INFO -- : thrId: 0, 14, http://world1.runescape.com, -1 ms, code: -1, size: 0
+E, [2018-10-22T13:31:45.761018 #74209] ERROR -- : thrId: 0, runHttpQueries() Failed to open TCP connection to world1.runescape.com:80 (getaddrinfo: nodename nor servname provided, or not known)
+D, [2018-10-22T13:31:45.761206 #74209] DEBUG -- : thrId: 0, http://world1.runescape.com failCounter=4
+I, [2018-10-22T13:31:45.768114 #74209]  INFO -- : thrId: 0, 15, http://world1.runescape.com, -1 ms, code: -1, size: 0
+E, [2018-10-22T13:31:47.770983 #74209] ERROR -- : thrId: 0, runHttpQueries() Failed to open TCP connection to world1.runescape.com:80 (getaddrinfo: nodename nor servname provided, or not known)
+D, [2018-10-22T13:31:47.771121 #74209] DEBUG -- : thrId: 0, http://world1.runescape.com failCounter=5
+I, [2018-10-22T13:31:47.777454 #74209]  INFO -- : thrId: 0, 16, http://world1.runescape.com, -1 ms, code: -1, size: 0
+E, [2018-10-22T13:31:49.780355 #74209] ERROR -- : thrId: 0, runHttpQueries() Failed to open TCP connection to world1.runescape.com:80 (getaddrinfo: nodename nor servname provided, or not known)
+D, [2018-10-22T13:31:49.780496 #74209] DEBUG -- : thrId: 0, http://world1.runescape.com failCounter=6
+I, [2018-10-22T13:31:49.785313 #74209]  INFO -- : thrId: 0, 17, http://world1.runescape.com, -1 ms, code: -1, size: 0
+E, [2018-10-22T13:31:51.790480 #74209] ERROR -- : thrId: 0, runHttpQueries() Failed to open TCP connection to world1.runescape.com:80 (getaddrinfo: nodename nor servname provided, or not known)
+D, [2018-10-22T13:31:51.790623 #74209] DEBUG -- : thrId: 0, http://world1.runescape.com failCounter=7
+I, [2018-10-22T13:31:51.798568 #74209]  INFO -- : thrId: 0, 18, http://world1.runescape.com, -1 ms, code: -1, size: 0
+I, [2018-10-22T13:31:54.177730 #74209]  INFO -- : thrId: 0, 19, http://world1.runescape.com, 352 ms, code: 200, size: 39514
+I, [2018-10-22T13:31:54.180018 #74209]  INFO -- : thrId: 0 has completed 20 HTTP operations, http://world1.runescape.com
+I, [2018-10-22T13:33:35.420811 #74298]  INFO -- : Logger has started
+I, [2018-10-22T13:33:35.424264 #74298]  INFO -- : instanceId: 0
+I, [2018-10-22T13:33:35.424403 #74298]  INFO -- : I have 1 operations to do
+I, [2018-10-22T13:33:35.424467 #74298]  INFO -- : tmpLogsDir: /Users/davide/Desktop/Code/RUBY/RCrawler/logs/
+I, [2018-10-22T13:33:35.424525 #74298]  INFO -- : tmpAlertTemplateLocation: /Users/davide/Desktop/Code/RUBY/RCrawler/alerts/template1.txt
+I, [2018-10-22T13:33:35.424583 #74298]  INFO -- : tmpEmailAddresses: dvdpnt16+alerts@gmail.com
+I, [2018-10-22T13:33:35.424639 #74298]  INFO -- : tmpMaxPingsBeforeAlert: 10
+I, [2018-10-22T13:33:35.424694 #74298]  INFO -- : tmpMaxHTTPBeforeAlert: 5
+I, [2018-10-22T13:33:35.424749 #74298]  INFO -- : tmpOperationsPerInstance: 20
+I, [2018-10-22T13:33:35.424806 #74298]  INFO -- : Doing operations from index 0 to 1
+I, [2018-10-22T13:33:35.424900 #74298]  INFO -- : Connecting to influxDB at localhost...
+I, [2018-10-22T13:33:35.425194 #74298]  INFO -- : Creating DB RCrawler ...
+D, [2018-10-22T13:33:35.436759 #74298] DEBUG -- : thrId: 0, #<Alerter:0x007fb6908e2288 @emailAddresses="dvdpnt16+alerts@gmail.com", @maxPingsBeforeAlert="10", @maxHTTPBeforeAlert="5", @sendAlerts=false, @alertTemplatelocation="/Users/davide/Desktop/Code/RUBY/RCrawler/alerts/template1.txt", @alertTemplate="\noperation: <op>\ndestination: <dest>\nfailuresInARow: <fails>\nstartEpoch: <sEpoch>\nstartDate: <sDate>\n\n\nRCrawler\n">, #<Logger:0x007fb6908e1fe0 @progname=nil, @level=0, @default_formatter=#<Logger::Formatter:0x007fb6908e1fb8 @datetime_format=nil>, @formatter=nil, @logdev=#<Logger::LogDevice:0x007fb6908e1f68 @shift_size=1048576, @shift_age=10, @filename="/Users/davide/Desktop/Code/RUBY/RCrawler/logs/0/hehe.log", @dev=#<File:/Users/davide/Desktop/Code/RUBY/RCrawler/logs/0/hehe.log>, @mon_owner=nil, @mon_count=0, @mon_mutex=#<Thread::Mutex:0x007fb6908e1f18>>>
+D, [2018-10-22T13:33:35.438308 #74298] DEBUG -- : thrId: 1, #<Alerter:0x007fb6908e2288 @emailAddresses="dvdpnt16+alerts@gmail.com", @maxPingsBeforeAlert="10", @maxHTTPBeforeAlert="5", @sendAlerts=false, @alertTemplatelocation="/Users/davide/Desktop/Code/RUBY/RCrawler/alerts/template1.txt", @alertTemplate="\noperation: <op>\ndestination: <dest>\nfailuresInARow: <fails>\nstartEpoch: <sEpoch>\nstartDate: <sDate>\n\n\nRCrawler\n">, #<Logger:0x007fb6908e1fe0 @progname=nil, @level=0, @default_formatter=#<Logger::Formatter:0x007fb6908e1fb8 @datetime_format=nil>, @formatter=nil, @logdev=#<Logger::LogDevice:0x007fb6908e1f68 @shift_size=1048576, @shift_age=10, @filename="/Users/davide/Desktop/Code/RUBY/RCrawler/logs/0/hehe.log", @dev=#<File:/Users/davide/Desktop/Code/RUBY/RCrawler/logs/0/hehe.log>, @mon_owner=nil, @mon_count=0, @mon_mutex=#<Thread::Mutex:0x007fb6908e1f18>>>
+I, [2018-10-22T13:33:35.438556 #74298]  INFO -- : Starting 2 threads...
+I, [2018-10-22T13:33:35.729884 #74298]  INFO -- : thrId: 0, 0, http://world1.runescape.com, 277 ms, code: 200, size: 39515
+I, [2018-10-22T13:33:37.994424 #74298]  INFO -- : thrId: 0, 1, http://world1.runescape.com, 256 ms, code: 200, size: 39515
+I, [2018-10-22T13:36:46.923169 #74368]  INFO -- : Logger has started
+I, [2018-10-22T13:36:46.926465 #74368]  INFO -- : instanceId: 0
+I, [2018-10-22T13:36:46.926636 #74368]  INFO -- : I have 1 operations to do
+I, [2018-10-22T13:36:46.926741 #74368]  INFO -- : tmpLogsDir: /Users/davide/Desktop/Code/RUBY/RCrawler/logs/
+I, [2018-10-22T13:36:46.926837 #74368]  INFO -- : tmpAlertTemplateLocation: /Users/davide/Desktop/Code/RUBY/RCrawler/alerts/template1.txt
+I, [2018-10-22T13:36:46.926929 #74368]  INFO -- : tmpEmailAddresses: dvdpnt16+alerts@gmail.com
+I, [2018-10-22T13:36:46.927019 #74368]  INFO -- : tmpMaxPingsBeforeAlert: 10
+I, [2018-10-22T13:36:46.927093 #74368]  INFO -- : tmpMaxHTTPBeforeAlert: 5
+I, [2018-10-22T13:36:46.927272 #74368]  INFO -- : tmpOperationsPerInstance: 20
+I, [2018-10-22T13:36:46.927450 #74368]  INFO -- : Doing operations from index 0 to 1
+I, [2018-10-22T13:36:46.927610 #74368]  INFO -- : Connecting to influxDB at localhost...
+I, [2018-10-22T13:36:46.928151 #74368]  INFO -- : Creating DB RCrawler ...
+D, [2018-10-22T13:36:46.944193 #74368] DEBUG -- : thrId: 0, #<Alerter:0x007ffb570e6460 @emailAddresses="dvdpnt16+alerts@gmail.com", @maxPingsBeforeAlert="10", @maxHTTPBeforeAlert="5", @sendAlerts=false, @alertTemplatelocation="/Users/davide/Desktop/Code/RUBY/RCrawler/alerts/template1.txt", @alertTemplate="\noperation: <op>\ndestination: <dest>\nfailuresInARow: <fails>\nstartEpoch: <sEpoch>\nstartDate: <sDate>\n\n\nRCrawler\n">, #<Logger:0x007ffb570e61e0 @progname=nil, @level=0, @default_formatter=#<Logger::Formatter:0x007ffb570e61b8 @datetime_format=nil>, @formatter=nil, @logdev=#<Logger::LogDevice:0x007ffb570e6168 @shift_size=1048576, @shift_age=10, @filename="/Users/davide/Desktop/Code/RUBY/RCrawler/logs/0/hehe.log", @dev=#<File:/Users/davide/Desktop/Code/RUBY/RCrawler/logs/0/hehe.log>, @mon_owner=nil, @mon_count=0, @mon_mutex=#<Thread::Mutex:0x007ffb570e6118>>>
+D, [2018-10-22T13:36:46.944476 #74368] DEBUG -- : thrId: 1, #<Alerter:0x007ffb570e6460 @emailAddresses="dvdpnt16+alerts@gmail.com", @maxPingsBeforeAlert="10", @maxHTTPBeforeAlert="5", @sendAlerts=false, @alertTemplatelocation="/Users/davide/Desktop/Code/RUBY/RCrawler/alerts/template1.txt", @alertTemplate="\noperation: <op>\ndestination: <dest>\nfailuresInARow: <fails>\nstartEpoch: <sEpoch>\nstartDate: <sDate>\n\n\nRCrawler\n">, #<Logger:0x007ffb570e61e0 @progname=nil, @level=0, @default_formatter=#<Logger::Formatter:0x007ffb570e61b8 @datetime_format=nil>, @formatter=nil, @logdev=#<Logger::LogDevice:0x007ffb570e6168 @shift_size=1048576, @shift_age=10, @filename="/Users/davide/Desktop/Code/RUBY/RCrawler/logs/0/hehe.log", @dev=#<File:/Users/davide/Desktop/Code/RUBY/RCrawler/logs/0/hehe.log>, @mon_owner=nil, @mon_count=0, @mon_mutex=#<Thread::Mutex:0x007ffb570e6118>>>
+I, [2018-10-22T13:36:46.947598 #74368]  INFO -- : Starting 2 threads...
+E, [2018-10-22T13:36:47.229719 #74368] ERROR -- : thrId: 0, runHttpQueries() undefined local variable or method `url' for #<Crawler:0x007ffb5619be10>
+Did you mean?  URI
+D, [2018-10-22T13:36:47.229868 #74368] DEBUG -- : thrId: 0, http://world1.runescape.com failCounter=1
+I, [2018-10-22T13:36:47.249152 #74368]  INFO -- : thrId: 0, 0, http://world1.runescape.com, -1 ms, code: -1, size: 0
+E, [2018-10-22T13:36:49.498518 #74368] ERROR -- : thrId: 0, runHttpQueries() undefined local variable or method `url' for #<Crawler:0x007ffb5619be10>
+Did you mean?  URI
+D, [2018-10-22T13:36:49.498670 #74368] DEBUG -- : thrId: 0, http://world1.runescape.com failCounter=2
+I, [2018-10-22T13:36:49.508452 #74368]  INFO -- : thrId: 0, 1, http://world1.runescape.com, -1 ms, code: -1, size: 0
+E, [2018-10-22T13:36:51.803552 #74368] ERROR -- : thrId: 0, runHttpQueries() undefined local variable or method `url' for #<Crawler:0x007ffb5619be10>
+Did you mean?  URI
+D, [2018-10-22T13:36:51.803716 #74368] DEBUG -- : thrId: 0, http://world1.runescape.com failCounter=3
+I, [2018-10-22T13:36:51.811945 #74368]  INFO -- : thrId: 0, 2, http://world1.runescape.com, -1 ms, code: -1, size: 0
+E, [2018-10-22T13:36:54.083364 #74368] ERROR -- : thrId: 0, runHttpQueries() undefined local variable or method `url' for #<Crawler:0x007ffb5619be10>
+Did you mean?  URI
+D, [2018-10-22T13:36:54.083456 #74368] DEBUG -- : thrId: 0, http://world1.runescape.com failCounter=4
+I, [2018-10-22T13:36:54.088053 #74368]  INFO -- : thrId: 0, 3, http://world1.runescape.com, -1 ms, code: -1, size: 0
+E, [2018-10-22T13:36:56.363965 #74368] ERROR -- : thrId: 0, runHttpQueries() undefined local variable or method `url' for #<Crawler:0x007ffb5619be10>
+Did you mean?  URI
+D, [2018-10-22T13:36:56.364117 #74368] DEBUG -- : thrId: 0, http://world1.runescape.com failCounter=5
+I, [2018-10-22T13:36:56.369897 #74368]  INFO -- : thrId: 0, 4, http://world1.runescape.com, -1 ms, code: -1, size: 0
+E, [2018-10-22T13:36:58.643043 #74368] ERROR -- : thrId: 0, runHttpQueries() undefined local variable or method `url' for #<Crawler:0x007ffb5619be10>
+Did you mean?  URI
+D, [2018-10-22T13:36:58.643191 #74368] DEBUG -- : thrId: 0, http://world1.runescape.com failCounter=6
+I, [2018-10-22T13:36:58.649101 #74368]  INFO -- : thrId: 0, 5, http://world1.runescape.com, -1 ms, code: -1, size: 0
+I, [2018-10-22T13:37:11.347230 #74377]  INFO -- : Logger has started
+I, [2018-10-22T13:37:11.347323 #74377]  INFO -- : instanceId: 0
+I, [2018-10-22T13:37:11.347374 #74377]  INFO -- : I have 1 operations to do
+I, [2018-10-22T13:37:11.347416 #74377]  INFO -- : tmpLogsDir: /Users/davide/Desktop/Code/RUBY/RCrawler/logs/
+I, [2018-10-22T13:37:11.347456 #74377]  INFO -- : tmpAlertTemplateLocation: /Users/davide/Desktop/Code/RUBY/RCrawler/alerts/template1.txt
+I, [2018-10-22T13:37:11.347494 #74377]  INFO -- : tmpEmailAddresses: dvdpnt16+alerts@gmail.com
+I, [2018-10-22T13:37:11.347523 #74377]  INFO -- : tmpMaxPingsBeforeAlert: 10
+I, [2018-10-22T13:37:11.347551 #74377]  INFO -- : tmpMaxHTTPBeforeAlert: 5
+I, [2018-10-22T13:37:11.347579 #74377]  INFO -- : tmpOperationsPerInstance: 20
+I, [2018-10-22T13:37:11.347608 #74377]  INFO -- : Doing operations from index 0 to 1
+I, [2018-10-22T13:37:11.347680 #74377]  INFO -- : Connecting to influxDB at localhost...
+I, [2018-10-22T13:37:11.347855 #74377]  INFO -- : Creating DB RCrawler ...
+D, [2018-10-22T13:37:11.352396 #74377] DEBUG -- : thrId: 0, #<Alerter:0x007ff07504a728 @emailAddresses="dvdpnt16+alerts@gmail.com", @maxPingsBeforeAlert="10", @maxHTTPBeforeAlert="5", @sendAlerts=false, @alertTemplatelocation="/Users/davide/Desktop/Code/RUBY/RCrawler/alerts/template1.txt", @alertTemplate="\noperation: <op>\ndestination: <dest>\nfailuresInARow: <fails>\nstartEpoch: <sEpoch>\nstartDate: <sDate>\n\n\nRCrawler\n">, #<Logger:0x007ff07504a430 @progname=nil, @level=0, @default_formatter=#<Logger::Formatter:0x007ff07504a408 @datetime_format=nil>, @formatter=nil, @logdev=#<Logger::LogDevice:0x007ff07504a3b8 @shift_size=1048576, @shift_age=10, @filename="/Users/davide/Desktop/Code/RUBY/RCrawler/logs/0/hehe.log", @dev=#<File:/Users/davide/Desktop/Code/RUBY/RCrawler/logs/0/hehe.log>, @mon_owner=nil, @mon_count=0, @mon_mutex=#<Thread::Mutex:0x007ff07504a368>>>
+D, [2018-10-22T13:37:11.352606 #74377] DEBUG -- : thrId: 1, #<Alerter:0x007ff07504a728 @emailAddresses="dvdpnt16+alerts@gmail.com", @maxPingsBeforeAlert="10", @maxHTTPBeforeAlert="5", @sendAlerts=false, @alertTemplatelocation="/Users/davide/Desktop/Code/RUBY/RCrawler/alerts/template1.txt", @alertTemplate="\noperation: <op>\ndestination: <dest>\nfailuresInARow: <fails>\nstartEpoch: <sEpoch>\nstartDate: <sDate>\n\n\nRCrawler\n">, #<Logger:0x007ff07504a430 @progname=nil, @level=0, @default_formatter=#<Logger::Formatter:0x007ff07504a408 @datetime_format=nil>, @formatter=nil, @logdev=#<Logger::LogDevice:0x007ff07504a3b8 @shift_size=1048576, @shift_age=10, @filename="/Users/davide/Desktop/Code/RUBY/RCrawler/logs/0/hehe.log", @dev=#<File:/Users/davide/Desktop/Code/RUBY/RCrawler/logs/0/hehe.log>, @mon_owner=nil, @mon_count=0, @mon_mutex=#<Thread::Mutex:0x007ff07504a368>>>
+I, [2018-10-22T13:37:11.352704 #74377]  INFO -- : Starting 2 threads...
+E, [2018-10-22T13:37:11.354719 #74377] ERROR -- : thrId: 0, runHttpQueries() undefined local variable or method `url' for #<Crawler:0x007ff075030058>
+Did you mean?  URI
+D, [2018-10-22T13:37:11.354854 #74377] DEBUG -- : thrId: 0, http://world1.runescape.com failCounter=1
+I, [2018-10-22T13:37:11.358990 #74377]  INFO -- : thrId: 0, 0, http://world1.runescape.com, -1 ms, code: -1, size: 0
+E, [2018-10-22T13:37:13.363990 #74377] ERROR -- : thrId: 0, runHttpQueries() undefined local variable or method `url' for #<Crawler:0x007ff075030058>
+Did you mean?  URI
+D, [2018-10-22T13:37:13.364128 #74377] DEBUG -- : thrId: 0, http://world1.runescape.com failCounter=2
+I, [2018-10-22T13:37:13.369825 #74377]  INFO -- : thrId: 0, 1, http://world1.runescape.com, -1 ms, code: -1, size: 0
+I, [2018-10-22T13:38:40.210157 #74404]  INFO -- : Logger has started
+I, [2018-10-22T13:38:40.210245 #74404]  INFO -- : instanceId: 0
+I, [2018-10-22T13:38:40.210285 #74404]  INFO -- : I have 1 operations to do
+I, [2018-10-22T13:38:40.210317 #74404]  INFO -- : tmpLogsDir: /Users/davide/Desktop/Code/RUBY/RCrawler/logs/
+I, [2018-10-22T13:38:40.210357 #74404]  INFO -- : tmpAlertTemplateLocation: /Users/davide/Desktop/Code/RUBY/RCrawler/alerts/template1.txt
+I, [2018-10-22T13:38:40.210386 #74404]  INFO -- : tmpEmailAddresses: dvdpnt16+alerts@gmail.com
+I, [2018-10-22T13:38:40.210414 #74404]  INFO -- : tmpMaxPingsBeforeAlert: 10
+I, [2018-10-22T13:38:40.210442 #74404]  INFO -- : tmpMaxHTTPBeforeAlert: 5
+I, [2018-10-22T13:38:40.210470 #74404]  INFO -- : tmpOperationsPerInstance: 20
+I, [2018-10-22T13:38:40.210498 #74404]  INFO -- : Doing operations from index 0 to 1
+I, [2018-10-22T13:38:40.210570 #74404]  INFO -- : Connecting to influxDB at localhost...
+I, [2018-10-22T13:38:40.210727 #74404]  INFO -- : Creating DB RCrawler ...
+D, [2018-10-22T13:38:40.214676 #74404] DEBUG -- : thrId: 0, #<Alerter:0x007fc70294ea78 @emailAddresses="dvdpnt16+alerts@gmail.com", @maxPingsBeforeAlert="10", @maxHTTPBeforeAlert="5", @sendAlerts=false, @alertTemplatelocation="/Users/davide/Desktop/Code/RUBY/RCrawler/alerts/template1.txt", @alertTemplate="\noperation: <op>\ndestination: <dest>\nfailuresInARow: <fails>\nstartEpoch: <sEpoch>\nstartDate: <sDate>\n\n\nRCrawler\n">, #<Logger:0x007fc70294e6e0 @progname=nil, @level=0, @default_formatter=#<Logger::Formatter:0x007fc70294e6b8 @datetime_format=nil>, @formatter=nil, @logdev=#<Logger::LogDevice:0x007fc70294e640 @shift_size=1048576, @shift_age=10, @filename="/Users/davide/Desktop/Code/RUBY/RCrawler/logs/0/hehe.log", @dev=#<File:/Users/davide/Desktop/Code/RUBY/RCrawler/logs/0/hehe.log>, @mon_owner=nil, @mon_count=0, @mon_mutex=#<Thread::Mutex:0x007fc70294e5f0>>>
+D, [2018-10-22T13:38:40.214866 #74404] DEBUG -- : thrId: 1, #<Alerter:0x007fc70294ea78 @emailAddresses="dvdpnt16+alerts@gmail.com", @maxPingsBeforeAlert="10", @maxHTTPBeforeAlert="5", @sendAlerts=false, @alertTemplatelocation="/Users/davide/Desktop/Code/RUBY/RCrawler/alerts/template1.txt", @alertTemplate="\noperation: <op>\ndestination: <dest>\nfailuresInARow: <fails>\nstartEpoch: <sEpoch>\nstartDate: <sDate>\n\n\nRCrawler\n">, #<Logger:0x007fc70294e6e0 @progname=nil, @level=0, @default_formatter=#<Logger::Formatter:0x007fc70294e6b8 @datetime_format=nil>, @formatter=nil, @logdev=#<Logger::LogDevice:0x007fc70294e640 @shift_size=1048576, @shift_age=10, @filename="/Users/davide/Desktop/Code/RUBY/RCrawler/logs/0/hehe.log", @dev=#<File:/Users/davide/Desktop/Code/RUBY/RCrawler/logs/0/hehe.log>, @mon_owner=nil, @mon_count=0, @mon_mutex=#<Thread::Mutex:0x007fc70294e5f0>>>
+I, [2018-10-22T13:38:40.215815 #74404]  INFO -- : Starting 2 threads...
+I, [2018-10-22T13:41:39.726303 #74453]  INFO -- : Logger has started
+I, [2018-10-22T13:41:39.726401 #74453]  INFO -- : instanceId: 0
+I, [2018-10-22T13:41:39.726453 #74453]  INFO -- : I have 1 operations to do
+I, [2018-10-22T13:41:39.726495 #74453]  INFO -- : tmpLogsDir: /Users/davide/Desktop/Code/RUBY/RCrawler/logs/
+I, [2018-10-22T13:41:39.726554 #74453]  INFO -- : tmpAlertTemplateLocation: /Users/davide/Desktop/Code/RUBY/RCrawler/alerts/template1.txt
+I, [2018-10-22T13:41:39.726585 #74453]  INFO -- : tmpEmailAddresses: dvdpnt16+alerts@gmail.com
+I, [2018-10-22T13:41:39.726613 #74453]  INFO -- : tmpMaxPingsBeforeAlert: 10
+I, [2018-10-22T13:41:39.726642 #74453]  INFO -- : tmpMaxHTTPBeforeAlert: 5
+I, [2018-10-22T13:41:39.726670 #74453]  INFO -- : tmpOperationsPerInstance: 20
+I, [2018-10-22T13:41:39.726700 #74453]  INFO -- : Doing operations from index 0 to 1
+I, [2018-10-22T13:41:39.726749 #74453]  INFO -- : Connecting to influxDB at localhost...
+I, [2018-10-22T13:41:39.726914 #74453]  INFO -- : Creating DB RCrawler ...
+D, [2018-10-22T13:41:39.730941 #74453] DEBUG -- : thrId: 0, #<Alerter:0x007f8ccc0617c8 @emailAddresses="dvdpnt16+alerts@gmail.com", @maxPingsBeforeAlert="10", @maxHTTPBeforeAlert="5", @sendAlerts=false, @alertTemplatelocation="/Users/davide/Desktop/Code/RUBY/RCrawler/alerts/template1.txt", @alertTemplate="\noperation: <op>\ndestination: <dest>\nfailuresInARow: <fails>\nstartEpoch: <sEpoch>\nstartDate: <sDate>\n\n\nRCrawler\n">, #<Logger:0x007f8ccc061138 @progname=nil, @level=0, @default_formatter=#<Logger::Formatter:0x007f8ccc061110 @datetime_format=nil>, @formatter=nil, @logdev=#<Logger::LogDevice:0x007f8ccc0610c0 @shift_size=1048576, @shift_age=10, @filename="/Users/davide/Desktop/Code/RUBY/RCrawler/logs/0/hehe.log", @dev=#<File:/Users/davide/Desktop/Code/RUBY/RCrawler/logs/0/hehe.log>, @mon_owner=nil, @mon_count=0, @mon_mutex=#<Thread::Mutex:0x007f8ccc061070>>>
+D, [2018-10-22T13:41:39.731167 #74453] DEBUG -- : thrId: 1, #<Alerter:0x007f8ccc0617c8 @emailAddresses="dvdpnt16+alerts@gmail.com", @maxPingsBeforeAlert="10", @maxHTTPBeforeAlert="5", @sendAlerts=false, @alertTemplatelocation="/Users/davide/Desktop/Code/RUBY/RCrawler/alerts/template1.txt", @alertTemplate="\noperation: <op>\ndestination: <dest>\nfailuresInARow: <fails>\nstartEpoch: <sEpoch>\nstartDate: <sDate>\n\n\nRCrawler\n">, #<Logger:0x007f8ccc061138 @progname=nil, @level=0, @default_formatter=#<Logger::Formatter:0x007f8ccc061110 @datetime_format=nil>, @formatter=nil, @logdev=#<Logger::LogDevice:0x007f8ccc0610c0 @shift_size=1048576, @shift_age=10, @filename="/Users/davide/Desktop/Code/RUBY/RCrawler/logs/0/hehe.log", @dev=#<File:/Users/davide/Desktop/Code/RUBY/RCrawler/logs/0/hehe.log>, @mon_owner=nil, @mon_count=0, @mon_mutex=#<Thread::Mutex:0x007f8ccc061070>>>
+I, [2018-10-22T13:41:39.732023 #74453]  INFO -- : Starting 2 threads...
+E, [2018-10-22T13:41:40.021495 #74453] ERROR -- : thrId: 0, runHttpQueries() undefined local variable or method `response' for #<Crawler:0x007f8ccb0ed0a8>
+Did you mean?  responseBody
+D, [2018-10-22T13:41:40.021640 #74453] DEBUG -- : thrId: 0, http://world1.runescape.com failCounter=1
+I, [2018-10-22T13:41:40.026816 #74453]  INFO -- : thrId: 0, 0, http://world1.runescape.com, -1 ms, code: -1, size: 0
+I, [2018-10-22T13:42:08.315457 #74463]  INFO -- : Logger has started
+I, [2018-10-22T13:42:08.315548 #74463]  INFO -- : instanceId: 0
+I, [2018-10-22T13:42:08.315595 #74463]  INFO -- : I have 1 operations to do
+I, [2018-10-22T13:42:08.315625 #74463]  INFO -- : tmpLogsDir: /Users/davide/Desktop/Code/RUBY/RCrawler/logs/
+I, [2018-10-22T13:42:08.315653 #74463]  INFO -- : tmpAlertTemplateLocation: /Users/davide/Desktop/Code/RUBY/RCrawler/alerts/template1.txt
+I, [2018-10-22T13:42:08.315682 #74463]  INFO -- : tmpEmailAddresses: dvdpnt16+alerts@gmail.com
+I, [2018-10-22T13:42:08.315728 #74463]  INFO -- : tmpMaxPingsBeforeAlert: 10
+I, [2018-10-22T13:42:08.315756 #74463]  INFO -- : tmpMaxHTTPBeforeAlert: 5
+I, [2018-10-22T13:42:08.315783 #74463]  INFO -- : tmpOperationsPerInstance: 20
+I, [2018-10-22T13:42:08.315812 #74463]  INFO -- : Doing operations from index 0 to 1
+I, [2018-10-22T13:42:08.315858 #74463]  INFO -- : Connecting to influxDB at localhost...
+I, [2018-10-22T13:42:08.316014 #74463]  INFO -- : Creating DB RCrawler ...
+D, [2018-10-22T13:42:08.322051 #74463] DEBUG -- : thrId: 0, #<Alerter:0x007f90e915dbd8 @emailAddresses="dvdpnt16+alerts@gmail.com", @maxPingsBeforeAlert="10", @maxHTTPBeforeAlert="5", @sendAlerts=false, @alertTemplatelocation="/Users/davide/Desktop/Code/RUBY/RCrawler/alerts/template1.txt", @alertTemplate="\noperation: <op>\ndestination: <dest>\nfailuresInARow: <fails>\nstartEpoch: <sEpoch>\nstartDate: <sDate>\n\n\nRCrawler\n">, #<Logger:0x007f90e915d908 @progname=nil, @level=0, @default_formatter=#<Logger::Formatter:0x007f90e915d8b8 @datetime_format=nil>, @formatter=nil, @logdev=#<Logger::LogDevice:0x007f90e915d868 @shift_size=1048576, @shift_age=10, @filename="/Users/davide/Desktop/Code/RUBY/RCrawler/logs/0/hehe.log", @dev=#<File:/Users/davide/Desktop/Code/RUBY/RCrawler/logs/0/hehe.log>, @mon_owner=nil, @mon_count=0, @mon_mutex=#<Thread::Mutex:0x007f90e915d818>>>
+D, [2018-10-22T13:42:08.322980 #74463] DEBUG -- : thrId: 1, #<Alerter:0x007f90e915dbd8 @emailAddresses="dvdpnt16+alerts@gmail.com", @maxPingsBeforeAlert="10", @maxHTTPBeforeAlert="5", @sendAlerts=false, @alertTemplatelocation="/Users/davide/Desktop/Code/RUBY/RCrawler/alerts/template1.txt", @alertTemplate="\noperation: <op>\ndestination: <dest>\nfailuresInARow: <fails>\nstartEpoch: <sEpoch>\nstartDate: <sDate>\n\n\nRCrawler\n">, #<Logger:0x007f90e915d908 @progname=nil, @level=0, @default_formatter=#<Logger::Formatter:0x007f90e915d8b8 @datetime_format=nil>, @formatter=nil, @logdev=#<Logger::LogDevice:0x007f90e915d868 @shift_size=1048576, @shift_age=10, @filename="/Users/davide/Desktop/Code/RUBY/RCrawler/logs/0/hehe.log", @dev=#<File:/Users/davide/Desktop/Code/RUBY/RCrawler/logs/0/hehe.log>, @mon_owner=nil, @mon_count=0, @mon_mutex=#<Thread::Mutex:0x007f90e915d818>>>
+I, [2018-10-22T13:42:08.323095 #74463]  INFO -- : Starting 2 threads...
+I, [2018-10-22T13:42:31.304248 #74475]  INFO -- : Logger has started
+I, [2018-10-22T13:42:31.304341 #74475]  INFO -- : instanceId: 0
+I, [2018-10-22T13:42:31.304391 #74475]  INFO -- : I have 1 operations to do
+I, [2018-10-22T13:42:31.304429 #74475]  INFO -- : tmpLogsDir: /Users/davide/Desktop/Code/RUBY/RCrawler/logs/
+I, [2018-10-22T13:42:31.304469 #74475]  INFO -- : tmpAlertTemplateLocation: /Users/davide/Desktop/Code/RUBY/RCrawler/alerts/template1.txt
+I, [2018-10-22T13:42:31.304498 #74475]  INFO -- : tmpEmailAddresses: dvdpnt16+alerts@gmail.com
+I, [2018-10-22T13:42:31.304527 #74475]  INFO -- : tmpMaxPingsBeforeAlert: 10
+I, [2018-10-22T13:42:31.304573 #74475]  INFO -- : tmpMaxHTTPBeforeAlert: 5
+I, [2018-10-22T13:42:31.304601 #74475]  INFO -- : tmpOperationsPerInstance: 20
+I, [2018-10-22T13:42:31.304630 #74475]  INFO -- : Doing operations from index 0 to 1
+I, [2018-10-22T13:42:31.304685 #74475]  INFO -- : Connecting to influxDB at localhost...
+I, [2018-10-22T13:42:31.304854 #74475]  INFO -- : Creating DB RCrawler ...
+D, [2018-10-22T13:42:31.309063 #74475] DEBUG -- : thrId: 0, #<Alerter:0x007fd4d78c1f50 @emailAddresses="dvdpnt16+alerts@gmail.com", @maxPingsBeforeAlert="10", @maxHTTPBeforeAlert="5", @sendAlerts=false, @alertTemplatelocation="/Users/davide/Desktop/Code/RUBY/RCrawler/alerts/template1.txt", @alertTemplate="\noperation: <op>\ndestination: <dest>\nfailuresInARow: <fails>\nstartEpoch: <sEpoch>\nstartDate: <sDate>\n\n\nRCrawler\n">, #<Logger:0x007fd4d78c1b18 @progname=nil, @level=0, @default_formatter=#<Logger::Formatter:0x007fd4d78c1af0 @datetime_format=nil>, @formatter=nil, @logdev=#<Logger::LogDevice:0x007fd4d78c1a78 @shift_size=1048576, @shift_age=10, @filename="/Users/davide/Desktop/Code/RUBY/RCrawler/logs/0/hehe.log", @dev=#<File:/Users/davide/Desktop/Code/RUBY/RCrawler/logs/0/hehe.log>, @mon_owner=nil, @mon_count=0, @mon_mutex=#<Thread::Mutex:0x007fd4d78c1a00>>>
+D, [2018-10-22T13:42:31.310077 #74475] DEBUG -- : thrId: 1, #<Alerter:0x007fd4d78c1f50 @emailAddresses="dvdpnt16+alerts@gmail.com", @maxPingsBeforeAlert="10", @maxHTTPBeforeAlert="5", @sendAlerts=false, @alertTemplatelocation="/Users/davide/Desktop/Code/RUBY/RCrawler/alerts/template1.txt", @alertTemplate="\noperation: <op>\ndestination: <dest>\nfailuresInARow: <fails>\nstartEpoch: <sEpoch>\nstartDate: <sDate>\n\n\nRCrawler\n">, #<Logger:0x007fd4d78c1b18 @progname=nil, @level=0, @default_formatter=#<Logger::Formatter:0x007fd4d78c1af0 @datetime_format=nil>, @formatter=nil, @logdev=#<Logger::LogDevice:0x007fd4d78c1a78 @shift_size=1048576, @shift_age=10, @filename="/Users/davide/Desktop/Code/RUBY/RCrawler/logs/0/hehe.log", @dev=#<File:/Users/davide/Desktop/Code/RUBY/RCrawler/logs/0/hehe.log>, @mon_owner=nil, @mon_count=0, @mon_mutex=#<Thread::Mutex:0x007fd4d78c1a00>>>
+I, [2018-10-22T13:42:31.310223 #74475]  INFO -- : Starting 2 threads...
+I, [2018-10-22T13:48:23.231530 #74577]  INFO -- : Logger has started
+I, [2018-10-22T13:48:23.234948 #74577]  INFO -- : instanceId: 0
+I, [2018-10-22T13:48:23.235087 #74577]  INFO -- : I have 1 operations to do
+I, [2018-10-22T13:48:23.235154 #74577]  INFO -- : tmpLogsDir: /Users/davide/Desktop/Code/RUBY/RCrawler/logs/
+I, [2018-10-22T13:48:23.235213 #74577]  INFO -- : tmpAlertTemplateLocation: /Users/davide/Desktop/Code/RUBY/RCrawler/alerts/template1.txt
+I, [2018-10-22T13:48:23.235271 #74577]  INFO -- : tmpEmailAddresses: dvdpnt16+alerts@gmail.com
+I, [2018-10-22T13:48:23.235327 #74577]  INFO -- : tmpMaxPingsBeforeAlert: 10
+I, [2018-10-22T13:48:23.235383 #74577]  INFO -- : tmpMaxHTTPBeforeAlert: 5
+I, [2018-10-22T13:48:23.235474 #74577]  INFO -- : tmpOperationsPerInstance: 20
+I, [2018-10-22T13:48:23.235534 #74577]  INFO -- : Doing operations from index 0 to 1
+I, [2018-10-22T13:48:23.235631 #74577]  INFO -- : Connecting to influxDB at localhost...
+I, [2018-10-22T13:48:23.235859 #74577]  INFO -- : Creating DB RCrawler ...
+D, [2018-10-22T13:48:23.252228 #74577] DEBUG -- : thrId: 0, #<Alerter:0x007f93661823f0 @emailAddresses="dvdpnt16+alerts@gmail.com", @maxPingsBeforeAlert="10", @maxHTTPBeforeAlert="5", @sendAlerts=false, @alertTemplatelocation="/Users/davide/Desktop/Code/RUBY/RCrawler/alerts/template1.txt", @alertTemplate="\noperation: <op>\ndestination: <dest>\nfailuresInARow: <fails>\nstartEpoch: <sEpoch>\nstartDate: <sDate>\n\n\nRCrawler\n">, #<Logger:0x007f93661820a8 @progname=nil, @level=0, @default_formatter=#<Logger::Formatter:0x007f9366182080 @datetime_format=nil>, @formatter=nil, @logdev=#<Logger::LogDevice:0x007f9366182030 @shift_size=1048576, @shift_age=10, @filename="/Users/davide/Desktop/Code/RUBY/RCrawler/logs/0/hehe.log", @dev=#<File:/Users/davide/Desktop/Code/RUBY/RCrawler/logs/0/hehe.log>, @mon_owner=nil, @mon_count=0, @mon_mutex=#<Thread::Mutex:0x007f9366181fb8>>>
+D, [2018-10-22T13:48:23.252657 #74577] DEBUG -- : thrId: 1, #<Alerter:0x007f93661823f0 @emailAddresses="dvdpnt16+alerts@gmail.com", @maxPingsBeforeAlert="10", @maxHTTPBeforeAlert="5", @sendAlerts=false, @alertTemplatelocation="/Users/davide/Desktop/Code/RUBY/RCrawler/alerts/template1.txt", @alertTemplate="\noperation: <op>\ndestination: <dest>\nfailuresInARow: <fails>\nstartEpoch: <sEpoch>\nstartDate: <sDate>\n\n\nRCrawler\n">, #<Logger:0x007f93661820a8 @progname=nil, @level=0, @default_formatter=#<Logger::Formatter:0x007f9366182080 @datetime_format=nil>, @formatter=nil, @logdev=#<Logger::LogDevice:0x007f9366182030 @shift_size=1048576, @shift_age=10, @filename="/Users/davide/Desktop/Code/RUBY/RCrawler/logs/0/hehe.log", @dev=#<File:/Users/davide/Desktop/Code/RUBY/RCrawler/logs/0/hehe.log>, @mon_owner=nil, @mon_count=0, @mon_mutex=#<Thread::Mutex:0x007f9366181fb8>>>
+I, [2018-10-22T13:48:23.256232 #74577]  INFO -- : Starting 2 threads...
+I, [2018-10-22T13:48:43.168733 #74582]  INFO -- : Logger has started
+I, [2018-10-22T13:48:43.168830 #74582]  INFO -- : instanceId: 0
+I, [2018-10-22T13:48:43.168878 #74582]  INFO -- : I have 1 operations to do
+I, [2018-10-22T13:48:43.168909 #74582]  INFO -- : tmpLogsDir: /Users/davide/Desktop/Code/RUBY/RCrawler/logs/
+I, [2018-10-22T13:48:43.168938 #74582]  INFO -- : tmpAlertTemplateLocation: /Users/davide/Desktop/Code/RUBY/RCrawler/alerts/template1.txt
+I, [2018-10-22T13:48:43.168967 #74582]  INFO -- : tmpEmailAddresses: dvdpnt16+alerts@gmail.com
+I, [2018-10-22T13:48:43.168996 #74582]  INFO -- : tmpMaxPingsBeforeAlert: 10
+I, [2018-10-22T13:48:43.169023 #74582]  INFO -- : tmpMaxHTTPBeforeAlert: 5
+I, [2018-10-22T13:48:43.169050 #74582]  INFO -- : tmpOperationsPerInstance: 20
+I, [2018-10-22T13:48:43.169097 #74582]  INFO -- : Doing operations from index 0 to 1
+I, [2018-10-22T13:48:43.169144 #74582]  INFO -- : Connecting to influxDB at localhost...
+I, [2018-10-22T13:48:43.169302 #74582]  INFO -- : Creating DB RCrawler ...
+D, [2018-10-22T13:48:43.175543 #74582] DEBUG -- : thrId: 0, #<Alerter:0x007faf8391e260 @emailAddresses="dvdpnt16+alerts@gmail.com", @maxPingsBeforeAlert="10", @maxHTTPBeforeAlert="5", @sendAlerts=false, @alertTemplatelocation="/Users/davide/Desktop/Code/RUBY/RCrawler/alerts/template1.txt", @alertTemplate="\noperation: <op>\ndestination: <dest>\nfailuresInARow: <fails>\nstartEpoch: <sEpoch>\nstartDate: <sDate>\n\n\nRCrawler\n">, #<Logger:0x007faf8391df18 @progname=nil, @level=0, @default_formatter=#<Logger::Formatter:0x007faf8391def0 @datetime_format=nil>, @formatter=nil, @logdev=#<Logger::LogDevice:0x007faf8391de78 @shift_size=1048576, @shift_age=10, @filename="/Users/davide/Desktop/Code/RUBY/RCrawler/logs/0/hehe.log", @dev=#<File:/Users/davide/Desktop/Code/RUBY/RCrawler/logs/0/hehe.log>, @mon_owner=nil, @mon_count=0, @mon_mutex=#<Thread::Mutex:0x007faf8391de00>>>
+D, [2018-10-22T13:48:43.176573 #74582] DEBUG -- : thrId: 1, #<Alerter:0x007faf8391e260 @emailAddresses="dvdpnt16+alerts@gmail.com", @maxPingsBeforeAlert="10", @maxHTTPBeforeAlert="5", @sendAlerts=false, @alertTemplatelocation="/Users/davide/Desktop/Code/RUBY/RCrawler/alerts/template1.txt", @alertTemplate="\noperation: <op>\ndestination: <dest>\nfailuresInARow: <fails>\nstartEpoch: <sEpoch>\nstartDate: <sDate>\n\n\nRCrawler\n">, #<Logger:0x007faf8391df18 @progname=nil, @level=0, @default_formatter=#<Logger::Formatter:0x007faf8391def0 @datetime_format=nil>, @formatter=nil, @logdev=#<Logger::LogDevice:0x007faf8391de78 @shift_size=1048576, @shift_age=10, @filename="/Users/davide/Desktop/Code/RUBY/RCrawler/logs/0/hehe.log", @dev=#<File:/Users/davide/Desktop/Code/RUBY/RCrawler/logs/0/hehe.log>, @mon_owner=nil, @mon_count=0, @mon_mutex=#<Thread::Mutex:0x007faf8391de00>>>
+I, [2018-10-22T13:48:43.176710 #74582]  INFO -- : Starting 2 threads...
+I, [2018-10-22T13:49:16.740397 #74594]  INFO -- : Logger has started
+I, [2018-10-22T13:49:16.740516 #74594]  INFO -- : instanceId: 0
+I, [2018-10-22T13:49:16.740569 #74594]  INFO -- : I have 1 operations to do
+I, [2018-10-22T13:49:16.740608 #74594]  INFO -- : tmpLogsDir: /Users/davide/Desktop/Code/RUBY/RCrawler/logs/
+I, [2018-10-22T13:49:16.740649 #74594]  INFO -- : tmpAlertTemplateLocation: /Users/davide/Desktop/Code/RUBY/RCrawler/alerts/template1.txt
+I, [2018-10-22T13:49:16.740706 #74594]  INFO -- : tmpEmailAddresses: dvdpnt16+alerts@gmail.com
+I, [2018-10-22T13:49:16.740739 #74594]  INFO -- : tmpMaxPingsBeforeAlert: 10
+I, [2018-10-22T13:49:16.740776 #74594]  INFO -- : tmpMaxHTTPBeforeAlert: 5
+I, [2018-10-22T13:49:16.740832 #74594]  INFO -- : tmpOperationsPerInstance: 20
+I, [2018-10-22T13:49:16.740866 #74594]  INFO -- : Doing operations from index 0 to 1
+I, [2018-10-22T13:49:16.740924 #74594]  INFO -- : Connecting to influxDB at localhost...
+I, [2018-10-22T13:49:16.741120 #74594]  INFO -- : Creating DB RCrawler ...
+D, [2018-10-22T13:49:16.745463 #74594] DEBUG -- : thrId: 0, #<Alerter:0x007fc69a082330 @emailAddresses="dvdpnt16+alerts@gmail.com", @maxPingsBeforeAlert="10", @maxHTTPBeforeAlert="5", @sendAlerts=false, @alertTemplatelocation="/Users/davide/Desktop/Code/RUBY/RCrawler/alerts/template1.txt", @alertTemplate="\noperation: <op>\ndestination: <dest>\nfailuresInARow: <fails>\nstartEpoch: <sEpoch>\nstartDate: <sDate>\n\n\nRCrawler\n">, #<Logger:0x007fc69a081fe8 @progname=nil, @level=0, @default_formatter=#<Logger::Formatter:0x007fc69a081f98 @datetime_format=nil>, @formatter=nil, @logdev=#<Logger::LogDevice:0x007fc69a081ea8 @shift_size=1048576, @shift_age=10, @filename="/Users/davide/Desktop/Code/RUBY/RCrawler/logs/0/hehe.log", @dev=#<File:/Users/davide/Desktop/Code/RUBY/RCrawler/logs/0/hehe.log>, @mon_owner=nil, @mon_count=0, @mon_mutex=#<Thread::Mutex:0x007fc69a081de0>>>
+D, [2018-10-22T13:49:16.746660 #74594] DEBUG -- : thrId: 1, #<Alerter:0x007fc69a082330 @emailAddresses="dvdpnt16+alerts@gmail.com", @maxPingsBeforeAlert="10", @maxHTTPBeforeAlert="5", @sendAlerts=false, @alertTemplatelocation="/Users/davide/Desktop/Code/RUBY/RCrawler/alerts/template1.txt", @alertTemplate="\noperation: <op>\ndestination: <dest>\nfailuresInARow: <fails>\nstartEpoch: <sEpoch>\nstartDate: <sDate>\n\n\nRCrawler\n">, #<Logger:0x007fc69a081fe8 @progname=nil, @level=0, @default_formatter=#<Logger::Formatter:0x007fc69a081f98 @datetime_format=nil>, @formatter=nil, @logdev=#<Logger::LogDevice:0x007fc69a081ea8 @shift_size=1048576, @shift_age=10, @filename="/Users/davide/Desktop/Code/RUBY/RCrawler/logs/0/hehe.log", @dev=#<File:/Users/davide/Desktop/Code/RUBY/RCrawler/logs/0/hehe.log>, @mon_owner=nil, @mon_count=0, @mon_mutex=#<Thread::Mutex:0x007fc69a081de0>>>
+I, [2018-10-22T13:49:16.746829 #74594]  INFO -- : Starting 2 threads...

@@ -8,6 +8,7 @@ require 'logger'
 require 'fileutils'		# so that I can use FileUtils.mkpath
 require 'influxdb'
 require 'open3'
+require 'HTTParty'
 
 load 'Operation.rb'
 load 'Alerter.rb'

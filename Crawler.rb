@@ -1,12 +1,18 @@
+# class implements the operations
+
+
 class Crawler
 
   def initialize(aObj, lObj, dbObj, id=-1)
 		# aObj: reference to Alert object
 		# lObj: reference to Logger object
 		# dbObj: reference to influxdb object
-		# id: useful when using multiple threads
+		# id: useful when using multiple RCrawler processes
     @objId, @alertObj, @logObj, @influxDBObj = id, aObj, lObj, dbObj
 		logObj.debug("thrId: #{@objId}, #{aObj.inspect}, #{lObj.inspect}")
+
+		@failCounter = 0
+		@alertSent = false
 
   end
 
@@ -17,9 +23,6 @@ class Crawler
     @pingDest = opInput.dest.to_s    # destination IP address for ping
     @pingCounter = 0          # count how many pings have been taken, if -1 go on forever
     @pingLimit = opInput.reps.to_i        # number of pings to send
-    @pingLatency = Array.new  # latency for ping
-    @pingReturnEpoch = Array.new     	# date in which ping result was taken
-		@pingReturnEpochDay = Array.new		# milliseconds after the start of the day in which ping result was taken
     @pingDstIsIP = false
 
     begin
@@ -51,8 +54,6 @@ class Crawler
 
     # start the pings
     # stores a -1 if the ping does not succeeds, i.e. timeout
-		failCounter = 0			# count how many times the operation failed
-		alertSent = false		# flag whether the alert was sent for the last occurrence
     loop do
 			tmpLatency = -1.0
 
@@ -77,22 +78,17 @@ class Crawler
 				tmpTimestamp = DateTime.now.strftime('%Q').to_i
 
 				# reset alert variables
-				failCounter = 0
+				@failCounter = 0
 				alertSent = false
 
 			else
-				failCounter += 1
-				logObj.debug("thrId: #{@objId}, #{pingDest.to_s} failCounter=#{failCounter}, exitstatus=#{status.exitstatus}")
+				@failCounter += 1
+				logObj.debug("thrId: #{@objId}, #{pingDest.to_s} failCounter=#{@failCounter}, exitstatus=#{status.exitstatus}")
 
 				# check if alert needs to be sent
-				if alertObj.sendAlerts && (failCounter >= alertObj.maxPingsBeforeAlert.to_i && !alertSent)
+				if alertObj.sendAlerts && (@failCounter >= alertObj.maxPingsBeforeAlert.to_i && !alertSent)
 					# send alert, but only one per-occurrence
-					currEpoch = DateTime.now.strftime('%Q')	# this so that logs and email alert have the same timestamp
-					alertObj.sendEmailAlert("PING", pingDest.to_s, failCounter, currEpoch.to_s, DateTime.strptime(currEpoch,'%Q'))
-					alertSent = true
-					puts "[#{currEpoch},#{objId.to_s}]: PING Alert sent, #{pingDest.to_s}"
-					logObj.info("thrId: #{@objId}, PING Alert sent, #{pingDest.to_s}")
-
+					alertSent = sendAlert("PING", pingDest.to_s, @failCounter, @objId)
 				end
 			end
 
@@ -127,7 +123,6 @@ class Crawler
   end
 
 
-  #def runHttpQueries(url, delay=10, limit=-1)
   def runHttpQueries(opInput)
     # run a get query for the URL every interval number of seconds
     # take as input an Operation object containing all the necessary values
@@ -148,47 +143,31 @@ class Crawler
     @httpDelay = opInput.interval.to_i
     @httpCounter = 0
     @httpLimit = opInput.reps.to_i
-    @httpDuration = Array.new
-    @httpReturnCode = Array.new
-    @httpReturnSize = Array.new
-    @httpReturnEpoch = Array.new
-		@httpReturnEpochDay = Array.new
-    @httpBaseOutputDir = opInput.outputDir.to_s  # directory to store output files in
     @httpFileHeader = opInput.httpFileHeader.to_s    # static file headers to put at the top of an output file
-    @httpOutFile
 
 
     # create file to store data to
     pos1 = httpUrl.index(":").to_i
     fileName = httpUrl[0,pos1] + "_" + httpUrl[pos1+3, httpUrl.length - (pos1+3)]
-    httpOutFile = httpBaseOutputDir + fileName + "_" + DateTime.now.strftime('%Q').to_s + ".log"
-
-    puts "id: #{objId}, httpOutFile: " + httpOutFile
-
-    begin
-      outFile = File.open(httpOutFile, 'w')
-    rescue Errno::ENOENT
-      puts "Could not write to httpOutFile: #{httpOutFile.to_s}"
-			logObj.error("thrId: #{@objId}, Could not write to httpOutFile: #{httpOutFile.to_s}")
-      return
-    end
-
-
-    # put first few lines of data to file
-    outFile << "# HTTP\t" << httpUrl << "\n"  # URL being crawled
-    outFile << "# Started at: " << DateTime.now.to_s << "\n"
-    outFile << httpFileHeader << "\n"
 
 
     # start crawling
-		failCounter = 0			# count how many times the operation failed
-		alertSent = false		# flag whether the alert was sent for the last occurrence
 		currEpoch = 0
     loop do
       startTime = DateTime.now.strftime('%Q').to_s
 
       begin
-        queryResponse = open(httpUrl.to_s)
+        # queryResponse = open(@httpUrl.to_s)
+				# puts queryResponse.class
+
+				queryResponse = HTTParty.get(@httpUrl.to_s, {timeout: 5})
+
+				# response.body, response.code, response.message, response.headers.inspect
+				# puts "body: #{queryResponse.body}"
+				# puts "code: #{queryResponse.code}"
+				# puts "message: #{queryResponse.message}"
+				puts "headers: #{queryResponse.headers.class}"
+
 
       # try to rescue from any exceptions, but keep trying
 			# TODO: for some reason the rescue clauses below throw runtime errors on Mac OS
@@ -196,95 +175,57 @@ class Crawler
 				# TODO: do some logging before re-raising the exception
 				puts "#{e}"
 				logObj.error("thrId: #{@objId}, runHttpQueries() #{e}")
-				failCounter += 1
-				logObj.debug("thrId: #{@objId}, #{httpUrl.to_s} failCounter=#{failCounter}")
+				@failCounter += 1
+				logObj.debug("thrId: #{@objId}, #{httpUrl.to_s} failCounter=#{@failCounter}")
 
 				#puts "FAILED, " + "#{failCounter}\t" + "#{alertObj.maxPingsBeforeAlert.to_i}"
-				if failCounter >= alertObj.maxHTTPBeforeAlert.to_i && !alertSent
+				if @alertObj.sendAlerts && (@failCounter >= @alertObj.maxHTTPBeforeAlert.to_i && !@alertSent)
 					# send alert, but only one per-occurrence
-					currEpoch = DateTime.now.strftime('%Q')	# this so that logs and email alert have the same timestamp
-					alertObj.sendEmailAlert("HTTP", httpUrl.to_s, failCounter, currEpoch.to_s, DateTime.strptime(currEpoch,'%Q'))
-					alertSent = true
-					puts "[#{currEpoch},#{objId.to_s}]: HTTP Alert sent, #{httpUrl.to_s}"
-					logObj.info("thrId: #{@objId}, HTTP Alert sent, #{httpUrl.to_s}")
-
+					@alertSent = sendAlert("HTTP", @httpUrl.to_s, @failCounter, @objId)
 				end
 
 				#raise e  # TODO: re-raise exception previously ignored and process properly
 
+			else
+				# no exceptions
+				@failCounter = 0
 			end
 
-
-			#
-      # rescue SocketError
-      #   # something happened to the socket, can happen when adapter is turned off or if could not
-      #   # resolve domain name for URL
-      #   puts "SocketError, #{httpUrl}"
-      #   sleep httpDelay
-      #   retry
-			#
-      # rescue Net::OpenTimeout
-      #   puts "Net::OpenTimeout, #{httpUrl}"
-      #   sleep httpDelay
-      #   retry
-			#
-      # rescue Exception => e
-      #   # use this as a catch-all scenario
-      #   puts "Uncaught exception: #{e}, #{httpUrl}"
-      #   sleep httpDelay
-      #   retry
-			#
-      # end
-
-
-			currEpoch = DateTime.now.strftime('%Q').to_s
+			currEpoch = DateTime.now.strftime('%Q').to_s	# time when query finished
+			hValues = {}
 
 			# if the query failed, save a whole bunch of -1s to file
-			if failCounter > 0
+			if @failCounter > 0
 				duration = -1
-				responseStatus = -1
-				responseBody = ""
+				hValues = {length: "-1", code: "-1", message: "-1", headers: "-1"}
 			else
       	duration = currEpoch.to_i - startTime.to_i  # time taken to do the HTTP GET, in milliseconds
-      	responseStatus = queryResponse.status     # HTTP response code received by the server
-      	responseBody = queryResponse.read
+				hValues = {length: queryResponse.body.length,
+					code: queryResponse.code,
+					message: queryResponse.message,
+					headers: queryResponse.headers}
 
 				# reset flags and variables
-				alertSent = false
-				failCounter = 0
+				@alertSent = false
+				@failCounter = 0
 			end
 
-      # store data in the arrays
-      httpDuration.push(duration)
-      httpReturnCode.push(responseStatus[0])
-      httpReturnSize.push(responseBody.length)
-      httpReturnEpoch.push(currEpoch)
-			httpReturnEpochDay.push(httpReturnEpoch[httpReturnEpoch.size-1].to_i % (3600000*24))
+
+			# store data in influxDB
+			data = {
+				values: hValues,
+				timestamp: currEpoch,
+			}
+			influxDBObj.write_point("HTTP_"+httpUrl.to_s, data)
+
 
 			# show some output in the terminal
 			httpOutput = "thrId: #{objId}" + ", " + httpCounter.to_s + ", " + httpUrl + ", " + duration.to_s + " ms"
-			httpOutput += ", code: " + responseStatus[0].to_s + ", size: " + responseBody.length.to_s
+			httpOutput += ", code: #{hValues[:code]}\tlength: #{hValues[:length]}"
       puts httpOutput
 			logObj.info(httpOutput)
 
-
-      # save to file
-      outFile << httpDuration[httpDuration.size-1]
-      outFile << "\t" << httpReturnCode[httpReturnCode.size-1]
-      outFile << "\t" << httpReturnSize[httpReturnSize.size-1]
-      outFile << "\t" << httpReturnEpoch[httpReturnEpoch.size-1]
-			outFile << "\t" << httpReturnEpochDay[httpReturnEpochDay.size-1]
-      outFile << "\n"
-
-			if httpCounter % 100 == 0
-				# store at most 100 elements in the arrays
-				logObj.debug("thrId: #{@objId}, clearing HTTP arrays...")
-				httpDuration.clear
-				httpReturnCode.clear
-				httpReturnSize.clear
-				httpReturnEpoch.clear
-				httpReturnEpochDay.clear
-			end
+			puts "\talertSent: #{@alertSent}\tfailCounter: #{@failCounter}"
 
 
 			# increase counters and see if the loop needs to continue
@@ -300,19 +241,33 @@ class Crawler
 
     end
 
-    outFile.close
-
-
   end
 
+	def sendAlert(op, dest, failCount, id=-1)
+		# send email alert using the Alert object passed to the class initialiser
+		currEpoch = DateTime.now.strftime('%Q')	# this so that logs and email alert have the same timestamp
+		output = @alertObj.sendEmailAlert(op, dest, failCount, currEpoch.to_s, DateTime.strptime(currEpoch,'%Q'))
 
+		if output
+			puts "[#{currEpoch},#{objId.to_s}]: #{op} Alert sent, #{dest}"
+			@logObj.info("thrId: #{@objId}, #{op} Alert sent, #{dest}")
+			return true
+		else
+			puts "[#{currEpoch},#{objId.to_s}]: #{op} Failed to send email alert, #{dest}"
+			@logObj.info("thrId: #{@objId}, #{op} Failed to send email alert, #{dest}")
+			return false
+		end
+	end
 
 
   # accessors for instance variables
   attr_accessor :objId, :alertObj, :logObj, :influxDBObj
 
-  attr_accessor :pingDelay, :pingDest, :pingCounter, :pingLimit, :pingLatency, :pingReturnEpoch, :pingReturnEpochDay, :pingFileHeader, :pingDstIsIP
+  attr_accessor :pingDelay, :pingDest, :pingCounter, :pingLimit, :pingFileHeader, :pingDstIsIP
 
-  attr_accessor :httpUrl, :httpDelay, :httpCounter, :httpLimit, :httpDuration, :httpReturnCode, :httpReturnSize, :httpReturnEpoch, :httpReturnEpochDay, :httpBaseOutputDir, :httpFileHeader
+  attr_accessor :httpUrl, :httpDelay, :httpCounter, :httpLimit, :httpFileHeader
+
+	# generic variables
+	attr_accessor :failCounter, :alertSent
 
 end

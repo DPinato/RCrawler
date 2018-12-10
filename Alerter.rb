@@ -32,7 +32,7 @@ class Alerter
 		# echo "<emailMessage>" | mail -s "<emailSubject>" emailAddress
 		# mail -s "<subject>" <email_address> < "<file>"
 
-		# TODO: the mail command fails silently
+		# TODO: the mail command fails silently, replace with something else?
 		cmdTest1 = "echo \"#{emailMessage.to_s}\" | mail -s \"#{emailSubject.to_s}\" #{emailAddresses.to_s}"
 		#puts cmdTest1
 		output = `#{cmdTest1}`
@@ -41,6 +41,7 @@ class Alerter
 		#puts cmdTest2
 		#output = `#{cmdTest2}`
 
+		return true
 
   end
 
