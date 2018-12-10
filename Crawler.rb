@@ -61,7 +61,6 @@ class Crawler
 			# remember that Mac OS has that value in milliseconds
 			pingCmd = "ping #{pingDest.to_s} -c 1 -W 5000"
       # now = `ping #{pingDest.to_s} -c 1 -W 5000`
-			puts pingCmd
 
 			stdout, stderr, status = Open3.capture3("#{pingCmd}")
 			# puts "stdout: #{stdout}"
