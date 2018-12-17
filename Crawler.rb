@@ -158,7 +158,7 @@ class Crawler
     loop do
       startTime = DateTime.now.strftime('%Q').to_s
 			duration = -1
-			hValues = {length: -1, code: "-1", duration: duration}	# if the query failed, save a whole bunch of -1s to file
+			hValues = {length: -1, code: -1, duration: -1}	# if the query failed, save a whole bunch of -1s to file
 
       begin
         # queryResponse = open(@httpUrl.to_s)
