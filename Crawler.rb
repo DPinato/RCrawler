@@ -56,25 +56,27 @@ class Crawler
     # stores a -1 if the ping does not succeeds, i.e. timeout
     loop do
 			tmpLatency = -1.0
+			tmpTtl = 0
 
 			# anything above 5 seconds timeout is really high
-			# remember that Mac OS has that value in milliseconds
+			# remember that Mac OS has that value in milliseconds, but Linux usually in seconds
 			pingCmd = "ping #{pingDest.to_s} -c 1 -W 5000"
-      # now = `ping #{pingDest.to_s} -c 1 -W 5000`
-
 			stdout, stderr, status = Open3.capture3("#{pingCmd}")
-			# puts "stdout: #{stdout}"
-			# puts "stderr: #{stderr}"
-			# puts "status: #{status}"
-			# puts status.exitstatus
 
-
-			# if now has no size, we could not resolve the hostname or something OS-related happened
+			# if stderr has contents, something bad happened
 			if stderr.size == 0
-	      tmpStr = stdout.split("\n")[1] # get second line of output "64 bytes from 8.8.8.8: icmp_seq=1 ttl=59 time=13.7 ms"
-	      index = tmpStr.rindex("time").to_i
-	      pos1 = index.to_i + "time".length.to_i + 1
-	      tmpLatency = tmpStr[pos1, tmpStr.length - pos1 - 3].to_f	# make it a float right here
+				# get second line of output "64 bytes from <ip>: icmp_seq=1 ttl=59 time=13.7 ms"
+	      tmpStr = stdout.split("\n")[1]
+
+				# get ttl
+				index = tmpStr.index("ttl").to_i
+				pos = index.to_i + "ttl".length.to_i + 1
+				tmpTtl = tmpStr[pos, tmpStr.length - pos - 3].to_i
+
+				# get latency
+				index = tmpStr.rindex("time").to_i
+	      pos = index.to_i + "time".length.to_i + 1
+	      tmpLatency = tmpStr[pos, tmpStr.length - pos - 3].to_f
 				tmpTimestamp = DateTime.now.strftime('%Q').to_i
 
 				# reset alert variables
@@ -95,7 +97,7 @@ class Crawler
 
 			# store data in influxDB
 			data = {
-				values: {latency: tmpLatency, exitStatus: status.exitstatus},
+				values: {latency: tmpLatency, ttl: tmpTtl, exitStatus: status.exitstatus},
 				timestamp: tmpTimestamp,
 			}
 			influxDBObj.write_point("PING_"+pingDest.to_s, data)
@@ -103,7 +105,7 @@ class Crawler
 
       # show something in the terminal
 			pingOutput = objId.to_s + ", " + pingCounter.to_s + ", " + pingDest
-			pingOutput += ", latency: #{tmpLatency.to_s} ms"
+			pingOutput += ", latency: #{tmpLatency.to_s} ms, ttl: #{tmpTtl.to_s}"
 			pingOutput += ", code: #{status.exitstatus}"
       puts pingOutput
 			logObj.info("thrId: #{@objId}, #{pingOutput.to_s}")
@@ -185,7 +187,6 @@ class Crawler
 				end
 
 				#raise e  # TODO: re-raise exception previously ignored and process properly
-				next
 
 			else
 				# no exceptions
@@ -198,7 +199,7 @@ class Crawler
 			# if the query failed, save a whole bunch of -1s to file
 			if @failCounter > 0
 				duration = -1
-				hValues = {length: "-1", code: "-1", message: "-1", headers: "-1"}
+				hValues = {length: "-1", code: "-1", duration: duration}
 			else
       	duration = currEpoch.to_i - startTime.to_i  # time taken to do the HTTP GET, in milliseconds
 				hValues = {length: queryResponse.body.length,
@@ -228,12 +229,9 @@ class Crawler
       puts httpOutput
 			logObj.info(httpOutput)
 
-			# puts "\talertSent: #{@alertSent}\tfailCounter: #{@failCounter}"
-
 
 			# increase counters and see if the loop needs to continue
       @httpCounter += 1
-
       if httpLimit > 0 && httpCounter >= httpLimit
 				puts "thrId: #{@objId} has completed #{httpLimit} HTTP operations, #{httpUrl}"
 				logObj.info("thrId: #{@objId} has completed #{httpLimit} HTTP operations, #{httpUrl}")
@@ -265,9 +263,7 @@ class Crawler
 
   # accessors for instance variables
   attr_accessor :objId, :alertObj, :logObj, :influxDBObj
-
   attr_accessor :pingDelay, :pingDest, :pingCounter, :pingLimit, :pingFileHeader, :pingDstIsIP
-
   attr_accessor :httpUrl, :httpDelay, :httpCounter, :httpLimit, :httpFileHeader
 
 	# generic variables

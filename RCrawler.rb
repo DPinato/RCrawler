@@ -42,6 +42,8 @@ tmpEmailAddresses = ""
 tmpMaxPingsBeforeAlert = ""
 tmpMaxHTTPBeforeAlert = ""
 tmpOperationsPerInstance = -1
+tmpDbName = ""
+tmpDbHost = ""
 
 ops = Array.new
 
@@ -105,6 +107,18 @@ confFile.readlines().each do |line|
       pos = line.index('=')
       tmpOperationsPerInstance = line[pos+1, line.size - (pos+1)].chomp!  # last character is newline
     end
+
+		# read variables related to InfluxDB
+		if line.include?("dbName")	# goes with the -i flag
+      pos = line.index('=')
+      tmpDbName = line[pos+1, line.size - (pos+1)].chomp!  # last character is newline
+    end
+		if line.include?("dbHost")	# goes with the -i flag
+      pos = line.index('=')
+      tmpDbHost = line[pos+1, line.size - (pos+1)].chomp!  # last character is newline
+    end
+
+
 
     # read list of operations to perform
     if line[0,4].include?("HTTP") || line[0,4].include?("PING")
@@ -177,6 +191,7 @@ unless Dir.exist?(logFileDir)
 		#Dir.mkdir(logFileDir)
 		FileUtils.mkpath(logFileDir)	# if needed, this will create every single directory that does not exist yet, so that
 																	# the path will be created
+		puts "Created directory for log files"
 
 	rescue SystemCallError
 		puts "Could not create directory for log file, instance: #{instanceId.to_s}, exiting..."
@@ -201,16 +216,16 @@ tmpLoggerObj.info("Doing operations from index " + "#{firstOp}" + " to " + "#{la
 
 
 # connect to the influxdb instance and create the database
-dbName = "RCrawler"		# database name
-nameSeries = "test"
-dbHost = "localhost"
+dbName = tmpDbName		# database name
+# nameSeries = "test"
+dbHost = tmpDbHost
 
-puts "Connecting to influxDB at #{dbHost}..."
-tmpLoggerObj.info("Connecting to influxDB at #{dbHost}...")
-influxdb = InfluxDB::Client.new(dbName, host: dbHost, time_precision: "ms")
+puts "Connecting to influxDB at #{dbHost}"
+tmpLoggerObj.info("Connecting to InfluxDB at #{dbHost}")
+influxdb = InfluxDB::Client.new(dbName, host: dbHost, time_precision: "ms", retry: 8)
 
-puts "Creating DB #{dbName} ..."
-tmpLoggerObj.info("Creating DB #{dbName} ...")
+puts "Creating DB #{dbName}"
+tmpLoggerObj.info("Creating DB #{dbName}")
 influxdb.create_database(dbName)	# create influxdb database for RCrawler
 
 
@@ -219,8 +234,7 @@ influxdb.create_database(dbName)	# create influxdb database for RCrawler
 crawlArray = Array.new
 
 #threadArray = (0...ops.size).map do |i| # this is equivalent to for (int i = 0; i < ops.size() i++)
-threadArray = (firstOp..lastOp).map do |i|
-
+threadArray = (firstOp...lastOp).map do |i|
   crawlArray[i] = Crawler.new(tmpAlertObj, tmpLoggerObj, influxdb, i)
 
   Thread.new(i) do |i|
