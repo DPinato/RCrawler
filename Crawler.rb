@@ -157,13 +157,14 @@ class Crawler
 		currEpoch = 0
     loop do
       startTime = DateTime.now.strftime('%Q').to_s
+			duration = -1
+			hValues = {length: "-1", code: "-1", duration: duration}	# if the query failed, save a whole bunch of -1s to file
 
       begin
         # queryResponse = open(@httpUrl.to_s)
 				# puts queryResponse.class
 
 				queryResponse = HTTParty.get(@httpUrl.to_s, {timeout: 5})
-
 				# response.body, response.code, response.message, response.headers.inspect
 				# puts "body: #{queryResponse.body}"
 				# puts "code: #{queryResponse.code}"
@@ -191,17 +192,8 @@ class Crawler
 			else
 				# no exceptions
 				@failCounter = 0
-			end
-
-			currEpoch = DateTime.now.strftime('%Q').to_s	# time when query finished
-			hValues = {}
-
-			# if the query failed, save a whole bunch of -1s to file
-			if @failCounter > 0
-				duration = -1
-				hValues = {length: "-1", code: "-1", duration: duration}
-			else
-      	duration = currEpoch.to_i - startTime.to_i  # time taken to do the HTTP GET, in milliseconds
+				currEpoch = DateTime.now.strftime('%Q').to_s	# time when query finished
+				duration = currEpoch.to_i - startTime.to_i  # time taken to do the HTTP GET, in milliseconds
 				hValues = {length: queryResponse.body.length,
 					code: queryResponse.code,
 					duration: duration
@@ -209,10 +201,8 @@ class Crawler
 					# headers: queryResponse.headers
 				}
 
-				# reset flags and variables
-				@alertSent = false
-				@failCounter = 0
 			end
+
 
 
 			# store data in influxDB
