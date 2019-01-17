@@ -234,7 +234,7 @@ influxdb.create_database(dbName)	# create influxdb database for RCrawler
 crawlArray = Array.new
 
 #threadArray = (0...ops.size).map do |i| # this is equivalent to for (int i = 0; i < ops.size() i++)
-threadArray = (firstOp...lastOp).map do |i|
+threadArray = (firstOp..lastOp).map do |i|
   crawlArray[i] = Crawler.new(tmpAlertObj, tmpLoggerObj, influxdb, i)
 
   Thread.new(i) do |i|
